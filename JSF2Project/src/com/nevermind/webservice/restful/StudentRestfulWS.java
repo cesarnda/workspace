@@ -34,6 +34,9 @@ public class StudentRestfulWS implements Provider<Source> {
 
 	private StudentFinder studentFinder;
 	
+	// Weblogic 12.1.1 seems to have a bug with the resource
+	// annotation and the WebServiceContext. So a name has to 
+	// be specified
 	@Resource(name="webServiceContext")
 	private WebServiceContext webServiceContext;
 	
