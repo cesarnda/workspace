@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="stack_overflow">
+	<jar destfile="weld.jar">
+	  <zipgroupfileset dir="/Users/cesarnda/Downloads/weld-2.0.3.Final/artifacts/weld" includes="*.jar" /> 
+	  <!-- other options -->
+	  <manifest>
+	    <attribute name="Main-Class" value="Main.MainClass" />
+	  </manifest>
+	</jar>
+</project>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <profiles>
+  	<profile>
+  		<id>SUN_JAVA</id>
+  		<properties>
+  			<SUN_JAVA_1_7>/Library/Java/JavaVirtualMachines/jdk1.7.0_40.jdk/Contents/Home/bin/javac</SUN_JAVA_1_7>
+  		</properties>
+  	</profile>
+  </profiles>
+  <activeProfiles>
+  	<activeProfile>SUN_JAVA</activeProfile>
+  </activeProfiles>
+</settings>
