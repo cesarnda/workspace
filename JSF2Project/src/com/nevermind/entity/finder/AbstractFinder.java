@@ -33,4 +33,12 @@ public abstract class AbstractFinder {
 		
 		return jsonUtil.fromJSONToObject(result.toString(), type);
 	}
+	
+	protected <T>T getRandomElement(Class<T> type){
+		DBObject result = dbCollection.findOne();
+		if(result == null){
+			return null;
+		}
+		return jsonUtil.fromJSONToObject(result.toString(), type);
+	}
 }

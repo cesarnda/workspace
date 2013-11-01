@@ -15,4 +15,9 @@ public class StudentFinder extends AbstractFinder{
 		student.set_id(id);
 		return getUniqueElement(student, Student.class);
 	}
+	
+	public Student getRandomStudent(){
+		return getRandomElement(Student.class);
+	}
+	
 }

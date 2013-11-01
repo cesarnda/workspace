@@ -56,4 +56,16 @@
   	<url-pattern>/restful/*</url-pattern>
   </servlet-mapping>
   
+  <servlet>
+  	<servlet-name>JerseyAdapter</servlet-name>
+  	<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>JerseyAdapter</servlet-name>
+  	<url-pattern>/jersey/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
 </web-app>

@@ -20,7 +20,6 @@ import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.security.Security;
 
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
@@ -153,7 +152,7 @@ public class GoogleFinanceRestClient {
 	
 	private SSLSocket getSecureSocket(){
 		int HTTPS_PORT = 443;
-		Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
+		//Security.addProvider(new com.sun.net.ssl.internal.ssl.Provider());
 		SSLSocketFactory sslSocketFactory = SSLSocketFactory.class.cast(SSLSocketFactory.getDefault());
 		try {
 			SSLSocket socket = SSLSocket.class.cast(sslSocketFactory.createSocket(AUTH_URL, HTTPS_PORT));
