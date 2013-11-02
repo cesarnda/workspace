@@ -1,7 +1,6 @@
 package com.nevermind.webservice.restful;
 
-import java.net.UnknownHostException;
-
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -14,15 +13,10 @@ import com.nevermind.entity.finder.StudentFinder;
 @Path("/students")
 public class StudentRestfulAnnotated {
 
+	@Inject
 	private StudentFinder studentFinder;
 
 	public StudentRestfulAnnotated(){
-		try {
-			studentFinder = new StudentFinder();
-		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 	}
 
 	@GET
@@ -36,6 +30,14 @@ public class StudentRestfulAnnotated {
 	@POST
 	@Produces({MediaType.APPLICATION_JSON})
 	public StudentsList getRandomStudentInJSONFormat(){
+		StudentsList studentsList = new StudentsList();
+		studentsList.getStudents().add(studentFinder.getRandomStudent());
+		return studentsList;
+	}
+	
+	@GET
+	@Produces({MediaType.APPLICATION_JSON})
+	public StudentsList getRandomStudentAlsoInJSON(){
 		StudentsList studentsList = new StudentsList();
 		studentsList.getStudents().add(studentFinder.getRandomStudent());
 		return studentsList;

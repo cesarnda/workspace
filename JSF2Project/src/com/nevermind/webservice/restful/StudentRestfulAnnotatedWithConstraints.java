@@ -1,6 +1,6 @@
 package com.nevermind.webservice.restful;
 
-import java.net.UnknownHostException;
+import java.util.List;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -13,25 +13,18 @@ import com.nevermind.entity.Student;
 import com.nevermind.entity.StudentsList;
 import com.nevermind.entity.finder.StudentFinder;
 
-
-@Path("/student/{id}")
-public class StudentRestfulAnnotatedWithPath {
+@Path("/student/name/{name: [a-zA-Z]+}")
+public class StudentRestfulAnnotatedWithConstraints {
 
 	@Inject
 	private StudentFinder studentFinder;
 	
-	public StudentRestfulAnnotatedWithPath(){
-	}
-	
-	
 	@GET
 	@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-	public StudentsList getStudent(@PathParam("id")Long studentId){
-		Student student = studentFinder.getUniqueStudent(studentId);
+	public StudentsList getStudentsWith(@PathParam("name") String name){
+		List<Student> students =  studentFinder.getStudentsThatStartWith(name);
 		StudentsList studentsList = new StudentsList();
-		studentsList.getStudents().add(student);
+		studentsList.getStudents().addAll(students);
 		return studentsList;
 	}
-	
-	
 }
