@@ -54,13 +54,16 @@ public class AbstractRestfulClient {
 		return null;
 	}
 	
-	public void sendGetRequest(String method, String request, String path, String contentType){
+	public void sendGetRequest(String method, String request, String path, String contentType, String accept){
 		try{
 			socket = new Socket(address, port);
 			Writer out = new OutputStreamWriter(socket.getOutputStream());
 			out.write(method + " " + path + " HTTP/1.0\r\n");
 			out.write("Content-Length: " + request.length() + "\r\n");
 			out.write("Content-Type: " + contentType + "\r\n");
+			if(accept != null && accept.trim().length() > 0){
+				out.write("Accept: " + accept + "\r\n");
+			}
 			out.write("\r\n");
 			out.write(request);
 			out.flush();

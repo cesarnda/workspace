@@ -11,12 +11,12 @@ public class StudentRestfulAnnotatedClient extends AbstractRestfulClient{
 	}
 	
 	public String getOneStudentInJSON() throws IOException{
-		sendGetRequest("POST", "", "/JSF2Project/jersey/students", "text/html");
+		sendGetRequest("POST", "", "/JSF2Project/jersey/students", "text/html", null);
 		return getResponse(StudentsList.class);
 	}
 	
 	public String getOneStudentInXML() throws IOException{
-		sendGetRequest("GET", "", "/JSF2Project/jersey/students", "text/html");
+		sendGetRequest("GET", "", "/JSF2Project/jersey/students", "text/html", null);
 		return getResponse(StudentsList.class);
 	}
 	
