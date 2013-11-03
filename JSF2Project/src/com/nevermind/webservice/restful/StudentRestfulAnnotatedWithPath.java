@@ -1,7 +1,5 @@
 package com.nevermind.webservice.restful;
 
-import java.net.UnknownHostException;
-
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
