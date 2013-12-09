@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="generate-client">
+	<exec executable="mkdir">
+		<arg line="nevermind"/>
+	</exec>
+	<exec executable="wsimport">
+		<arg line="-keep -d nevermind http://localhost:10000/nevermind?wsdl"/>
+	</exec>
+	<exec executable="jar">
+			<arg line="cf WebContent/WEB-INF/lib/nevermind.jar nevermind"/>
+	</exec>
+</project>
