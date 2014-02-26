@@ -30,4 +30,8 @@ public class Graph {
 		}
 		return mstWeight;
 	}
+	
+	public String toString(){
+		return "Nodes: " + nodes + "\nEdges: " + edges;
+	}
 }
