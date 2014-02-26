@@ -1,6 +1,7 @@
 package edu.harvard.cscie124.graph.mst;
 
 import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import edu.harvard.cscie124.graph.GraphGenerator;
 import edu.harvard.cscie124.graph.Graph;
@@ -15,6 +16,7 @@ public class KrushkalTestCase {
 		Graph graph = graphGenerator.generateUndirectedCompleteGraph(6, 2);
 		Graph mst = krushkal.generateMininumSpanningTree(graph);
 		System.out.println(mst);
+		assertEquals(5, mst.getEdges().size());
 	}
 	
 }
