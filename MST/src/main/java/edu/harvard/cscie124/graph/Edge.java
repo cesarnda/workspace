@@ -6,6 +6,18 @@ public class Edge implements Comparable<Edge>{
 	private Node destination;
 	private Double weight;
 	
+	public Edge(Node source, Node destination){
+		this.source = source;
+		this.destination = destination;
+		Double[] sourceCoordinates = this.source.getCoordinates();
+		Double[] destinationCoordinates = this.destination.getCoordinates();
+		weight = 0.0;
+		for(int index = 0; index < sourceCoordinates.length; index++){
+			weight +=  Math.pow(destinationCoordinates[index] - sourceCoordinates[index], 2); 
+		}
+		weight = Math.sqrt(weight);
+	}
+	
 	public Node getSource() {
 		return source;
 	}

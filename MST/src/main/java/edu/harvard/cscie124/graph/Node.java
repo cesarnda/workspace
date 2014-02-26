@@ -3,6 +3,24 @@ package edu.harvard.cscie124.graph;
 public class Node {
 	
 	private String name;
+	private Double[] coordinates;
+
+	public Node(String name){
+		this.name = name;
+	}
+	
+	public Node(String name, Double[] coordinates){
+		this.name = name;
+		this.coordinates = coordinates;
+	}
+	
+	public Double[] getCoordinates() {
+		return coordinates;
+	}
+
+	public void setCoordinates(Double[] coordinates) {
+		this.coordinates = coordinates;
+	}
 
 	public String getName() {
 		return name;

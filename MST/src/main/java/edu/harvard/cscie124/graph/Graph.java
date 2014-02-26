@@ -22,4 +22,12 @@ public class Graph {
 	public void setEdges(Set<Edge> edges) {
 		this.edges = edges;
 	}
+	
+	public Double getMininumSpanningTreeWeight(){
+		Double mstWeight = 0.0;
+		for(Edge edge : edges){
+			mstWeight += edge.getWeight();
+		}
+		return mstWeight;
+	}
 }
