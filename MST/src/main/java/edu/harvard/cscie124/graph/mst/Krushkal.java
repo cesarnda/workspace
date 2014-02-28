@@ -31,10 +31,11 @@ public class Krushkal implements MinimumSpanningTree{
 	}
 	
 	public Set<Edge> selectEdgesGreedily(List<Edge> edges, Set<Node> nodes){
+		int numberOfEdgesInMST = nodes.size() - 1;
 		Set<Edge> edgesForMST = new HashSet<Edge>();
 		Set<Node> nodesInMST = new HashSet<Node>();
 		
-		while(nodesInMST.size() != nodes.size()){
+		while(edgesForMST.size() < numberOfEdgesInMST){
 			Edge edgeWithMinimumWeigth = edges.remove(0);
 			if(nodesInMST.contains(edgeWithMinimumWeigth.getSource()) && edgesForMST.contains(edgeWithMinimumWeigth.getDestination())){
 				continue;
