@@ -1,6 +1,7 @@
 package edu.harvard.cscie124.graph.mst;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -23,10 +24,18 @@ public class Krushkal implements MinimumSpanningTree{
 	public Graph generateMininumSpanningTree(Graph g) {
 		List<Edge> edges = new ArrayList<Edge>();
 		edges.addAll(g.getEdges());
-		sorter.sort(edges);
+		int numberOfEdges = edges.size();
+		long startTimeForSorting = System.currentTimeMillis();
+		Collections.sort(edges);
+		//sorter.sort(edges);
+		long timeTakenToSort = System.currentTimeMillis() - startTimeForSorting;
+		System.out.println("It took " + timeTakenToSort + " milliseconds to sort.");
+		long startTime = System.currentTimeMillis();
 		Graph mst = new Graph();
 		mst.setNodes(g.getNodes());
 		mst.setEdges(selectEdgesGreedily(edges, g.getNodes()));
+		long timeTaken = System.currentTimeMillis() - startTime;
+		System.out.println("Krushkal took " + timeTaken + " milliseconds for " + g.getNodes().size() + " nodes and " + numberOfEdges + " edges.");
 		return mst;
 	}
 	

@@ -22,18 +22,27 @@ public class GraphGenerator {
 		
 		graph.setNodes(nodes);
 		graph.setEdges(generateEdges(nodes));
+		System.out.println("Generated graph with " + graph.getNodes().size() + " nodes and " + graph.getEdges().size() + " edges");
 		return graph;
 	}
 	
 	private Set<Edge> generateEdges(Set<Node> nodes){
-		Node[] nodesInArray = nodes.toArray(new Node[nodes.size()]);
+		int numberOfNodes = nodes.size();
+		int numberOfEdges = numberOfNodes * numberOfNodes;
+		Node[] nodesInArray = nodes.toArray(new Node[numberOfNodes]);
 		Set<Edge> edges = new HashSet<Edge>();
 		int indexForDestination;
+		int counter = 0;
+		try{
 		for(int indexForSource = 0; indexForSource < nodes.size() - 1; indexForSource++){
 			for(indexForDestination = indexForSource + 1; indexForDestination < nodes.size(); indexForDestination++){
 				Edge edge = new Edge(nodesInArray[indexForSource], nodesInArray[indexForDestination]);
+				counter++;
 				edges.add(edge);
 			}
+		}
+		}catch(Error e){
+			throw new Error("Counter: " + counter, e);
 		}
 		return edges;
 	}

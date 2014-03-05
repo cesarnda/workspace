@@ -7,9 +7,12 @@ public class MergeSort implements Sorter{
 
 	@Override
 	public <T extends Comparable<? super T>> void sort(List<T> unsortedList) {
+		long startTime = System.currentTimeMillis();
 		List<T> sortedList = mergeSort(unsortedList);
 		unsortedList.clear();
 		unsortedList.addAll(sortedList);
+		long timeTaken = System.currentTimeMillis() - startTime;
+		System.out.println("Sorting " + unsortedList.size() + " elements took " + timeTaken + " milliseconds");
 	}
 	
 	
