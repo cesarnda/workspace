@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.junit.Test;
 
+import edu.harvard.cscie124.graph.BigGraphGenerator;
 import edu.harvard.cscie124.graph.Graph;
 import edu.harvard.cscie124.graph.GraphGenerator;
 
@@ -97,8 +98,15 @@ public class KrushkalTestCase {
 		System.out.println("Running Krushkal with " + numberOfNodes + " nodes in R " + dimension);
 		GraphGenerator graphGenerator = new GraphGenerator();
 		Krushkal krushkal = new Krushkal();
-		Graph graph = graphGenerator.generateUndirectedCompleteGraph(numberOfNodes, dimension);
-		Graph mst = krushkal.generateMininumSpanningTree(graph);
+		Graph mst = null;
+		if(numberOfNodes > 8192){
+			BigGraphGenerator bigGraphGenerator = new BigGraphGenerator(numberOfNodes, dimension);
+			mst = krushkal.generateMininumSpanningTreeForBigGraph(bigGraphGenerator.getNodes(), bigGraphGenerator);
+		}else{
+			Graph graph = graphGenerator.generateUndirectedCompleteGraph(numberOfNodes, dimension);
+			 mst = krushkal.generateMininumSpanningTree(graph);
+		}
+		
 		System.out.println(mst);
 		assertEquals(numberOfNodes - 1, mst.getEdges().size());
 	}

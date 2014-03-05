@@ -28,7 +28,6 @@ public class GraphGenerator {
 	
 	private Set<Edge> generateEdges(Set<Node> nodes){
 		int numberOfNodes = nodes.size();
-		int numberOfEdges = numberOfNodes * numberOfNodes;
 		Node[] nodesInArray = nodes.toArray(new Node[numberOfNodes]);
 		Set<Edge> edges = new HashSet<Edge>();
 		int indexForDestination;
