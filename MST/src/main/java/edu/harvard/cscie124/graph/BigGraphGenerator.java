@@ -7,7 +7,12 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class BigGraphGenerator implements Iterator<Edge>, Iterable<Edge>{
+	
+	private static final Logger logger = LoggerFactory.getLogger(BigGraphGenerator.class);
 	
 	private int numberOfNodes;
 	private List<Node> nodes;
@@ -71,7 +76,7 @@ public class BigGraphGenerator implements Iterator<Edge>, Iterable<Edge>{
 		
 		currentNumberOfEdges++;
 		Edge edge = new Edge(nodes.get(indexNodeSource), nodes.get(indexNodeDestination));
-		//System.out.println("Generated " + currentNumberOfEdges + " edges " + edge);
+		logger.trace("Generated " + currentNumberOfEdges + " edges " + edge);
 		return edge;
 	}
 

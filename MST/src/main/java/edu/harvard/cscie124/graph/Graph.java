@@ -31,6 +31,7 @@ public class Graph {
 		return mstWeight;
 	}
 	
+	
 	@Override
 	public String toString(){
 		return "Nodes: " + nodes + "\nEdges: " + edges + "\nMinimum Spanning Weigth: " + getMininumSpanningTreeWeight();

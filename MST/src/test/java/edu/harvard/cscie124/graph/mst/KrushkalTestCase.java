@@ -20,17 +20,13 @@ public class KrushkalTestCase {
 		generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(6, 2);
 	}
 	
-	//@Test
-	public void generateMininumSpanningTree_Test_With_65536_Nodes_And_4_Dimensions(){
-		generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(65536, 4);
-	}
 	
 	@Test
 	public void generateMininumSpanningTree_Test_With_32768_Nodes_And_4_Dimensions(){
 		generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(32768, 4);
 	}
 	
-	/*
+	
 	@Test
 	public void generateMininumSpanningTree_Test_With_16384_Nodes_And_4_Dimensions(){
 		generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(16384, 4);
@@ -86,7 +82,7 @@ public class KrushkalTestCase {
 		generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(16, 4);
 	}
 	
-	*/
+	
 	private void generateMinimumSpanningTree_Test_With_N_Nodes_And_D_Dimensions_From_A_Complete_Graph(int numberOfNodes, int dimension){
 		RuntimeMXBean runtimeMxBean = ManagementFactory.getRuntimeMXBean();
 		List<String> arguments = runtimeMxBean.getInputArguments();
@@ -99,7 +95,7 @@ public class KrushkalTestCase {
 		GraphGenerator graphGenerator = new GraphGenerator();
 		Krushkal krushkal = new Krushkal();
 		Graph mst = null;
-		if(numberOfNodes > 8192){
+		if(numberOfNodes > 2048){
 			BigGraphGenerator bigGraphGenerator = new BigGraphGenerator(numberOfNodes, dimension);
 			mst = krushkal.generateMininumSpanningTreeForBigGraph(bigGraphGenerator.getNodes(), bigGraphGenerator);
 		}else{
@@ -107,7 +103,7 @@ public class KrushkalTestCase {
 			 mst = krushkal.generateMininumSpanningTree(graph);
 		}
 		
-		System.out.println(mst);
+		System.out.println("Minimum Spanning weight: " + mst.getMininumSpanningTreeWeight());
 		assertEquals(numberOfNodes - 1, mst.getEdges().size());
 	}
 }

@@ -4,8 +4,12 @@ import java.util.Random;
 import java.util.Set;
 import java.util.HashSet;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class GraphGenerator {
-	
+	private static final Logger logger = LoggerFactory.getLogger(GraphGenerator.class);
+
 	private Random random;
 	
 	public GraphGenerator(){
@@ -22,7 +26,7 @@ public class GraphGenerator {
 		
 		graph.setNodes(nodes);
 		graph.setEdges(generateEdges(nodes));
-		System.out.println("Generated graph with " + graph.getNodes().size() + " nodes and " + graph.getEdges().size() + " edges");
+		logger.debug("Generated graph with " + graph.getNodes().size() + " nodes and " + graph.getEdges().size() + " edges");
 		return graph;
 	}
 	
@@ -41,6 +45,7 @@ public class GraphGenerator {
 			}
 		}
 		}catch(Error e){
+			logger.error("Error while creating edge " + counter + ", exception: " + e);
 			throw new Error("Counter: " + counter, e);
 		}
 		return edges;

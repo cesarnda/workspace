@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import edu.harvard.cscie124.graph.Edge;
 import edu.harvard.cscie124.graph.Graph;
 import edu.harvard.cscie124.graph.Node;
@@ -15,6 +18,8 @@ import edu.harvard.cscie124.sorting.Sorter;
 
 public class Krushkal implements MinimumSpanningTree{
 	
+	private static final Logger logger = LoggerFactory.getLogger(Krushkal.class);
+
 	private Sorter sorter;
 	
 	public Krushkal(){
@@ -34,16 +39,20 @@ public class Krushkal implements MinimumSpanningTree{
 		List<Edge> edges = new ArrayList<Edge>();
 		edges.addAll(g.getEdges());
 		int numberOfEdges = edges.size();
+		long startTimeOverAll = System.currentTimeMillis();
 		long startTimeForSorting = System.currentTimeMillis();
 		sorter.sort(edges);
 		long timeTakenToSort = System.currentTimeMillis() - startTimeForSorting;
-		System.out.println("It took " + timeTakenToSort + " milliseconds to sort.");
+		logger.debug("It took " + timeTakenToSort + " milliseconds to sort " + edges.size() + " edges");
 		long startTime = System.currentTimeMillis();
 		Graph mst = new Graph();
 		mst.setNodes(g.getNodes());
 		mst.setEdges(selectEdgesGreedily(edges, g.getNodes()));
 		long timeTaken = System.currentTimeMillis() - startTime;
-		System.out.println("Krushkal took " + timeTaken + " milliseconds for " + g.getNodes().size() + " nodes and " + numberOfEdges + " edges.");
+		long timeTakenOverAll = System.currentTimeMillis() - startTimeOverAll;
+		logger.debug("Krushkal took " + timeTaken + " milliseconds for " + g.getNodes().size() + " nodes and " + numberOfEdges + " edges.");
+		logger.debug("Krushkal took " + timeTakenOverAll + " milliseconds over all for " + g.getNodes().size() + " nodes and " + numberOfEdges + " edges.");
+
 		return mst;
 	}
 	
@@ -73,7 +82,7 @@ public class Krushkal implements MinimumSpanningTree{
 		graph.setEdges(selectEdgesGreedilyForBigGraph(nodes, edgeFetcher));
 		
 		long timeTaken = System.currentTimeMillis() - startTime;
-		System.out.println("Krushkal for Big Graphs took " + timeTaken + " for a complete graph with " + nodes.size() + " nodes");
+		logger.debug("Krushkal for Big Graphs took " + timeTaken + " for a complete graph with " + nodes.size() + " nodes");
 		return graph;
 	}
 	
@@ -86,17 +95,19 @@ public class Krushkal implements MinimumSpanningTree{
 		int counter = 0;
 		long startTime = System.currentTimeMillis();
 		for(Edge edge : edgeFetcher){
+			if(edge == null){
+				break;
+			}
 			partialEdges.add(edge);
 			counter++;
 			if(counter == batchBlock){
-				System.out.println("Sorting " + partialEdges.size() + " edges");
-				///sorter.sort(partialEdges);
+				logger.trace("Sorting " + partialEdges.size() + " edges");
 				partialEdgesArray.addAll(partialEdges);
-				System.out.println("Finished sorting " + partialEdgesArray.size() + " edges");
+				logger.trace("Finished sorting " + partialEdgesArray.size() + " edges");
 				edgesForMST = selectEdgesGreedily(partialEdgesArray, nodes);
 				counter = 0;
 				numberOfElementsTreated += batchBlock;
-				System.out.println("Number of elements treated so far: " + numberOfElementsTreated + " in " + (System.currentTimeMillis() - startTime) + " milliseconds");
+				logger.trace("Number of elements treated so far: " + numberOfElementsTreated + " in " + (System.currentTimeMillis() - startTime) + " milliseconds");
 				partialEdges.clear();
 				partialEdgesArray.clear();
 				partialEdges.addAll(edgesForMST);
@@ -104,7 +115,6 @@ public class Krushkal implements MinimumSpanningTree{
 		}
 		
 		partialEdges.addAll(edgesForMST);
-		//sorter.sort(partialEdges);
 		edgesForMST = selectEdgesGreedily(new ArrayList<Edge>(partialEdges), nodes);
 		
 		return edgesForMST;
