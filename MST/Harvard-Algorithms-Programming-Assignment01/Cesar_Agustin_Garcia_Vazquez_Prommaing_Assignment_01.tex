@@ -1,0 +1,90 @@
+\documentclass[tikz, 12pt]{scrartcl}
+\usepackage{etex}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage[ruled,vlined, linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\usepackage{vaucanson-g}
+\usepackage{amsthm}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Data Structures and Algorithms}
+\subtitle{Spring 2014}
+\author{Cesar Agustin Garcia Vazquez}
+\date{\today}                                           % Activate to display a given date or no date
+\allowdisplaybreaks
+\begin{document}
+\maketitle
+\section{Programming Assignment 01}
+
+\subsection{Introduction}
+For this assigment, I work with a MacBook Aluminum latex 2008, with a 2 GHz Intel Core 2 Duo processor and 8 GB 1067 MHz DDR3 in RAM. \\
+All the experiments run for this assignment are with a complete graph, so generating $|V|(|V| - 1)/2$ edges might not feasible for certain values. The number of nodes the program is expected to handle is shown in Table \ref{cardinalities}, which helps to determine what values can be computed straightforward and what values required special treatment. If we consider $n = 2^k$, then the number of edges is $2^k(2^k - 1) / 2 < 2^k \cdot 2^k / 2 = 2^{2k} / 2 = 2^{2k - 1}$, then we have an upper bound for the number of edges as a power of 2.
+
+\begin{table}[ht!]
+\caption{\label{cardinalities}Cardinality of nodes and edges}
+\centering
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Nodes		&			&	Edge			& Upper bound	&	\\
+\hline
+16			&	$2^4$	& 	120	 		&	128		&	$2^{7}$\\
+32			&	$2^5$	&	496			&	512		&	$2^{9}$\\
+64			&	$2^6$	&	2,016		& 2,048		&	$2^{11}$\\
+128			&	$2^7$	&	8,128		& 8,192		&	$2^{13}$\\
+256			&	$2^8$	&	32,640		&32,768		&	$2^{15}$\\
+512			&	$2^9$	&	130,816		&131,072		&	$2^{17}$\\
+1,024		&	$2^{10}$	& 	523,776		&524,288		&	$2^{19}$\\
+2,048		&	$2^{11}$ 	& 	2,096,128		&2,097,152	&	$2^{21}$\\
+4,096		&	$2^{12}$	&     8,386,560		&8,388,608	&	$2^{23}$\\
+8,192		&	$2^{13}$	&   33,550,336		& 33,554,432	&	$2^{25}$\\
+16,384		&	$2^{14}$	& 134,209,536		& 134,217,728	&	$2^{27}$\\
+32,678		&	$2^{15}$	& 533,909,503		& 536,870,912	&	$2^{29}$\\
+\hline
+\end{tabular}
+\end{table}
+
+Considering how much RAM I have, we have that 8 GB = 8,192 MB = 8(1,024) MB = 8,388,608 KB = $8(1,024)^2$ KB = 8,589,934,592 B = $8(1,024)^3$ B = $8 (2^{10})^3 B = 8(2^{30})$ B, so this gives an idea of how much I can compute.
+\\
+if I assign 4,096 MB for memory heap and I tried to create a complete graph with $16,384$ nodes in $\mathbb{R}^4$, I get an OutOfMemoryError while trying to create the edge number 38, 293, 002. If I increase the memory heap to 6,144 MB, then I get the error while creating the edge $50,331,651$. Hence it is not going to be possible to create $134,217,728$ edges and keep all of them at the same time in memory. \\
+\\
+For the cases $2^{13} + 1$ nodes and more, 
+$8,193$ nodes, weight computed from points in $\mathbb{R}^3$, my own MergeSort implementation,  and using  
+
+\begin{table}
+\centering
+\caption{Running time with different values of $n$}
+\begin{tabular}{|c|c|}
+\hline
+$n$	&	Time in milliseconds	\\
+\hline
+16		&              0 \\
+32		&	          3\\
+64		&		   5\\
+128		&              9 \\
+256		&		239\\
+512		&	      436\\
+1,024	&	    1,800\\
+2,048	&	  14,371\\
+4,096	&	  39,714\\
+8,192	&	177,060	\\
+16,384	&	466,158\\
+32,678	&  2,190,921\\
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}  
