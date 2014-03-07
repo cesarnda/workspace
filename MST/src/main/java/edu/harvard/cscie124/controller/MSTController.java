@@ -7,6 +7,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import edu.harvard.cscie124.exception.MissingParametersException;
 import edu.harvard.cscie124.graph.BigGraphGenerator;
 import edu.harvard.cscie124.graph.Graph;
 import edu.harvard.cscie124.graph.GraphGenerator;
@@ -17,8 +18,15 @@ public class MSTController {
 	private static final Logger logger = LoggerFactory.getLogger(MSTController.class);
 
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MissingParametersException {
+		if(args == null || args.length < 4){
+			throw new MissingParametersException("Expected: java MSTController 0 16 5 2");
+		}
 		
+		String numberOfNodes = args[1];
+		String numberOfTrials = args[2];
+		String dimension = args[3];
+		new MSTController().executeMST(0, Integer.parseInt(numberOfNodes), Integer.parseInt(numberOfTrials), Integer.parseInt(dimension));;
 
 	}
 	
