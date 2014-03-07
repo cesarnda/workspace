@@ -18,6 +18,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 \usetikzlibrary{arrows}
+\usepackage{pgfplots}
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
@@ -147,6 +148,75 @@ Notice that the running time for $32,678$ was around $2,191$ seconds, which mean
 
 \subsection{Experiments}
 
+All of the experiments were defined as test cases using JUnit 4. This helped me keep track of what experiments I had done and was missing. \\
+Also, since the experiments were expected to run during  several hours but no more than a day, I used SL4J and Log4J to log the require information into a file.\\
+To ease how the required jars are downloaded, as well as how the project is compile and test cases run, I decided to create a Maven project.\\
+\\
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot+[smooth] coordinates
+		{ (16, 2.5127) 
+		(32, 3.1006) 
+		(64,4.2234 ) 
+		(128, 6.1184) 
+		(256,8.5201 ) 
+		(512,12.1413 ) 
+		(1024, 16.9708) 
+		(2048, 24.0638) 
+		(4096, 34.0971) 
+		(8192, 48.2088) 
+		(16384,68.4251 ) 
+		(32768, 96.35012) };
+	\end{axis}
+\end{tikzpicture}
+\caption{Plot of values for dimension 2}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot+[smooth] coordinates
+		{ (16, 4.0817) 
+		(32, 6.0461) 
+		(64, 10.4436) 
+		(128, 15.3123) 
+		(256,  24.3552) 
+		(512, 39.0512) 
+		(1024, 60.8072) 
+		(2048, 95.9808) 
+		(4096, 152.1876) 
+		(8192, 241.5627 ) 
+		(16384, 380.3812) 
+		(32768, 606.0621) };
+	\end{axis}
+\end{tikzpicture}
+\caption{Plot of values for dimension 3}
+\end{figure}
+
+\begin{figure}[ht!]
+\centering
+\begin{tikzpicture}
+	\begin{axis}
+		\addplot+[smooth] coordinates
+		{ (16, 5.6336) 
+		(32, 9.4831 ) 
+		(64, 15.8855) 
+		(128, 26.0393) 
+		(256,  44.1646) 
+		(512,  72.5237) 
+		(1024, 120.7670) 
+		(2048, 202.0731) 
+		(4096, 336.3943) 
+		(8192, 563.3407) 
+		(16384, 943.1550) 
+		(32768, 1580.8873) };
+	\end{axis}
+\end{tikzpicture}
+\caption{Plot of values for dimension 4}
+\end{figure}
 
 
 \subsection{Deducing $f(n)$}
