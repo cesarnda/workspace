@@ -24,3 +24,13 @@
 03:17:50,352  INFO MSTController:35 - The average minimum spanning weight for n = 8192 and d = 3 is 241.56272817420404
 03:32:34,041  INFO MSTController:35 - The average minimum spanning weight for n = 8192 and d = 4 is 563.3407594716058
 07:09:06,735  INFO MSTController:35 - The average minimum spanning weight for n = 32768 and d = 2 is 96.35012288135086
+10:58:42,541  INFO MSTController:35 - The average minimum spanning weight for n = 32768 and d = 3 is 606.0621423308656
+14:57:09,053  INFO MSTController:35 - The average minimum spanning weight for n = 32768 and d = 4 is 1580.887366656983
+14:57:09,443  INFO MSTController:35 - The average minimum spanning weight for n = 256 and d = 2 is 8.520105291603068
+14:57:09,879  INFO MSTController:35 - The average minimum spanning weight for n = 256 and d = 3 is 24.355256614433166
+14:57:10,321  INFO MSTController:35 - The average minimum spanning weight for n = 256 and d = 4 is 44.16464953800842
+14:57:20,659  INFO MSTController:35 - The average minimum spanning weight for n = 1024 and d = 2 is 16.970821379798988
+14:57:31,272  INFO MSTController:35 - The average minimum spanning weight for n = 1024 and d = 3 is 60.80725011424782
+14:57:42,332  INFO MSTController:35 - The average minimum spanning weight for n = 1024 and d = 4 is 120.76707795801448
+15:51:10,498  INFO MSTController:35 - The average minimum spanning weight for n = 16384 and d = 2 is 68.4251959842683
+16:46:48,221  INFO MSTController:35 - The average minimum spanning weight for n = 16384 and d = 3 is 380.3812798503555
