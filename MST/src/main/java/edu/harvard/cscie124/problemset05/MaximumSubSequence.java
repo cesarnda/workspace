@@ -1,13 +1,6 @@
 package edu.harvard.cscie124.problemset05;
 
-public class MaximumSubSequence {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-	
-		public MaximumSubSequenceDTO getMaximumSum(int[] array){
+public MaximumSubSequenceDTO getMaximumSum(int[] array){
 		int maximumSum = 0;
 		int proposedMaximumSum = 0;
 		MaximumSubSequenceDTO maximumSubSequenceDTO = new MaximumSubSequenceDTO();
@@ -29,10 +22,13 @@ public class MaximumSubSequence {
 			
 			proposedMaximumSum += array[index];
 			
+			// if a new proposed maximum sum is found, then end the
+			// corresponding sub sequence now
 			if(proposedMaximumSum > maximumSum){
 				maximumSum = proposedMaximumSum;
 				maximumSubSequenceDTO.setEndIndex(index);
 			}
+			
 			
 			if(proposedMaximumSum + maximumSum == 0){
 				proposedMaximumSum = 0;
@@ -40,6 +36,9 @@ public class MaximumSubSequence {
 			}
 			
 		}
+		
+		maximumSubSequenceDTO.setMaximumSum(maximumSum);
+		
 		return maximumSubSequenceDTO;
 	}
 
