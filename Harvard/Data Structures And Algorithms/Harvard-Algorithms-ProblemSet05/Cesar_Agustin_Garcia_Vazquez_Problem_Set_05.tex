@@ -1,0 +1,64 @@
+\documentclass[tikz, 12pt]{scrartcl}
+\usepackage{etex}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage[ruled,vlined, linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\usepackage{vaucanson-g}
+\usepackage{amsthm}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Data Structures and Algorithms}
+\subtitle{Spring 2014}
+\author{Cesar Agustin Garcia Vazquez}
+\date{\today}                                           % Activate to display a given date or no date
+\allowdisplaybreaks
+\begin{document}
+\maketitle
+\section{Problem Set 04}
+
+\begin{enumerate}
+	\item Suppose we have an array $A$ containing $n$ numbers, some of which may be negative. We wish to find indices $i$ and $j$ so that
+	$$\sum_{k = i}^{j}A[k]$$
+is maximized. Find an algorithm that runs in time $O(n)$.
+
+	\item A challenge that arises in databases is how to summarize data in easy-to-display formats, such as a histogram. A problem in this context is the minimal imbalance problem. Again suppose we have an array $A$ containing $n$ numbers, this time all positive, and another input $k$. 
+	Consider $k$ indices $j_1, j_2 \ldots, j_k$ that partition the array into $k + 1$ subarrays $A[1, j_1], A[j_1 + 1, j_2], \ldots, A[j_k + 1, n]$. The weight $w(i)$ of the $i$th subarray is the sum of its entries. The imbalance of the partition is
+	$$
+	\text{max}_i \left| w(i) - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right|
+	$$
+That is, the imbalance is the maximum deviation any partition has from the average size.\\
+	\begin{enumerate}
+		\item Give an algorithm for determining the partition with the minimal imbalance given $A$, $n$, and $k$. (This corresponds to finding a histogram with $k$ breaking points, giving $k + 1$ bars, as close to equal as possible, in some sense.) \\
+		\\
+		\textbf{Answer: }
+		\begin{algorithm}
+		\end{algorithm}
+		\item Explain how your algorithm would change if the imbalance was redefined to be
+			$$
+	\sum_{i} \left| w(i) - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right|
+	$$
+	\end{enumerate}
+	\item Suppose we want to print a paragraph neatly on a page. The paragraph consists of words of length $l_1, l_2, \ldots, l_n$. The maximum line length is $M$. (Assume $l_i \leq M$ always.) We define a measure of neatness as follows. The extra space on a line (using one space between words) containing words $l_i$ through $l_j$ is $M - j + 1 - \sum_{k =1}^{j} l_k$. The penalty is the sum over all lines \textbf{except the last} of the \textbf{cube} of the extra space at the end of the line. This has been proven to an effective heuristic for neatness in practice. Find a dynamic programing algorithm to determine the neatest way to print a paragraph. Of course you should provider a recursive definition of the value of the optimal solution that motivates your algorithm.\\
+	For this problem, besides explaining/proving your algorithms as for other problems on the set, yous hold also code up your algorithm to print an optimal division of words into lines. The output should be theft split into lines appropriately, and the numerical value of the penalty. You can use any coding language you wish. You should assume that a \textit{word} in this context is any contiguous sequence of characters not including blank spaces.\\
+	After coding your algorithm, determine the minimal penalty for the following review of Season 1 Buffy DVD, apparently written by Ryan Crackell for the Apollo Guide, for the cases where $M = 40$ and $M = 72$. We will try to put the text of the review on the class page as well.\\
+	Buffy the Vampire Slayer fans are sure to get their fix with the DVD release of the show's first season. The three-disc collection includes all 12 episodes as well as many extras. There is a collection of interviews by the show's creator Joss Whedon in which he explains his inspiration for the show as well as comments on the various cast members. Much of the same material is covered in more depth with Wheadon's commentary track for the show's first two episodes that make up the Buffy The Vampire Slayer pilot. The most interesting points of Whedon's commentary come from his explanation of the learning curve he encountered shifting from blockbuster films like Toy Story to a much lower-budget television series. The first disc also includes a short interview with David Boreanaz who plays the role of Angel. Other features include the script for the pilot episodes, a trailer, a large photo gallery of publicity shots and in-depth biographies of Whedon and several of the show's stars, including Sarah Michelle Geller, Alyson Hannigan and Nicholas Brendon.
+\end{enumerate}
+%\subsection{}
+
+
+
+\end{document}  
