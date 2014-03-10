@@ -2,15 +2,15 @@ package edu.harvard.cscie124.problemset05;
 
 public class MaximumSubSequenceDTO {
 	
-	private Double maximumSum;
+	private double maximumSum;
 	private int startIndex;
 	private int endIndex;
 	
-	public Double getMaximumSum() {
+	public double getMaximumSum() {
 		return maximumSum;
 	}
 	
-	public void setMaximumSum(Double maximumSum) {
+	public void setMaximumSum(double maximumSum) {
 		this.maximumSum = maximumSum;
 	}
 	
