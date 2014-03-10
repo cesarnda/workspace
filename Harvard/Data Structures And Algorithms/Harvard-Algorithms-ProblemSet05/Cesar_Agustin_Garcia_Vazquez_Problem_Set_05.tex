@@ -38,15 +38,43 @@ is maximized. Find an algorithm that runs in time $O(n)$.
 	\item A challenge that arises in databases is how to summarize data in easy-to-display formats, such as a histogram. A problem in this context is the minimal imbalance problem. Again suppose we have an array $A$ containing $n$ numbers, this time all positive, and another input $k$. 
 	Consider $k$ indices $j_1, j_2 \ldots, j_k$ that partition the array into $k + 1$ subarrays $A[1, j_1], A[j_1 + 1, j_2], \ldots, A[j_k + 1, n]$. The weight $w(i)$ of the $i$th subarray is the sum of its entries. The imbalance of the partition is
 	$$
-	\text{max}_i \left| w(i) - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right|
+	\text{max}_i \left| w(i) - \frac{\sum_{l = 1}^n A[l]}{k + 1} \right|
 	$$
 That is, the imbalance is the maximum deviation any partition has from the average size.\\
 	\begin{enumerate}
 		\item Give an algorithm for determining the partition with the minimal imbalance given $A$, $n$, and $k$. (This corresponds to finding a histogram with $k$ breaking points, giving $k + 1$ bars, as close to equal as possible, in some sense.) \\
 		\\
 		\textbf{Answer: }
-		\begin{algorithm}
-		\end{algorithm}
+		Also, an upper bound for the maximum imbalance could happen when $w(i) = -\sum_{l = 1}^nA[k]$,  so an upper bound could be defined as in equation (\ref{upperBound}).
+		\begin{eqnarray}
+		\left| w(i) - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right|	&	=	&	\left| - \sum_{l = 1}^n A[k] - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right| \nonumber \\
+			&	=	&	\left| \frac{-(k + 1)\sum_{l = 1}^n A[k] - \sum_{l = 1}^n A[k]}{k + 1}\right| \nonumber \\
+			& 	=	&	\left|  \frac{-(k + 2)\sum_{l = 1}^n A[k]}{k + 1}\right| \nonumber \\
+			& 	=	&	\frac{(k + 2)\sum_{l = 1}^n A[k]}{k + 1}\nonumber \\
+			& 	=	&	\frac{k + 2}{k + 1}\sum_{l = 1}^n A[k] \label{upperBound}
+		\end{eqnarray}
+
+The upper bound shown in equation (\ref{upperBound}) can appear when we have arrays like $A = [-6, 12, 12]$ and k = $[0]$, so we have two partitions with the arrays $A_0 =[-6]$, $A_1 = [12,12]$ and $sum_{l=0}^2A[]$
+		
+		\begin{algorithm}[th!]
+	{\bf funcion} minimumImbalance(A, $n$, $k$)\\
+	w = Array of size $k + 1$ \tcp{Weights for each partition}
+	t = 0 \tcp{Global total}
+	j = 0 \tcp{Index of each partition}
+	\For{i = 0; i $<$  A.size; i++}{
+		t += A[i] \\
+		w[j] += A[i]\\
+		\If{j == k[j]}{
+			j++
+		}
+		
+	}
+	m = t + 1 \tcp{Upper bound}
+	a = t / (k.size + 1);
+\caption{Algorithm to determine the minimum imbalance}
+\label{minimumImbalance}
+\end{algorithm}
+
 		\item Explain how your algorithm would change if the imbalance was redefined to be
 			$$
 	\sum_{i} \left| w(i) - \frac{\sum_{l = 1}^n A[k]}{k + 1} \right|
