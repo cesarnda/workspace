@@ -1,0 +1,958 @@
+\documentclass[12pt]{scrartcl}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage[ruled,vlined, linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\usepackage{vaucanson-g}
+\usepackage{amsthm}
+\usepackage{longtable}
+\usepackage{hyperref}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Data Structures and Algorithms}
+\subtitle{Spring 2014}
+\author{Cesar Agustin Garcia Vazquez}
+\date{\today}                                           % Activate to display a given date or no date
+\allowdisplaybreaks
+\begin{document}
+\maketitle
+\section{Problem Set 02}
+
+\begin{enumerate}
+	\item Buffy and Willow are facing an evil demon named Stooge, living inside Willow's computer. In an effort to slow the Scooby Gang's computing power to a crawl, the demon has replaced Willow's hand-designed super-fast sorting routine with the following recursive sorting algorithm, known as StoogeSort. For simplicity, we think of Stoogesort as running on a list of distinct numbers. StoogeSort runs in three phases. In the first phase, the first $2/3$ of the list is (recursively) sorted. In the second phase, the final $2/3$ of the list is (recursively) sorted. Finally, in the third phase, the first $2/3$ of the list is (recursively) sorted again.\\
+	Willow notices some sluggishness in her system, but doesn't notice any errors from the sorting routine. This is because StoogeSort correctly sorts. For the first part of your problem, prove rigorously that StoogeSort correctly sorts. (Note: in your proof you should also explain clearly and carefully what the algorithm should do and why it works even if the number of items to be sorted is \textbf{not} divisible by $3$. You may assume all numbers to be sorted are distinct.) But StoogeSort can be slow. Derive a recurrence describing its running time, and use the recurrence to bound the asymptotic running time of StoogeSort.\\
+	\\
+	\textbf{Answer: } According to the description, the algorithm can be expressed as in the algorithm \ref{stoogeSort}. While constructing the algorithm, one can be tempted to do the comparison in line 4, only if there are only 2 elements remaining in the array to sort, i.e., $i + 1 == j$. But if we consider the array $[50,  57, 8, 87, 92, 72, 71 ]$, the output is $[8, 50, 57, 71, 87, 72, 92 ]$, which is not correctly sorted. The table \ref{wrongStoogeSteps} shows the steps in which a change in ordering is done and we can see how the number $72$ is not correctly sort. In order to make the algorithm work correctly, we have to mimic analysis of quick sort, in which every element to the left of the pivot is less than or equal than the pivot and every element to the right of the pivot is greater or equal than the pivot. \\
+	If we only compare when $i + 1 == j$, then after the second call to Stooge sort, the number 72 will be left in the last third of the array, and then in the final call to Stooge Sort, the numbers $[72, 92]$ are assumed to be sorted correctly, which they are, but only relative to themselves and not to the entire array. \\
+	\\
+	To avoid the problem of left elements out of the comparison, we compare in every recursive iteration, both ends of the corresponding sequence $[i, \ldots, j]$, and we take the ceiling of $(j - i)/3$, so $k$ will never be less than 1, due to the fact that when the indices are equal, then the recursive cycle ends.
+	
+	\begin{table}[ht!]
+	\caption{Sorting steps of wrong version of Stooge Sort}
+	\centering
+	\begin{tabular}{|c|l|}
+	\hline
+	Sequence			&	Step\\
+	\hline
+	50 57 8 87 92 72 71 	&	Start\\
+	50 8 57 87 92 72 71 	& Second 2/3: 1 - 2, end: 2 \\
+	8 50 57 87 92 72 71  & Final 2/3: 0 - 1, end: 2\\
+	8 50 57 87 72 92 71 	& First 2/3: 4 - 5, end: 6\\
+	8 50 57 87 72 71 92 	& Second 2/3: 5 - 6, end: 6\\	
+	8 50 57 87 71 72 92  & Final 2/3: 4 - 5, end: 6\\
+	8 50 57 71 87 72 92  & Second 2/3: 3 - 4, end: 4\\
+	\hline
+	\end{tabular}
+		\label{wrongStoogeSteps}
+	\end{table}
+
+To prove that the algorithm \ref{stoogeSort} correctly sorts an array of length $n$, we are going to use strong induction on the length of the array. The base case is handle by lines 2 and 3 when we only one element remaining the array to sort, hence one element is already. Our induction hypothesis is going to be based on Stooge Sort sorts correctly arrays of length $< n$, and as inductive step, we are going to prove that Stooge Sorts correctly arrays of length $n$. At line 8 we have that $i = 1$ and $j = n$, so $k = \lceil (n - 1) / 3$ and then at line 9 the recursive call is done with $i = 1$ and $j - k = n - k < n$ because $k > 0$ and by the induction hypothesis Stooge Sort sorts correctly that section of the array. The current sorted section from $1$ to $j - k$ is sorted, which means that for every element in $[1, \ldots k]$ is lesser or equal than every element in $[k + 1, \ldots, n - k]$, i.e., there exists $k$ elements in [k + 1, \ldots, n -k ] that are greater or equal than every element in $[1, \ldots k]$.\\
+	After step 10 is executed the section of the array $[k + 1, \ldots, n]$ is already sorted correctly due to the induction hypothesis and this means that for every element in $[k + 1, \ldots, n - k]$ is lesser or equal than every element in $[n - k + 1, \ldots, n]$, and since the sequence of elements $[k + 1, \ldots, n -k ]$ had $k$ elements greater or equal than every element in $[1, \ldots k]$, then every element in $[n - k + 1, \ldots, n]$ is greater or equal than every element in $[1, \ldots k]$.\\
+	After line 10 is executed, at most $k$ elements that were in the original sequence $[n - k + 1, \ldots, n]$ might be smaller than some elements in the sequence $[1, \ldots k]$. These $k$ elements are found in the sequence $[k + 1, \ldots, n - k]$, so we have that for every element in the sequence $[1, \dots, n -k]$ is lesser or equal than every element in the sequence $[n - k, \ldots, n]$, but the sequence $[1, n - k]$ is not sorted. Therefore, after line 11 is executed, the sort completes by sorting again the sequence $[1, n - k]$, which by induction hypothesis is sorted correctly.  This concludes the proof that Stooge Sort correctly sorts. 
+	
+	%\incmargin{1em}
+%\linesnumbered
+\begin{algorithm}[th!]
+	{\bf funcion} StoogeSort(array, i, j)\\
+	\If{i $\ge$ j}{
+		return \tcp{only one element left to sort}
+	}
+		\If{array[i] $>$ array[j]}{\tcp{Sorting elements}
+		t $\leftarrow$ array[i] \\
+		array[i] $\leftarrow$ array[j] \\
+		array[j] $\leftarrow$ t
+		}
+	$k \leftarrow \lceil (j - i) / 3 \rceil$ \\
+	StoogeSort(array, i, j - k)\\
+	StoogeSort(array, i + k, j)\\
+	StoogeSort(array, i, j - k)
+\caption{StoogeSort}
+\label{stoogeSort}
+\end{algorithm}
+
+The algorithm is going to make 3 recursive calls with $2/3$ of the original array and it will take a constant amount of time $c$, to compare and swap elements in case ordering is needed. This leads to the recurrence
+
+\begin{eqnarray}
+	T(n)  &	=	&	3T\left(\frac{2}{3} n\right) + c
+\end{eqnarray}
+
+Using the master theorem we have that $a = 3$, $b = \left(\frac{2}{3}\right)^{-1} = \left(\frac{3}{2}\right)$ and $k = 0$, so we have that $a = 3 > \left(\frac{3}{2}\right)^0 = 1$, and hence we have that $T(n)$ is $\Theta(n^{\log_{3/2}(3))})$. And with the help of \url{http://www.sagemath.com}, we can compute $\log_{3/2}(3)) \approx 2.7095$, so we can say that $T(n)$ is $\Theta(n^{2.7})$.\\
+\\
+
+
+
+	
+	\item Solve the following recurrences exactly, and then prove your solutions are correctly by induction. (Hint: Graph values and guess the form of a solution: then prove that your guess is correct.)
+		\begin{enumerate}
+			\item $T(1) = 1$, $T(n) = T(n - 1) + 3n -3$\\
+			\\
+			\textbf{Answer:} To solve this problem, first we are going to get the first values of the recurrence as shown in equations (\ref{firstT1}), (\ref{firstT2}) and (\ref{firstT3}).
+			\begin{eqnarray}
+			T(1)	&	=	&	1 \label{firstT1}\\
+			T(2)	&	=	&	T(1) + 6 - 3 = 1 + 3 = 4 \label{firstT2}\\
+			T(3)	&	=	&	T(2) + 9 - 3 = 4 + 6 = 10\label{firstT3}
+			\end{eqnarray}
+			And using the characteristic equation we get the polynomial in equation (\ref{firstCharacteristicEquation}).
+			\begin{eqnarray}\label{firstCharacteristicEquation}
+				(x - 1)(x - 1)^2 	&	=	& (x - 1)^3
+			\end{eqnarray}
+			The polynomial in (\ref{firstCharacteristicEquation}) has only one root the multiplicity 3, so the proposed solution for the recurrence is shown in (\ref{firstGeneralSolution}).
+			
+			\begin{eqnarray}\label{firstGeneralSolution}
+			t_n 	&	=	&	c_1 + c_2n + c_3 n^2
+			\end{eqnarray}
+			
+			Considering the base cases (\ref{firstT1}), (\ref{firstT2}), (\ref{firstT3}) and the general solution (\ref{firstGeneralSolution}), we get the linear system of equations (\ref{firstLinearSystem}).
+			
+			\begin{equation}\label{firstLinearSystem}
+				\begin{array}{ccccccc}
+					c_1	&	+	&	c_2	&	+	&	c_3	&	=	&	1 \\
+					c_1	&	+	&	2c_2	&	+	&	4c_3	&	=	&	4 \\
+					c_1	&	+	&	3c_2	&	+	&	9c_3	&	=	&	10 \\
+				\end{array}
+			\end{equation}
+			
+			The linear system of equations \ref{firstLinearSystem} can be solved using Gauss as show in (\ref{firstStepsToSolve}).
+			
+			\begin{equation}\label{firstStepsToSolve}
+			\begin{split}
+				\begin{array}{cccccc}
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	1	&	1 \\
+						1	&	2	&	4	&	4 \\
+						1	&	3	&	9	&	10 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+									\\
+					R_2 - R_1		 \\
+					R_3 - R_1		\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	1	&	1 \\
+						0	&	1	&	3	&	3 \\
+						0	&	2	&	8	&	9 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+								\\
+								 \\
+					R_3 - 2R_2	\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					% Second row
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	1	&	1 \\
+						0	&	1	&	3	&	3 \\
+						0	&	0	&	2	&	3 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+									\\
+								 \\
+					\frac{1}{2}R_3 		\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	1	&	1 \\
+						0	&	1	&	3	&	3 \\
+						0	&	0	&	1	&	\frac{3}{2}\\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+								\\
+					R_2 - 3R_3			 \\
+						\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					% third row
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	1	&	1 \\
+						0	&	1	&	0	&	-\frac{3}{2} \\
+						0	&	0	&	1	&	\frac{3}{2} \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+					R_1 - R_3				\\
+								 \\
+							\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	1	&	0	&	-\frac{1}{2} \\
+						0	&	1	&	0	&	-\frac{3}{2} \\
+						0	&	0	&	1	&	\frac{3}{2}\\
+					\end{array}
+					\right)
+					&\begin{array}{c}
+					R_1 - R_32			\\
+								 \\
+							\\
+					\end{array}
+										&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					\left(
+					\begin{array}{ccc|c}
+						1	&	0	&	0	&	1 \\
+						0	&	1	&	0	&	-\frac{3}{2} \\
+						0	&	0	&	1	&	\frac{3}{2}\\
+					\end{array}
+					\right)
+					\\
+				\end{array}
+				\end{split}
+			\end{equation}
+
+			Based on the reduced form yielded in (\ref{firstStepsToSolve}), we get that $c_1 = 1$, $c_2 = -3/2$ and $c_3 = 3/2$, which means that the recurrence is given exactly by equation (\ref{firstExact}).
+			\begin{eqnarray}\label{firstExact}
+			t_n 	&	=	&	1 - \frac{3}{2}n + \frac{3}{2}n^2
+			\end{eqnarray}
+			
+			We proceed to compute the first 3 values of $t_n$ to verify that they match the values from (\ref{firstT1}), (\ref{firstT2}) and (\ref{firstT3}).
+			
+			\begin{eqnarray}
+				t_1	&	=	&	1 - \frac{3}{2} + \frac{3}{2} = 1	\label{firstExactT1}\\
+				t_2	&	=	&	1 - \frac{3}{2}(2) + \frac{3}{2}(2 \cdot 2) = 1 - 3 + 6 = 1 + 3 = 4 \label{firstExactT2}\\
+				t_3	&	=	&	1 - \frac{3}{2}(3) + \frac{3}{2}(3)^2 = 1 - \frac{9}{2} + \frac{27}{2} = 1 + \frac{18}{2} = 1 + 9 = 10 \label{firstExactT3}
+			\end{eqnarray}
+			
+			The values gotten from (\ref{firstExactT1}), (\ref{firstExactT2}) and (\ref{firstExactT3}) prove that the base case is valid for the exact solution (\ref{firstExact}). As induction hypothesis, we assume that $T(n) = 1 - \frac{3}{2} n + \frac{3}{2}n^2$, so we have to prove that the recurrence equation is also valid for $n +1$, which is done in (\ref{firstProof}).
+			\begin{eqnarray}
+				T(n + 1)		&	=	&	T(n) + 3(n + 1) - 3 \nonumber\\
+							&	=	&	1 - \frac{3}{2} n + \frac{3}{2}n^2 + 3n + 3 - 3 \nonumber\\
+							&	=	&	1 - \frac{3}{2} n + \frac{3}{2}n^2 + 3n \nonumber\\
+							&	=	&	1 - \frac{3}{2} n + \frac{3}{2}n^2 + 3n + \frac{3}{2} - \frac{3}{2}\nonumber\\
+							&	=	&	1 - \frac{3}{2} n  - \frac{3}{2}+ \frac{3}{2}n^2 + 3n + \frac{3}{2} \nonumber\\
+							&	=	&	1 - \frac{3}{2} \left(n + 1\right) + \frac{3}{2}\left(n^2 + 2n + 1 \right) \nonumber\\
+							&	=	&	1 - \frac{3}{2} \left(n + 1\right) + \frac{3}{2}\left(n + 1 \right)^2 \label{firstProof}
+			\end{eqnarray}
+			
+			% -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			% -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			% -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+			\item $T(1) = 1$, $T(n) = 2T(n - 1) + 2n - 1$\\
+			\\
+			\textbf{Answer: }
+			To solve this problem, first we are going to get the first values of the recurrence as shown in equations (\ref{secondT1}), (\ref{secondT2}) and (\ref{secondT3}).
+			\begin{eqnarray}
+			T(1)	&	=	&	1 \label{secondT1}\\
+			T(2)	&	=	&	2T(1) + 4 + 1 = 2 + 5 =  7\label{secondT2}\\
+			T(3)	&	=	&	2T(2) + 6 + 1 = 14 + 7 = 21\label{secondT3}
+			\end{eqnarray}
+			And using the characteristic equation we get the polynomial in equation (\ref{secondCharacteristicEquation}).
+			\begin{equation}\label{secondCharacteristicEquation}
+				(x-2)(x - 1)^2
+			\end{equation}
+			The polynomial in (\ref{secondCharacteristicEquation}) has two roots, $2$ with multiplicity one and $1$ with multiplicity two, so the proposed solution for the recurrence is shown in equation (\ref{secondGeneralSolution}).
+			\begin{eqnarray}\label{secondGeneralSolution}
+				t_n 	&	=	&	c_1 2^n + c_2 + c_3 n
+			\end{eqnarray}
+			Considering the base cases (\ref{secondT1}), (\ref{secondT2}), (\ref{secondT3}) and the general solution (\ref{secondGeneralSolution}), we get the linear system of equations (\ref{secondLinearSystem}).
+				\begin{equation}\label{secondLinearSystem}
+				\begin{array}{ccccccc}
+					2c_1	&	+	&	c_2	&	+	&	c_3		&	=	&	1 \\
+					4c_1	&	+	&	c_2	&	+	&	2c_3	&	=	&	7 \\
+					8c_1	&	+	&	c_2	&	+	&	93_3	&	=	&	21 \\
+				\end{array}
+			\end{equation}
+			
+			The linear system of equations \ref{secondLinearSystem} can be solved using Gauss as show in (\ref{secondStepsToSolve}).
+			
+			\begin{equation}\label{secondStepsToSolve}
+			\begin{split}
+				\begin{array}{cccccc}
+					\left(
+					\begin{array}{ccc|c}
+						2	&	1	&	1	&	1 \\
+						4	&	1	&	2	&	7 \\
+						8	&	1	&	3	&	21 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+					\frac{1}{2}R_1				\\
+						 \\
+							\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						4	&	1			&	2			&	7 \\
+						8	&	1			&	3			&	21 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+					R_2 - 4R_1			\\
+								 \\
+						\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					% Second row
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						0	&	-1			&	0			&	5 \\
+						8	&	1			&	3			&	21 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+									\\
+							 \\
+					 R_3 - 8R_1			\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						0	&	-1			&	0			&	5 \\
+						0	&	-3			&	-1			&	17 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+								\\
+					-R_2			 \\
+						\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					% third row
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						0	&	1			&	0			&	-5 \\
+						0	&	-3			&	-1			&	17 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+								\\
+								 \\
+					R_3 + 3R_2		\\
+					\end{array}
+					&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						0	&	1			&	0			&	-5 \\
+						0	&	0			&	-1			&	2 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+							\\
+								 \\
+					-R_3		\\
+					\end{array}
+										&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	\frac{1}{2}	&	\frac{1}{2} \\
+						0	&	1			&	0			&	-5 \\
+						0	&	0			&	1			&	-2 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+					R_1 - \frac{1}{2}R_3		\\
+								 \\
+						\\
+					\end{array}
+										&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					&
+					\left(
+					\begin{array}{ccc|c}
+						1	&	\frac{1}{2}	&	0	&	\frac{3}{2} \\
+						0	&	1			&	0			&	-5 \\
+						0	&	0			&	1			&	-2 \\
+					\end{array}
+					\right)
+					&
+					\begin{array}{c}
+					R_1 - \frac{1}{2}R_2		\\
+								 \\
+						\\
+					\end{array}
+										&
+					\begin{array}{c}
+					 \\
+					 \sim\\
+					 \\
+					\end{array}
+					\\
+					\\
+					\left(
+					\begin{array}{ccc|c}
+						1	&	0	&	0	&	4 \\
+						0	&	1			&	0			&	-5 \\
+						0	&	0			&	1			&	-2 \\
+					\end{array}
+					\right)
+				\end{array}
+				\end{split}
+			\end{equation}
+
+			Based on the reduced form yielded in (\ref{secondStepsToSolve}), we get that $c_1$, $c_2$ and $c_3 = -2$, which means that the recurrence is given exactly by equation (\ref{solutionSecondRecurrenceExactly}).
+			
+			\begin{eqnarray}\label{solutionSecondRecurrenceExactly}
+				t_n	&	=	&	2^{n + 2} - 5 - 2n
+			\end{eqnarray}
+			
+			We proceed to compute the first 3 values of $t_n$ to verify that they match the  values from  (\ref{secondT1}), (\ref{secondT2}) and (\ref{secondT3}).
+			
+			\begin{eqnarray}
+				t_1	&	=	&	8 - 5 - 2  = 1\label{secondBaseT1}\\
+				t_2	&	=	&	2^4 - 5 -4 = 16 - 9 = 7\label{secondBaseT2}\\
+				t_3	&	=	&	2^5 - 5 -6 = 32 - 11 = 21\label{secondBaseT3}\\
+			\end{eqnarray}
+			The values gotten from (\ref{secondBaseT1}), (\ref{secondBaseT2}) and (\ref{secondBaseT3}) prove that the base case is valid for the exact solution (\ref{solutionSecondRecurrenceExactly}). As induction hypothesis, we assume that $T(n) = 2^{n + 2} - 5 - 2n$, so we have to prove that the recurrence equation is also valid for $n + 1$, which is done in (\ref{secondProof})
+				\begin{eqnarray}
+				T(n + 1)		&	=	&	2T(n) + 2(n + 1) + 1 \nonumber\\
+							&	=	&	2(2^{n + 2} - 5 - 2n) + 2n + 2 +1 \nonumber \\
+							&	=	&	2^{n + 2 + 1} - 10 - 4n + 2n + 3 \nonumber \\
+							&	=	&	2^{(n + 1) + 2} - 7 - 2n  \nonumber \\
+							&	=	&	2^{(n + 1) + 2} - 5 - 2n  - 2 \nonumber \\
+							&	=	&	2^{(n + 1) + 2} - 5 - 2(n  + 1) \label{secondProof}
+				\end{eqnarray}
+				
+			
+		\end{enumerate}
+	
+	\item Give asymptotic bounds for $T(n)$ in each of the following recurrences. Hint: You may have to change variables somehow in the last one.
+		\begin{enumerate}
+			\item $T(n) = 4T(n / 2) + n^3$\\
+			\\
+			\textbf{Answer: } If we consider $a = 4$, $b = 2$ and $k = 3$ by the master theorem we have that $a = 4 < b^k = 2^3 = 8$. So $T(n)$ is $\Theta(n^3)$.
+			\\
+			\item $T(n) = 17T(n / 4) + n^2$\\
+			\\
+			\textbf{Answer: } If we consider $a = 17$, $b = 4$ and $k = 2$, then $a = 17 > b^k = 4^2 = 16$. So $T(n)$ is $\Theta(n^{\log_4(17)}) \approx \Theta(n^{2.04})$.
+			\\
+			\item $T(n) = 9T(n / 3) + n^2$\\
+			\\
+			\textbf{Answer: } If we consider $a = 9$, $b = 3$ and $k = 2$, then we have that $a = 9 = b^k = 3^2 = 9$. So by the master theorem we have that $T(n)$ is $\Theta(n^2 \log n)$.
+			\\
+			\item $T(n) = T(\sqrt{n}) + 1$\\
+			\\
+			\textbf{Answer: } To solve this recurrence, we are going to consider a generalized case where $T(n) = T(\sqrt[b]{n}) + 1$. If we consider $n = b^{b^k}$, then $\log_b(n) = b^k$ and $\log_b \log_b(n) = k$ and represent $T(n)$ in terms of $k$ as shown in equation (\ref{transformTn}).
+
+			\begin{eqnarray}\label{transformTn}
+				T(n)	&	=	&	T(\sqrt[b]{n}) + 1 \nonumber \\
+					&	=	&	T(\sqrt[b]{b^{b^k}}) + 1 \nonumber \\
+					&	=	&	T((b^{b^k})^{\frac{1}{b}}) + 1 \nonumber \\
+					&	=	&	T(b^{\frac{b^k}{b}}) + 1 \nonumber \\
+					&	=	&	T(b^{b^{k -1}}) + 1 \nonumber \\
+					&	=	&	T(k)
+			\end{eqnarray}
+			Therefore, we can consider the new equivalent recurrence shown in equation (\ref{newRecurrence}).
+			\begin{equation}\label{newRecurrence}
+				t_k	= t_{k -1} + 1
+			\end{equation}
+			The recurrence (\ref{newRecurrence}) has the polynomial characteristic $(x - 1)^2$, which implies that the solution is given by equation (\ref{recurrenceSolution}).
+			\begin{equation}\label{recurrenceSolution}
+			t_k = c_1 + c_2k 
+			\end{equation}
+			Therefore the original solution is shown in  equation (\ref{generalRecurrenceSolution}).
+			
+			\begin{equation}\label{generalRecurrenceSolution}
+				T(n) = c_1 + c_2 \log_b \log_b(n) 
+			\end{equation}
+			
+			For our particular case, this implies that $T(n)$ is $\Theta(\log_2 \log_2(n))$.
+			
+		\end{enumerate}
+	\item We found that a recurrence describing the number of comparison operations for a merge sort is $T(n) = 2T(n/2) + n - 1$ in the case where $n$ is a power of $2$. (Here $T(1) = 0$ and $T(2) = 1$.) We can generalize to when $n$ is not a power of $2$ with the recurrence 
+	\begin{equation}
+		T(n) = T(\lceil n / 2 \rceil) + T(\lfloor n / 2 \rfloor) + n - 1
+	\end{equation}
+	Exactly solve for this more general form of $T(n)$, and prove your solution is true by induction. Hint: plot the first several values of $T(n)$, graphically. What do you find? You might find the following concept useful in your solution: what is $2^{\lceil \log_2 n\rceil}$?\\
+	\\
+	\textbf{Answer: } If we take $m = 2^{\lceil \log_2 n\rceil}$, since ${\lceil \log_2 n\rceil}$ is an integer, then $m$ is a power of 2, and hence $\log_2m = \lceil \log_2 n\rceil$. Also, for this problem we are going to need the values of $\lceil n / 2 \rceil$ and $\lfloor n / 2 \rfloor$. All this values are shown in Table \ref{requiredValues}.
+	
+	
+	\begin{table}[ht!]
+	\centering
+	\caption{Different values required to calculate $T(n)$ and deduce it}
+	\label{requiredValues}
+	\begin{tabular}{|cccccc|}
+	\hline
+	$n$	&	$\lfloor n / 2 \rfloor$	&	$\lceil n / 2 \rceil$	&	$\log_2 n$		&	$\lceil \log_2 n \rceil$		&	$\lfloor \log_2 n \rfloor$
+	\\
+	\hline
+	2	&			1		&		1			&		1		&		1				&		1			\\
+	3	&			1		&		2			&		1.584	&		2				&		1			\\
+	4	&			2		&		2			&		2		&		2				&		2			\\
+	5	&			2		&		3			&		2.321	&		3				&		2			\\
+	6	&			3		&		3			&		2.584	&		3				&		2			\\
+	7	&			3		&		4			&		2.807	&		3				&		2			\\
+	8	&			4		&		4			&		3		&		3				&		3			\\
+	9	&			4		&		5			&		3.169	&		4				&		3			\\
+	10	&			5		&		5			&		3.321	&		4				&		3			\\
+	11	&			5		&		6			&		3.459	&		4				&		3			\\
+	12	&			6		&		6			&		3.584	&		4				&		3			\\
+	13	&			6		&		7			&		3.7		&		4				&		3			\\
+	14	&			7		&		7			&		3.807	&		4				&		3			\\
+	15	&			7		&		8			&		3.906	&		4				&		3			\\
+	16	&			8		&		8			&		4		&		4				&		4			\\
+	17	&			8		&		9			&		4.087	&		5				&		4			\\
+	18	&			9		&		9			&		4.169	&		5				&		4			\\
+	\hline
+	\end{tabular}	
+	\end{table}
+	
+	Now we proceed to compute the first $18$ values of $T(n)$, assuming that $T(1) = 1$.
+	
+	\begin{eqnarray}
+		T(2)		&	=	&	T(\lfloor 2 / 2 \rfloor) + T(\lceil 2 / 2 \rceil) + 2 - 1 \nonumber \\
+				&	=	&	T(1)	+	T(1)	+ 1  \nonumber \\
+				&	=	&	1 + 1 + 1  \nonumber \\
+				&	=	&	3   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(3)		&	=	&	T(\lfloor 3 / 2 \rfloor) + T(\lceil 3 / 2 \rceil) + 3 - 1 \nonumber \\
+				&	=	&	T(1)	+	T(2)	+ 1  \nonumber \\
+				&	=	&	1 + 3 + 2  \nonumber \\
+				&	=	&	6  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(4)		&	=	&	T(\lfloor 4 / 2 \rfloor) + T(\lceil 4 / 2 \rceil) + 4 - 1 \nonumber \\
+				&	=	&	T(2)	+	T(2)	+ 3  \nonumber \\
+				&	=	&	3 + 3 + 3  \nonumber \\
+				&	=	&	9  \nonumber 
+	\end{eqnarray}
+
+
+	\begin{eqnarray}
+		T(5)		&	=	&	T(\lfloor 5 / 2 \rfloor) + T(\lceil 5 / 2 \rceil) + 5 - 1 \nonumber \\
+				&	=	&	T(2)	+	T(3)	+ 4  \nonumber \\
+				&	=	&	3+ 6 + 4  \nonumber \\
+				&	=	&	13  \nonumber 
+	\end{eqnarray}
+
+
+	\begin{eqnarray}
+		T(6)		&	=	&	T(\lfloor 6 / 2 \rfloor) + T(\lceil 6 / 2 \rceil) + 6 - 1 \nonumber \\
+				&	=	&	T(3)	+	T(3)	+ 5  \nonumber \\
+				&	=	&	6 + 6 + 5  \nonumber \\
+				&	=	&	17  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(7)		&	=	&	T(\lfloor 7 / 2 \rfloor) + T(\lceil 7 / 2 \rceil) + 7 - 1 \nonumber \\
+				&	=	&	T(3)	+	T(4)	+ 5  \nonumber \\
+				&	=	&	6 + 9 + 6  \nonumber \\
+				&	=	&	21  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(8)		&	=	&	T(\lfloor 8 / 2 \rfloor) + T(\lceil 8 / 2 \rceil) + 8 - 1 \nonumber \\
+				&	=	&	T(4)	+	T(4)	+ 7  \nonumber \\
+				&	=	&	9 + 9 + 7  \nonumber \\
+				&	=	&	25  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(9)		&	=	&	T(\lfloor 9 / 2 \rfloor) + T(\lceil 9 / 2 \rceil) + 9 - 1 \nonumber \\
+				&	=	&	T(4)	+	T(5)	+ 8  \nonumber \\
+				&	=	&	9 + 13+ 8  \nonumber \\
+				&	=	&	30  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(10)		&	=	&	T(\lfloor 10 / 2 \rfloor) + T(\lceil 10 / 2 \rceil) + 10 - 1 \nonumber \\
+				&	=	&	T(5)	+	T(5)	+ 9  \nonumber \\
+				&	=	&	13 + 13 + 9  \nonumber \\
+				&	=	&	35  \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(11)		&	=	&	T(\lfloor 11 / 2 \rfloor) + T(\lceil 11 / 2 \rceil) + 11 - 1 \nonumber \\
+				&	=	&	T(5)	+	T(6)	+ 10  \nonumber \\
+				&	=	&	13 + 17 + 10  \nonumber \\
+				&	=	&	40   \nonumber 
+	\end{eqnarray}
+
+	\begin{eqnarray}
+		T(12)		&	=	&	T(\lfloor 12 / 2 \rfloor) + T(\lceil 12 / 2 \rceil) + 12 - 1 \nonumber \\
+				&	=	&	T(6)	+	T(6)	+ 11  \nonumber \\
+				&	=	&	17 + 17 + 11  \nonumber \\
+				&	=	&	45   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(13)		&	=	&	T(\lfloor 13 / 2 \rfloor) + T(\lceil 13 / 2 \rceil) + 13- 1 \nonumber \\
+				&	=	&	T(6)	+	T(7)	+ 12  \nonumber \\
+				&	=	&	17 + 21 + 12  \nonumber \\
+				&	=	&	50   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(14)		&	=	&	T(\lfloor 14 / 2 \rfloor) + T(\lceil 14 / 2 \rceil) + 14 - 1 \nonumber \\
+					&	=	&	T(7)	+	T(8)	+ 13  \nonumber \\
+					&	=	&	21 + 21 + 13  \nonumber \\
+					&	=	&	55   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(15)		&	=	&	T(\lfloor 15 / 2 \rfloor) + T(\lceil 15 / 2 \rceil) + 15 - 1 \nonumber \\
+					&	=	&	T(7)	+	T(8)	+ 14  \nonumber \\
+					&	=	&	21 + 25 + 14  \nonumber \\
+					&	=	&	60   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(16)		&	=	&	T(\lfloor 16 / 2 \rfloor) + T(\lceil 16 / 2 \rceil) + 16 - 1 \nonumber \\
+					&	=	&	T(8)	+	T(8)	+ 15  \nonumber \\
+					&	=	&	25 + 25 + 15  \nonumber \\
+					&	=	&	65   \nonumber 
+	\end{eqnarray}
+	
+	
+	\begin{eqnarray}
+		T(17)		&	=	&	T(\lfloor 17 / 2 \rfloor) + T(\lceil 17 / 2 \rceil) + 17 - 1 \nonumber \\
+					&	=	&	T(8)	+	T(9)	+ 16  \nonumber \\
+					&	=	&	25 + 30 + 16  \nonumber \\
+					&	=	&	71   \nonumber 
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		T(18)		&	=	&	T(\lfloor 18 / 2 \rfloor) + T(\lceil 18 / 2 \rceil) + 18 - 1 \nonumber \\
+					&	=	&	T(9)	+	T(9)	+ 17  \nonumber \\
+					&	=	&	30 + 30 + 17  \nonumber \\
+					&	=	&	77   \nonumber 
+	\end{eqnarray}
+	
+	
+	Hence we have the values of $T(n)$, that by themselves will not help. To have an idea of how we can deduce the formula, we are going to compute how its value increments based on its predecessor. All this values are show in Table \ref{incrementsOfT}.
+	
+	\begin{table}[ht!]
+		\centering
+		\caption{Values of $T(n)$ and its increments}
+		\label{incrementsOfT}
+		\begin{tabular}{|ccc|}
+		\hline
+		$n$		&	$T(n)$	&	T(n) - T(n - 1)	\\
+		\hline
+		1		&	1		&			\\
+		2		&	3		&	2		\\
+		3		&	6		&	3		\\
+		4		&	9		&	3		\\
+		5		&	13		&	4		\\
+		6		&	17		&	4		\\
+		7		&	21		&	4		\\
+		8		&	25		&	4		\\
+		9		&	30		&	5		\\
+		10		&	35		&	5		\\
+		11		&	40		&	5		\\
+		12		&	45		&	5		\\
+		13		&	50		&	5		\\
+		14		&	55		&	5		\\
+		15		&	60		&	5		\\
+		16		&	65		&	5		\\
+		17		&	71		&	6		\\
+		18		&	77		&	6		\\
+		\hline
+		\end{tabular}
+	\end{table}
+	
+	The difference in each term is $\lceil \log_2 n \rceil + 1$, and we know that $T(n) \in \Theta(n \log_2 n)$, so we can deduce that the formula is something like $T(n) = n \lceil \log_2 n \rceil + \lceil \log_2 n \rceil + 1$. If we try this formula with $n = 18$, we get $T(18) = (18)(5) + 5 + 1 = 90 + 5 + 1 = 96 \neq 77$. This implies that $T(n) = n \lceil \log_2 n \rceil + \lceil \log_2 n \rceil + 1 - f(n)$, where $f(n)$ is an unknown value that reduce the require amount of units so the value is correct.\\
+	Hence we proceed to compute the values of $f(n)$, which is $ n \lceil \log_2 n \rceil + \lceil \log_2 n \rceil + 1 - T(n)$.
+	\\
+	
+	\begin{eqnarray}
+		f(2)		&	=	& 	(1)(2 + 1)  + 1 - 3\nonumber \\
+				&	=	&	(1)(3) + 1 - 3 \nonumber \\
+				&	=	&	3 + 1 - 3 \nonumber \\
+				&	=	&	4 - 3 \nonumber \\
+				&	=	&	1 \nonumber
+	\end{eqnarray}		
+	
+	\begin{eqnarray}
+		f(3)		&	=	& 	(2)(3 + 1)  + 1 - 6\nonumber \\
+				&	=	&	(2)(4) + 1 - 6 \nonumber \\
+				&	=	&	8 + 1 - 6 \nonumber \\
+				&	=	&	9 - 6 \nonumber \\
+				&	=	&	3 \nonumber
+	\end{eqnarray}	
+	
+	\begin{eqnarray}
+		f(4)		&	=	& 	(2)(4 + 1)  + 1 - 9\nonumber \\
+				&	=	&	(2)(5) + 1 - 9 \nonumber \\
+				&	=	&	10 + 1 - 9 \nonumber \\
+				&	=	&	11 - 9 \nonumber \\
+				&	=	&	2 \nonumber
+	\end{eqnarray}	
+	
+	\begin{eqnarray}
+		f(5)		&	=	& 	(3)(5 + 1)  + 1 - 13\nonumber \\
+				&	=	&	(3)(6) + 1 - 13 \nonumber \\
+				&	=	&	18+ 1 - 13 \nonumber \\
+				&	=	&	19 - 13 \nonumber \\
+				&	=	&	6 \nonumber
+	\end{eqnarray}		
+	
+	\begin{eqnarray}
+		f(6)		&	=	& 	(3)(6 + 1)  + 1 - 17\nonumber \\
+				&	=	&	(3)(7) + 1 - 17 \nonumber \\
+				&	=	&	21+ 1 - 17 \nonumber \\
+				&	=	&	22 - 17 \nonumber \\
+				&	=	&	5 \nonumber
+	\end{eqnarray}		
+	
+	\begin{eqnarray}
+		f(7)		&	=	& 	(3)(7 + 1)  + 1 - 21\nonumber \\
+				&	=	&	(3)(8) + 1 - 21 \nonumber \\
+				&	=	&	24+ 1 - 21 \nonumber \\
+				&	=	&	25 - 21 \nonumber \\
+				&	=	&	4 \nonumber
+	\end{eqnarray}		
+	
+	\begin{eqnarray}
+		f(8)		&	=	& 	(3)(8 + 1)  + 1 - 25\nonumber \\
+				&	=	&	(3)(9) + 1 - 25 \nonumber \\
+				&	=	&	27+ 1 - 25 \nonumber \\
+				&	=	&	28 - 25 \nonumber \\
+				&	=	&	3 \nonumber
+	\end{eqnarray}	
+	
+	\begin{eqnarray}
+		f(9)		&	=	& 	(4)(9 + 1)  + 1 - 30\nonumber \\
+				&	=	&	(4)(10) + 1 - 30 \nonumber \\
+				&	=	&	40+ 1 - 30 \nonumber \\
+				&	=	&	41 - 30 \nonumber \\
+				&	=	&	11 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(10)		&	=	& 	(4)(10 + 1)  + 1 - 35\nonumber \\
+				&	=	&	(4)(11) + 1 - 35 \nonumber \\
+				&	=	&	44+ 1 - 35 \nonumber \\
+				&	=	&	45 - 35 \nonumber \\
+				&	=	&	10 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(11)		&	=	& 	(4)(11 + 1)  + 1 - 40\nonumber \\
+				&	=	&	(4)(12) + 1 - 40 \nonumber \\
+				&	=	&	48 + 1 - 40 \nonumber \\
+				&	=	&	49 - 40 \nonumber \\
+				&	=	&	9 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(11)		&	=	& 	(4)(11 + 1)  + 1 - 40\nonumber \\
+				&	=	&	(4)(12) + 1 - 40 \nonumber \\
+				&	=	&	48 + 1 - 40 \nonumber \\
+				&	=	&	49 - 40 \nonumber \\
+				&	=	&	9 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(12)		&	=	& 	(4)(12 + 1)  + 1 - 45\nonumber \\
+				&	=	&	(4)(13) + 1 - 45 \nonumber \\
+				&	=	&	52 + 1 - 45 \nonumber \\
+				&	=	&	53 - 45 \nonumber \\
+				&	=	&	8 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(13)		&	=	& 	(13)(4)  + 4 + 1 - 50\nonumber \\
+				&	=	&	52 + 5 - 50 \nonumber \\
+				&	=	&	57 - 50 \nonumber \\
+				&	=	&	7 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(14)		&	=	& 	(14)(4)  + 4 + 1 - 55\nonumber \\
+				&	=	&	56 + 5 - 55 \nonumber \\
+				&	=	&	61 - 55 \nonumber \\
+				&	=	&	6 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(15)		&	=	& 	(15)(4)  + 4 + 1 - 60\nonumber \\
+				&	=	&	60 + 5 - 60 \nonumber \\
+				&	=	&	65 - 60 \nonumber \\
+				&	=	&	5 \nonumber	
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(16)		&	=	& 	(16)(4)  + 4 + 1 - 77\nonumber \\
+				&	=	&	64 + 5 - 77 \nonumber \\
+				&	=	&	69 - 65 \nonumber \\
+				&	=	&	4 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(17)		&	=	& 	(17)(5)  + 5 + 1 - 77\nonumber \\
+				&	=	&	85 + 6 - 77 \nonumber \\
+				&	=	&	91 - 71 \nonumber \\
+				&	=	&	20 \nonumber
+	\end{eqnarray}
+	
+	\begin{eqnarray}
+		f(18)		&	=	& 	(18)(5)  + 5 + 1 - 77\nonumber \\
+				&	=	&	90 + 6 - 77 \nonumber \\
+				&	=	&	96 - 77 \nonumber \\
+				&	=	&	19 \nonumber
+	\end{eqnarray}
+	
+	Just as with the previous values to deduce the function $T(n)$, we have the Table \ref{valuesOfFn} with the values of $f(n)$ and its differences with its corresponding predecessor, so we can deduce the formula for $f(n)$.
+	
+	\begin{table}
+	\centering
+	\caption{Values of $f(n)$ and its corresponding differences}
+	\label{valuesOfFn}
+		\begin{tabular}{|cccc|}
+		\hline
+			$n$		&	$f(n)$	&	$f(n) - f(n - 1)$	&	 \\
+			\hline
+			2		&	1		&				&\\
+			3		&	3		&		2		&	$2^1$	\\	
+			4		&	2		&		-1		&	\\
+			5		&	6		&		4		&	$2^2$	\\
+			6		&	5		&		-1		&	\\
+			7		&	4		&		-1		&	\\
+			8		&	3		&		-1		&	\\
+			9		&	11		&		8		&	$2^3$	\\	
+			10		&	10		&		-1		&	\\
+			11		&	9		&		-1		&	\\
+			12		&	8		&		-1		&	\\
+			13		&	7		&		-1		&	\\
+			14		&	6		&		-1		&	\\
+			15		&	4		&		-1		&	\\
+			16		&	4		&		-1		&	\\
+			17		&	20		&		16		&	$2^4$	\\	
+			18		&	19		&		-1		&	\\
+		\hline
+		\end{tabular}
+	\end{table}
+		
+	For the values in which the difference is a power of 2, we can use the formula $2^{\lfloor \log_2 n \rfloor} + \lfloor \log_2 n \rfloor$ and it works fine, but for the other values it breaks. We just have to consider the that after difference that is a power of 2, the difference is only $-1$, i.e., it linearly decreases. For instance, if we take $n = 12$, then $f(12) = f(9) - n - 2^{\lfloor \log_2 n \rfloor}$. This formula breaks when the difference is not a power of 2, but it breaks otherwise. Therefore, $f(n)$ has the form $2^{\lfloor \log_2 n \rfloor} + \lfloor \log_2 n \rfloor -  c\left(n + 2^{\lfloor \log_2 n \rfloor} \right)$, where $c$ is a condition that that value is going to subtracted only when the difference is not a power of 2. This can be achieve with $\left\lfloor \frac{n}{2^{\lfloor \log_2 n \rfloor} + 2} \right\rfloor$. This way, $f(n)$ is deduced as equation (\ref{functionF}).
+	
+	
+	\begin{equation}\label{functionF}
+		2^{\lceil \log_2 n \rceil } + \lfloor \log_2 n \rfloor - \left\lfloor \frac{n}{2^{\lfloor \log_2 n \rfloor} + 2} \right\rfloor \left( 2^{\lfloor \log_2 n \rfloor} - n \right)
+	\end{equation}
+	
+	Hence the proposed solution is shown in equation in equation (\ref{proposedFinalEquation}).
+	
+	\begin{eqnarray}
+	T(n) 	&	= 	&	n \lceil \log_2 n \rceil + \lceil \log_2 n \rceil + 1 - \left( 2^{\lceil \log_2 n \rceil } + \lfloor \log_2 n \rfloor - \left\lfloor \frac{n}{2^{\lfloor \log_2 n \rfloor} + 2} \right\rfloor \left( 2^{\lfloor \log_2 n \rfloor} - n \right) \right) \nonumber \\
+		&	=	&n \lceil \log_2 n \rceil + \lceil \log_2 n \rceil + 1 -  2^{\lceil \log_2 n \rceil} - \lfloor \log_2 n \rfloor + \left\lfloor \frac{n}{2^{\lfloor \log_2 n \rfloor} + 2} \right\rfloor \left( 2^{\lfloor \log_2 n \rfloor} - n \right)  \label{proposedFinalEquation}
+	\end{eqnarray}
+	
+	We start the proof of the formula by induction with $n = 1$
+	
+\end{enumerate}
+%\subsection{}
+
+
+
+\end{document}  
