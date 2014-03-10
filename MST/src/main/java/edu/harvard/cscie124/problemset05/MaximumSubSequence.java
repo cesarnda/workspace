@@ -7,18 +7,23 @@ public class MaximumSubSequence {
 
 	}
 	
-	public int getMaximumSum(int[] array){
+		public MaximumSubSequenceDTO getMaximumSum(int[] array){
 		int maximumSum = 0;
 		int proposedMaximumSum = 0;
-		
+		MaximumSubSequenceDTO maximumSubSequenceDTO = new MaximumSubSequenceDTO();
+		maximumSubSequenceDTO.setStartIndex(-1);
+		maximumSubSequenceDTO.setEndIndex(-1);
 		int startIndex = 0;
 		while(startIndex < array.length && array[startIndex] <= 0){
 			startIndex++;
 		}
 		
 		if(startIndex == array.length){
-			return 0;
+			return maximumSubSequenceDTO;
 		}
+		
+		// start with the first positive number
+		maximumSubSequenceDTO.setStartIndex(startIndex);
 		
 		for(int index = startIndex; index < array.length; index++){
 			
@@ -26,14 +31,16 @@ public class MaximumSubSequence {
 			
 			if(proposedMaximumSum > maximumSum){
 				maximumSum = proposedMaximumSum;
+				maximumSubSequenceDTO.setEndIndex(index);
 			}
 			
 			if(proposedMaximumSum + maximumSum == 0){
 				proposedMaximumSum = 0;
+				maximumSubSequenceDTO.setStartIndex(index);
 			}
 			
 		}
-		return maximumSum;
+		return maximumSubSequenceDTO;
 	}
 
 }
