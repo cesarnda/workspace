@@ -33,7 +33,13 @@
 \begin{enumerate}
 	\item Suppose we have an array $A$ containing $n$ numbers, some of which may be negative. We wish to find indices $i$ and $j$ so that
 	$$\sum_{k = i}^{j}A[k]$$
-is maximized. Find an algorithm that runs in time $O(n)$.
+is maximized. Find an algorithm that runs in time $O(n)$.\\
+\\
+\textbf{Answer: } To solve this problem, first we need to consider the case where all the elements in the array are negative. In that case we return an empty subsequence and the sum is 0. \\
+	The above can be easily determined by iterating over the array until we found an element that is greater than $0$. If we iterate over all the elements, then we return the index $i = -1$ and $j = -1$.\\
+	\\
+	So far, our algorithm is $O(n)$, then we iterate from the index where we found our first positive element, which is our proposed $i$, and add it to a variable that will represent the proposed maximum sum. If this proposed maximum sum is greater than the current maximum sum, which was initialized with 0, then the current maximum sum is the proposed maximum sum and we assigned as $j =$ current index. \\
+	When the proposed maximum sum plus the maximum sum is equal zero, that means that our current proposed maximum sum will not be a maximum sum. This is done to consider the cases when we have negative elements between positive elements but still the sum is maximized.
 
 	\item A challenge that arises in databases is how to summarize data in easy-to-display formats, such as a histogram. A problem in this context is the minimal imbalance problem. Again suppose we have an array $A$ containing $n$ numbers, this time all positive, and another input $k$. 
 	Consider $k$ indices $j_1, j_2 \ldots, j_k$ that partition the array into $k + 1$ subarrays $A[1, j_1], A[j_1 + 1, j_2], \ldots, A[j_k + 1, n]$. The weight $w(i)$ of the $i$th subarray is the sum of its entries. The imbalance of the partition is
