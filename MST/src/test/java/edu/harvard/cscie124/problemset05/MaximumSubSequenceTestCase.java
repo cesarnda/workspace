@@ -1,4 +1,4 @@
-package edu.harvard/cscie124.problemset05;
+package edu.harvard.cscie124.problemset05;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
@@ -47,8 +47,8 @@ public class MaximumSubSequenceTestCase {
 		MaximumSubSequenceDTO maximumSubSequenceDTO = maximumSubSequence.getMaximumSum(array);
 		double sum = maximumSubSequenceDTO.getMaximumSum();
 		assertEquals(20.0, sum, DELTA);
-		assertEquals(2, maximumSubSequenceDTO.getStartIndex());
-		assertEquals(6, maximumSubSequenceDTO.getEndIndex());
+		assertEquals(9, maximumSubSequenceDTO.getStartIndex());
+		assertEquals(9, maximumSubSequenceDTO.getEndIndex());
 	}
 	
 	

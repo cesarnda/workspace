@@ -1,5 +1,8 @@
 package edu.harvard.cscie124.problemset05;
 
+public class MaximumSubSequence{
+	
+
 public MaximumSubSequenceDTO getMaximumSum(int[] array){
 		int maximumSum = 0;
 		int proposedMaximumSum = 0;
@@ -18,6 +21,8 @@ public MaximumSubSequenceDTO getMaximumSum(int[] array){
 		// start with the first positive number
 		maximumSubSequenceDTO.setStartIndex(startIndex);
 		
+		int proposedStartIndex = startIndex;
+		
 		for(int index = startIndex; index < array.length; index++){
 			
 			proposedMaximumSum += array[index];
@@ -26,13 +31,16 @@ public MaximumSubSequenceDTO getMaximumSum(int[] array){
 			// corresponding sub sequence now
 			if(proposedMaximumSum > maximumSum){
 				maximumSum = proposedMaximumSum;
+				maximumSubSequenceDTO.setStartIndex(proposedStartIndex);
 				maximumSubSequenceDTO.setEndIndex(index);
 			}
 			
 			
-			if(proposedMaximumSum + maximumSum == 0){
+			if(proposedMaximumSum + maximumSum <= 0){
 				proposedMaximumSum = 0;
-				maximumSubSequenceDTO.setStartIndex(index);
+				if(index + 1 < array.length){
+					proposedStartIndex = index + 1;
+				}
 			}
 			
 		}
