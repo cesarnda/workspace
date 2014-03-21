@@ -1,0 +1,4 @@
+00:51:17,785  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
+00:51:17,793  INFO PrimeWitnessFinder:30 - The witness 241771 returned the reminder 545371
+00:55:51,379  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
+00:55:51,388  INFO PrimeWitnessFinder:30 - The witness 515440 returned the reminder 123330
