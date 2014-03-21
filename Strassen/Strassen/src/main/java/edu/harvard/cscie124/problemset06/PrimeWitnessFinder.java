@@ -39,7 +39,7 @@ public class PrimeWitnessFinder {
 	
 	private int applyFermatLittleTheorem(int base, int power, int modulus){
 		if(power == 1){
-			return base;
+			return base % modulus;
 		}
 		if(power % 2 == 0){
 			int poweredA = applyFermatLittleTheorem(base, power / 2, modulus);

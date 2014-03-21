@@ -2,3 +2,9 @@
 00:51:17,793  INFO PrimeWitnessFinder:30 - The witness 241771 returned the reminder 545371
 00:55:51,379  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
 00:55:51,388  INFO PrimeWitnessFinder:30 - The witness 515440 returned the reminder 123330
+01:02:34,974  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
+01:02:34,984  INFO PrimeWitnessFinder:30 - The witness 173852 returned the reminder 385421
+01:04:46,404  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
+01:04:46,416  INFO PrimeWitnessFinder:30 - The witness 201375 returned the reminder -391406
+01:09:36,106  INFO PrimeWitnessFinder:21 - Trying to determine if 636127 is prime.
+01:09:36,116  INFO PrimeWitnessFinder:30 - The witness 375911 returned the reminder -36733

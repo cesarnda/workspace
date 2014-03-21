@@ -21,4 +21,32 @@ public class PrimeWitnessFinderTestCase {
 		int reminder = primeWitnessFinder.applyFermatLittleTheorem(2, 7);
 		assertEquals(1, reminder);
 	}
+	
+	@Test
+	public void findWitness_Test_With_a_3_And_p_2(){
+		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
+		int reminder = primeWitnessFinder.applyFermatLittleTheorem(3, 2);
+		assertEquals(1, reminder);
+	}
+	
+	@Test
+	public void findWitness_Test_With_a_6_And_p_2(){
+		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
+		int reminder = primeWitnessFinder.applyFermatLittleTheorem(6, 2);
+		assertEquals(0, reminder);
+	}
+	
+	@Test
+	public void findWitness_Test_With_a_14_And_p_7(){
+		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
+		int reminder = primeWitnessFinder.applyFermatLittleTheorem(-14, 7);
+		assertEquals(0, reminder);
+	}
+
+	@Test
+	public void findWitness_Test_With_a_150_And_p_997(){
+		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
+		int reminder = primeWitnessFinder.applyFermatLittleTheorem(150,997);
+		assertEquals(1, reminder);
+	}
 }
