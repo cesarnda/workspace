@@ -1,5 +1,6 @@
 package edu.harvard.cscie124.problemset06;
 
+import java.math.BigInteger;
 import java.util.Random;
 
 import org.slf4j.Logger;
@@ -33,21 +34,18 @@ public class PrimeWitnessFinder {
 	}
 	
 	public int applyFermatLittleTheorem(int base, int modulus){
-		return applyFermatLittleTheorem(base, modulus - 1,modulus);
+		int reminder = applyFermatLittleTheorem(base, modulus - 1,modulus);
+		logger.info("The reminder of " + base + "^" + (modulus -1) + " modulus " + modulus + " is " + reminder);
+		return reminder;
 	}
 	
 	
-	private int applyFermatLittleTheorem(int base, int power, int modulus){
-		if(power == 1){
-			return base % modulus;
-		}
-		if(power % 2 == 0){
-			int poweredA = applyFermatLittleTheorem(base, power / 2, modulus);
-			return (poweredA * poweredA) % modulus;
-		}
-		int newPower = (int)Math.floor(power / 2);
-		int poweredBase = applyFermatLittleTheorem(base, newPower, modulus);
-		return (((poweredBase * poweredBase) % modulus) * poweredBase ) % modulus;
+	private int applyFermatLittleTheorem(Integer base, int exponent, Integer modulus){
+		BigInteger bigBase = new BigInteger(base.toString());
+		BigInteger bigModulus = new BigInteger(modulus.toString());
+		BigInteger baseToExponent = bigBase.pow(exponent);
+		BigInteger bigReminder = baseToExponent.mod(bigModulus);
+		return bigReminder.intValue();
 	}
 	
 }
