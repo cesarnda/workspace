@@ -1,0 +1,72 @@
+\documentclass[tikz, 12pt]{scrartcl}
+\usepackage{etex}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage[ruled,vlined, linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\usepackage{vaucanson-g}
+\usepackage{amsthm}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Data Structures and Algorithms}
+\subtitle{Spring 2014}
+\author{Cesar Agustin Garcia Vazquez}
+\date{\today}                                           % Activate to display a given date or no date
+\allowdisplaybreaks
+\begin{document}
+\maketitle
+\section{Problem Set 06}
+
+\begin{enumerate}
+	\item Suppose that Harvard ID numbers were issued randomly, with replacement. That is, your Harvard ID would consist of just 8 randomly generated digits, and no check was made to ensure that the same number was not issued twice. You might use the last four digits of your ID number as a password. Try go give exact numerical answers for the following questions:
+	\begin{enumerate}
+		\item How many people would you need to have in a room before it was more likely than not that two had the same last four digits? 
+		\item How many numbers could be issued before it would be more likely than not that there is a duplicate Harvard ID number?
+		\item  What would the answers for the above questions be if there were 12 digit ID numbers?
+	\end{enumerate}
+	
+	\item Suppose each person gets a random hash value from the range $[1, \ldots, n]$. (For the case of birthdays, $n$ would be 365.) Show that for some constant $c_1$, where there are at least $c_1 \sqrt{n}$ people in a room, the probability that no two have the same hash value is at most $1/e$. Similarly, show that for some constant $c_2$ (and sufficiently large $n$), when there are at most $c_2 \sqrt{n}$ people in the room, the probability that no two have the same hash value is at least $1/2$. Make these constants as close to optimal as possible.\\
+	Hint: you may use the fact in equation (\ref{hint2.1})
+	\begin{equation}\label{hint2.1}
+		e^{-x} \geq 1 - x
+	\end{equation}
+	and in equation (\ref{hint2.2}).
+	
+	\begin{equation}\label{hint2.2}
+	e^{-x - x^2} \leq 1 - x \mbox{ for } x \leq \frac{1}{2}
+	\end{equation}
+	
+	You may feel free to find and use better bounds.
+	
+	\item For the document similarity scheme described in class, it would be better to store fewer bytes per document. Here is one way to do this, that uses just 48 bytes per document: take an original sketch of a document, using 84 different permutations. Divide the 84 permutations into 6 groups of 14. Re-hash each group of 14 values to get 6 new 64 bit values. Call this the \textit{super-sketch}. Note that for each of the 6 values in the super-sketch, two documents will agree on a value when they agree on all 14 of the corresponding values in the sketch. Why does it make sense to simply assume that this is the only time a match will occur?\\
+	Consider the probability that two documents with resemblance $r$ agree on two or more of the six sketches. Write equations that give this probability and graph the probability of a function of $r$. Explain and discuss your results.\\
+	What happens if instead of using a 64 bit hash value for each group in the super-sketch, we only use a 16 bit hash? An 8 bit hash?
+	
+	\item Prove that 636,127 is composite by finding an appropriate witness. Be sure to give ample evidence showing that your witness is in fact witnesses. (NoteL do not use a factor as a witness!) Sure, these numbers are small enough that you can exhaustively find a factor; that is not the point. A factor is not a witness, according to our definition.) Hint: you will want to write some code. You will preferably use a package that deals with big integers appropriately, as you may want to use some of this code for the next problem (RSA). We don't need a code listing for this problem, a short summary of the output should suffice.\\
+	\\
+	The number 294, 409 is a Carmichael number. Prove that it is composite by finding a witness. Briefly explain why Fermat's little theorem won't help.
+	
+	\item My RSA public key is (46947848749720430529628739081, 37267486263679235062064536973). Convert the message 
+	\begin{center}
+	Give me an A
+	\end{center}
+	into a number, using ASCII in the natural way. (So for ``A b": in ASCII, A = 65, space = 32, and b = 98; translating each number into 8 bits gives ``A b'' = 010000010010000001100010 in binary.) Encode the message as though you were sending it to me using my RSA key, and write for me the corresponding encoded message in decimal.
+\end{enumerate}
+%\subsection{}
+
+
+
+\end{document}  
