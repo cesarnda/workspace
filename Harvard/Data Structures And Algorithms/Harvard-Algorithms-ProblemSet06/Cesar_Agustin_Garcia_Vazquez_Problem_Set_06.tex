@@ -59,9 +59,13 @@
 	\\
 	The number 294, 409 is a Carmichael number. Prove that it is composite by finding a witness. Briefly explain why Fermat's little theorem won't help. \\
 	\\
-	\textbf{Answer:} The number 428,996 acts as a witness since it returns the reminder 478,088.
+	\textbf{Answer:}  For the number 636,127, we first generate a random number $w$, between $(1, 636,127)$ and then we just applied Fermat's little Theorem. The trick here is to correctly compute $w^{636,126} \mbox{ mod } 636,127$, which can be easily done using the java class \textit{java.math.BigInteger}. If the reminder is different than 1, that means that the number is composite and then we stop and log the witness and the reminder obtained. \\
+	The number 360,850 acts as a witness that 646,127 composite, since it is $360,850 \equiv 36,085 \mbox{ mod } 636,127$.\\
 	\\
-	For the Carmichael number, the witness 76,590 returned the reminder 143,227.
+	To find a witness for the Carmichael number, Fermat's Little Theorem does not work directly with any number, since it will return the reminder as 1 if the possible witness share a factor with $294,409$. This might lead to computing a lot of unnecessary computations if we don't consider this condition. \\
+	So the tweak is that after getting randomly the possible witness, we compute the greater common divisor, and if it is 1, then we drop that possible witness and we retrieve another one. \\
+	After adding the dropping condition, the program finds the witness $88,987$ which returned the reminder $16,133$, so we have that $88,987 \equiv 16,133 \mbox{ mod }294,409$.
+	
 	\item My RSA public key is (46947848749720430529628739081, 37267486263679235062064536973). Convert the message 
 	\begin{center}
 	Give me an A
