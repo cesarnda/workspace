@@ -17,6 +17,20 @@ public class PrimeWitnessFinder {
 		random = new Random();
 	}
 	
+	public static void main(String ... args){
+		String binaryNumber = "010001110110100101110110011001010010000001101101011001010010000001100001011011100010000001000001";
+		System.out.println("Length of the binary number: " + binaryNumber.length());
+		BigInteger bigMessage = new BigInteger(binaryNumber, 2);
+		System.out.println("Numeric value: " + bigMessage);
+		
+		BigInteger bigN = new BigInteger("46947848749720430529628739081");
+		BigInteger bigE = new BigInteger("37267486263679235062064536973");
+		int comparison = bigMessage.compareTo(bigN);
+		System.out.println("Comparing big message against n is: " + comparison);
+		BigInteger result = bigMessage.modPow(bigE, bigN);
+		System.out.println("message to e mod n is: " + result);
+	}
+	
 	
 	public int findWitness(int possiblePrime){
 		logger.info("Trying to determine if " + possiblePrime + " is prime.");
@@ -25,12 +39,21 @@ public class PrimeWitnessFinder {
 		do{
 			possibleWitness = random.nextInt(possiblePrime);
 			logger.debug("Trying with " + possibleWitness);
+			
+			if(greatedCommonDivisor(possibleWitness, possiblePrime) == 1){
+				continue; // Ignore Carmichael numbers
+			}
+			
 			reminder = applyFermatLittleTheorem(possibleWitness, possiblePrime - 1, possiblePrime);
 		}while(reminder == 1);
 		
 		logger.info("The witness " + possibleWitness + " returned the reminder " + reminder);
 		
 		return possibleWitness;
+	}
+	
+	public int greatedCommonDivisor(int a, int b) { 
+		return b == 0 ? a : greatedCommonDivisor(b, a % b); 
 	}
 	
 	public int applyFermatLittleTheorem(int base, int modulus){

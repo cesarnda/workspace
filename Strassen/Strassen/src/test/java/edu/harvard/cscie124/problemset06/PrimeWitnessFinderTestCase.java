@@ -17,6 +17,13 @@ public class PrimeWitnessFinderTestCase {
 	}
 	
 	@Test
+	public void findWitness_Test_With_294_409(){
+		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
+		int witness = primeWitnessFinder.findWitness(294_409);
+		assertNotEquals(1, witness);
+	}
+	
+	@Test
 	public void applyFermatLittleTheorem_Test_With_a_2_And_p_7(){
 		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
 		int reminder = primeWitnessFinder.applyFermatLittleTheorem(2, 7);
@@ -60,7 +67,7 @@ public class PrimeWitnessFinderTestCase {
 	@Test
 	public void test_Pseudo_Prime(){
 		int[] primes = new int[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47,
-									53, 59, 61, 67, 71, 73, 79, 83};
+									53, 59, 61, 67, 71, 73, 79, 83, 997};
 		for(int prime : primes){
 			applyFermatLittleTheorem_Test_P_Is_Prime(prime);
 		}
