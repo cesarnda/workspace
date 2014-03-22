@@ -61,11 +61,51 @@
 	\\
 	\textbf{Answer:} The number 428,996 acts as a witness since it returns the reminder 478,088.
 	\\
+	For the Carmichael number, the witness 76,590 returned the reminder 143,227.
 	\item My RSA public key is (46947848749720430529628739081, 37267486263679235062064536973). Convert the message 
 	\begin{center}
 	Give me an A
 	\end{center}
-	into a number, using ASCII in the natural way. (So for ``A b": in ASCII, A = 65, space = 32, and b = 98; translating each number into 8 bits gives ``A b'' = 010000010010000001100010 in binary.) Encode the message as though you were sending it to me using my RSA key, and write for me the corresponding encoded message in decimal.
+	into a number, using ASCII in the natural way. (So for ``A b": in ASCII, A = 65, space = 32, and b = 98; translating each number into 8 bits gives ``A b'' = 010000010010000001100010 in binary.) Encode the message as though you were sending it to me using my RSA key, and write for me the corresponding encoded message in decimal.\\
+	\\
+	\textbf{Answer: } First we convert every character into its corresponding ASCII number and then into 8 bits. This is shown in Table \ref{valuesForCharacter}.
+	
+	\begin{table}[ht!]
+		\caption{\label{valuesForCharacter}Values of each character in the message}
+		\centering
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Character		&	ASCII	&	Binary	\\
+			\hline
+			G			&	71		&	0100 0111	\\ %1
+			i			&	105		&	0110 1001	\\ %2 
+			v			&	118		&	0111 0110	\\ %3
+			e			&	101		&	0110 0101	\\ %4
+						&	32		&	0010 0000\\ %5
+			m			&	109		&	0110 1101	\\ %6
+			e			&	101		&	0110 0101	\\ %7
+						&	32		&	0010 0000\\ %8
+			a			&	97		&	0110 0001	\\ %9
+			n			&	110		&	0110 1110	\\ %10
+						&	32		&	0010 0000\\ %11
+			A			&	65		&	0100 0001\\ %12
+			\hline
+		\end{tabular}
+	\end{table}
+	
+	If we append each binary string after another, we get the string in equation (\ref{binaryString}).
+	\begin{equation}\label{binaryString}
+	\begin{split}
+	01000111	01101001 01110110 01100101 00100000 01101101 \\ 01100101 00100000 01100001 	01101110	00100000 01000001
+	\end{split}
+	\end{equation}
+	
+	%37,267,486,263,679,235,062,064,536,973
+	%46,947,848,749,720,430,529,628,739,081
+	%22,100,932,013,077,800,977,026,654,273
+	
+	The binary number in equation (\ref{binaryString})  of 96 bits (8 bits per 12 characters), represents the number $x=$ 22,100,932,013,077,800,977,026,654,273, which can be obtained by using the java class \textit{java.math.BigInteger}.  If we consider the public key $(n, e)$ given, then message to be sent is in the range $[1, \ldots, n]$. So we just need to compute $e(x) = x^{e} \mbox{ mod } n$, which yields $e(x) = 27,016,764,340,118,192,395,712,492,378$.\\
+	The above result was computed using \textit{java.math.BigInteger\#modPow} which internally breaks the operations and then it uses the Chinese Remainder Theorem to combine results.
 \end{enumerate}
 %\subsection{}
 
