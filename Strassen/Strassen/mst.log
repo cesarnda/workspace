@@ -10,3 +10,7 @@
 01:09:36,116  INFO PrimeWitnessFinder:30 - The witness 375911 returned the reminder -36733
 22:44:45,046  INFO PrimeWitnessFinder:22 - Trying to determine if 294409 is prime.
 22:45:00,624  INFO PrimeWitnessFinder:36 - The witness 76590 returned the reminder 143227
+10:32:54,296  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+10:34:53,619  INFO PrimeWitnessFinder:50 - The witness 360850 returned the reminder 36085
+10:34:53,621  INFO PrimeWitnessFinder:36 - Trying to determine if 294409 is prime.
+10:35:13,825  INFO PrimeWitnessFinder:50 - The witness 88987 returned the reminder 16133
