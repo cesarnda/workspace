@@ -56,7 +56,24 @@ public class StrassenMultiplication {
         double[][] subMatrixC21 = add(subMatrixP3, subMatrixP4);
         double[][] subMatrixC22 = subtract(subtract(add(subMatrixP5, subMatrixP1), subMatrixP3), subMatrixP7);
         
+        assembleBigMatrix(matrixC, subMatrixC11, 0, 0);
+        assembleBigMatrix(matrixC, subMatrixC12, 0, split);
+        assembleBigMatrix(matrixC, subMatrixC21, split, 0);
+        assembleBigMatrix(matrixC, subMatrixC22, split, split);
+        
 		return matrixC;
+	}
+	
+	public void assembleBigMatrix(double[][] fullMatrix, double[][] subMatrix, int startRow, int startColumn){
+		int n = subMatrix.length;
+		int rowLimit = startRow + n;
+		int columnLimit = startColumn  + n;
+		
+		for(int row = startRow; row < rowLimit; row++){
+			for(int column = startColumn; column < columnLimit; column++){
+				fullMatrix[row][column] = subMatrix[row - startRow][column - startColumn];
+			}
+		}
 	}
 	
 	public double[][] add(double[][] matrixA, double[][] matrixB){
