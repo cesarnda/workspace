@@ -27,6 +27,13 @@ public class StrassenMultiplicationTestCase {
 	}
 	
 	private boolean areNumericMatrixEquals(double[][] matrixA, double[][] matrixB, double delta){
+		for(int i = 0; i < matrixA.length; i++){
+			for(int j = 0; j < matrixA[0].length; j++){
+				if(matrixA[i][j] - matrixB[i][j] > delta){
+					return false;
+				}
+			}
+		}
 		return true;
 	}
 	
@@ -62,7 +69,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -72,7 +79,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -82,7 +89,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -92,7 +99,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -102,7 +109,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -112,7 +119,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -122,7 +129,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -132,7 +139,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -142,7 +149,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -152,7 +159,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -162,7 +169,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -172,7 +179,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 
 	
@@ -183,7 +190,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -193,7 +200,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -203,7 +210,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -213,7 +220,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -223,7 +230,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -233,7 +240,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	
@@ -244,9 +251,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		printMatrix("Expected matrix: ", expectedResult);
-		printMatrix("Resulted matrix: ", result);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -256,7 +261,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -266,7 +271,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -276,7 +281,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -286,7 +291,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 	@Test
@@ -296,7 +301,7 @@ public class StrassenMultiplicationTestCase {
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
 		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(Arrays.deepEquals(expectedResult, result));
+		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
 	}
 	
 }
