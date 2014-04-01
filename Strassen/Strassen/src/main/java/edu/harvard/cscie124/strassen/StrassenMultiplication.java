@@ -1,7 +1,32 @@
 package edu.harvard.cscie124.strassen;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class StrassenMultiplication {
 
+	private static final Logger logger = LoggerFactory.getLogger(StrassenMultiplication.class);
+
+	
+	public double[][] multiply(double[][] matrixA, double[][] matrixB){
+		int numberOfRowsOfA = matrixA.length;
+		int numberOfRowsOfB = matrixB.length;
+		int numberOfColumnsOfB = matrixB[0].length;
+		long startTime = System.currentTimeMillis();
+		double[][] result = multiplyDivideAndConquer(matrixA, matrixB);
+		long timeTaken = System.currentTimeMillis() - startTime;
+		logger.info("Naive Strassen multiplication took " + timeTaken + " milliseconds to multiply A(" + 
+				numberOfRowsOfA +"x" + 
+				numberOfRowsOfB + 
+				") by B(" + 
+				numberOfRowsOfB +
+				"x" + 
+				numberOfColumnsOfB +
+				")");
+		
+		return result;
+	}
+	
 	/**
 	 * This method multiplies two matrices A and B, assuming
 	 * both of them are of size n x n, where n = 2^k.
@@ -10,7 +35,7 @@ public class StrassenMultiplication {
 	 * @param b
 	 * @return
 	 */
-	public double[][] multiply(double[][] matrixA, double[][] matrixB){
+	public double[][] multiplyDivideAndConquer(double[][] matrixA, double[][] matrixB){
 		int n = matrixA.length;
 		
 		double[][] matrixC = new double[n][n];
@@ -43,13 +68,13 @@ public class StrassenMultiplication {
         double[][] subMatrixS9  = subtract(subMatrixA11, subMatrixA21);
         double[][] subMatrixS10 = add(subMatrixB11, subMatrixB12);
         
-        double[][] subMatrixP1 = multiply(subMatrixA11, subMatrixS1);
-        double[][] subMatrixP2 = multiply(subMatrixS2, subMatrixB22);
-        double[][] subMatrixP3 = multiply(subMatrixS3, subMatrixB11);
-        double[][] subMatrixP4 = multiply(subMatrixA22, subMatrixS4);
-        double[][] subMatrixP5 = multiply(subMatrixS5, subMatrixS6);
-        double[][] subMatrixP6 = multiply(subMatrixS7, subMatrixS8);
-        double[][] subMatrixP7 = multiply(subMatrixS9, subMatrixS10);
+        double[][] subMatrixP1 = multiplyDivideAndConquer(subMatrixA11, subMatrixS1);
+        double[][] subMatrixP2 = multiplyDivideAndConquer(subMatrixS2, subMatrixB22);
+        double[][] subMatrixP3 = multiplyDivideAndConquer(subMatrixS3, subMatrixB11);
+        double[][] subMatrixP4 = multiplyDivideAndConquer(subMatrixA22, subMatrixS4);
+        double[][] subMatrixP5 = multiplyDivideAndConquer(subMatrixS5, subMatrixS6);
+        double[][] subMatrixP6 = multiplyDivideAndConquer(subMatrixS7, subMatrixS8);
+        double[][] subMatrixP7 = multiplyDivideAndConquer(subMatrixS9, subMatrixS10);
         
         double[][] subMatrixC11 = add(subtract(add(subMatrixP5, subMatrixP4), subMatrixP2), subMatrixP6);
         double[][] subMatrixC12 = add(subMatrixP1, subMatrixP2);

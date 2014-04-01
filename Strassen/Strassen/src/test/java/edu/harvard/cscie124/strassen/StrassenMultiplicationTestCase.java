@@ -6,9 +6,12 @@ import java.util.Arrays;
 
 import org.junit.Before;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class StrassenMultiplicationTestCase {
-	
+	private static final Logger logger = LoggerFactory.getLogger(StrassenMultiplicationTestCase.class);
+
 	private MatrixMultiplication matrixMultiplication;
 	private StrassenMultiplication strassenMultiplication;
 	private MatrixGenerator matrixGenerator;
@@ -64,6 +67,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_2_Square_0_And_1_Matrices(){
+		logger.info("Test with 2-size Square matrices with 0s and 1s");
 		int size = 2;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -74,6 +78,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_4_Square_0_And_1_Matrices(){
+		logger.info("Test with 4-size Square matrices with 0s and 1s");
 		int size = 4;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -84,6 +89,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_8_Square_0_And_1_Matrices(){
+		logger.info("Test with 8-size Square matrices with 0s and 1s");
 		int size = 8;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -94,6 +100,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_16_Square_0_And_1_Matrices(){
+		logger.info("Test with 16-size Square matrices with 0s and 1s");
 		int size = 16;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -104,6 +111,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_32_Square_0_And_1_Matrices(){
+		logger.info("Test with 32-size Square matrices with 0s and 1s");
 		int size = 32;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -114,6 +122,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_64_Square_0_And_1_Matrices(){
+		logger.info("Test with 64-size Square matrices with 0s and 1s");
 		int size = 64;
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
@@ -123,7 +132,8 @@ public class StrassenMultiplicationTestCase {
 	}
 	
 	@Test
-	public void multiply_Test_With_2_Square_0_And_1_And_2Matrices(){
+	public void multiply_Test_With_2_Square_0_And_1_And_2_Matrices(){
+		logger.info("Test with 2-size Square matrices with 0s, 1s and 2s");
 		int size = 2;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -133,7 +143,8 @@ public class StrassenMultiplicationTestCase {
 	}
 	
 	@Test
-	public void multiply_Test_With_4_Square_0_And_1_And_2Matrices(){
+	public void multiply_Test_With_4_Square_0_And_1_And_2_Matrices(){
+		logger.info("Test with 4-size Square matrices with 0s, 1s and 2s");
 		int size = 4;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -144,6 +155,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_8_Square_0_And_1_And_2_Matrices(){
+		logger.info("Test with 8-size Square matrices with 0s, 1s and 2s");
 		int size = 8;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -154,6 +166,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_16_Square_0_And_1__And_2_Matrices(){
+		logger.info("Test with 16-size Square matrices with 0s, 1s and 2s");
 		int size = 16;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -164,6 +177,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_32_Square_0_And_1_And_2_Matrices(){
+		logger.info("Test with 32-size Square matrices with 0s, 1s and 2s");
 		int size = 32;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -174,6 +188,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_64_Square_0_And_1_And_2_Matrices(){
+		logger.info("Test with 64-size Square matrices with 0s, 1s and 2s");
 		int size = 64;
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
@@ -185,6 +200,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_2_Square_0_And_1_And_Negative_1_Matrices(){
+		logger.info("Test with 2-size Square matrices with 0s, 1s and -1s");
 		int size = 2;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -195,6 +211,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_4_Square_0_And_1_And_Negative_1_Matrices(){
+		logger.info("Test with 4-size Square matrices with 0s, 1s and -1s");
 		int size = 4;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -205,6 +222,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_8_Square_0_And_1_And_Negative_1_Matrices(){
+		logger.info("Test with 8-size Square matrices with 0s, 1s and -1s");
 		int size = 8;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -215,6 +233,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_16_Square_0_And_1__And_Negative_1_Matrices(){
+		logger.info("Test with 16-size Square matrices with 0s, 1s and -1s");
 		int size = 16;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -225,6 +244,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_32_Square_0_And_1_And_Negative_1_Matrices(){
+		logger.info("Test with 32-size Square matrices with 0s, 1s and -1s");
 		int size = 32;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -235,6 +255,7 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void multiply_Test_With_64_Square_0_And_1_And_Negative_1_Matrices(){
+		logger.info("Test with 64-size Square matrices with 0s, 1s and -1s");
 		int size = 64;
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
@@ -245,58 +266,16 @@ public class StrassenMultiplicationTestCase {
 	
 	
 	@Test
-	public void multiply_Test_With_2_Square_In_Rage_0_To_1_Matrices(){
-		int size = 2;
-		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] expectedResult = matrixMultiplication.multiply(a, b);
-		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
+	public void multiply_Test_With_N_Square(){
+		int[] sizes = new int[]{2, 4, 8, 16, 32, 64, 128, 256, 512};
+		for(int size : sizes){
+			multiply_Test_With_N_Square_In_Range_0_To_1_Matrices(size);
+		}
 	}
 	
-	@Test
-	public void multiply_Test_With_4_Square_In_Rage_0_To_1_Matrices(){
-		int size = 4;
-		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] expectedResult = matrixMultiplication.multiply(a, b);
-		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
-	}
 	
-	@Test
-	public void multiply_Test_With_8_Square_In_Rage_0_To_1_Matrices(){
-		int size = 8;
-		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] expectedResult = matrixMultiplication.multiply(a, b);
-		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
-	}
-	
-	@Test
-	public void multiply_Test_With_16_Square_In_Rage_0_To_1_Matrices(){
-		int size = 16;
-		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] expectedResult = matrixMultiplication.multiply(a, b);
-		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
-	}
-	
-	@Test
-	public void multiply_Test_With_32_Square_In_Rage_0_To_1_Matrices(){
-		int size = 32;
-		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		double[][] expectedResult = matrixMultiplication.multiply(a, b);
-		double[][] result = strassenMultiplication.multiply(a, b);
-		assertTrue(areNumericMatrixEquals(expectedResult, result, 0.0001));
-	}
-	
-	@Test
-	public void multiply_Test_With_64_Square_In_Rage_0_To_1_Matrices(){
-		int size = 64;
+	public void multiply_Test_With_N_Square_In_Range_0_To_1_Matrices(int size){
+		logger.info("Test with " + size + "-size Square matrices in range 0 to 1");
 		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] expectedResult = matrixMultiplication.multiply(a, b);
