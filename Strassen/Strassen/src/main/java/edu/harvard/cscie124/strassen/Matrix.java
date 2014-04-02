@@ -107,16 +107,24 @@ public class Matrix {
 		}
 		return true;
 	}
+	
+	public boolean equals(Matrix matrix){
+		return equals(matrix, 0.0001);
+	}
 
 	public boolean equals(double[][] matrix, double delta){
 		return equals(new Matrix(matrix), delta);
 	}
 	
+	public boolean equals(double[][] matrix){
+		return equals(matrix, 0.0001);
+	}
+	
 	public Matrix add(Matrix matrix){
-		double[][] result = new double[this.numberOfRows][this.numberOfColumns];
+		double[][] result = new double[getNumberOfRows()][getNumberOfColumns()];
 		
-		for(int i = startRow; i < limitRow; i++){
-			for(int j = startColumn; j < limitColumn; j++){
+		for(int i = 0; i < getNumberOfRows(); i++){
+			for(int j = 0; j < getNumberOfColumns(); j++){
 				result[i][j] = get(i,j) + matrix.get(i, j);
 			}
 		}
