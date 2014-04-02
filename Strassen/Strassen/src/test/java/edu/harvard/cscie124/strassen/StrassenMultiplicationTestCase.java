@@ -20,9 +20,9 @@ public class StrassenMultiplicationTestCase {
 		logger.info("Running Naive Strassen");
 		strassenTestCases.runTestCases();
 		
-		/*strassenTestCases.setStrassent(new MatrixStrassenMultiplication());
+		strassenTestCases.setStrassent(new MatrixStrassenMultiplication());
 		logger.info("Running Matrix Strassen");
-		strassenTestCases.runTestCases();*/
+		strassenTestCases.runTestCases();
 	}
 	
 	

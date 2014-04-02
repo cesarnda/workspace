@@ -3,16 +3,20 @@ package edu.harvard.cscie124.strassen;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 public class Matrix {
+	
+	private static final Logger logger = LoggerFactory.getLogger(Matrix.class);
+
 	
 	private final double matrix[][];
 	private final int numberOfRows;
 	private final int numberOfColumns;
 	private final int startRow;
 	private final int startColumn;
-	private final int limitRow;
-	private final int limitColumn;
 	private final boolean composedMatrix;
 	private final int sizeOfSubMatrix;
 	private final List<Matrix> subMatrices;
@@ -31,8 +35,6 @@ public class Matrix {
 		this.sizeOfSubMatrix = C11.getNumberOfRows();
 		this.numberOfRows = 2 * sizeOfSubMatrix;
 		this.numberOfColumns = 2 * sizeOfSubMatrix;
-		this.limitColumn = 2 * sizeOfSubMatrix;
-		this.limitRow = 2 * sizeOfSubMatrix;
 		this.startRow = 0;
 		this.startColumn = 0;
 		this.matrix = null;
@@ -57,8 +59,6 @@ public class Matrix {
 		this.numberOfColumns = numberOfColumns;
 		this.startRow = startRow;
 		this.startColumn = startColumn;
-		this.limitRow = startRow + numberOfRows;
-		this.limitColumn = startColumn + numberOfColumns;
 		this.composedMatrix = false;
 		this.sizeOfSubMatrix = 0;
 		this.subMatrices = null;
@@ -68,23 +68,28 @@ public class Matrix {
 		if(composedMatrix){
 			return getElementFromCompose(row, column);
 		}
+		logger.debug("Getting (" + row + ", " + column +")");
+		logger.debug("I(" + startRow + ", " + startColumn + ")");
+		logger.debug("Size: " + matrix.length + " x " + matrix[0].length);
 		return matrix[startRow + row][startColumn + column];
 	}
 	
 	private double getElementFromCompose(int row, int column){
-		
 		if(row < sizeOfSubMatrix){
 			if(column < sizeOfSubMatrix){
+				logger.debug("Using C11");
 				return subMatrices.get(0).get(row, column);
 			}
-			return subMatrices.get(1).get(row, column);
+			logger.debug("Using C12");
+			return subMatrices.get(1).get(row, column - sizeOfSubMatrix);
 		}
-		
+		row -= sizeOfSubMatrix;
 		if(column < sizeOfSubMatrix){
+			logger.debug("Using C21");
 			return subMatrices.get(2).get(row, column);
 		}
-		
-		return subMatrices.get(3).get(row, column);		
+		logger.debug("Using C22");
+		return subMatrices.get(3).get(row, column - sizeOfSubMatrix);		
 	}
 		
 	public int getNumberOfRows() {
@@ -100,7 +105,10 @@ public class Matrix {
 		int numberOfColumns = matrix.getNumberOfColumns();
 		for(int i = 0; i < numberOfRows; i++){
 			for(int j = 0; j < numberOfColumns; j++){
-				if(Math.abs(get(i, j) - matrix.get(i,j)) > delta){
+				logger.debug("i: " + i + ", j: " + j);
+				double a = get(i,j);
+				double b = matrix.get(i, j);
+				if(Math.abs(a - b) > delta){
 					return false;
 				}
 			}
@@ -135,8 +143,8 @@ public class Matrix {
 	public Matrix subtract(Matrix matrix){
 		double[][] result = new double[this.numberOfRows][this.numberOfColumns];
 		
-		for(int i = startRow; i < limitRow; i++){
-			for(int j = startColumn; j < limitColumn; j++){
+		for(int i = 0; i < getNumberOfRows(); i++){
+			for(int j = 0; j < getNumberOfColumns(); j++){
 				result[i][j] = get(i,j) - matrix.get(i, j);
 			}
 		}

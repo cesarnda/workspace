@@ -35,6 +35,8 @@ public class GeneralStrassenTestCase {
 	
 	
 	public void multiply_Test_With_Identity_Matrix(){
+		logger.info("Test with 2-size Square matrix and identity matrix");
+
 		double[][] a = new double[][]{{1,2},{3,4}};
 		double[][] b = new double[][]{{1,0},{0,1}};
 		
@@ -44,6 +46,7 @@ public class GeneralStrassenTestCase {
 
 	
 	public void multiply_Test_Squaring(){
+		logger.info("Test with 2-size Square matrix and itsel");
 		double[][] a = new double[][]{{1,2},{3,4}};
 		double[][] expectedResult = new double[][]{{7,10},{15,22}};
 		
