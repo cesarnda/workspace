@@ -3,12 +3,12 @@ package edu.harvard.cscie124.strassen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class StrassenMultiplication {
+public class StrassenMultiplication implements Strassen{
 
 	private static final Logger logger = LoggerFactory.getLogger(StrassenMultiplication.class);
-
 	
-	public double[][] multiply(double[][] matrixA, double[][] matrixB){
+	@Override
+	public Matrix multiply(double[][] matrixA, double[][] matrixB){
 		int numberOfRowsOfA = matrixA.length;
 		int numberOfRowsOfB = matrixB.length;
 		int numberOfColumnsOfB = matrixB[0].length;
@@ -24,7 +24,7 @@ public class StrassenMultiplication {
 				numberOfColumnsOfB +
 				")");
 		
-		return result;
+		return new Matrix(result);
 	}
 	
 	/**
