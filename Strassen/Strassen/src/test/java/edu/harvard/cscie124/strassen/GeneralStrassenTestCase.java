@@ -13,7 +13,7 @@ public class GeneralStrassenTestCase {
 	private MatrixGenerator matrixGenerator;
 	private Strassen strassenMultiplication;
 	
-	int[] sizes = new int[]{2, 4, 8, 16, 32, 64, 128};
+	int[] sizes = new int[]{2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768};
 	
 	public GeneralStrassenTestCase(){
 		matrixMultiplication = new MatrixMultiplication();
