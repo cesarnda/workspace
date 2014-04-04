@@ -950,6 +950,21 @@ Using the master theorem we have that $a = 3$, $b = \left(\frac{2}{3}\right)^{-1
 	
 	We start the proof of the formula by induction with $n = 1$
 	
+	The solution proposed in piazza is
+	
+	\begin{eqnarray}
+	T(n)  &	=	& \left(n - 2^{\lfloor \log n\rfloor}\right) \log\left( 2^{\lceil \log n \rceil} \right) + 2^{\lfloor \log n \rfloor}\left( \log \left(2^{\lfloor \log n \rfloor} \right) - 1 \right) + 1
+	\end{eqnarray}
+	
+	If we start with 0, then we get
+	
+	\begin{eqnarray}
+		T(1)	&	=	& \left(1 - 2^{\lfloor \log 1 \rfloor}\right) \log\left( 2^{\lceil \log 1 \rceil} \right) + 2^{\lfloor \log 1 \rfloor}\left( \log \left(2^{\lfloor \log 1 \rfloor} \right) - 1 \right) + 1 \nonumber \\
+			&	=	& \left(1 - 2^{\lfloor 0 \rfloor}\right) \log\left( 2^{\lceil 0 \rceil} \right) + 2^{\lfloor 0 \rfloor}\left( \log \left(2^{\lfloor 0 \rfloor} \right) - 1 \right) + 1 \nonumber \\
+			&	=	& \left(1 - 1 \right) \log\left( 1 \right) + (1)\left( \log \left(1\right) - 1 \right) + 1 \nonumber \\
+			&	=	& \left(0 \right) \log\left( 1 \right) + (1)\left( 0 - 1 \right) + 1 \nonumber \\
+	\end{eqnarray}
+	
 \end{enumerate}
 %\subsection{}
 

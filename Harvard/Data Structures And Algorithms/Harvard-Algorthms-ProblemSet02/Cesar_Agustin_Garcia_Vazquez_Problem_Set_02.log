@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  22 FEB 2014 08:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 MAR 2014 15:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1635,22 +1635,22 @@ Overfull \hbox (30.4474pt too wide) in alignment at lines 946--949
  [][][] []
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 956.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 973.
 [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 956.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 973.
  (./Cesar_Agustin_Garcia_Vazquez_Problem_Set_02.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 956.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 956.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 973.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 973.
 Package rerunfilecheck Info: File `Cesar_Agustin_Garcia_Vazquez_Problem_Set_02.
 out' has not changed.
 (rerunfilecheck)             Checksum: D943024FD70FF6FE1289E6F47EB6615B;49.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 956.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 973.
  ) 
 Here is how much of TeX's memory you used:
- 15298 strings out of 493315
- 234839 string characters out of 6137904
- 440137 words of memory out of 5000000
- 18442 multiletter control sequences out of 15000+600000
+ 15301 strings out of 493315
+ 234888 string characters out of 6137904
+ 440180 words of memory out of 5000000
+ 18443 multiletter control sequences out of 15000+600000
  12854 words of font info for 49 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  54i,26n,75p,1101b,596s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1670,11 +1670,11 @@ ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive
 /2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
 13/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Cesar_Agustin_Garcia_Vazquez_Problem_Set_02.pdf (17 pages, 18
-9209 bytes).
+Output written on Cesar_Agustin_Garcia_Vazquez_Problem_Set_02.pdf (17 pages, 19
+0135 bytes).
 PDF statistics:
- 276 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 71 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 500000)
  9 words of extra memory for PDF output out of 10000 (max. 10000000)
 

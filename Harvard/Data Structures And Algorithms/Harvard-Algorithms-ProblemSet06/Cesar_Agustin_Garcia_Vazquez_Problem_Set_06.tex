@@ -49,7 +49,32 @@
 	e^{-x - x^2} \leq 1 - x \mbox{ for } x \leq \frac{1}{2}
 	\end{equation}
 	
-	You may feel free to find and use better bounds.
+	You may feel free to find and use better bounds.\\
+	\\
+	\textbf{Answer: } For the case with some constant $c_1$, where $k \geq c_1 \sqrt{n}$, the probability that no two have the same hash is the same as all of the $c_1 \sqrt{n}$ people have different hash value.\\
+	If we consider the birthday paradox, the probability that no two people have the same birthday is given by equation (\ref{birthdayEquation}).
+	\begin{eqnarray}
+	P(B) 	&	=	& \prod_{j}^{k}\frac{365 - j + 1}{365} \nonumber\\
+		&	=	& \prod_{j}^{k} \frac{1}{365}\left(365 - j + 1 \right) \nonumber \\
+		&	=	& \left( \frac{1}{365}\right)^{k} \prod_{j}^{k} \left(365 - j + 1 \right) \nonumber \\
+		&	=	& \left( \frac{1}{365}\right)^{k} \frac{365!}{(365 - k)!} \label{birthdayEquation}
+	\end{eqnarray}
+	
+	If we generalize from 365 to $n$, then we get equation (\ref{generalizeBirthday}).
+	
+	\begin{equation}\label{generalizeBirthday}
+	P(B) = \left( \frac{1}{n}\right)^{k} \frac{n!}{(n - k)!} 
+	\end{equation}
+	
+	If we consider $k \geq \sqrt{n}$ then equation (\ref{generalizeBirthday})  becomes equation (\ref{birthdayC1}).
+	
+	\begin{eqnarray}
+	P(B) &	\leq	& \left( \frac{1}{n}\right)^{k} \frac{n!}{(n - k)!} \nonumber \\
+		&	\leq	&  \left( \frac{1}{n}\right)^{c_1\sqrt{n}} \frac{n!}{(n - c_1 \sqrt{n})!} \nonumber \\
+		&	\leq	&  \left( \frac{1}{ n^{c_1\sqrt{n}} } \right) \frac{n!}{(n - c_1 \sqrt{n})!} \label{birthdayC1} 
+	\end{eqnarray}
+	
+	We can simplify the analysis if we consider $X_{ij} = $
 	
 	\item For the document similarity scheme described in class, it would be better to store fewer bytes per document. Here is one way to do this, that uses just 48 bytes per document: take an original sketch of a document, using 84 different permutations. Divide the 84 permutations into 6 groups of 14. Re-hash each group of 14 values to get 6 new 64 bit values. Call this the \textit{super-sketch}. Note that for each of the 6 values in the super-sketch, two documents will agree on a value when they agree on all 14 of the corresponding values in the sketch. Why does it make sense to simply assume that this is the only time a match will occur?\\
 	Consider the probability that two documents with resemblance $r$ agree on two or more of the six sketches. Write equations that give this probability and graph the probability of a function of $r$. Explain and discuss your results.\\
