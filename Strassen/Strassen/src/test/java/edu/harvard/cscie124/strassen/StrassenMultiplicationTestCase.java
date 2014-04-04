@@ -16,13 +16,20 @@ public class StrassenMultiplicationTestCase {
 	
 	@Test
 	public void runTestCasesWithNaiveStrassen(){
+		strassenTestCases.setStrassent(new MatrixMultiplication());
+		logger.info("Running Straight Multiplication");
+		//strassenTestCases.runTestCases();
+		
 		strassenTestCases.setStrassent(new StrassenMultiplication());
 		logger.info("Running Naive Strassen");
 		strassenTestCases.runTestCases();
 		
 		strassenTestCases.setStrassent(new MatrixStrassenMultiplication());
 		logger.info("Running Matrix Strassen");
-		strassenTestCases.runTestCases();
+		//strassenTestCases.runTestCases();
+		
+		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(32));
+		//strassenTestCases.runTestCases();
 	}
 	
 	

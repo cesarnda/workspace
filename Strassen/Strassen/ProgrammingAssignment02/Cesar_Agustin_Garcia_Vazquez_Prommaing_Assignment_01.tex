@@ -120,7 +120,20 @@ public double[][] multiply(double[][] a, double[][] b){
 	}
 \end{lstlisting}
 
-
+\begin{table}
+\caption{Straightforward multiplication algorithm run with different test cases and sizes}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128	&	256	&	512	&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	76	&	1,175	&	15,102\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	75	&	1,117	&	14,380\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	76	&	1,119	&	14,382\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	77	&	1,120	&	14,420\\
+\hline
+\end{tabular}
+\end{table}
 
 
 \end{document}  

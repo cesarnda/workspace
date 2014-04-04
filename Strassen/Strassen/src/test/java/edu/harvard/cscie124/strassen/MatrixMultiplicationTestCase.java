@@ -13,7 +13,7 @@ public class MatrixMultiplicationTestCase {
 		double[][] b = new double[][]{{1,0},{0,1}};
 		
 		MatrixMultiplication matrixMultiplciation = new MatrixMultiplication();
-		double c[][] = matrixMultiplciation.multiply(a, b);
+		double c[][] = matrixMultiplciation.multiplyNaive(a, b);
 		assertTrue(Arrays.deepEquals(a, c));
 	}
 
@@ -23,7 +23,7 @@ public class MatrixMultiplicationTestCase {
 		double[][] expectedResult = new double[][]{{7,10},{15,22}};
 		
 		MatrixMultiplication matrixMultiplciation = new MatrixMultiplication();
-		double c[][] = matrixMultiplciation.multiply(a, a);
+		double c[][] = matrixMultiplciation.multiplyNaive(a, a);
 		assertTrue(Arrays.deepEquals(expectedResult, c));
 	}
 	
@@ -34,7 +34,7 @@ public class MatrixMultiplicationTestCase {
 		double[][] expectedResult = new double[][]{{21, 24, 27},{47, 54, 61}};
 		
 		MatrixMultiplication matrixMultiplciation = new MatrixMultiplication();
-		double c[][] = matrixMultiplciation.multiply(a, b);
+		double c[][] = matrixMultiplciation.multiplyNaive(a, b);
 		assertTrue(Arrays.deepEquals(expectedResult, c));
 	}
 	

@@ -3,10 +3,29 @@ package edu.harvard.cscie124.strassen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class MatrixMultiplication {
+public class MatrixMultiplication implements Strassen{
 	
 	private static final Logger logger = LoggerFactory.getLogger(MatrixMultiplication.class);
 
+	
+	@Override
+	public Matrix multiply(double[][] a, double[][] b){
+		int numberOfRowsOfA = a.length;
+		int numberOfRowsOfB = b.length;
+		int numberOfColumnsOfB = b[0].length;
+		long startTime = System.currentTimeMillis();
+		double[][] result = multiplyNaive(a, b);
+		long timeTaken = System.currentTimeMillis() - startTime;
+		logger.info("Standard multiplication took " + timeTaken + " milliseconds to multiply A(" + 
+																			numberOfRowsOfA +"x" + 
+																			numberOfRowsOfB + 
+																			") by B(" + 
+																			numberOfRowsOfB +
+																			"x" + 
+																			numberOfColumnsOfB +
+																			")");
+		return new Matrix(result);
+	}
 	
 	/**
 	 * This method receives two matrices A (m x n) and B (n x k)
@@ -17,8 +36,7 @@ public class MatrixMultiplication {
 	 * @param b
 	 * @return
 	 */
-	public double[][] multiply(double[][] a, double[][] b){
-		long startTime = System.currentTimeMillis();
+	public double[][] multiplyNaive(double[][] a, double[][] b){
 		int numberOfRowsOfA = a.length;
 		int numberOfRowsOfB = b.length;
 		int numberOfColumnsOfB = b[0].length;
@@ -32,16 +50,6 @@ public class MatrixMultiplication {
 				}
 			}
 		}
-		
-		long timeTaken = System.currentTimeMillis() - startTime;
-		logger.info("Standard multiplication took " + timeTaken + " milliseconds to multiply A(" + 
-																			numberOfRowsOfA +"x" + 
-																			numberOfRowsOfB + 
-																			") by B(" + 
-																			numberOfRowsOfB +
-																			"x" + 
-																			numberOfColumnsOfB +
-																			")");
 		
 		return c;
 	}
