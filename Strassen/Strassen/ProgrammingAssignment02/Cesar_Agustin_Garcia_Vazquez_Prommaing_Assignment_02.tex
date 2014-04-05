@@ -1,0 +1,398 @@
+\documentclass[tikz, 12pt]{scrartcl}
+\usepackage{etex}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{subfig}
+\usepackage[ruled,vlined, linesnumbered]{algorithm2e}
+\usepackage{fancyhdr}
+\usepackage{anysize}
+\usepackage{vaucanson-g}
+\usepackage{amsthm}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{tkz-fct}
+\usetikzlibrary{arrows}
+\usepackage{pgfplots}
+\usepackage{listings}
+\usepackage{color}
+
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\title{Data Structures and Algorithms}
+\subtitle{Spring 2014}
+\author{Cesar Agustin Garcia Vazquez}
+\date{\today}                                           % Activate to display a given date or no date
+\allowdisplaybreaks
+\begin{document}
+\maketitle
+\section{Programming Assignment 02}
+
+\subsection{Introduction}
+
+Strassen's divide and conquer matrix multiplication algorithm for $n$ by $n$ matrices is asymptotically faster than the conventional $O(n^3)$ algorithm. This means that for sufficiently large values of $n$, Strassen's algorithm will run faster than the conventional algorithm. For small values of $n$, however, the conventional algorithm is faster. Indeed, the textbook Algorithms in C (1990 edition) suggests that $n$ would have to be in the thousands before offering an improvement to standard multiplication, and ``Thus the algorithm is a theoretical, not practical, contribution''. Here we test this analysis.\\
+\\
+Since Strassen's algorithm is a recursive algorithm, at some point in the recursion, once the matrices are small enough, we may want to switch from recursively calling Strassen's algorithm and just do a ``base case'' of a 1 by 1 matrix, but to switch earlier and use conventional matrix multiplication. Let us define the \textit{cross-over point} between the two algorithms to be the value of $n$ for which we want to stop using Strassen's algorithm and switch to conventional matrix multiplication. The goal of this assignment is to implement the conventional algorithm and Strassen's algorithm and to determine their cross-over point, both analytically and experimentally. One important factor our simple analysis will not take into account is memory management, which may significantly affect the speed of your implementation.
+\subsubsection*{Tasks:}
+
+\begin{enumerate}
+	\item Assume that the cost of any single arithmetic operation (adding, subtracting, multiplying, or dividing two real numbers) is 1, and that all other operations are free. Consider the following variant of Strassen's algorithm: to multiply two $n$ by $n$ matrices, start using Strassen's algorithm, but stop the recursion at some size $n_0$, and use the conventional algorithm below that point. You have to find a suitable value for $n_0$ - the cross-over point. Analytically determine the value of $n_0$ that optimizes the running time of this algorithm in this mode. (That is, solve the appropriate equations, somehow, numerically.) This gives a crude estimate for the cross-over point between Strassen's algorithm and the standard matrix multiplication algorithm.
+	\item Implement your variant of Strassen's algorithm and the standard matrix multiplication algorithm to find the cross-over point experimentally. Experimentally optimize for $n_0$ and compare the experimental results with your estimate from above. Make both implementations as efficient as possible.\\
+	The actual cross-over point, which you would like to make as small as possible, will depend on how efficiently you implement Strassen's algorithm. Your implementation should work for any matrices, not just those whose dimensions are a power of 2.\\
+	To test your algorithm , you might try matrices where each entry is randomly selected to be 0 or 1; similarly, you might try matrices where each entry is randomly selected to be 0, 1, or 2, or instead o, 1, or $-1$. You might also try matrices where each entry is a randomly selected real number in the range $[0, 1]$. You need not try all of these, but do test your algorithm adequately.
+\end{enumerate}
+
+\subsubsection*{Code setup:}
+
+So that we may test your code ourselves as necessary, please make sure your code accepts the following command line form:
+\begin{center}
+\$./strassen 0 dimension inputfile
+\end{center}
+The flag 0 is meant to provide you some flexibility; you may use other values for your own testing, debugging, or extensions. The dimension, which we refer to henceforth as $d$, is the dimension of the matrix you are multiplying, so that 32 means you are multiplying two 32 by 32 matrices together. The parameter input file is an ASCII file with $2d^2$ integer numbers, one per line, representing two matrices $A$ and $B$; you are to find the product $AB = C$. The first integer number is matrix entry $a_{0,0}$, followed by $a_{0,1}, a_{0,2}, \ldots, a_{0, d-1}$; next comes $a_{1,0}, a{1,1}$, and so on, for the first $d^{2}$ numbers. The next $d^2$ numbers are similar for matrix $B$. \\
+\\
+Your program should put on standard output (printf, cout, System.out, etc) a list of the values of the \textit{diagonal entries} $c_{0, 0}, c_{1,1}, \ldots, c_{d-1, d-1}$, one per line, including a trailing new line. The output may be checked by a script - add no clutter. (You should not output the whole matrix, although of course all entries should be computed.)\\
+\\
+The inputs we present will be small integer, but you should make sure your matrix multiplication can deal with results that are up to 32 bits.\\
+\\
+If you expect there will be any problems with running your work on the Harvard nice system (or a standard UNIX system), please contact the TFs early on in the process; also, be sure to include a makefile, or give explicit instructions on how to compile if necessary. Ideally, your program will be compiled, run, and tested by a script, so we would  prefer the following: you would be able to sit in the directory you submit, on nice, type ``make'', then ``./strassen 0 <dimension> <inputfile>'' for some dimension and input file, and have it work.
+
+\subsubsection*{What to hand in:}
+Hand in a project report (on paper) describing your analytical and experimental work (for example, carefully describe optimizations you made in your implementations). Be sure to discuss the results you obtain, and try to give explanations for what you observe. How low was your crossover point? What difficulties arose? what matrices did you multiply, and does this choice matter?\\
+\\
+Your grade will be based primarily on the correctness of your program, the crossover point you find, your interpretation of the data, and your discussion of the experiment.
+
+\subsubsection*{Hints:}
+It is hard to make the conventional algorithm inefficient; however, you may get better caching performance by looping through the variables in the right order (really, try it!). For Strassen's algorithm:
+
+\begin{itemize}
+	\item Avoid excessive memory allocation and deallocation. This requires some thinking.
+	\item Avoid copying large blocks of data unnecessarily. This requires some thinking.
+	\item Your implementation of Strassen's algorithm should work even when $n$ is odd! This requires some additional work, and thinking. (One option is to pad with 0's; how can this be done most effectively?) However, you may want to first get it to work when $n$ is a power of 2 - this will get you most of the credit - and then refined it to work for some more general values of $n$.
+\end{itemize}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+%\lstset{frame=tb,
+%  language=Java,
+%  aboveskip=3mm,
+%  belowskip=3mm,
+%  showstringspaces=false,
+%  columns=flexible,
+%  basicstyle={\small\ttfamily},
+%  numbers=left,
+%  numberstyle=\tiny\color{gray},
+%  keywordstyle=\color{blue},
+%  commentstyle=\color{dkgreen},
+%  stringstyle=\color{mauve},
+%  breaklines=true,
+%  breakatwhitespace=true
+%  tabsize=3
+% }
+%
+%\begin{lstlisting}[caption={Basic implementation of straight algorithm},label={straightAlgorithm}]
+%public double[][] multiply(double[][] a, double[][] b){
+%		int numberOfRowsOfA = a.length;
+%		int numberOfRowsOfB = b.length;
+%		int numberOfColumnsOfB = b[0].length;
+%		
+%		double[][] c = new double[numberOfRowsOfA][numberOfColumnsOfB];
+%		
+%		for(int i = 0; i < numberOfRowsOfA; i++){
+%			for(int j = 0; j < numberOfColumnsOfB; j++){
+%				for(int m = 0; m < numberOfRowsOfB; m++){
+%					c[i][j] += a[i][m] * b[m][j];
+%				}
+%			}
+%		}
+%		
+%		return c;
+%	}
+%\end{lstlisting}
+
+\section{First steps}
+
+For this assignment, the programming language used was Java SE 1.7 due to the familiarity with the language. All the development and running of experiments are done on a MacBook Aluminum late 2008, with a 2 GHz Intel Core 2 Duo processor and 8 GB 1067 MHz DDR3 in RAM. \\
+\\
+The first thing to do is program the straightforward algorithm to multiply 2 matrices. This is going to work as benchmark of Strassen's algorithm. In this section, I only consider square matrices whose size is $n = 2^k$. The idea of the programming assignment is to find a way to make Strassen multiplication look faster than the standard multiplication, considering an $n$ not too big. For this reason, I am only considering the size of the matrices up to $n = 1,024$. \\
+The scenarios that I am considering are: matrices with only 0s and 1s, matrices with only 0s, 1s and 2s, matrices with only 0s, 1s and -1s and matrices with values in the real interval $[0, 1]$. \\
+The Table \ref{straightforwardResults} shows the results of running these experiments, from which we can see that up to matrices of size 32, which gives and idea of when to switch from Strassen's algorithm to the standard method. The straightforward algorithm performs exactly $n^3$ multiplications and after allocation the space for the result, no more space memory is used.
+
+
+\begin{table}[h!]
+\caption{Straightforward multiplication algorithm run with different test cases and sizes\label{straightforwardResults}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128	&	256	&	512	&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	76	&	1,175	&	15,102\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	75	&	1,117	&	14,380\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	76	&	1,119	&	14,382\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	1	&	7	&	77	&	1,120	&	14,420\\
+\hline
+\end{tabular}
+\end{table}
+
+
+Even though the implementation of Strassen's algorithm might seem a little hard to do, if we follow the algorithm as is presented in \textit{Introduction to Algorithms} by CLRS, the implementation is straightforward. \\
+The Table \ref{strassenResults} presents the results of running the same experiments, from which we can see that the algorithm performs not too good compared to the standard multiplication algorithm. In fact, the performance is poor if we consider that the difference is 1 or 2 orders of magnitude. The poor performance can be mainly due to 2 reasons:
+\begin{enumerate}
+	\item Strassen's algorithm has a good performance with matrices of medium size, since we are dividing the size of the matrices up to 1, we are computing a lot of matrices of the same size (but not the same ones). This can be improved by finding a threshold and run the Strassen's algorithm up to that threshold and then use the standard multiplication algorithm.
+	\item Memory allocation and deallocation. During the recursive calls, a great amount of sub matrices are allocated and subsequently deallocated. This can also generate a slowness in the performance.
+\end{enumerate}
+
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm run with different test cases and sizes\label{strassenResults}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128		&	256		&	512		&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	2	&	26	&	181	&	366	&	1,231	&	8,343	&	56,602	&	429,100\\
+\{0, 1, 2 \}				&	0	&	0	&	1	&	4	&	34	&	219	&	1,456	&	8,845	&	69,767	&	491,296\\
+\{0, 1, -1\}				&	0	&	0	&	1	&	4	&	30	&	231	&	1,489	&	10,367	&	69,940	&	491,382\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	1	&	4	&	30	&	215	&	1,454	&	9,969	&	70,260	&	490,370\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Finding a threshold}
+
+Based on the Table \ref{straightforwardResults} experimental thresholds can 32 and 64. Analytically the threshold can be computed considering different cases as follows.\\
+\\
+If we consider only the multiplication in the Strassen's algorithm, then we have the recurrence $T(n) = 7 \cdot T(n / 2)$ and if we consider $n = 2^k$, then the recurrence becomes $T(2^k) = 7 \cdot T(2^k/2) = 7 \cdot T(2^{k - 1})$, which can be seen as $T(k) = 7 \cdot T(k - 1)$ and then we can get the characteristic equation as $x - 7 = 0$ and we get that $x = 7$, so the solution to the equation is $T(k) = c_1 \cdot 7^k$.   If $n = 2^k$, then applying logarithm function based 2 on both sides, we get that $\log_2 n = \log_2 2^k = k$. Hence we have that $T(n) = c_1 \cdot 7^{\log_2 n} = c_1 n^{\log_2 7}$.\\
+If we consider $T(1) = 1$, since the base case would to just return the multiplication of two numbers, then we have that $T(1) = c_1(1)^{\log_2 7} = c_1 = 1$. Therefore with this weak analysis, we conclude that a good threshold would be $n = 1$, and if we naively try with values like 2, 4 and even 8, it might the wrong idea that the threshold is correct.\\
+\\
+If we consider the multiplication and addition as operations with the same amount of unit effort, then we can see Strassen's algorithm as a recurrence of using 7 multiplication of matrices of sizes $n/2$ and 18 additions. This will help us find a better threshold.\\
+Based on the above, we have that Strassen's recurrence is given by equation (\ref{strassenRecurrence}). 
+
+\begin{eqnarray}
+T(n) 	&	=  	&	7 \cdot T\left(\frac{n}{2}\right) + 18\left(\frac{n}{2}\right)^2 \nonumber \\
+	&	=	&	7 \cdot T\left(\frac{n}{2}\right) + 18\left(\frac{n^2}{4}\right) \nonumber \\
+	&	=	&	7 \cdot T\left(\frac{n}{2}\right) + \frac{18}{4}\left(n^2 \right) \nonumber \\
+	&	=	&	7 \cdot T\left(\frac{n}{2}\right) + \frac{9}{2}n^2  \label{strassenRecurrence}
+\end{eqnarray}
+
+If we consider $n = 2^k$ then the Strassen's recurrence can be seen as in equation (\ref{strassenReduction}).
+
+\begin{eqnarray}
+T(2^k)	&	=	&	7 \cdot T\left(\frac{2^k}{2}\right) + \frac{9}{2}\left(2^k \right)^2 \nonumber \\
+		&	=	&	7 \cdot T\left(\frac{2^k}{2}\right) + \frac{9}{2}\left(2^{2k} \right) \nonumber \\
+		&	=	&	7 \cdot T\left(\frac{2^k}{2}\right) + \frac{9}{2}\left(2^{2} \right)^k \nonumber \\
+		&	=	&	7 \cdot T\left(\frac{2^k}{2}\right) + \frac{9}{2}\left(4 \right)^k \nonumber \\
+		&	=	&	7 \cdot T\left(2^{k-1}\right) + \frac{9}{2}\left(4 \right)^k \label{strassenReduction}
+\end{eqnarray}
+
+From equation (\ref{strassenReduction}) we can get the characteristic equation shown in equation (\ref{strassenCharacteristic}).
+
+\begin{equation}\label{strassenCharacteristic}
+t_k - 7 \cdot t_{k - 1} = 4^k\left( \frac{9}{2}\right)
+\end{equation}
+
+The characteristic polynomial from equation (\ref{strassenCharacteristic}) is presented in equation (\ref{strassenPolynomial}).
+
+\begin{equation}\label{strassenPolynomial}
+p(x) = \left(x - 7\right)\left(x - \frac{9}{2}\right)
+\end{equation}
+
+The roots of the polynomial in equation (\ref{strassenPolynomial}) are given by $x_1 = 7$ and ${\displaystyle x_2 = \frac{9}{2}}$, which yields the solution to equation (\ref{strassenCharacteristic}) which is shown in equation (\ref{solution}).
+
+\begin{equation}\label{solution}
+t_k = c_1 7^k + c_2 \left( \frac{9}{2} \right)^k
+\end{equation}
+
+Remembering that $n = 2^k$ and then $k = \log_2 n$, we have that the equation (\ref{solution}) can be seen as in equation (\ref{toSolveSystem}) or as in equation (\ref{solutionNumeric}).
+
+\begin{eqnarray}
+T(n)	&	=	&	c_1 7^{\log_2 n} + c_2 \left( \frac{9}{2} \right)^{\log_2 n} \label{toSolveSystem} \\
+	&	=	&	c_1 n^{\log_2 7} + c_2 n^{\log_2 9/2}	 \nonumber \\
+	&	=	&	c_1 n^{\log_2 7} + c_2 n^{\log_2 \left(9 \cdot 2^{-1} \right)} \nonumber \\
+	&	=	&	c_1 n^{\log_2 7} + c_2 n^{\log_2 9 + \log_2  2^{-1}} \nonumber \\
+	&	=	&	c_1 n^{\log_2 7} + c_2 n^{\log_2 9 - 1} \nonumber \\
+	&	=	&	c_1 n^{2.8} + c_2 n^{3.169 - 1} \nonumber \\
+	&	=	&	c_1 n^{2.8} + c_2 n^{2.169} \label{solutionNumeric} 
+\end{eqnarray}
+
+The equation (\ref{toSolveSystem}) is going to help us find the constants $c_1$ and $c_2$ and equation (\ref{solutionNumeric}) is going to help us find the threshold.\\
+Considering that $T(1) = 1$, then for $T(2)$ the solution is 25 as shown in equation (\ref{solutionFor2}).
+
+\begin{eqnarray}
+T(2)	&	=	&	7 \cdot T\left(\frac{2}{2}\right) + \frac{9}{2}\left(2^2 \right) \nonumber \\
+	&	=	&	7 \cdot T(1) +  \frac{9}{2}\left(4 \right) \nonumber \\
+	&	=	&	7  + 18 \nonumber \\
+	&	=	&	25 \label{solutionFor2}
+\end{eqnarray}
+
+For $T(4)$, we have that the solution is 247, as shown in equation (\ref{solutionFor4}).
+
+\begin{eqnarray}
+T(4)	&	=	&	7 \cdot T\left(\frac{4}{2}\right) + \frac{9}{2}\left(4^2 \right) \nonumber \\
+	&	=	&	7 \cdot T(2) +  \frac{9}{2}\left(16 \right) \nonumber \\
+	&	=	&	7(25)  + 9(8) \nonumber \\
+	&	=	&	175 + 72 \nonumber \\
+	&	=	&	247 \label{solutionFor4}
+\end{eqnarray}
+
+Therefore, from equations (\ref{solutionFor2}) and (\ref{solutionFor4}) and considering the solution in equation (\ref{toSolveSystem}) we have relationship shown in equation (\ref{substitution}).
+
+\begin{equation}\label{substitution}
+	\begin{array}{ccccc}
+	T(2)	&	=	&	c_1 7^{\log_2 2} + c_2 \left( \frac{9}{2} \right)^{\log_2 2}	&	 =	&	25\\
+	T(2)	&	=	&	c_1 7 + c_2 \left( \frac{9}{2} \right)	&	 =	&	25 \\
+	\\
+	T(4)	&	=	&	c_1 7^{\log_2 4} + c_2 \left( \frac{9}{2} \right)^{\log_2 4}	&	 =	&	247\\
+	T(4)	&	=	&	c_1 7^{2} + c_2 \left( \frac{9}{2} \right)^{2}	&	 =	&	247
+	\end{array}
+\end{equation}
+
+From the substitution in equation (\ref{substitution}), we have the linear system in equation (\ref{linearSystem}).
+
+\begin{equation}\label{linearSystem}
+	\begin{array}{ccc}
+	 7 \cdot c_1 +  \left( \frac{9}{2} \right)	c_2 &	 =	&	25 \\
+	 \\
+	49 \cdot c_1 + \left( \frac{81}{4} \right) c_2	&	 =	&	247
+	\end{array}
+\end{equation}
+
+The linear equation system can be solved in four steps. The first step is presented in equation (\ref{firstStep}), in which we multiply by -7 the first row and add it to the second row.Then the second row is divided by $-11.25$ which yields the value for $c_2 = -6.4$ as shown in equation (\ref{secondStep}).\\
+For the third step, we just divide by 7 the first row as shown in equation (\ref{thirdStep}) and finally we multiply by $-14/9$ the second row and we add it to the first row as shown in equation (\ref{fourthStep}).
+
+\begin{eqnarray}
+\left( 
+\begin{array}{cc|c}
+7	&	\frac{9}{2}		&	25\\
+	&				&	\\
+49	&	\frac{81}{4}	&	247
+\end{array}
+\right)
+&
+\sim
+&
+\left( 
+\begin{array}{cc|c}
+7	&	\frac{9}{2}		&	25\\
+	&				&\\
+0	&	-11.25	&	72
+\end{array}
+\right) \label{firstStep}\\
+\nonumber
+\\
+\left( 
+\begin{array}{cc|c}
+7	&	\frac{9}{2}		&	25\\
+	&				&\\
+0	&	-11.25	&	72
+\end{array}
+\right) 
+&
+\sim
+&
+\left( 
+\begin{array}{cc|c}
+7	&	\frac{9}{2}		&	25\\
+	&				&\\
+0	&	1			&	-6.4
+\end{array}
+\right) \label{secondStep}\\
+\nonumber
+\\
+\left( 
+\begin{array}{cc|c}
+7	&	\frac{9}{2}		&	25\\
+	&				&\\
+0	&	1			&	-6.4
+\end{array}
+\right)
+&
+\sim
+&
+\left( 
+\begin{array}{cc|c}
+1	&	\frac{9}{14}		&	25/7\\
+	&				&\\
+0	&	1			&	-6.4
+\end{array}
+\right) \label{thirdStep}\\
+\nonumber
+\\
+\left( 
+\begin{array}{cc|c}
+1	&	\frac{9}{14}		&	25/7\\
+	&				&\\
+0	&	1			&	-6.4
+\end{array}
+\right) 
+&
+\sim
+&
+\left( 
+\begin{array}{cc|c}
+1	&	0		&	13.526\\
+	&				&\\
+0	&	1			&	-6.4
+\end{array}
+\right) \label{fourthStep}
+\end{eqnarray}
+
+From the solutions presented above we have that $c_1 = 13.526$ and $c_2 = -6.4$, which yields the solution presented in equation (\ref{finalSolution}).
+\begin{equation}\label{finalSolution}
+T(n) = 13.526 n^{2.8} - 6.4 n^{2.169}
+\end{equation}
+
+Now we can determine when Strassen's algorithm is going to be faster than the standard multiplication algorithm by finding a solution to $13.526 n^{2.8} - 6.4 n^{2.169} = n^3$, which can be easily programmed using binary search or using some Mathematical program like Sage. In sage, if I try 
+\begin{verbatim}
+(13.526 * x^2.8 - 6.4 * x^2.169 == x^3).find_root(452000,452600)
+\end{verbatim}
+
+I get that the solution is $x = 452448.8633404477$, i.e., we would like to compute matrices whose sizes are in the hundreds of thousands to verify that Strassen's algorithm is faster. \\
+\\
+Based on the above analysis, the algebraic analysis does not help to find a suitable threshold which would help us compute the multiplication of matrices faster, so for the next experiment, we are going to use the experimental threshold.
+
+\section{Strassen with threshold}
+
+In this section I am going to present the results of running the naive implementation of Strassen's algorithm using thresholds. The first two threshold that I use are 32 and 64 because those are the values whose running was below 0 and 1 milliseconds, compared to Strassen's values which running time was already around 30 and 200 milliseconds. \\
+The higher the threshold, the better results it is going to give, but the idea of this assignment is to find the minimum threshold. In Table \ref{strassen32}, we can see the results of running the same test cases 
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 32 run with different test cases and sizes\label{strassen32}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128		&	256		&	512		&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	0	&	2	&	3	&	56		&	98		&	544		&	3,565\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	0	&	0	&	1	&	7		&	60		&	546		&	3,106\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	16		&	54		&	443		&	2,972\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	5	&	8		&	61		&	432		&	3,056\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 64 run with different test cases and sizes\label{strassen64}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128		&	256		&	512		&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	1	&	19	&	9	&	68		&	67		&	484		&	3,006\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	0	&	0	&	1	&	6		&	56		&	432		&	2,778\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	7		&	59		&	454		&	2,599\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	1	&	6		&	54		&	624		&	2,578\\
+\hline
+\end{tabular}
+\end{table}
+
+
+\end{document}  

@@ -4799,3 +4799,479 @@
 22:55:02,349  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
 22:55:59,116  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 56748 milliseconds to multiply A(512x512) by B(512x512)
 22:55:59,116  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+19:45:12,616  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 74953402 milliseconds to multiply A(1024x1024) by B(1024x1024)
+19:45:12,616  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+19:45:12,619  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+19:45:12,619  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+19:45:12,620  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1 milliseconds to multiply A(4x4) by B(4x4)
+19:45:12,620  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+19:45:12,621  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1 milliseconds to multiply A(8x8) by B(8x8)
+19:45:12,622  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+19:45:12,629  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 6 milliseconds to multiply A(16x16) by B(16x16)
+19:45:12,630  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+19:45:12,673  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 41 milliseconds to multiply A(32x32) by B(32x32)
+19:45:12,674  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+19:45:12,908  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 232 milliseconds to multiply A(64x64) by B(64x64)
+19:45:12,909  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+19:45:14,381  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1458 milliseconds to multiply A(128x128) by B(128x128)
+19:45:14,382  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+19:45:24,791  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 10401 milliseconds to multiply A(256x256) by B(256x256)
+19:45:24,793  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+19:46:26,836  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 61962 milliseconds to multiply A(512x512) by B(512x512)
+19:46:26,836  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+19:53:34,509  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 427507 milliseconds to multiply A(1024x1024) by B(1024x1024)
+19:53:34,540  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+19:53:34,541  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+19:53:34,541  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+19:53:34,542  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4)
+19:53:34,542  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+19:53:34,543  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8)
+19:53:34,544  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+19:53:34,548  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 4 milliseconds to multiply A(16x16) by B(16x16)
+19:53:34,548  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+19:53:34,577  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 28 milliseconds to multiply A(32x32) by B(32x32)
+19:53:34,578  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+19:53:34,772  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 193 milliseconds to multiply A(64x64) by B(64x64)
+19:53:34,773  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+19:53:36,010  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1223 milliseconds to multiply A(128x128) by B(128x128)
+19:53:36,010  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+19:53:44,427  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 8409 milliseconds to multiply A(256x256) by B(256x256)
+19:53:44,427  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+20:26:17,252  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+20:26:17,265  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+20:26:17,266  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+20:26:17,266  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:26:17,268  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+20:26:17,269  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:26:17,270  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+20:26:17,270  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:26:17,270  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+20:26:17,271  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4)
+20:26:17,271  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+20:26:17,274  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 2 milliseconds to multiply A(8x8) by B(8x8)
+20:26:17,274  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+20:26:17,301  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 26 milliseconds to multiply A(16x16) by B(16x16)
+20:26:17,302  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+20:26:17,485  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 181 milliseconds to multiply A(32x32) by B(32x32)
+20:26:17,490  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+20:26:17,887  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 366 milliseconds to multiply A(64x64) by B(64x64)
+20:26:17,888  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+20:26:19,128  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1231 milliseconds to multiply A(128x128) by B(128x128)
+20:26:19,129  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+20:26:27,476  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 8343 milliseconds to multiply A(256x256) by B(256x256)
+20:26:27,477  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+20:27:24,099  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 56602 milliseconds to multiply A(512x512) by B(512x512)
+20:27:24,100  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+20:34:33,277  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 429100 milliseconds to multiply A(1024x1024) by B(1024x1024)
+20:34:33,278  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+20:34:33,278  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:34:33,279  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+20:34:33,279  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4)
+20:34:33,280  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+20:34:33,281  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1 milliseconds to multiply A(8x8) by B(8x8)
+20:34:33,281  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+20:34:33,285  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 4 milliseconds to multiply A(16x16) by B(16x16)
+20:34:33,286  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+20:34:33,320  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 34 milliseconds to multiply A(32x32) by B(32x32)
+20:34:33,321  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+20:34:33,541  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 219 milliseconds to multiply A(64x64) by B(64x64)
+20:34:33,541  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+20:34:35,005  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1456 milliseconds to multiply A(128x128) by B(128x128)
+20:34:35,005  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+20:34:44,858  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 9845 milliseconds to multiply A(256x256) by B(256x256)
+20:34:44,858  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+20:35:54,656  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 69767 milliseconds to multiply A(512x512) by B(512x512)
+20:35:54,656  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+20:44:06,089  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 491296 milliseconds to multiply A(1024x1024) by B(1024x1024)
+20:44:06,142  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+20:44:06,142  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:44:06,143  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+20:44:06,143  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4)
+20:44:06,144  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+20:44:06,145  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1 milliseconds to multiply A(8x8) by B(8x8)
+20:44:06,145  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+20:44:06,150  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 4 milliseconds to multiply A(16x16) by B(16x16)
+20:44:06,151  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+20:44:06,182  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 30 milliseconds to multiply A(32x32) by B(32x32)
+20:44:06,183  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+20:44:06,415  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 231 milliseconds to multiply A(64x64) by B(64x64)
+20:44:06,415  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+20:44:07,919  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1489 milliseconds to multiply A(128x128) by B(128x128)
+20:44:07,922  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+20:44:18,304  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 10367 milliseconds to multiply A(256x256) by B(256x256)
+20:44:18,305  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+20:45:28,277  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 69940 milliseconds to multiply A(512x512) by B(512x512)
+20:45:28,277  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+20:53:39,776  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 491382 milliseconds to multiply A(1024x1024) by B(1024x1024)
+20:53:39,806  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+20:53:39,807  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+20:53:39,808  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+20:53:39,808  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4)
+20:53:39,809  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+20:53:39,810  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1 milliseconds to multiply A(8x8) by B(8x8)
+20:53:39,810  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+20:53:39,815  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 4 milliseconds to multiply A(16x16) by B(16x16)
+20:53:39,816  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+20:53:39,847  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 30 milliseconds to multiply A(32x32) by B(32x32)
+20:53:39,848  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+20:53:40,066  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 215 milliseconds to multiply A(64x64) by B(64x64)
+20:53:40,067  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+20:53:41,544  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 1454 milliseconds to multiply A(128x128) by B(128x128)
+20:53:41,544  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+20:53:51,524  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 9969 milliseconds to multiply A(256x256) by B(256x256)
+20:53:51,559  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+20:55:01,861  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 70260 milliseconds to multiply A(512x512) by B(512x512)
+20:55:01,886  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+21:03:12,417  INFO StrassenMultiplication:18 - Naive Strassen multiplication took 490370 milliseconds to multiply A(1024x1024) by B(1024x1024)
+21:03:12,486  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+02:43:35,458  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+02:43:35,472  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+02:43:35,474  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+02:43:35,475  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+02:43:35,476  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:35,489  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+02:43:35,489  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:35,490  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+02:43:35,490  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:35,490  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+02:43:35,491  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 32
+02:43:35,491  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+02:43:35,492  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 32
+02:43:35,492  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+02:43:35,493  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 32
+02:43:35,494  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+02:43:35,501  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2 milliseconds to multiply A(32x32) by B(32x32) with threshold 32
+02:43:35,519  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+02:43:35,537  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3 milliseconds to multiply A(64x64) by B(64x64) with threshold 32
+02:43:35,553  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+02:43:35,613  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 56 milliseconds to multiply A(128x128) by B(128x128) with threshold 32
+02:43:35,614  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+02:43:35,717  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 98 milliseconds to multiply A(256x256) by B(256x256) with threshold 32
+02:43:35,717  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+02:43:36,280  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 544 milliseconds to multiply A(512x512) by B(512x512) with threshold 32
+02:43:36,281  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+02:43:39,919  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3565 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 32
+02:43:39,919  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+02:43:39,920  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:39,920  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+02:43:39,920  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 32
+02:43:39,925  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+02:43:39,926  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 32
+02:43:39,927  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+02:43:39,927  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 32
+02:43:39,927  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+02:43:39,928  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 32
+02:43:39,928  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+02:43:39,931  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 32
+02:43:39,931  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+02:43:39,952  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 7 milliseconds to multiply A(128x128) by B(128x128) with threshold 32
+02:43:39,973  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+02:43:40,039  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 60 milliseconds to multiply A(256x256) by B(256x256) with threshold 32
+02:43:40,041  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+02:43:40,610  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 546 milliseconds to multiply A(512x512) by B(512x512) with threshold 32
+02:43:40,611  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+02:43:43,805  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3106 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 32
+02:43:43,805  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+02:43:43,806  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:43,806  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+02:43:43,806  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 32
+02:43:43,806  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+02:43:43,807  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 32
+02:43:43,807  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+02:43:43,807  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 32
+02:43:43,807  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+02:43:43,808  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 32
+02:43:43,808  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+02:43:43,810  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 32
+02:43:43,811  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+02:43:43,834  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 16 milliseconds to multiply A(128x128) by B(128x128) with threshold 32
+02:43:43,834  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+02:43:43,894  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 54 milliseconds to multiply A(256x256) by B(256x256) with threshold 32
+02:43:43,895  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+02:43:44,361  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 443 milliseconds to multiply A(512x512) by B(512x512) with threshold 32
+02:43:44,361  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+02:43:47,421  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2972 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 32
+02:43:47,421  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+02:43:47,422  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 32
+02:43:47,422  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+02:43:47,422  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 32
+02:43:47,422  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+02:43:47,423  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 32
+02:43:47,423  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+02:43:47,423  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 32
+02:43:47,424  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+02:43:47,425  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 32
+02:43:47,425  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+02:43:47,434  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 5 milliseconds to multiply A(64x64) by B(64x64) with threshold 32
+02:43:47,435  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+02:43:47,464  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 8 milliseconds to multiply A(128x128) by B(128x128) with threshold 32
+02:43:47,464  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+02:43:47,534  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 61 milliseconds to multiply A(256x256) by B(256x256) with threshold 32
+02:43:47,534  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+02:43:48,000  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 432 milliseconds to multiply A(512x512) by B(512x512) with threshold 32
+02:43:48,008  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+02:43:51,196  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3056 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 32
+02:57:54,997  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+02:57:55,008  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+02:57:55,010  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+02:57:55,011  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+02:57:55,012  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:57:55,014  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+02:57:55,014  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:57:55,015  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+02:57:55,015  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:57:55,016  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+02:57:55,016  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+02:57:55,016  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+02:57:55,017  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+02:57:55,017  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+02:57:55,020  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+02:57:55,020  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+02:57:55,043  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 18 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+02:57:55,044  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+02:57:55,059  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+02:57:55,066  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+02:57:55,118  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 42 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+02:57:55,124  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+02:57:55,196  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 67 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+02:57:55,197  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+02:57:55,706  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 487 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+02:57:55,706  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+02:57:58,743  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2965 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+02:57:58,743  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+02:57:58,743  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:57:58,744  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+02:57:58,744  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+02:57:58,749  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+02:57:58,750  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+02:57:58,750  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+02:57:58,751  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+02:57:58,751  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+02:57:58,752  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+02:57:58,753  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+02:57:58,756  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+02:57:58,756  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+02:57:58,778  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 7 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+02:57:58,799  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+02:57:58,858  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 53 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+02:57:58,859  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+02:57:59,283  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 403 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+02:57:59,284  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+02:58:02,251  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2876 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+02:58:02,252  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+02:58:02,252  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:58:02,253  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+02:58:02,253  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+02:58:02,253  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+02:58:02,253  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+02:58:02,254  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+02:58:02,254  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+02:58:02,255  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+02:58:02,255  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+02:58:02,256  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+02:58:02,258  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+02:58:02,259  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+02:58:02,280  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 7 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+02:58:02,281  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+02:58:02,337  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 51 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+02:58:02,338  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+02:58:02,833  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 473 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+02:58:02,834  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+02:58:05,522  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2591 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+02:58:05,522  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+02:58:05,523  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+02:58:05,523  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+02:58:05,523  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+02:58:05,524  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+02:58:05,524  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+02:58:05,524  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+02:58:05,525  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+02:58:05,525  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+02:58:05,526  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+02:58:05,527  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+02:58:05,531  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+02:58:05,536  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+02:58:05,564  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 6 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+02:58:05,565  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+02:58:05,626  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 53 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+02:58:05,626  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+02:58:06,248  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 591 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+02:58:06,255  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+02:58:08,966  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2557 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+03:02:18,448  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+03:02:18,455  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+03:02:18,457  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+03:02:18,459  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+03:02:18,459  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:18,461  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+03:02:18,461  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:18,462  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+03:02:18,462  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:18,462  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+03:02:18,463  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+03:02:18,463  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+03:02:18,463  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+03:02:18,464  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+03:02:18,547  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+03:02:18,547  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+03:02:18,572  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 19 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+03:02:18,572  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+03:02:18,595  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 9 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+03:02:18,596  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+03:02:18,679  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 68 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+03:02:18,685  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+03:02:18,758  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 67 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+03:02:18,759  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+03:02:19,264  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 484 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+03:02:19,265  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+03:02:22,343  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3006 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+03:02:22,344  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+03:02:22,344  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:22,345  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+03:02:22,345  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+03:02:22,350  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+03:02:22,351  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+03:02:22,351  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+03:02:22,352  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+03:02:22,352  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+03:02:22,353  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+03:02:22,353  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+03:02:22,355  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+03:02:22,356  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+03:02:22,377  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 6 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+03:02:22,399  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+03:02:22,461  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 56 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+03:02:22,462  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+03:02:22,919  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 432 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+03:02:22,919  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+03:02:25,788  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2778 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+03:02:25,788  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+03:02:25,789  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:25,789  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+03:02:25,789  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+03:02:25,789  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+03:02:25,790  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+03:02:25,790  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+03:02:25,790  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+03:02:25,791  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+03:02:25,791  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+03:02:25,792  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+03:02:25,794  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+03:02:25,795  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+03:02:25,816  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 7 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+03:02:25,816  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+03:02:25,881  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 59 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+03:02:25,881  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+03:02:26,359  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 454 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+03:02:26,359  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+03:02:29,048  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2599 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+03:02:29,049  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+03:02:29,049  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 64
+03:02:29,049  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+03:02:29,049  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 64
+03:02:29,050  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+03:02:29,050  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 64
+03:02:29,050  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+03:02:29,051  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 64
+03:02:29,051  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+03:02:29,052  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 64
+03:02:29,052  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+03:02:29,060  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 64
+03:02:29,061  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+03:02:29,089  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 6 milliseconds to multiply A(128x128) by B(128x128) with threshold 64
+03:02:29,090  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+03:02:29,152  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 54 milliseconds to multiply A(256x256) by B(256x256) with threshold 64
+03:02:29,152  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+03:02:29,810  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 624 milliseconds to multiply A(512x512) by B(512x512) with threshold 64
+03:02:29,810  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+03:02:32,523  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2578 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 64
+03:07:42,397  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+03:07:42,408  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+03:07:42,409  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+03:08:31,891  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+03:08:31,901  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+03:08:31,903  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+03:08:31,904  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+03:08:31,905  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:31,907  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+03:08:31,907  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:31,908  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+03:08:31,908  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:31,909  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+03:08:31,909  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:08:31,910  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+03:08:31,910  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:08:31,910  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+03:08:31,911  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:08:31,912  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+03:08:31,930  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 13 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:08:31,948  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+03:08:31,982  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 26 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:08:31,988  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+03:08:32,024  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 19 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:08:32,024  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+03:08:32,171  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 140 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:08:32,171  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+03:08:33,218  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1029 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:08:33,219  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+03:08:38,138  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4845 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:08:38,140  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+03:08:38,141  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:38,141  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+03:08:38,142  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:08:38,146  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+03:08:38,147  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:08:38,147  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+03:08:38,147  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:08:38,148  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+03:08:38,148  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:08:38,149  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+03:08:38,152  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:08:38,152  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+03:08:38,176  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 17 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:08:38,177  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+03:08:38,274  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 92 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:08:38,275  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+03:08:39,054  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 758 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:08:39,054  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+03:08:43,430  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4282 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:08:43,431  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+03:08:43,431  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:43,432  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+03:08:43,432  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:08:43,432  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+03:08:43,432  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:08:43,433  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+03:08:43,433  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:08:43,434  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+03:08:43,434  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:08:43,435  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+03:08:43,438  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 2 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:08:43,438  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+03:08:43,465  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 13 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:08:43,465  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+03:08:43,556  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 86 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:08:43,556  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+03:08:44,214  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 635 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:08:44,214  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+03:08:48,610  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4301 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:08:48,611  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+03:08:48,611  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:08:48,612  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+03:08:48,612  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:08:48,612  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+03:08:48,613  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:08:48,613  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+03:08:48,614  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:08:48,614  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+03:08:48,615  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:08:48,616  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+03:08:48,620  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:08:48,626  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+03:08:48,659  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 10 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:08:48,659  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+03:08:48,756  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 88 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:08:48,756  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+03:08:49,433  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 643 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:08:49,434  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+03:08:53,739  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4171 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16

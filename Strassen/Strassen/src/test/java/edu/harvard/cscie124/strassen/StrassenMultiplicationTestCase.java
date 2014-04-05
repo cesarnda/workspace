@@ -22,14 +22,17 @@ public class StrassenMultiplicationTestCase {
 		
 		strassenTestCases.setStrassent(new StrassenMultiplication());
 		logger.info("Running Naive Strassen");
-		strassenTestCases.runTestCases();
+		//strassenTestCases.runTestCases();
 		
 		strassenTestCases.setStrassent(new MatrixStrassenMultiplication());
 		logger.info("Running Matrix Strassen");
 		//strassenTestCases.runTestCases();
 		
-		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(32));
+		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(64));
 		//strassenTestCases.runTestCases();
+		
+		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(16));
+		strassenTestCases.runTestCases();
 	}
 	
 	
