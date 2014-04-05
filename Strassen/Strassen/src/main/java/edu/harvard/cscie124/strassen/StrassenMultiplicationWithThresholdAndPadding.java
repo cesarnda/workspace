@@ -40,14 +40,14 @@ public class StrassenMultiplicationWithThresholdAndPadding implements Strassen{
 			result = removePadding(result, numberOfRowsOfA, numberOfColumnsOfB);
 		}
 		long timeTaken = System.currentTimeMillis() - startTime;
-		logger.info("Naive Strassen multiplication took " + timeTaken + " milliseconds to multiply A(" + 
+	/*	logger.info("Naive Strassen multiplication took " + timeTaken + " milliseconds to multiply A(" + 
 				numberOfRowsOfA +"x" + 
 				numberOfRowsOfB + 
 				") by B(" + 
 				numberOfRowsOfB +
 				"x" + 
 				numberOfColumnsOfB +
-				") with threshold " + threshold);
+				") with threshold " + threshold);*/
 
 		return new Matrix(result);
 	}
@@ -88,7 +88,7 @@ public class StrassenMultiplicationWithThresholdAndPadding implements Strassen{
 		while (newSize < sizes[2]){
 			newSize <<= 1;
 		}
-		logger.info("Padding was required, new square size is " + newSize);
+		//logger.info("Padding was required, new square size is " + newSize);
 		return newSize;
 	}
 

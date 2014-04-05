@@ -20,15 +20,14 @@ public class StrassenControl {
 		StrassenControl control = new StrassenControl();
 		control.initializeMatrices(dimensionString);
 		control.readMatrices(inputFile);
+		control.multiplyAndPrintResult();
 		
 	}
 	
 	public void multiplyAndPrintResult(){
 		Matrix result = strassen.multiply(matrixA, matrixB);
 		for(int i = 0; i < dimension; i++){
-			for(int j = 0; j < dimension; j++){
-				System.out.println(result.get(i, j));
-			}
+				System.out.println(result.get(i, i));
 		}
 	}
 	

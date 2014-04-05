@@ -468,6 +468,28 @@ $[0, 1] \in \mathbb{R}$	&	1	&	1	&	27	&	15	&	52	&	203	&	864		&	4,855	&	28,672\\
 \end{tabular}
 \end{table}
 
-The problem here is that we are multiplying a lot of matrices that are $0$, so we just need an indicator that if a matrices is 0, then we just return it.
+The problem here is that we are multiplying a lot of matrices that are $0$, so we just need an indicator that if a matrices is 0, then we just return it. Currently, the
+
+
+\section{Conclusion}
+
+After finishing this assignment and the experiments, we can conclude that we can make Strassen's algorithm to run faster than standard multiplication algorithm even with matrices of small sizes.\\
+\\
+The padding technique can be improved by con siding an adaptive threshold and based on the dimension and the next power of 2, can determine the best threshold for each particular scenario.\\
+\\
+There was one solution not presented in this report, in which the division of matrices was done without generating a new matrix. Instead the matrix object took the general matrices and its corresponding size of the sub matrix and using offsets it is able to retrieve the corresponding element of each sub matrix. This saves a lot of memory since we are not creating sub matrices but for the initial runs it was running slower than the naive implementation. Maybe the use of a threshold would have drastically improved the performance of this technique.\\
+\\
+The algorithms were implemented using Java SE 1.7 and maven which the current \textit{NICE} system does not support. So everything has been packed and uploaded to my account and can be run using
+\begin{verbatim}
+ java -jar Strassen.jar 0 3 input.txt 
+\end{verbatim}
+This have been tested, so I expected no problems while running it. If the user would like to try it in a different environment or recompile it again from scratch, you would only need to run the following two commands:
+
+\begin{verbatim}
+mvn clean compile assembly:single
+mvn assembly:assembly
+\end{verbatim}
+
+After the command second command is executed, it can be killed when running the test cases.
 
 \end{document}  

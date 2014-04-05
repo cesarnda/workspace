@@ -5938,3 +5938,9 @@
 10:09:08,753  INFO GeneralStrassenTestCase:202 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0 and 1
 10:09:08,895  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
 10:09:36,656  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27761 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32
+10:38:49,879  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+10:47:34,197  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+10:49:37,428  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+10:50:09,238  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+10:55:16,688  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
+11:00:44,217  INFO PrimeWitnessFinder:36 - Trying to determine if 636127 is prime.
