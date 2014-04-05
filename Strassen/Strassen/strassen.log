@@ -5275,3 +5275,666 @@
 03:08:49,433  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 643 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
 03:08:49,434  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
 03:08:53,739  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4171 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:22:06,064  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+03:22:06,081  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+03:22:06,095  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+03:22:06,111  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+03:22:06,112  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:06,119  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+03:22:06,120  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:06,121  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+03:22:06,121  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:06,121  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+03:22:06,122  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:22:06,122  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+03:22:06,123  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:22:06,123  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+03:22:06,124  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:22:06,125  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+03:22:06,143  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 12 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:22:06,178  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+03:22:06,221  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 32 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:22:06,228  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+03:22:06,271  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 31 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:22:06,271  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+03:22:06,434  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 157 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:22:06,434  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+03:22:07,830  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1375 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:22:07,831  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+03:22:13,455  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 5506 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:22:13,455  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+03:22:13,456  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:13,457  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+03:22:13,457  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:22:13,459  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+03:22:13,459  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:22:13,460  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+03:22:13,461  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:22:13,462  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+03:22:13,462  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:22:13,463  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+03:22:13,465  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:22:13,465  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+03:22:13,510  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 11 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:22:13,511  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+03:22:13,610  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 93 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:22:13,611  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+03:22:14,254  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 619 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:22:14,255  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+03:22:18,739  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4392 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:22:18,739  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+03:22:18,739  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:18,740  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+03:22:18,740  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:22:18,740  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+03:22:18,741  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:22:18,741  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+03:22:18,741  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:22:18,742  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+03:22:18,742  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:22:18,743  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+03:22:18,746  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:22:18,746  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+03:22:18,773  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 11 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:22:18,774  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+03:22:18,870  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 90 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:22:18,871  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+03:22:19,508  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 616 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:22:19,509  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+03:22:23,910  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4307 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:22:23,910  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+03:22:23,911  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 16
+03:22:23,911  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+03:22:23,911  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 16
+03:22:23,911  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+03:22:23,912  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 16
+03:22:23,912  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+03:22:23,913  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 16
+03:22:23,913  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+03:22:23,914  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 16
+03:22:23,915  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+03:22:23,926  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 7 milliseconds to multiply A(64x64) by B(64x64) with threshold 16
+03:22:23,926  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+03:22:23,958  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 11 milliseconds to multiply A(128x128) by B(128x128) with threshold 16
+03:22:23,959  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+03:22:24,058  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 91 milliseconds to multiply A(256x256) by B(256x256) with threshold 16
+03:22:24,059  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+03:22:24,707  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 617 milliseconds to multiply A(512x512) by B(512x512) with threshold 16
+03:22:24,708  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+03:22:29,150  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4305 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 16
+03:32:22,518  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+03:32:22,528  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+03:32:22,530  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+03:32:22,532  INFO GeneralStrassenTestCase:40 - Test with 2-size Square matrix and identity matrix
+03:32:22,532  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:22,534  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and itsel
+03:32:22,534  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:22,535  INFO GeneralStrassenTestCase:66 - Test with 2-size Square matrices with 0 and 1
+03:32:22,536  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:22,536  INFO GeneralStrassenTestCase:66 - Test with 4-size Square matrices with 0 and 1
+03:32:22,536  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 8
+03:32:22,537  INFO GeneralStrassenTestCase:66 - Test with 8-size Square matrices with 0 and 1
+03:32:22,537  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 8
+03:32:22,538  INFO GeneralStrassenTestCase:66 - Test with 16-size Square matrices with 0 and 1
+03:32:22,539  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(16x16) by B(16x16) with threshold 8
+03:32:22,539  INFO GeneralStrassenTestCase:66 - Test with 32-size Square matrices with 0 and 1
+03:32:22,559  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 14 milliseconds to multiply A(32x32) by B(32x32) with threshold 8
+03:32:22,559  INFO GeneralStrassenTestCase:66 - Test with 64-size Square matrices with 0 and 1
+03:32:22,599  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 30 milliseconds to multiply A(64x64) by B(64x64) with threshold 8
+03:32:22,599  INFO GeneralStrassenTestCase:66 - Test with 128-size Square matrices with 0 and 1
+03:32:22,655  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 47 milliseconds to multiply A(128x128) by B(128x128) with threshold 8
+03:32:22,656  INFO GeneralStrassenTestCase:66 - Test with 256-size Square matrices with 0 and 1
+03:32:23,143  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 481 milliseconds to multiply A(256x256) by B(256x256) with threshold 8
+03:32:23,144  INFO GeneralStrassenTestCase:66 - Test with 512-size Square matrices with 0 and 1
+03:32:24,725  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1555 milliseconds to multiply A(512x512) by B(512x512) with threshold 8
+03:32:24,725  INFO GeneralStrassenTestCase:66 - Test with 1024-size Square matrices with 0 and 1
+03:32:33,959  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 9161 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 8
+03:32:33,959  INFO GeneralStrassenTestCase:83 - Test with 2-size Square matrices with 0, 1 and 2
+03:32:33,960  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:33,960  INFO GeneralStrassenTestCase:83 - Test with 4-size Square matrices with 0, 1 and 2
+03:32:33,960  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 8
+03:32:33,965  INFO GeneralStrassenTestCase:83 - Test with 8-size Square matrices with 0, 1 and 2
+03:32:33,966  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 8
+03:32:33,966  INFO GeneralStrassenTestCase:83 - Test with 16-size Square matrices with 0, 1 and 2
+03:32:33,967  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(16x16) by B(16x16) with threshold 8
+03:32:33,967  INFO GeneralStrassenTestCase:83 - Test with 32-size Square matrices with 0, 1 and 2
+03:32:33,968  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1 milliseconds to multiply A(32x32) by B(32x32) with threshold 8
+03:32:33,968  INFO GeneralStrassenTestCase:83 - Test with 64-size Square matrices with 0, 1 and 2
+03:32:33,973  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 4 milliseconds to multiply A(64x64) by B(64x64) with threshold 8
+03:32:33,974  INFO GeneralStrassenTestCase:83 - Test with 128-size Square matrices with 0, 1 and 2
+03:32:34,014  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 25 milliseconds to multiply A(128x128) by B(128x128) with threshold 8
+03:32:34,035  INFO GeneralStrassenTestCase:83 - Test with 256-size Square matrices with 0, 1 and 2
+03:32:34,226  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 184 milliseconds to multiply A(256x256) by B(256x256) with threshold 8
+03:32:34,227  INFO GeneralStrassenTestCase:83 - Test with 512-size Square matrices with 0, 1 and 2
+03:32:35,498  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1249 milliseconds to multiply A(512x512) by B(512x512) with threshold 8
+03:32:35,499  INFO GeneralStrassenTestCase:83 - Test with 1024-size Square matrices with 0, 1 and 2
+03:32:44,295  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 8705 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 8
+03:32:44,296  INFO GeneralStrassenTestCase:99 - Test with 2-size Square matrices with 0, 1 and -1
+03:32:44,296  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:44,296  INFO GeneralStrassenTestCase:99 - Test with 4-size Square matrices with 0, 1 and -1
+03:32:44,297  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 8
+03:32:44,297  INFO GeneralStrassenTestCase:99 - Test with 8-size Square matrices with 0, 1 and -1
+03:32:44,297  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 8
+03:32:44,297  INFO GeneralStrassenTestCase:99 - Test with 16-size Square matrices with 0, 1 and -1
+03:32:44,298  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 8
+03:32:44,298  INFO GeneralStrassenTestCase:99 - Test with 32-size Square matrices with 0, 1 and -1
+03:32:44,299  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 8
+03:32:44,300  INFO GeneralStrassenTestCase:99 - Test with 64-size Square matrices with 0, 1 and -1
+03:32:44,304  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3 milliseconds to multiply A(64x64) by B(64x64) with threshold 8
+03:32:44,305  INFO GeneralStrassenTestCase:99 - Test with 128-size Square matrices with 0, 1 and -1
+03:32:44,339  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 25 milliseconds to multiply A(128x128) by B(128x128) with threshold 8
+03:32:44,340  INFO GeneralStrassenTestCase:99 - Test with 256-size Square matrices with 0, 1 and -1
+03:32:44,535  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 190 milliseconds to multiply A(256x256) by B(256x256) with threshold 8
+03:32:44,535  INFO GeneralStrassenTestCase:99 - Test with 512-size Square matrices with 0, 1 and -1
+03:32:45,793  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1236 milliseconds to multiply A(512x512) by B(512x512) with threshold 8
+03:32:45,794  INFO GeneralStrassenTestCase:99 - Test with 1024-size Square matrices with 0, 1 and -1
+03:32:54,621  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 8737 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 8
+03:32:54,622  INFO GeneralStrassenTestCase:116 - Test with 2-size Square matrices in range 0 to 1
+03:32:54,622  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(2x2) by B(2x2) with threshold 8
+03:32:54,622  INFO GeneralStrassenTestCase:116 - Test with 4-size Square matrices in range 0 to 1
+03:32:54,623  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(4x4) by B(4x4) with threshold 8
+03:32:54,624  INFO GeneralStrassenTestCase:116 - Test with 8-size Square matrices in range 0 to 1
+03:32:54,624  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(8x8) by B(8x8) with threshold 8
+03:32:54,625  INFO GeneralStrassenTestCase:116 - Test with 16-size Square matrices in range 0 to 1
+03:32:54,625  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(16x16) by B(16x16) with threshold 8
+03:32:54,626  INFO GeneralStrassenTestCase:116 - Test with 32-size Square matrices in range 0 to 1
+03:32:54,627  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 0 milliseconds to multiply A(32x32) by B(32x32) with threshold 8
+03:32:54,628  INFO GeneralStrassenTestCase:116 - Test with 64-size Square matrices in range 0 to 1
+03:32:54,639  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 3 milliseconds to multiply A(64x64) by B(64x64) with threshold 8
+03:32:54,639  INFO GeneralStrassenTestCase:116 - Test with 128-size Square matrices in range 0 to 1
+03:32:54,681  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 23 milliseconds to multiply A(128x128) by B(128x128) with threshold 8
+03:32:54,681  INFO GeneralStrassenTestCase:116 - Test with 256-size Square matrices in range 0 to 1
+03:32:54,871  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 182 milliseconds to multiply A(256x256) by B(256x256) with threshold 8
+03:32:54,872  INFO GeneralStrassenTestCase:116 - Test with 512-size Square matrices in range 0 to 1
+03:32:56,153  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 1249 milliseconds to multiply A(512x512) by B(512x512) with threshold 8
+03:32:56,156  INFO GeneralStrassenTestCase:116 - Test with 1024-size Square matrices in range 0 to 1
+03:33:05,251  INFO StrassenMultiplicationWithThreshold:30 - Naive Strassen multiplication took 8961 milliseconds to multiply A(1024x1024) by B(1024x1024) with threshold 8
+04:10:30,976  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:10:30,988  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+04:10:30,990  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+04:10:30,993  INFO GeneralStrassenTestCase:138 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+04:10:31,005  INFO StrassenMultiplicationWithThreshold:88 - Padding was required, new square size is 2
+04:11:22,054  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:11:22,065  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+04:11:22,068  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+04:11:22,072  INFO GeneralStrassenTestCase:138 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+04:11:22,072  INFO StrassenMultiplicationWithThreshold:88 - Padding was required, new square size is 2
+04:12:21,386  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:12:21,398  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+04:12:21,400  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+04:12:21,415  INFO GeneralStrassenTestCase:138 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+04:13:21,168  INFO StrassenMultiplicationWithThreshold:88 - Padding was required, new square size is 2
+04:14:08,598  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:14:08,606  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+04:14:08,607  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+04:14:08,610  INFO GeneralStrassenTestCase:138 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+04:14:08,611  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+04:14:08,612  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+04:14:08,614  INFO GeneralStrassenTestCase:138 - Test with A(5, 5)  and B(5, 5) matrices in range 0 to 1
+04:14:08,614  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 8
+04:14:08,614  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(5x5) by B(5x5) with threshold 8
+04:14:08,616  INFO GeneralStrassenTestCase:138 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+04:14:08,617  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+04:14:08,617  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+04:14:08,622  INFO GeneralStrassenTestCase:138 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+04:14:08,623  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+04:14:08,628  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 5 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+04:14:08,643  INFO GeneralStrassenTestCase:138 - Test with A(34, 34)  and B(34, 34) matrices in range 0 to 1
+04:14:08,651  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:14:08,668  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 17 milliseconds to multiply A(34x34) by B(34x34) with threshold 8
+04:14:08,715  INFO GeneralStrassenTestCase:138 - Test with A(63, 63)  and B(63, 63) matrices in range 0 to 1
+04:14:08,722  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:14:08,729  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 7 milliseconds to multiply A(63x63) by B(63x63) with threshold 8
+04:14:08,748  INFO GeneralStrassenTestCase:138 - Test with A(125, 125)  and B(125, 125) matrices in range 0 to 1
+04:14:08,765  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+04:14:08,825  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 60 milliseconds to multiply A(125x125) by B(125x125) with threshold 8
+04:14:08,840  INFO GeneralStrassenTestCase:138 - Test with A(250, 250)  and B(250, 250) matrices in range 0 to 1
+04:14:08,921  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+04:14:09,392  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 471 milliseconds to multiply A(250x250) by B(250x250) with threshold 8
+04:14:09,486  INFO GeneralStrassenTestCase:138 - Test with A(500, 500)  and B(500, 500) matrices in range 0 to 1
+04:14:10,702  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+04:14:12,337  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1635 milliseconds to multiply A(500x500) by B(500x500) with threshold 8
+04:14:12,468  INFO GeneralStrassenTestCase:138 - Test with A(1000, 1000)  and B(1000, 1000) matrices in range 0 to 1
+04:14:26,490  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+04:14:35,512  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 9022 milliseconds to multiply A(1000x1000) by B(1000x1000) with threshold 8
+04:24:38,719  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:24:38,728  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+04:24:38,730  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+04:24:38,733  INFO GeneralStrassenTestCase:150 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+04:24:38,734  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+04:24:38,734  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+04:24:38,737  INFO GeneralStrassenTestCase:150 - Test with A(5, 5)  and B(5, 5) matrices in range 0 to 1
+04:24:38,737  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 8
+04:24:38,738  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(5x5) by B(5x5) with threshold 8
+04:24:38,739  INFO GeneralStrassenTestCase:150 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+04:24:38,740  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+04:24:38,741  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+04:24:38,750  INFO GeneralStrassenTestCase:150 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+04:24:38,752  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+04:24:38,757  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+04:24:38,797  INFO GeneralStrassenTestCase:150 - Test with A(34, 34)  and B(34, 34) matrices in range 0 to 1
+04:24:38,812  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:24:38,840  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 28 milliseconds to multiply A(34x34) by B(34x34) with threshold 8
+04:24:38,886  INFO GeneralStrassenTestCase:150 - Test with A(63, 63)  and B(63, 63) matrices in range 0 to 1
+04:24:38,904  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:24:38,915  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 11 milliseconds to multiply A(63x63) by B(63x63) with threshold 8
+04:24:38,945  INFO GeneralStrassenTestCase:150 - Test with A(125, 125)  and B(125, 125) matrices in range 0 to 1
+04:24:38,952  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+04:24:39,040  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 88 milliseconds to multiply A(125x125) by B(125x125) with threshold 8
+04:24:39,068  INFO GeneralStrassenTestCase:150 - Test with A(250, 250)  and B(250, 250) matrices in range 0 to 1
+04:24:39,099  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+04:24:39,468  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 369 milliseconds to multiply A(250x250) by B(250x250) with threshold 8
+04:24:39,670  INFO GeneralStrassenTestCase:150 - Test with A(500, 500)  and B(500, 500) matrices in range 0 to 1
+04:24:39,701  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+04:24:41,144  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1443 milliseconds to multiply A(500x500) by B(500x500) with threshold 8
+04:24:42,535  INFO GeneralStrassenTestCase:150 - Test with A(1000, 1000)  and B(1000, 1000) matrices in range 0 to 1
+04:24:42,674  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+04:24:51,755  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 9081 milliseconds to multiply A(1000x1000) by B(1000x1000) with threshold 8
+04:25:06,242  INFO GeneralStrassenTestCase:167 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and -1
+04:25:06,243  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+04:25:06,243  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+04:25:06,243  INFO GeneralStrassenTestCase:167 - Test with A(5, 5)  and B(5, 5) matrices with 0, 1 and -1
+04:25:06,243  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 8
+04:25:06,244  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(5x5) by B(5x5) with threshold 8
+04:25:06,244  INFO GeneralStrassenTestCase:167 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and -1
+04:25:06,244  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+04:25:06,245  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+04:25:06,249  INFO GeneralStrassenTestCase:167 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and -1
+04:25:06,251  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+04:25:06,253  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 2 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+04:25:06,256  INFO GeneralStrassenTestCase:167 - Test with A(34, 34)  and B(34, 34) matrices with 0, 1 and -1
+04:25:06,258  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:06,263  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 5 milliseconds to multiply A(34x34) by B(34x34) with threshold 8
+04:25:06,264  INFO GeneralStrassenTestCase:167 - Test with A(63, 63)  and B(63, 63) matrices with 0, 1 and -1
+04:25:06,267  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:06,272  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 5 milliseconds to multiply A(63x63) by B(63x63) with threshold 8
+04:25:06,275  INFO GeneralStrassenTestCase:167 - Test with A(125, 125)  and B(125, 125) matrices with 0, 1 and -1
+04:25:06,280  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+04:25:06,307  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27 milliseconds to multiply A(125x125) by B(125x125) with threshold 8
+04:25:06,322  INFO GeneralStrassenTestCase:167 - Test with A(250, 250)  and B(250, 250) matrices with 0, 1 and -1
+04:25:06,326  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+04:25:06,508  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 182 milliseconds to multiply A(250x250) by B(250x250) with threshold 8
+04:25:06,615  INFO GeneralStrassenTestCase:167 - Test with A(500, 500)  and B(500, 500) matrices with 0, 1 and -1
+04:25:06,633  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+04:25:07,932  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1299 milliseconds to multiply A(500x500) by B(500x500) with threshold 8
+04:25:09,097  INFO GeneralStrassenTestCase:167 - Test with A(1000, 1000)  and B(1000, 1000) matrices with 0, 1 and -1
+04:25:09,163  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+04:25:17,832  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 8669 milliseconds to multiply A(1000x1000) by B(1000x1000) with threshold 8
+04:25:32,182  INFO GeneralStrassenTestCase:184 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and 2
+04:25:32,183  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+04:25:32,183  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+04:25:32,183  INFO GeneralStrassenTestCase:184 - Test with A(5, 5)  and B(5, 5) matrices with 0, 1 and 2
+04:25:32,183  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 8
+04:25:32,184  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(5x5) by B(5x5) with threshold 8
+04:25:32,184  INFO GeneralStrassenTestCase:184 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and 2
+04:25:32,184  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+04:25:32,185  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+04:25:32,185  INFO GeneralStrassenTestCase:184 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and 2
+04:25:32,186  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+04:25:32,186  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+04:25:32,187  INFO GeneralStrassenTestCase:184 - Test with A(34, 34)  and B(34, 34) matrices with 0, 1 and 2
+04:25:32,187  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:32,191  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(34x34) by B(34x34) with threshold 8
+04:25:32,192  INFO GeneralStrassenTestCase:184 - Test with A(63, 63)  and B(63, 63) matrices with 0, 1 and 2
+04:25:32,193  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:32,196  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3 milliseconds to multiply A(63x63) by B(63x63) with threshold 8
+04:25:32,199  INFO GeneralStrassenTestCase:184 - Test with A(125, 125)  and B(125, 125) matrices with 0, 1 and 2
+04:25:32,204  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+04:25:32,230  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 26 milliseconds to multiply A(125x125) by B(125x125) with threshold 8
+04:25:32,244  INFO GeneralStrassenTestCase:184 - Test with A(250, 250)  and B(250, 250) matrices with 0, 1 and 2
+04:25:32,249  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+04:25:32,431  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 182 milliseconds to multiply A(250x250) by B(250x250) with threshold 8
+04:25:32,538  INFO GeneralStrassenTestCase:184 - Test with A(500, 500)  and B(500, 500) matrices with 0, 1 and 2
+04:25:32,555  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+04:25:33,810  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1255 milliseconds to multiply A(500x500) by B(500x500) with threshold 8
+04:25:34,960  INFO GeneralStrassenTestCase:184 - Test with A(1000, 1000)  and B(1000, 1000) matrices with 0, 1 and 2
+04:25:35,029  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+04:25:43,699  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 8670 milliseconds to multiply A(1000x1000) by B(1000x1000) with threshold 8
+04:25:57,965  INFO GeneralStrassenTestCase:201 - Test with A(3, 3)  and B(3, 3) matrices with 0 and 1
+04:25:57,966  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+04:25:57,966  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+04:25:57,967  INFO GeneralStrassenTestCase:201 - Test with A(5, 5)  and B(5, 5) matrices with 0 and 1
+04:25:57,967  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 8
+04:25:57,967  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(5x5) by B(5x5) with threshold 8
+04:25:57,967  INFO GeneralStrassenTestCase:201 - Test with A(9, 9)  and B(9, 9) matrices with 0 and 1
+04:25:57,968  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+04:25:57,968  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+04:25:57,968  INFO GeneralStrassenTestCase:201 - Test with A(17, 17)  and B(17, 17) matrices with 0 and 1
+04:25:57,969  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+04:25:57,969  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+04:25:57,970  INFO GeneralStrassenTestCase:201 - Test with A(34, 34)  and B(34, 34) matrices with 0 and 1
+04:25:57,970  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:57,974  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(34x34) by B(34x34) with threshold 8
+04:25:57,975  INFO GeneralStrassenTestCase:201 - Test with A(63, 63)  and B(63, 63) matrices with 0 and 1
+04:25:57,976  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+04:25:57,980  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(63x63) by B(63x63) with threshold 8
+04:25:57,983  INFO GeneralStrassenTestCase:201 - Test with A(125, 125)  and B(125, 125) matrices with 0 and 1
+04:25:57,988  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+04:25:58,013  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 25 milliseconds to multiply A(125x125) by B(125x125) with threshold 8
+04:25:58,028  INFO GeneralStrassenTestCase:201 - Test with A(250, 250)  and B(250, 250) matrices with 0 and 1
+04:25:58,033  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+04:25:58,215  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 182 milliseconds to multiply A(250x250) by B(250x250) with threshold 8
+04:25:58,325  INFO GeneralStrassenTestCase:201 - Test with A(500, 500)  and B(500, 500) matrices with 0 and 1
+04:25:58,345  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+04:25:59,601  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1256 milliseconds to multiply A(500x500) by B(500x500) with threshold 8
+04:26:00,763  INFO GeneralStrassenTestCase:201 - Test with A(1000, 1000)  and B(1000, 1000) matrices with 0 and 1
+04:26:00,843  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+04:26:09,510  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 8667 milliseconds to multiply A(1000x1000) by B(1000x1000) with threshold 8
+04:51:18,143  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+04:51:18,152  INFO GeneralStrassenTestCase:51 - Test with 2-size Square matrix and identity matrix
+04:51:18,153  INFO MatrixMultiplication:19 - Standard multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+04:51:18,155  INFO GeneralStrassenTestCase:62 - Test with 2-size Square matrix and itsel
+04:51:18,155  INFO MatrixMultiplication:19 - Standard multiplication took 0 milliseconds to multiply A(2x2) by B(2x2)
+04:51:18,156  INFO GeneralStrassenTestCase:77 - Test with 2048-size Square matrices with 0 and 1
+04:53:30,686  INFO MatrixMultiplication:19 - Standard multiplication took 132036 milliseconds to multiply A(2048x2048) by B(2048x2048)
+04:53:30,687  INFO GeneralStrassenTestCase:77 - Test with 4096-size Square matrices with 0 and 1
+05:22:36,760  INFO MatrixMultiplication:19 - Standard multiplication took 1744624 milliseconds to multiply A(4096x4096) by B(4096x4096)
+05:22:36,761  INFO GeneralStrassenTestCase:77 - Test with 8192-size Square matrices with 0 and 1
+09:59:37,437  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+09:59:37,504  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+09:59:37,506  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+09:59:37,509  INFO GeneralStrassenTestCase:151 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+09:59:37,511  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+09:59:37,512  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 2 milliseconds to multiply A(3x3) by B(3x3) with threshold 8
+09:59:37,514  INFO GeneralStrassenTestCase:151 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+09:59:37,515  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+09:59:37,516  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 8
+09:59:37,517  INFO GeneralStrassenTestCase:151 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+09:59:37,518  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+09:59:37,535  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 17 milliseconds to multiply A(17x17) by B(17x17) with threshold 8
+09:59:37,536  INFO GeneralStrassenTestCase:151 - Test with A(33, 33)  and B(33, 33) matrices in range 0 to 1
+09:59:37,541  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+09:59:37,581  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 40 milliseconds to multiply A(33x33) by B(33x33) with threshold 8
+09:59:37,582  INFO GeneralStrassenTestCase:151 - Test with A(65, 65)  and B(65, 65) matrices in range 0 to 1
+09:59:37,600  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+09:59:37,675  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 75 milliseconds to multiply A(65x65) by B(65x65) with threshold 8
+09:59:37,675  INFO GeneralStrassenTestCase:151 - Test with A(129, 129)  and B(129, 129) matrices in range 0 to 1
+09:59:37,696  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+09:59:38,302  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 606 milliseconds to multiply A(129x129) by B(129x129) with threshold 8
+09:59:38,303  INFO GeneralStrassenTestCase:151 - Test with A(257, 257)  and B(257, 257) matrices in range 0 to 1
+09:59:38,337  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+09:59:41,047  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 2710 milliseconds to multiply A(257x257) by B(257x257) with threshold 8
+09:59:41,053  INFO GeneralStrassenTestCase:151 - Test with A(513, 513)  and B(513, 513) matrices in range 0 to 1
+09:59:41,094  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+09:59:54,170  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 13076 milliseconds to multiply A(513x513) by B(513x513) with threshold 8
+09:59:54,182  INFO GeneralStrassenTestCase:151 - Test with A(1025, 1025)  and B(1025, 1025) matrices in range 0 to 1
+09:59:54,448  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:04:00,237  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+10:04:00,262  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+10:04:00,266  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+10:04:00,272  INFO GeneralStrassenTestCase:151 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+10:04:00,281  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:04:00,282  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 9 milliseconds to multiply A(3x3) by B(3x3) with threshold 16
+10:04:00,299  INFO GeneralStrassenTestCase:151 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+10:04:00,300  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:04:00,301  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 16
+10:04:00,302  INFO GeneralStrassenTestCase:151 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+10:04:00,303  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:04:00,335  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 32 milliseconds to multiply A(17x17) by B(17x17) with threshold 16
+10:04:00,340  INFO GeneralStrassenTestCase:151 - Test with A(33, 33)  and B(33, 33) matrices in range 0 to 1
+10:04:00,345  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:04:00,374  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 29 milliseconds to multiply A(33x33) by B(33x33) with threshold 16
+10:04:00,381  INFO GeneralStrassenTestCase:151 - Test with A(65, 65)  and B(65, 65) matrices in range 0 to 1
+10:04:00,395  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:04:00,427  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 32 milliseconds to multiply A(65x65) by B(65x65) with threshold 16
+10:04:00,428  INFO GeneralStrassenTestCase:151 - Test with A(129, 129)  and B(129, 129) matrices in range 0 to 1
+10:04:00,441  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:04:00,722  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 281 milliseconds to multiply A(129x129) by B(129x129) with threshold 16
+10:04:00,729  INFO GeneralStrassenTestCase:151 - Test with A(257, 257)  and B(257, 257) matrices in range 0 to 1
+10:04:00,746  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:04:02,209  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1463 milliseconds to multiply A(257x257) by B(257x257) with threshold 16
+10:04:02,217  INFO GeneralStrassenTestCase:151 - Test with A(513, 513)  and B(513, 513) matrices in range 0 to 1
+10:04:02,278  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:04:08,804  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 6526 milliseconds to multiply A(513x513) by B(513x513) with threshold 16
+10:04:08,805  INFO GeneralStrassenTestCase:151 - Test with A(1025, 1025)  and B(1025, 1025) matrices in range 0 to 1
+10:04:09,084  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:04:49,648  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 40564 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 16
+10:04:49,649  INFO GeneralStrassenTestCase:168 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and -1
+10:04:49,650  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:04:49,650  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(3x3) by B(3x3) with threshold 16
+10:04:49,650  INFO GeneralStrassenTestCase:168 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and -1
+10:04:49,651  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:04:49,652  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 16
+10:04:49,652  INFO GeneralStrassenTestCase:168 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and -1
+10:04:49,653  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:04:49,653  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(17x17) by B(17x17) with threshold 16
+10:04:49,654  INFO GeneralStrassenTestCase:168 - Test with A(33, 33)  and B(33, 33) matrices with 0, 1 and -1
+10:04:49,657  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:04:49,671  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(33x33) by B(33x33) with threshold 16
+10:04:49,673  INFO GeneralStrassenTestCase:168 - Test with A(65, 65)  and B(65, 65) matrices with 0, 1 and -1
+10:04:49,686  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:04:49,702  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 16 milliseconds to multiply A(65x65) by B(65x65) with threshold 16
+10:04:49,703  INFO GeneralStrassenTestCase:168 - Test with A(129, 129)  and B(129, 129) matrices with 0, 1 and -1
+10:04:49,732  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:04:49,917  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 186 milliseconds to multiply A(129x129) by B(129x129) with threshold 16
+10:04:49,918  INFO GeneralStrassenTestCase:168 - Test with A(257, 257)  and B(257, 257) matrices with 0, 1 and -1
+10:04:49,934  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:04:50,981  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1047 milliseconds to multiply A(257x257) by B(257x257) with threshold 16
+10:04:50,984  INFO GeneralStrassenTestCase:168 - Test with A(513, 513)  and B(513, 513) matrices with 0, 1 and -1
+10:04:51,006  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:04:56,817  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 5811 milliseconds to multiply A(513x513) by B(513x513) with threshold 16
+10:04:56,820  INFO GeneralStrassenTestCase:168 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0, 1 and -1
+10:04:56,938  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:05:17,426  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+10:05:17,457  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+10:05:17,459  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+10:05:17,462  INFO GeneralStrassenTestCase:151 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+10:05:17,464  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:05:17,469  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 6 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:05:17,489  INFO GeneralStrassenTestCase:151 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+10:05:17,490  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:05:17,491  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:05:17,491  INFO GeneralStrassenTestCase:151 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+10:05:17,493  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:05:17,513  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 20 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:05:17,514  INFO GeneralStrassenTestCase:151 - Test with A(33, 33)  and B(33, 33) matrices in range 0 to 1
+10:05:17,519  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:05:17,524  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 5 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:05:17,540  INFO GeneralStrassenTestCase:151 - Test with A(65, 65)  and B(65, 65) matrices in range 0 to 1
+10:05:17,560  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:05:17,611  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 51 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:05:17,612  INFO GeneralStrassenTestCase:151 - Test with A(129, 129)  and B(129, 129) matrices in range 0 to 1
+10:05:17,627  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:05:17,836  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 209 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:05:17,837  INFO GeneralStrassenTestCase:151 - Test with A(257, 257)  and B(257, 257) matrices in range 0 to 1
+10:05:17,854  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:05:18,742  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 888 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:05:18,745  INFO GeneralStrassenTestCase:151 - Test with A(513, 513)  and B(513, 513) matrices in range 0 to 1
+10:05:18,814  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:05:23,641  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4827 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:05:23,644  INFO GeneralStrassenTestCase:151 - Test with A(1025, 1025)  and B(1025, 1025) matrices in range 0 to 1
+10:05:23,843  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:05:52,164  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 28321 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32
+10:05:52,168  INFO GeneralStrassenTestCase:168 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and -1
+10:05:52,168  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:05:52,169  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:05:52,169  INFO GeneralStrassenTestCase:168 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and -1
+10:05:52,170  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:05:52,170  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:05:52,173  INFO GeneralStrassenTestCase:168 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and -1
+10:05:52,177  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:05:52,178  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:05:52,179  INFO GeneralStrassenTestCase:168 - Test with A(33, 33)  and B(33, 33) matrices with 0, 1 and -1
+10:05:52,180  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:05:52,184  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:05:52,186  INFO GeneralStrassenTestCase:168 - Test with A(65, 65)  and B(65, 65) matrices with 0, 1 and -1
+10:05:52,202  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:05:52,215  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 13 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:05:52,217  INFO GeneralStrassenTestCase:168 - Test with A(129, 129)  and B(129, 129) matrices with 0, 1 and -1
+10:05:52,223  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:05:52,351  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 128 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:05:52,360  INFO GeneralStrassenTestCase:168 - Test with A(257, 257)  and B(257, 257) matrices with 0, 1 and -1
+10:05:52,365  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:05:53,129  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 764 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:05:53,130  INFO GeneralStrassenTestCase:168 - Test with A(513, 513)  and B(513, 513) matrices with 0, 1 and -1
+10:05:53,152  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:05:57,092  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3940 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:05:57,093  INFO GeneralStrassenTestCase:168 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0, 1 and -1
+10:05:57,214  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:06:23,704  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+10:06:23,741  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+10:06:23,743  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+10:06:23,757  INFO GeneralStrassenTestCase:151 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+10:06:23,758  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:06:23,759  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 64
+10:06:23,761  INFO GeneralStrassenTestCase:151 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+10:06:23,762  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:06:23,762  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 64
+10:06:23,763  INFO GeneralStrassenTestCase:151 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+10:06:23,764  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:06:23,798  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 33 milliseconds to multiply A(17x17) by B(17x17) with threshold 64
+10:06:23,798  INFO GeneralStrassenTestCase:151 - Test with A(33, 33)  and B(33, 33) matrices in range 0 to 1
+10:06:23,803  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:06:23,816  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 13 milliseconds to multiply A(33x33) by B(33x33) with threshold 64
+10:06:23,817  INFO GeneralStrassenTestCase:151 - Test with A(65, 65)  and B(65, 65) matrices in range 0 to 1
+10:06:23,855  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:06:23,960  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 105 milliseconds to multiply A(65x65) by B(65x65) with threshold 64
+10:06:23,961  INFO GeneralStrassenTestCase:151 - Test with A(129, 129)  and B(129, 129) matrices in range 0 to 1
+10:06:23,986  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:06:24,124  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 137 milliseconds to multiply A(129x129) by B(129x129) with threshold 64
+10:06:24,124  INFO GeneralStrassenTestCase:151 - Test with A(257, 257)  and B(257, 257) matrices in range 0 to 1
+10:06:24,136  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:06:24,968  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 832 milliseconds to multiply A(257x257) by B(257x257) with threshold 64
+10:06:24,969  INFO GeneralStrassenTestCase:151 - Test with A(513, 513)  and B(513, 513) matrices in range 0 to 1
+10:06:25,018  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:06:29,176  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4157 milliseconds to multiply A(513x513) by B(513x513) with threshold 64
+10:06:29,176  INFO GeneralStrassenTestCase:151 - Test with A(1025, 1025)  and B(1025, 1025) matrices in range 0 to 1
+10:06:29,452  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:06:55,162  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 25710 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 64
+10:06:55,163  INFO GeneralStrassenTestCase:168 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and -1
+10:06:55,166  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:06:55,166  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(3x3) by B(3x3) with threshold 64
+10:06:55,167  INFO GeneralStrassenTestCase:168 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and -1
+10:06:55,167  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:06:55,168  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 64
+10:06:55,168  INFO GeneralStrassenTestCase:168 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and -1
+10:06:55,170  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:06:55,172  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 2 milliseconds to multiply A(17x17) by B(17x17) with threshold 64
+10:06:55,174  INFO GeneralStrassenTestCase:168 - Test with A(33, 33)  and B(33, 33) matrices with 0, 1 and -1
+10:06:55,177  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:06:55,180  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3 milliseconds to multiply A(33x33) by B(33x33) with threshold 64
+10:06:55,181  INFO GeneralStrassenTestCase:168 - Test with A(65, 65)  and B(65, 65) matrices with 0, 1 and -1
+10:06:55,196  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:06:55,208  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 12 milliseconds to multiply A(65x65) by B(65x65) with threshold 64
+10:06:55,209  INFO GeneralStrassenTestCase:168 - Test with A(129, 129)  and B(129, 129) matrices with 0, 1 and -1
+10:06:55,213  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:06:55,324  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 111 milliseconds to multiply A(129x129) by B(129x129) with threshold 64
+10:06:55,325  INFO GeneralStrassenTestCase:168 - Test with A(257, 257)  and B(257, 257) matrices with 0, 1 and -1
+10:06:55,341  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:06:56,091  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 750 milliseconds to multiply A(257x257) by B(257x257) with threshold 64
+10:06:56,092  INFO GeneralStrassenTestCase:168 - Test with A(513, 513)  and B(513, 513) matrices with 0, 1 and -1
+10:06:56,117  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:06:59,680  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3562 milliseconds to multiply A(513x513) by B(513x513) with threshold 64
+10:06:59,683  INFO GeneralStrassenTestCase:168 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0, 1 and -1
+10:06:59,798  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:07:23,568  INFO StrassenMultiplicationTestCase:20 - Running Straight Multiplication
+10:07:23,594  INFO StrassenMultiplicationTestCase:24 - Running Naive Strassen
+10:07:23,596  INFO StrassenMultiplicationTestCase:28 - Running Matrix Strassen
+10:07:23,600  INFO GeneralStrassenTestCase:151 - Test with A(3, 3)  and B(3, 3) matrices in range 0 to 1
+10:07:23,602  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:07:23,602  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:07:23,620  INFO GeneralStrassenTestCase:151 - Test with A(9, 9)  and B(9, 9) matrices in range 0 to 1
+10:07:23,621  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:07:23,622  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:07:23,622  INFO GeneralStrassenTestCase:151 - Test with A(17, 17)  and B(17, 17) matrices in range 0 to 1
+10:07:23,624  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:07:23,651  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:07:23,652  INFO GeneralStrassenTestCase:151 - Test with A(33, 33)  and B(33, 33) matrices in range 0 to 1
+10:07:23,657  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:07:23,672  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 15 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:07:23,680  INFO GeneralStrassenTestCase:151 - Test with A(65, 65)  and B(65, 65) matrices in range 0 to 1
+10:07:23,705  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:07:23,757  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 52 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:07:23,757  INFO GeneralStrassenTestCase:151 - Test with A(129, 129)  and B(129, 129) matrices in range 0 to 1
+10:07:23,770  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:07:23,973  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 203 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:07:23,974  INFO GeneralStrassenTestCase:151 - Test with A(257, 257)  and B(257, 257) matrices in range 0 to 1
+10:07:23,992  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:07:24,856  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 864 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:07:24,857  INFO GeneralStrassenTestCase:151 - Test with A(513, 513)  and B(513, 513) matrices in range 0 to 1
+10:07:24,901  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:07:29,756  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4855 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:07:29,759  INFO GeneralStrassenTestCase:151 - Test with A(1025, 1025)  and B(1025, 1025) matrices in range 0 to 1
+10:07:29,998  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:07:58,670  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 28672 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32
+10:07:58,674  INFO GeneralStrassenTestCase:168 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and -1
+10:07:58,675  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:07:58,678  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:07:58,679  INFO GeneralStrassenTestCase:168 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and -1
+10:07:58,679  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:07:58,680  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:07:58,682  INFO GeneralStrassenTestCase:168 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and -1
+10:07:58,689  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:07:58,689  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:07:58,690  INFO GeneralStrassenTestCase:168 - Test with A(33, 33)  and B(33, 33) matrices with 0, 1 and -1
+10:07:58,691  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:07:58,695  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:07:58,696  INFO GeneralStrassenTestCase:168 - Test with A(65, 65)  and B(65, 65) matrices with 0, 1 and -1
+10:07:58,710  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:07:58,721  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 11 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:07:58,724  INFO GeneralStrassenTestCase:168 - Test with A(129, 129)  and B(129, 129) matrices with 0, 1 and -1
+10:07:58,729  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:07:58,850  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 121 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:07:58,850  INFO GeneralStrassenTestCase:168 - Test with A(257, 257)  and B(257, 257) matrices with 0, 1 and -1
+10:07:58,856  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:07:59,707  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 851 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:07:59,710  INFO GeneralStrassenTestCase:168 - Test with A(513, 513)  and B(513, 513) matrices with 0, 1 and -1
+10:07:59,732  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:08:03,632  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3900 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:08:03,633  INFO GeneralStrassenTestCase:168 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0, 1 and -1
+10:08:03,756  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:08:31,074  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27317 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32
+10:08:31,077  INFO GeneralStrassenTestCase:185 - Test with A(3, 3)  and B(3, 3) matrices with 0, 1 and 2
+10:08:31,077  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:08:31,080  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:08:31,081  INFO GeneralStrassenTestCase:185 - Test with A(9, 9)  and B(9, 9) matrices with 0, 1 and 2
+10:08:31,081  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:08:31,081  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:08:31,082  INFO GeneralStrassenTestCase:185 - Test with A(17, 17)  and B(17, 17) matrices with 0, 1 and 2
+10:08:31,082  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:08:31,083  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:08:31,083  INFO GeneralStrassenTestCase:185 - Test with A(33, 33)  and B(33, 33) matrices with 0, 1 and 2
+10:08:31,084  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:08:31,088  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 4 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:08:31,088  INFO GeneralStrassenTestCase:185 - Test with A(65, 65)  and B(65, 65) matrices with 0, 1 and 2
+10:08:31,090  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:08:31,100  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 10 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:08:31,102  INFO GeneralStrassenTestCase:185 - Test with A(129, 129)  and B(129, 129) matrices with 0, 1 and 2
+10:08:31,107  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:08:31,238  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 131 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:08:31,239  INFO GeneralStrassenTestCase:185 - Test with A(257, 257)  and B(257, 257) matrices with 0, 1 and 2
+10:08:31,255  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:08:32,058  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 803 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:08:32,063  INFO GeneralStrassenTestCase:185 - Test with A(513, 513)  and B(513, 513) matrices with 0, 1 and 2
+10:08:32,085  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:08:36,011  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3926 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:08:36,014  INFO GeneralStrassenTestCase:185 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0, 1 and 2
+10:08:36,129  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:09:03,749  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27620 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32
+10:09:03,753  INFO GeneralStrassenTestCase:202 - Test with A(3, 3)  and B(3, 3) matrices with 0 and 1
+10:09:03,753  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 4
+10:09:03,754  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(3x3) by B(3x3) with threshold 32
+10:09:03,754  INFO GeneralStrassenTestCase:202 - Test with A(9, 9)  and B(9, 9) matrices with 0 and 1
+10:09:03,755  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 16
+10:09:03,755  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 0 milliseconds to multiply A(9x9) by B(9x9) with threshold 32
+10:09:03,756  INFO GeneralStrassenTestCase:202 - Test with A(17, 17)  and B(17, 17) matrices with 0 and 1
+10:09:03,756  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 32
+10:09:03,757  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 1 milliseconds to multiply A(17x17) by B(17x17) with threshold 32
+10:09:03,757  INFO GeneralStrassenTestCase:202 - Test with A(33, 33)  and B(33, 33) matrices with 0 and 1
+10:09:03,758  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 64
+10:09:03,760  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 2 milliseconds to multiply A(33x33) by B(33x33) with threshold 32
+10:09:03,763  INFO GeneralStrassenTestCase:202 - Test with A(65, 65)  and B(65, 65) matrices with 0 and 1
+10:09:03,764  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 128
+10:09:03,774  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 10 milliseconds to multiply A(65x65) by B(65x65) with threshold 32
+10:09:03,777  INFO GeneralStrassenTestCase:202 - Test with A(129, 129)  and B(129, 129) matrices with 0 and 1
+10:09:03,788  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 256
+10:09:03,870  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 82 milliseconds to multiply A(129x129) by B(129x129) with threshold 32
+10:09:03,871  INFO GeneralStrassenTestCase:202 - Test with A(257, 257)  and B(257, 257) matrices with 0 and 1
+10:09:03,884  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 512
+10:09:04,735  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 851 milliseconds to multiply A(257x257) by B(257x257) with threshold 32
+10:09:04,736  INFO GeneralStrassenTestCase:202 - Test with A(513, 513)  and B(513, 513) matrices with 0 and 1
+10:09:04,763  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 1024
+10:09:08,752  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 3989 milliseconds to multiply A(513x513) by B(513x513) with threshold 32
+10:09:08,753  INFO GeneralStrassenTestCase:202 - Test with A(1025, 1025)  and B(1025, 1025) matrices with 0 and 1
+10:09:08,895  INFO StrassenMultiplicationWithThreshold:91 - Padding was required, new square size is 2048
+10:09:36,656  INFO StrassenMultiplicationWithThreshold:43 - Naive Strassen multiplication took 27761 milliseconds to multiply A(1025x1025) by B(1025x1025) with threshold 32

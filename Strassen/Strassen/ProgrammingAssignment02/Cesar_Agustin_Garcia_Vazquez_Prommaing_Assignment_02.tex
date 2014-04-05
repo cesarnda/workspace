@@ -123,8 +123,9 @@ For this assignment, the programming language used was Java SE 1.7 due to the fa
 \\
 The first thing to do is program the straightforward algorithm to multiply 2 matrices. This is going to work as benchmark of Strassen's algorithm. In this section, I only consider square matrices whose size is $n = 2^k$. The idea of the programming assignment is to find a way to make Strassen multiplication look faster than the standard multiplication, considering an $n$ not too big. For this reason, I am only considering the size of the matrices up to $n = 1,024$. \\
 The scenarios that I am considering are: matrices with only 0s and 1s, matrices with only 0s, 1s and 2s, matrices with only 0s, 1s and -1s and matrices with values in the real interval $[0, 1]$. \\
+The matrices are randomly generated and the running time show in the tables is in milliseconds and it is the average of running the test cases 3 times. I chose 3 times because in the first experiments that I ran, I wanted to compute matrices with size up to 32,768, but that was taking too long, so instead of using the average of 5 as in the previous assignment, I decided to reduce it to 3. \\
+\\
 The Table \ref{straightforwardResults} shows the results of running these experiments, from which we can see that up to matrices of size 32, which gives and idea of when to switch from Strassen's algorithm to the standard method. The straightforward algorithm performs exactly $n^3$ multiplications and after allocation the space for the result, no more space memory is used.
-
 
 \begin{table}[h!]
 \caption{Straightforward multiplication algorithm run with different test cases and sizes\label{straightforwardResults}}
@@ -361,7 +362,7 @@ Based on the above analysis, the algebraic analysis does not help to find a suit
 \section{Strassen with threshold}
 
 In this section I am going to present the results of running the naive implementation of Strassen's algorithm using thresholds. The first two threshold that I use are 32 and 64 because those are the values whose running was below 0 and 1 milliseconds, compared to Strassen's values which running time was already around 30 and 200 milliseconds. \\
-The higher the threshold, the better results it is going to give, but the idea of this assignment is to find the minimum threshold. In Table \ref{strassen32}, we can see the results of running the same test cases 
+The higher the threshold, the better results it is going to give, but the idea of this assignment is to find the minimum threshold. In Table \ref{strassen32}, we can see the results of running the same test cases with the same sizes of the matrices and the performance is so much better. 
 
 \begin{table}[h!]
 \caption{Strassen's multiplication algorithm with threshold 32 run with different test cases and sizes\label{strassen32}}
@@ -378,6 +379,7 @@ $[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	5	&	8		&	61		&	432		&	3,056\\
 \end{tabular}
 \end{table}
 
+The Table \ref{strassen64} presents the results of running the naive Strassen's implementation with a threshold of 64. Based on the previous analysis, the obtained results were expected since as the threshold gets higher (but no higher than 450,000), this method will compute faster than the standard matrix multiplication. 
 
 \begin{table}[h!]
 \caption{Strassen's multiplication algorithm with threshold 64 run with different test cases and sizes\label{strassen64}}
@@ -394,5 +396,78 @@ $[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	1	&	6		&	54		&	624		&	2,578\\
 \end{tabular}
 \end{table}
 
+Even though a threshold of 32 might seem to be a good one, we require a the minimum threshold possible which computes the multiplication of 2 matrices faster than the standard multiplication algorithm. The Table \ref{strassen16} presents the results of running the same test cases with the same sizes, but with a threshold of 16. As expected, the performance is not as good as with a threshold of 64 or 32, but still better than the standard matrix multiplication algorithm.
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 16 run with different test cases and sizes\label{strassen16}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128		&	256		&	512		&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	1	&	12	&	32	&	31		&	157		&	1,375	&	5,506\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	0	&	0	&	1	&	11		&	93		&	619		&	4,392\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	11		&	90		&	616		&	4,307\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	7	&	11		&	91		&	617		&	4,305\\
+\hline
+\end{tabular}
+\end{table}
+
+Based on the above experiments, it might appear that with a threshold of 8, we could still get better results that the standard matrix multiplication algorithm. As can be seen in the Table \ref{strassen8}, the threshold of 8 is still good, and it is the one that I am going to use as default.
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 8 run with different test cases and sizes\label{strassen8}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	2	&	4	&	8	&	16	&	32	&	64	&	128		&	256		&	512		&	1024\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	1	&	14	&	30	&	47		&	481		&	1,555	&	9,161\\
+\{0, 1, 2 \}				&	0	&	0	&	0	&	1	&	1	&	4	&	25		&	184		&	1,249	&	8,705\\
+\{0, 1, -1\}				&	0	&	0	&	0	&	0	&	0	&	1	&	25		&	190		&	1,236	&	8,737\\
+$[0, 1] \in \mathbb{R}$	&	0	&	0	&	0	&	0	&	0	&	3	&	23		&	182		&	1,249	&	8,961\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Working with non power of 2 matrices}
+
+Strassen's algorithm works fine for matrices that are square and the size is a power of 2. For the case when the size is not a power of 2, or they might not even be square they algorithm does not divide correctly the sub matrices. \\
+To solve this problem, I use the technique of padding the matrices up to the next power of 2 and the after the multiplication is done, I removed the padding. The Table \ref{strassenPadding} presents the results of running the same test cases but with different matrices sizes. Note that for these scenarios, the matrices are still square and the running time still in what it is expected to be.
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 8 run with different test cases and sizes\label{strassenPadding}}
+\centering
+\begin{tabular}{|c|cccccccccc|}
+\hline
+Test\textbackslash  n		&	3	&	5	&	9	&	17	&	34	&	63	&	125		&	250		&	500		&	1000\\
+\hline
+\{0, 1\}				&	0	&	0	&	0	&	0	&	4	&	4	&	25		&	182		&	1,256	&	8,667\\
+\{0, 1, 2 \}				&	0	&	1	&	1	&	1	&	4	&	4	&	128		&	182		&	1,255	&	8,670\\
+\{0, 1, -1\}				&	0	&	1	&	1	&	2	&	5	&	5	&	27		&	182		&	1,299	&	8,669\\
+$[0, 1] \in \mathbb{R}$	&	1	&	1	&	1	&	4	&	28	&	11	&	88		&	369		&	1,443	&	9,081\\
+\hline
+\end{tabular}
+\end{table}
+
+
+The problem occurs when we have matrices with sizes equal to $2^k + 1$, because the matrices will have to be padded up to $2^{k+1}$. For this scenario, the threshold 8 might not be a good choice, since it is almost running in the same magnitude as the standard matrix multiplication. To try to improve the performance when this scenario happens, the threshold to be chosen is 32 and the results while running these scenarios are presented in Table \ref{strassenPaddingOdd}.
+
+\begin{table}[h!]
+\caption{Strassen's multiplication algorithm with threshold 32 run with different test cases and sizes\label{strassenPaddingOdd}}
+\centering
+\begin{tabular}{|c|ccccccccc|}
+\hline
+Test\textbackslash  n		&	3	&	9	&	17	&	33	&	65	&	129	&	257		&	513		&	1025\\
+\hline
+\{0, 1\}				&	1	&	1	&	1	&	2	&	10	&	82	&	851		&	3,989	&	27,761\\
+\{0, 1, 2 \}				&	3	&	1	&	1	&	4	&	10	&	131	&	803		&	3,926	&	27,620\\
+\{0, 1, -1\}				&	3	&	1	&	1	&	4	&	11	&	121	&	851		&	3,900	&	27,317\\
+$[0, 1] \in \mathbb{R}$	&	1	&	1	&	27	&	15	&	52	&	203	&	864		&	4,855	&	28,672\\
+\hline
+\end{tabular}
+\end{table}
+
+The problem here is that we are multiplying a lot of matrices that are $0$, so we just need an indicator that if a matrices is 0, then we just return it.
 
 \end{document}  

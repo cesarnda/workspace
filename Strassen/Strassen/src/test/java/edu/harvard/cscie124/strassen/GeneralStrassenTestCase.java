@@ -12,9 +12,13 @@ public class GeneralStrassenTestCase {
 	private MatrixMultiplication matrixMultiplication;
 	private MatrixGenerator matrixGenerator;
 	private Strassen strassenMultiplication;
+	private boolean validate;
 	
 	//int[] sizes = new int[]{2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768};
 	int[] sizes = new int[]{2, 4, 8, 16, 32, 64, 128, 256, 512, 1024};
+	//int[] sizes = new int[]{2048, 4096, 8192,};
+	int[] sizesOdd = new int[]{3, 9, 17, 33, 65, 129, 257, 513, 1025};
+
 
 	
 	public GeneralStrassenTestCase(){
@@ -24,6 +28,13 @@ public class GeneralStrassenTestCase {
 	
 	public void setStrassent(Strassen strassen){
 		this.strassenMultiplication = strassen;
+	}
+	
+	public void runNonSquareTestCases(){
+		multiply_Test_With_N_In_Range_0_To_1_Matrices();
+		multiply_Test_With_0_And_1_And_Negative_1_Matrices();
+		multiply_Test_With_0_And_1_And_2_Matrices();
+		multiply_Test_With_0_And_1_Matrices();
 	}
 	
 	public void runTestCases(){
@@ -66,9 +77,11 @@ public class GeneralStrassenTestCase {
 		logger.info("Test with " + size + "-size Square matrices with 0 and 1");
 		double[][] a = matrixGenerator.generateMatrixWith0And1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1(size, size);
-		//double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
 		Matrix result = strassenMultiplication.multiply(a, b);
-		//assertTrue(result.equals(expectedResult, 0.0001));
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
 	}
 	
 	
@@ -83,9 +96,11 @@ public class GeneralStrassenTestCase {
 		logger.info("Test with " + size + "-size Square matrices with 0, 1 and 2");
 		double[][] a = matrixGenerator.generateMatrixWith0And1And2(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1And2(size, size);
-		//double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
 		Matrix result = strassenMultiplication.multiply(a, b);
-		//assertTrue(result.equals(expectedResult, 0.0001));
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
 	}
 	
 	
@@ -99,9 +114,11 @@ public class GeneralStrassenTestCase {
 		logger.info("Test with " + size + "-size Square matrices with 0, 1 and -1");
 		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
 		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(size, size);
-		//double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
 		Matrix result = strassenMultiplication.multiply(a, b);
-		//assertTrue(result.equals(expectedResult, 0.0001));
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
 	}
 	
 	
@@ -116,9 +133,83 @@ public class GeneralStrassenTestCase {
 		logger.info("Test with " + size + "-size Square matrices in range 0 to 1");
 		double[][] a = matrixGenerator.generateMatriInRange0To1(size, size);
 		double[][] b = matrixGenerator.generateMatriInRange0To1(size, size);
-		//double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
 		Matrix result = strassenMultiplication.multiply(a, b);
-		//assertTrue(result.equals(expectedResult, 0.0001));
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
 	}
 	
+	public void multiply_Test_With_N_In_Range_0_To_1_Matrices(){
+		for(int size : sizesOdd){
+			multiply_Test_With_N_Square_In_Range_0_To_1_Matrices(size, size, size);
+		}
+	}
+	
+	
+	public void multiply_Test_With_N_Square_In_Range_0_To_1_Matrices(int rowsOfA, int rowsOfB, int columnsOfB){
+		logger.info("Test with A(" + rowsOfA + ", " + rowsOfB + ")  and B(" + rowsOfB + ", " + columnsOfB + ") matrices in range 0 to 1");
+		double[][] a = matrixGenerator.generateMatriInRange0To1(rowsOfA, rowsOfB);
+		double[][] b = matrixGenerator.generateMatriInRange0To1(rowsOfB, columnsOfB);
+		Matrix result = strassenMultiplication.multiply(a, b);
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
+	}
+	
+	public void multiply_Test_With_0_And_1_And_Negative_1_Matrices(){
+		for(int size : sizesOdd){
+			multiply_Test_With__0_And1_And_Negative_1_Matrices(size, size, size);
+		}
+	}
+	
+	public void multiply_Test_With__0_And1_And_Negative_1_Matrices(int rowsOfA, int rowsOfB, int columnsOfB){
+		logger.info("Test with A(" + rowsOfA + ", " + rowsOfB + ")  and B(" + rowsOfB + ", " + columnsOfB + ") matrices with 0, 1 and -1");
+		double[][] a = matrixGenerator.generateMatrixWith0And1AndNegative1(rowsOfA, rowsOfB);
+		double[][] b = matrixGenerator.generateMatrixWith0And1AndNegative1(rowsOfB, columnsOfB);
+		Matrix result = strassenMultiplication.multiply(a, b);
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
+	}
+	
+	public void multiply_Test_With_0_And_1_And_2_Matrices(){
+		for(int size : sizesOdd){
+			multiply_Test_With_0_And_1_And_2_Matrices(size, size, size);
+		}
+	}
+
+	public void multiply_Test_With_0_And_1_And_2_Matrices(int rowsOfA, int rowsOfB, int columnsOfB){
+		logger.info("Test with A(" + rowsOfA + ", " + rowsOfB + ")  and B(" + rowsOfB + ", " + columnsOfB + ") matrices with 0, 1 and 2");
+		double[][] a = matrixGenerator.generateMatrixWith0And1And2(rowsOfA, rowsOfB);
+		double[][] b = matrixGenerator.generateMatrixWith0And1And2(rowsOfB, columnsOfB);
+		Matrix result = strassenMultiplication.multiply(a, b);
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
+	}
+	
+	public void multiply_Test_With_0_And_1_Matrices(){
+		for(int size : sizesOdd){
+			multiply_Test_With_0_And_1_Matrices(size, size, size);
+		}
+	}
+	
+	public void multiply_Test_With_0_And_1_Matrices(int rowsOfA, int rowsOfB, int columnsOfB){
+		logger.info("Test with A(" + rowsOfA + ", " + rowsOfB + ")  and B(" + rowsOfB + ", " + columnsOfB + ") matrices with 0 and 1");
+		double[][] a = matrixGenerator.generateMatrixWith0And1(rowsOfA, rowsOfB);
+		double[][] b = matrixGenerator.generateMatrixWith0And1(rowsOfB, columnsOfB);
+		Matrix result = strassenMultiplication.multiply(a, b);
+		if(validate){
+			double[][] expectedResult = matrixMultiplication.multiplyNaive(a, b);
+			assertTrue(result.equals(expectedResult, 0.0001));
+		}
+	}
+
+	public void setValidate(boolean validate) {
+		this.validate = validate;
+	}
 }

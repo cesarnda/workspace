@@ -32,7 +32,14 @@ public class StrassenMultiplicationTestCase {
 		//strassenTestCases.runTestCases();
 		
 		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(16));
-		strassenTestCases.runTestCases();
+		//strassenTestCases.runTestCases();
+		
+		strassenTestCases.setStrassent(new StrassenMultiplicationWithThreshold(8));
+		//strassenTestCases.runTestCases();
+		
+		strassenTestCases.setStrassent(new StrassenMultiplicationWithThresholdAndPadding(32));
+		strassenTestCases.setValidate(false);
+		strassenTestCases.runNonSquareTestCases();
 	}
 	
 	

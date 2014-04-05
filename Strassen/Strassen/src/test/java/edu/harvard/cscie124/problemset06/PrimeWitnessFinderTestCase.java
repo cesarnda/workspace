@@ -12,14 +12,14 @@ public class PrimeWitnessFinderTestCase {
 	@Test
 	public void findWitness_Test_With_636_127(){
 		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
-		int witness = primeWitnessFinder.findWitness(636_127);
+		int witness = primeWitnessFinder.findWitness(636127);
 		assertNotEquals(1, witness);
 	}
 	
 	@Test
 	public void findWitness_Test_With_294_409(){
 		PrimeWitnessFinder primeWitnessFinder = new PrimeWitnessFinder();
-		int witness = primeWitnessFinder.findWitness(294_409);
+		int witness = primeWitnessFinder.findWitness(294409);
 		assertNotEquals(1, witness);
 	}
 	/*
