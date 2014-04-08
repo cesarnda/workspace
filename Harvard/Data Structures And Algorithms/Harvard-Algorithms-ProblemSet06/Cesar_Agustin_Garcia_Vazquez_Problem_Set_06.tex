@@ -70,16 +70,40 @@
 	2mk + k(k - 1)						&	\geq	&	2n \log(2) \label{generalCaseForM}
 	\end{eqnarray}
 	
-	From equation (\ref{generalCaseForM}), we know that $n = 100,000,000$ and $m = 10,000$, we reach in equation in (\ref{finalInequation}), and by solving it using sagemath.org, we reach to 2 roots and we focus only in the real root, which means that $k = 25446.8116224798$, i.e., that is, with 25,446 people in a room, the probability of password collision is les than 
+	From equation (\ref{generalCaseForM}), we know that $n = 100,000,000$ and $m = 10,000$, we reach in equation in (\ref{finalInequation}), and by solving it using sagemath.org, we reach to 2 roots and we focus only in the real root, which means that $k = 25446.8116224798$, i.e., that is, with 25,446 people in a room, the probability of password collision is less than 0.5
 	
 	\begin{eqnarray}
 	2mk + k(k - 1)						&	\geq	&	2n \log(2) \nonumber \\
 	2(10,000)k + k(k - 1)					&	\geq	&	2(100,000,000) \log(2) \nonumber \\
 	20,000k + k^2 - k - 200,000,000 \log(2)	&	\geq	& 	0 \nonumber \\
-	k^2 - 19,999k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
-	k^2 - 19,999k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
-	k^2 - 19,999k - 138,629,436.112		&	\geq	&	0 \label{finalInequation}
+	k^2 + 19,999k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
+	k^2 + 19,999k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
+	k^2 + 19,999k - 138,629,436.112		&	\geq	&	0 \label{finalInequation}
 	\end{eqnarray}
+	
+	For the second question, we just have to do $m = 1$, and then we reach inequality (\ref{caseForM1}), and then solving for $k$, we have that the number of ids that could be issued before a collision are 11,774.
+	
+	\begin{eqnarray}
+	2mk + k(k - 1)						&	\geq	&	2n \log(2) \nonumber \\
+	2k + k(k - 1)					&	\geq	&	2(100,000,000) \log(2) \nonumber \\
+	2k + k^2 - k - 200,000,000 \log(2)	&	\geq	& 	0 \nonumber \\
+	k^2 + k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
+	k^2 + k - 200,000,000(0.693)		&	\geq	&	0 \nonumber \\
+	k^2 + k - 138,629,436.112		&	\geq	&	0 \label{caseForM1}
+	\end{eqnarray}
+	
+	For the third question, $m = 10,000$ but $n = 1,000,000,000,000$, so, we reach the inequality (\ref{biggerInequality}), and then solving for $k$ we have that the number of people in a room, for the probability of password collision to be less than 0.5, is 1,167,452.
+	
+	\begin{eqnarray}
+	2mk + k(k - 1)						&	\geq	&	2n \log(2) \nonumber \\
+	2(10,000)k + k(k - 1)					&	\geq	&	2( 1,000,000,000,000) \log(2) \nonumber \\
+	20,000k + k^2 - k -  2,000,000,000,000 \log(2)	&	\geq	& 	0 \nonumber \\
+	k^2 + 19,999k -  2,000,000,000,000(0.693)		&	\geq	&	0 \nonumber \\
+	k^2 + 19,999k - 1,386,294,361,120		&	\geq	&	0 \label{biggerInequality}
+	\end{eqnarray}
+
+
+	
 	
 	\item Suppose each person gets a random hash value from the range $[1, \ldots, n]$. (For the case of birthdays, $n$ would be 365.) Show that for some constant $c_1$, where there are at least $c_1 \sqrt{n}$ people in a room, the probability that no two have the same hash value is at most $1/e$. Similarly, show that for some constant $c_2$ (and sufficiently large $n$), when there are at most $c_2 \sqrt{n}$ people in the room, the probability that no two have the same hash value is at least $1/2$. Make these constants as close to optimal as possible.\\
 	Hint: you may use the fact in equation (\ref{hint2.1})
