@@ -51,31 +51,51 @@
 	
 	You may feel free to find and use better bounds.\\
 	\\
-	\textbf{Answer: } For the case with some constant $c_1$, where $k \geq c_1 \sqrt{n}$, the probability that no two have the same hash is the same as all of the $c_1 \sqrt{n}$ people have different hash value.\\
-	If we consider the birthday paradox, the probability that no two people have the same birthday is given by equation (\ref{birthdayEquation}).
-	\begin{eqnarray}
-	P(B) 	&	=	& \prod_{j}^{k}\frac{365 - j + 1}{365} \nonumber\\
-		&	=	& \prod_{j}^{k} \frac{1}{365}\left(365 - j + 1 \right) \nonumber \\
-		&	=	& \left( \frac{1}{365}\right)^{k} \prod_{j}^{k} \left(365 - j + 1 \right) \nonumber \\
-		&	=	& \left( \frac{1}{365}\right)^{k} \frac{365!}{(365 - k)!} \label{birthdayEquation}
-	\end{eqnarray}
-	
-	If we generalize from 365 to $n$, then we get equation (\ref{generalizeBirthday}).
-	
-	\begin{equation}\label{generalizeBirthday}
-	P(B) = \left( \frac{1}{n}\right)^{k} \frac{n!}{(n - k)!} 
-	\end{equation}
-	
-	If we consider $k \geq \sqrt{n}$ then equation (\ref{generalizeBirthday})  becomes equation (\ref{birthdayC1}).
+	\textbf{Answer: } For this problem, we are going to consider the general case of the birthday paradox problem, where the probability of no collisions when we have $k$ people over $n$ numbers is given by equation (\ref{probabilityGeneral}).
 	
 	\begin{eqnarray}
-	P(B) &	\leq	& \left( \frac{1}{n}\right)^{k} \frac{n!}{(n - k)!} \nonumber \\
-		&	\leq	&  \left( \frac{1}{n}\right)^{c_1\sqrt{n}} \frac{n!}{(n - c_1 \sqrt{n})!} \nonumber \\
-		&	\leq	&  \left( \frac{1}{ n^{c_1\sqrt{n}} } \right) \frac{n!}{(n - c_1 \sqrt{n})!} \label{birthdayC1} 
+	P(B_k) 	&	=	&	\left( \frac{n - 0}{n} \right) \cdot  \left( \frac{n - 1}{n} \right) \cdot \left( \frac{n - 2}{n} \right)\cdots\left( \frac{n - k + 1}{n} \right) \nonumber \\
+			&	=	&	1 \cdot \left(1 -  \frac{1}{n} \right)\cdot \left(1 -  \frac{1}{n} \right)\cdot \left(1 -  \frac{2}{n} \right) \cdots \left(1 -  \frac{k-1}{n} \right)\label{probabilityGeneral}
 	\end{eqnarray}
 	
-	We can simplify the analysis if we consider $X_{ij} = $
+	If we consider the inequality (\ref{hint2.1}), then we can reach the result in equation (\ref{simplifiedProbability}).
 	
+	\begin{eqnarray}
+	P(B_k)	&	\leq	&	e^{-1/n} \cdot e^{-2/n} \cdots e^{-(k - 1)/n} \nonumber \\
+			&	=	&	e^{-\sum_{i = 1}^{k -1} \frac{i}{n}} \nonumber \\
+			&	=	&	e^{-\frac{k(k-1)}{2n}} \label{simplifiedProbability}
+	\end{eqnarray}
+	
+	For the first case, we want that $P(B_{k}) \leq 1/e$, so if we consider that  $e^{-\frac{k(k-1)}{2n}} \approx e^{-\frac{k^2}{2n}} $, then we we reach (\ref{constantC1}), which means that $c_1 = \sqrt{2} \approx 1.414$
+	
+	\begin{eqnarray}
+	{\displaystyle e^{-\frac{k^2}{2n}} }		&	\leq	&	\frac{1}{e} \nonumber \\
+	-\frac{k^2}{2n}						&	\leq &	\log\left(\frac{1}{e}\right) \nonumber \\
+	-k^2								& 	\leq & 2n \log(e^{-1}) \nonumber \\
+	-k^2								&	\leq	& -2n  \nonumber \\
+	k^2								& 	>	& 2  n \nonumber \\
+	k								&	>	&	\sqrt{ 2 n} \nonumber \\
+	k								&	>	&	\sqrt{ 2}\sqrt{n} \label{constantC1}
+	\end{eqnarray}
+
+	
+	For the second case, we want that $P(B_{k}) \geq 1/2$, so if we consider that $e^{-\frac{k(k-1)}{2n}} \geq e^{-\frac{k^2}{2n}} $, then we reach (\ref{constantC2}), which means that $c_2 = \sqrt{ 2 \log(2)} \approx 1.177$
+	
+		
+	\begin{eqnarray}
+	P(B_k) 							&	\geq &	\frac{1}{2} \nonumber \\
+	{\displaystyle e^{-\frac{k(k-1)}{2n}} }		&	\geq	&	\frac{1}{2} \nonumber \\
+	{\displaystyle e^{-\frac{k(k-1)}{2n}} }		&	\geq	&	{\displaystyle e^{-\frac{k^2}{2n}} }	 \nonumber \\
+	{\displaystyle e^{-\frac{k^2}{2n}} }		&	\geq	&	\frac{1}{2} \nonumber \\
+	-\frac{k^2}{2n}						&	\geq &	\log\left(\frac{1}{2}\right) \nonumber \\
+	-k^2								& 	\geq & 2n \log(2^{-1}) \nonumber \\
+	-k^2								&	\geq	& -2n \log(2) \nonumber \\
+	k^2								& <		& 2 \log(2) n \nonumber \\
+	k								&	<	&	\sqrt{ 2 \log(2) n} \nonumber \\
+	k								&	<	&	\sqrt{ 2 \log(2)}\sqrt{n} \label{constantC2}
+	\end{eqnarray}
+
+		
 	\item For the document similarity scheme described in class, it would be better to store fewer bytes per document. Here is one way to do this, that uses just 48 bytes per document: take an original sketch of a document, using 84 different permutations. Divide the 84 permutations into 6 groups of 14. Re-hash each group of 14 values to get 6 new 64 bit values. Call this the \textit{super-sketch}. Note that for each of the 6 values in the super-sketch, two documents will agree on a value when they agree on all 14 of the corresponding values in the sketch. Why does it make sense to simply assume that this is the only time a match will occur?\\
 	Consider the probability that two documents with resemblance $r$ agree on two or more of the six sketches. Write equations that give this probability and graph the probability of a function of $r$. Explain and discuss your results.\\
 	What happens if instead of using a 64 bit hash value for each group in the super-sketch, we only use a 16 bit hash? An 8 bit hash?
