@@ -45,14 +45,29 @@
 			&	=	&	\left(1 - \frac{m}{n} \right) \cdot \left(1 -  \frac{m + 1}{n} \right)\cdot \left(1 -  \frac{m + 2}{n} \right) \cdots \left(1 -  \frac{m + k-1}{n} \right)\label{probabilityGeneralWithM}
 	\end{eqnarray}
 	
-	If we consider the inequality $e^{-x} \geq 1-x$, then we reach
+	If we consider the inequality $e^{-x} \geq 1-x$, then we reach the result in equation (\ref{generalBirthdayWithRepetition}).
 	\begin{eqnarray}
 	P(B_k)	&	=	&	\left(1 - \frac{m}{n} \right) \cdot \left(1 -  \frac{m + 1}{n} \right)\cdot \left(1 -  \frac{m + 2}{n} \right) \cdots \left(1 -  \frac{m + k-1}{n} \right) \nonumber \\
 			&	\leq	&	e^{-\frac{m}{n}} \cdot e^{-\frac{m+1}{n}}\cdot e^{-\frac{m+1}{n}} \cdots e^{-\frac{m+k - 1}{n}} \nonumber \\
 			&	=	&	e^{-\frac{m}{n}-\frac{m + 1}{n} -\frac{m + 2}{n} - \cdots -\frac{m + k -1}{n}} \nonumber\\
 			&	=	&	e^{-\sum_{i=0}^{k - 1}\frac{m + i}{n} }\nonumber \\
 			&	=	&	e^{-\sum_{i=0}^{k - 1}\left( \frac{m}{n}  + \frac{i}{n} \right)}  \nonumber \\
-			&	=	&	e^{-\sum_{i=0}^{k - 1}\left( \frac{m}{n}  + \frac{i}{n} \right)}  \nonumber \\
+			&	=	&	e^{-\left( \sum_{i=0}^{k - 1} \frac{m}{n}  + \sum_{i=0}^{k - 1} \frac{i}{n} \right)}  \nonumber \\
+			&	=	&	e^{-\left( \frac{m}{n} \sum_{i=0}^{k - 1} 1 + \frac{1}{n}\sum_{i=0}^{k - 1} i \right)}  \nonumber \\			
+			&	=	&	e^{-\left( \frac{m}{n} k+ \frac{1}{n}\frac{k(k -1)}{2} \right)}  \nonumber \\	
+			&	=	&	e^{-\left( \frac{mk}{n}+ \frac{k(k -1)}{2n}\right)}  \nonumber \\	
+			&	=	&	e^{-\left(\frac{2mk + k(k - 1)}{2n} \right)}  \label{generalBirthdayWithRepetition}			
+	\end{eqnarray}
+	
+	So we want to know $k$ such that $P(B_k) \leq e^{-\left(\frac{2mk + k(k - 1)}{2n} \right)} < 1/2$, which can be reached 
+	
+	\begin{eqnarray}
+	e^{-\left(\frac{2mk + k(k - 1)}{2n} \right)} 	&	<	&	\frac{1}{2} \nonumber \\
+	-\left(\frac{2mk + k(k - 1)}{2n} \right)		&	<	&	\log\left( \frac{1}{2} \right) \nonumber \\
+	-\left(\frac{2mk + k(k - 1)}{2n} \right)		&	<	&	\log ( 2^{-1} ) \nonumber \\
+	-\left(\frac{2mk + k(k - 1)}{2n} \right)		&	<	&	-\log( 2) \nonumber \\
+	\frac{2mk + k(k - 1)}{2n} 				&	\geq	&	\log( 2) \nonumber \\
+	2mk + k(k - 1)						&	\geq	&	2n \log(2) \nonumber\\
 	\end{eqnarray}
 	
 	\item Suppose each person gets a random hash value from the range $[1, \ldots, n]$. (For the case of birthdays, $n$ would be 365.) Show that for some constant $c_1$, where there are at least $c_1 \sqrt{n}$ people in a room, the probability that no two have the same hash value is at most $1/e$. Similarly, show that for some constant $c_2$ (and sufficiently large $n$), when there are at most $c_2 \sqrt{n}$ people in the room, the probability that no two have the same hash value is at least $1/2$. Make these constants as close to optimal as possible.\\
