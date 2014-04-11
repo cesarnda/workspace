@@ -31,7 +31,73 @@
 \section{Problem Set 07}
 
 \begin{enumerate}
-	\item 
+	\item We have considered a random walk with a completely reflecting boundary at 0- that is, whenever position 0 is reached, with probability 1 we move to position 1 at the next turn. Consider now a random walk with a partially reflecting boundary at 0- whenever position 0 is reached, with probability 1/2 we move to position 1 at the next turn, and with probability 1/2 we stay at 0. Everywhere else the random walk either moves up or down 1, each with probability 1/2.\\
+	Find the expected number of moves to reach $n$ starting from posting $i$ using a random walk with a partially reflecting boundary.
+	
+	\item Find the maximum flow from $s$ to $t$ and the minimum cut between $s$ and $t$ in the network below in Figure \ref{network}, using the method of augmenting paths discussed in class. (This means give the flow a long each edge, along with the final flow value; similarly, give the edges that cross the cut, along with the final cut value.) Show the residual network at the intermediate steps as you build the flow. (If you need more information on the algorithm, it's called the Ford-Fulkerson algorithm.)
+	
+	
+\begin{figure}[ht!]
+\centering	
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=3cm,
+  thick,main node/.style={circle,fill=blue!20,draw,font=\sffamily\Large\bfseries}]
+
+  \node[main node] (1){a};
+  \node[main node] (2) [below left of=1]{s};
+  \node[main node] (3) [right of=1] {b};
+  \node[main node] (4) [below right of=2] {c};
+  \node[main node] (5) [right of=4] {d}; 
+  \node[main node] (6) [below right of=3] {e};   
+  \node[main node] (7) [right of=6] {t};  
+  \path[every node/.style={font=\sffamily\small}]
+    (2) edge node [left] {4} (1)
+        edge [right] node[left] {5} (4)
+    (1) edge node [bend right] {3} (3)
+    	edge node [bend right] {2} (5)
+	edge node [bend right] {1} (6)
+    (3) edge node [bend right] {4} (7)
+    (4) edge node [bend right]{3}(5)
+          edge node [bend right]{1}(1)
+          edge node [bend right]{1}(6)
+    (6) edge node [bend right]{7}(7)
+    (5) edge node [bend right]{3}(7)
+    	;
+\end{tikzpicture}
+\caption{\label{network}Network}
+\end{figure}
+	
+	\item There are many variations on the maximum flow problem. For the two examples below, show how to solve the more general problem by reducing it to the original max-flow problem.
+	
+	\begin{itemize}
+		\item There are multiple sources and multiple sinks, and we wish to maximize the flow between all sources and all sinks.
+		\item Both the edges \textit{and the vertices} (except for $s$ and $t$) have capacities. The flow into and out of a vertex cannot exceed the capacity of the vertex.
+	\end{itemize}
+	
+	\item For the next two problems, show how to reduce the problem to linear programming.
+	\begin{itemize}
+		\item At each vertex, half the flow into the vertex is lost (or kept) at the vertex, and the other half flows out. The goal is to maximize the flow that reaches the destination $t$.
+		\item For each edge $e$, there is also a fixed cost $c_e$ for each unit of flow through the edge. We need to find the maximum flow with the minimum cost. That is, there may be many possible flows that achieve the maximum flow; if there is more than one such flow, find the one of minimum cost. (Hint: you may need to use more than on a linear program!)
+	\end{itemize}
+	
+	\item Suppose we are given a maximum flow in a graph $G=(V, E)$ with source $s$, sink $t$, and integer capacities. (That is, we're given both the maximum flow value, as well as the amount of flow that goes along each edge to achieve that value.) Now the capacity of a given edge $e$ is increased by 1. Give a linear time $O(|V| + |E|)$  algorithm for computing the new maximum flow. Similarly, give a linear time $O(|V| + |E|)$ algorithm for computing the new maximum flow if the capacity of a given edge $e$ is decreased by 1.
+	
+	\item Consider the two-player game given by the following matrix. (A positive payoff goes to the row player.)
+	$$
+	\left[
+	\begin{array}{cccc}
+	3	&	1	&	0	&	-4\\
+	6	&	-2	&	-2	&	0\\
+	-3	&	-2	&	3	&	-3\\
+	-7	&	4	&	-5	&	7
+	\end{array}
+	\right]	
+	$$
+	
+	\begin{itemize}
+		\item Write down the linear program to determine the row player strategy that maximizes the value of the game to the row player. Do the same for the column player.
+		\item Find an LP solver. Use the solver to solve these linear programs, and give the proper strategies for both players.
+		\item What is the value of the game? Should the column player pay the row player to play, or vice verse, and how much should one player pay the other to make the game fair?
+	\end{itemize}
 \end{enumerate}
 %\subsection{}
 
