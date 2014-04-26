@@ -6,4 +6,5 @@ public interface Heap<T>{
 	public T deleteElementAtTop();
 	public void insertElement(T t);
 	public int size();
+	public void clear();
 }

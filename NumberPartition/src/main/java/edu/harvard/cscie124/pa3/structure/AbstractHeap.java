@@ -1,5 +1,6 @@
 package edu.harvard.cscie124.pa3.structure;
 
+import java.util.Collection;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
@@ -9,6 +10,13 @@ public abstract class AbstractHeap<T> implements Heap<T>, Comparator<T> {
 	
 	public AbstractHeap(){
 		queue = new PriorityQueue<T>(100, this);
+	}
+	
+	public AbstractHeap(final Collection<T> elements){
+		this();
+		for(T element : elements){
+			insertElement(element);
+		}
 	}
 	
 	/**
@@ -38,6 +46,11 @@ public abstract class AbstractHeap<T> implements Heap<T>, Comparator<T> {
 	@Override
 	public int size(){
 		return queue.size();
+	}
+	
+	@Override
+	public void clear(){
+		queue.clear();
 	}
 	
 }
