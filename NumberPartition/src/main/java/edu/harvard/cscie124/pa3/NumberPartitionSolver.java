@@ -4,6 +4,6 @@ import java.util.List;
 
 public interface NumberPartitionSolver {
 
-	public int getResidue(List<Integer> list);
+	public long getResidue(List<Long> list);
 	
 }

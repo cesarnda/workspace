@@ -27,17 +27,17 @@ public class KarmarkarKarp implements NumberPartitionSolver {
 	}
 	
 	@Override
-	public int getResidue(List<Integer> list) {
+	public long getResidue(List<Long> list) {
 		
 		if(list == null || list.isEmpty()){
 			return 0;
 		}
 		
-		Heap<Integer> heap = new MaxHeap<Integer>(list);
+		Heap<Long> heap = new MaxHeap<Long>(list);
 		return findResidueInSortedList(heap);
 	}
 	
-	private int findResidueInSortedList(final Heap<Integer> heap){
+	private long findResidueInSortedList(final Heap<Long> heap){
 		if(heap.size() == 0){
 			return 0;
 		}
@@ -46,9 +46,9 @@ public class KarmarkarKarp implements NumberPartitionSolver {
 			return heap.deleteElementAtTop();
 		}
 		
-		Integer firstlargest = heap.deleteElementAtTop();
-		Integer secondLarget = heap.deleteElementAtTop();
-		Integer residue = Math.abs(firstlargest - secondLarget);
+		Long firstlargest = heap.deleteElementAtTop();
+		Long secondLarget = heap.deleteElementAtTop();
+		Long residue = Math.abs(firstlargest - secondLarget);
 		// Only nonzero elements are inserted, otherwise, they will not affect the final result
 		if(residue > 0){
 			heap.insertElement(residue);
