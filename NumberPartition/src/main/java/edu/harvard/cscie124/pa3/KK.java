@@ -1,5 +1,7 @@
 package edu.harvard.cscie124.pa3;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -14,21 +16,22 @@ public class KK {
 		karmarkarKarp = new KarmarkarKarp();
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		KK kk = new KK();
 		long residue = kk.applyKarmarkarKarp(args[0]);
 		System.out.println(residue);
 	}
 	
-	public long applyKarmarkarKarp(String filename){
+	public long applyKarmarkarKarp(String filename) throws FileNotFoundException{
 		List<Long> elements = readIntegersFromFile(filename);
 		return karmarkarKarp.getResidue(elements);
 	}
 	
-	private List<Long> readIntegersFromFile(String filename){
+	private List<Long> readIntegersFromFile(String filename) throws FileNotFoundException{
 		List<Long> elements = new ArrayList<Long>(100);
-		Scanner scanner = new Scanner(filename);
+		Scanner scanner = new Scanner(new File(filename));
 		while(scanner.hasNext()){
+			//String line = scanner.nextLine();
 			elements.add(scanner.nextLong());
 		}
 		
