@@ -48,8 +48,87 @@ In this programming assignment, we are going to analyze and implement several he
 
 \subsection{Number Partition in $O(n \cdot b)$}
 
-As a warm-up exercise, you will first prove that even though Number Partition is NP-complete, it can be solved in pseudo-polynomial time. That is, suppose the sequence of terms in $A$ sum up to some number $b$. Then each of the numbers in $A$ has at most $\log b$ bits, so a polynomial time algorithm would take time polynomial in $n \cdot \log b$. Instead you should find a dynamic programming algorithm that takes time polynomial in $n \cdot b$.
+As a warm-up exercise, you will first prove that even though Number Partition is NP-complete, it can be solved in pseudo-polynomial time. That is, suppose the sequence of terms in $A$ sum up to some number $b$. Then each of the numbers in $A$ has at most $\log b$ bits, so a polynomial time algorithm would take time polynomial in $n \cdot \log b$. Instead you should find a dynamic programming algorithm that takes time polynomial in $n \cdot b$. \\
+\\
+If we consider sum over the elements in $A$ is $b$, then the program can be reduced as from a set of integers, find the subset whose elements sum $b$. To solve this problem using dynamic program, we are going to consider smaller problems which are given by finding the subset whose elements sum $b - 1$. If we continue this way simplifying this problem, we are going to reach to the simple problem of finding a subset over $n$ elements, whose sum is 1. \\
+This problem can be simplified even more if we consider a smaller subset, i.e., finding a subset over $n- 1$ elements, whose sum is 1. If we continue reducing this problem, then we are going to reach the simple problem which is determine if we the first element, is equal to 1. \\
+If we can solve this problem, we can solve the problem of the residue by finding the closest element to $b / 2$ that can be yielded by summing a subset of $A$. For this, we are going to create a tableau with $n$ rows, which are going to represent the elements of the set and $b$ columns, that are going to represent the numbers that can be yielded by summing up a subset from $A$. So we have to create a n $n \cdot b$ boolean tableau $D$, in which each entry $(i,j)$ is true if it is possible to sum take the elements in the set $A$ from $a_1$ to $a_j$, i.e., from the first one, up to the $j$-th element.\\ 
+The recurrence is going to be given by considering how can $D(i,j)$ be computed if I already know if $D(i - 1, j)$ and $D(i - 1, j- 1)$. If we know that $D(i - 1, j)$ is true, that means that we can yield the number $j$ wit the previous $i - 1$ elements, and we can do it with the first $i$ elements just by not considering the $i$-th element in the subset. \\ 
+\\
+If $D(i-1, j)$ is false, then it means that so far we have not been able to generate a subset whose elements sum $j$. Hence, we have to consider the information that $D(i - 1, j - 1)$ can give, which only tells us if the number $j- 1$ was able to be computed with $i -1$ elements. If we were to add the element $a_i$ to the set, we would be able to yield the value $j$ as long as the current sum is $j - a_i$. Therefore if $D(i - 1, j - a_i)$ is true, then $D(i, j)$ is true because we just need to add $a_i$ to the subset in $D(i - 1, j - a_1)$.\\
+\\
+Before applying the recurrence formula in a nested loop, we need to consider a base case or a way to initialize the tableau with a sum that can be yielded. This initialization is going to be given by the minimum element in the array. This algorithm is shown in Algorithm \ref{isSumPossible}.
 
+\begin{algorithm}[th!]
+	{\bf funcion} populateTableau(Array $A$)\\
+	Long $b$ = $\sum_{a \in A}a$\\
+	Long minimum = A.minimum\\
+	boolean[] tableau = new boolean[$A.size$][$b$ + 1]\\
+	tableau[0][minimum] = \textbf{true} \tcp{initialize tableau} 
+	\For{(int $i$ = 1; $i$ $< A.size$; $i$++)}{
+		\For{(long $j$ = 1; $j$ $\leq b$; $j$++)}{
+			\If{tableau[$i$ - 1][$j$] \textbf{or} tableau[$i$ - 1][$j$ - A[$i$]]}{
+				tableau[$i$][$j$] = \textbf{true};
+			}
+		}
+	}
+\caption{Algorithm to populate the tableau to check if a sum is possible}
+\label{isSumPossible}
+\end{algorithm}
+
+So far we can only decide if based on the set $A$, we are able to compute a sum $k$, where $k$ can be $b$ or $b/2$. We want to partition $A$ into $A_1$ and $A_2$, such that if $S_1 = \sum_{a \in A_1} a$ and $S_2 = \sum_{a^{\prime} \in A_2} a^{\prime}$, then $|S_1 - S_2|$ is minimized. Assuming the best case is when $S_1 = m$, then $S_2 = b - m$, then the residue is going to be given by equation (\ref{numberPartitionResidueFormula}).
+
+\begin{eqnarray}
+|S_1 - S_2|	&	=	&	|\sum_{a \in A_1} - \sum_{a^{\prime} \in A_2} a^{\prime}| \nonumber \\
+				&	=	&	|m - (b - m)| \nonumber \\
+				&	=	&	|m - b + m| \nonumber \\
+				&	=	&	|2m - b| \nonumber \\
+				&	=	&	|2m - 2 \frac{b}{2}| \nonumber \\
+				&	=	&	\left|2\left(m - \frac{b}{2} \right)\right| \nonumber \\
+				&	=	&	2\left|m - \frac{b}{2}\right| \label{numberPartitionResidueFormula}
+\end{eqnarray}
+
+The number partition problem now can be reduced to finding the element $m$ that is possible to yield and is the closest to $b/2$, since the perfect scenario is when $S_1$ and $S_2$ are both equal to $b/2$. So we only have to iterate over the columns from $b/2$ down to 1, until we find that $D(i,j)$ is true. This search might be in $O(n \cdot b)$ but can be reduced if maintain an boolean array $C$ of size equals to $b$, in which an element $c$ is going to be true as long as $D(x, c)$ is true for any $x \in [1, \ldots n]$. The algorithm \ref{isSumPossibleUpdate} shows the updated version to add the new array to keep track of the values that be generated. Notice that so far the complexity of the algorithm is $O(n \cdot b)$, which might be considered as the initialization and population of the tableau.
+
+\begin{algorithm}[th!]
+	{\bf funcion} populateTableau(Array $A$)\\
+	Long $b$ = $\sum_{a \in A}a$\\
+	Long minimum = A.minimum\\
+	boolean[][] tableau = new boolean[$A.size$][$b$ + 1]\\
+	boolean[] C = new boolean[$b$ + 1]\\
+	tableau[0][minimum] = \textbf{true} \tcp{initialize tableau} 
+	\For{(int $i$ = 1; $i$ $< A.size$; $i$++)}{
+		\For{(long $j$ = 1; $j$ $\leq b$; $j$++)}{
+			\If{tableau[$i$ - 1][$j$] \textbf{or} tableau[$i$ - 1][$j$ - A[$i$]]}{
+				tableau[$i$][$j$] = \textbf{true};\\
+				C[$j$] = \textbf{true}
+			}
+		}
+	}
+\caption{Algorithm to populate the tableau to check if a sum is possible in $O(b)$}
+\label{isSumPossibleUpdate}
+\end{algorithm}
+
+Finally, we just need to find $m$ such that $|m - b / 2$ is minimized. This can be achieved in $O(b)$ by considering just the first value that can be computed starting from $b /2$ down to 1. The algorithm \ref{checkIfSumIsPossible} shows how this search can be done and returns the absolute difference $|m - b/2|$.
+
+\begin{algorithm}[th!]
+	{\bf funcion} findSumThatMinimizes(Long b)\\
+	Long $b$ = $\sum_{a \in A}a$\\
+	\For{(long $m = b /2$; $m > 0$; $m = m - 1$)}{
+		\If{C[m] == \textbf{true}}{
+			\Return $|m - b / 2|$
+		}
+	}
+	\Return \textbf{null}
+\caption{Algorithm check if a sum is possible in $O(b)$}
+\label{checkIfSumIsPossible}
+\end{algorithm}
+
+Based on equation (\ref{numberPartitionResidueFormula}), the returned value  just needs to be multiplied by 2 and we would have gotten the minimum residue possible. The only thing that we have to consider is when $b$ is odd, which makes $b/2$ be not an integer. For this scenario we just need to return $2 |m - b / 2| + b \mbox{ mod } 2$, to add the missing 1, due to the division.\\
+\\
+The algorithm works in theory and in practice is going to work fine with small integers, but when we consider integers in the range of $10^{12}$, then creating the tableau and populating it is going to take too long. Also languages like Java do not allow the creating of arrays that big. To solve this problem, we can create a class called \textit{SparseMatrix} that is going to manage big matrices.\\
+For this approach we considered an array of maps to store the values that are true for each column, and also an map \textit{MC} to represent the array $C$. The map \textit{MC} is going store only true for the columns $j$ such that $D(x,j)$ is true.\\
+We can tune the algorithm a little more by dropping the elements that are larger than $b/2$, which would help reduce the size of the tableau. Also when moving through the columns, we are not considering the case where $S_1 = \{ \}$, this scenario should be validated before, so we can start populating the columns always from the minimum element in the set $A$.
 \subsection{Karmarkar-Karp Algorithm}
 
 One deterministic heuristic for the Number Partition problem is the Karmarkar-Karp algorithm, or the KK algorithm. This approach uses \textit{differencing}. The differencing idea is to take two elements from $A$, call them $a_i$ and $a_j$, and replace the larger by $|a_i - a_j|$ while replacing the smaller by 0. The intuition is that if we decided to put $a_i$ and $a_j$ in different sets, then it is as though we have one element of size $|a_i - a_j|$ around. An algorithm based on differencing repeatedly takes two elements from $A$ and performs a differencing until there is only one element left; this element equals an attainable residue. (A sequence of signs $s_i$ that yields this residue can be determined from the differencing operations performed in linear time by two-coloring the graph $(A, E)$ that arises, where $E$ is the set of pairs $(a_i, a_j)$ that are used in the differencing steps. You will not need to construct the $s_i$ for this assignment.)\\

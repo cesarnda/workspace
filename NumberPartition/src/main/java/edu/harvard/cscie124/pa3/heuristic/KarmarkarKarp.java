@@ -2,6 +2,9 @@ package edu.harvard.cscie124.pa3.heuristic;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import edu.harvard.cscie124.pa3.NumberPartitionSolver;
 import edu.harvard.cscie124.pa3.structure.Heap;
 import edu.harvard.cscie124.pa3.structure.MaxHeap;
@@ -21,6 +24,8 @@ import edu.harvard.cscie124.pa3.structure.MaxHeap;
  *
  */
 public class KarmarkarKarp implements NumberPartitionSolver {
+
+	private static final Logger logger = LoggerFactory.getLogger(KarmarkarKarp.class);
 
 	
 	public KarmarkarKarp(){
