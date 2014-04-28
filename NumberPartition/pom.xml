@@ -50,7 +50,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>edu.harvard.cscie124.strassen.StrassenControl</mainClass>
+							<mainClass>edu.harvard.cscie124.pa3.KK</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
