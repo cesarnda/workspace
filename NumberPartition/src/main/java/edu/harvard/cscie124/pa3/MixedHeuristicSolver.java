@@ -1,5 +1,6 @@
 package edu.harvard.cscie124.pa3;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -20,6 +21,11 @@ public abstract class MixedHeuristicSolver extends HeuristicSolver implements Nu
 		Collections.sort(list);
 		long residue = iterateToFindMinimum(list);
 		return residue;
+	}
+	
+	public long getResidue(String filename) throws FileNotFoundException{
+		List<Long> elements = readIntegersFromFile(filename);
+		return getResidue(elements);
 	}
 	
 	public abstract Long iterateToFindMinimum(List<Long> list);
@@ -43,5 +49,13 @@ public abstract class MixedHeuristicSolver extends HeuristicSolver implements Nu
 		}
 		
 		return listAPrime;
+	}
+	
+	public int[] cloneArray(int[] a){
+		int[] clone = new int[a.length];
+		for(int index = 0; index < a.length; index++){
+			clone[index] = a[index];
+		}
+		return clone;
 	}
 }
