@@ -6,8 +6,7 @@ import java.util.List;
 
 import edu.harvard.cscie124.pa3.heuristic.KarmarkarKarp;
 
-public abstract class MixedHeuristicSolver extends HeuristicSolver implements
-		NumberPartitionSolver {
+public abstract class MixedHeuristicSolver extends HeuristicSolver implements NumberPartitionSolver {
 
 	private KarmarkarKarp kk;
 	
