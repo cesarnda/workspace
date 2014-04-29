@@ -1,50 +1,350 @@
-00:23:20,320  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-01.txt is 114182 in 195 milliseconds
-00:23:20,385  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-02.txt is 142542 in 38 milliseconds
-00:23:20,426  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-03.txt is 218382 in 41 milliseconds
-00:23:20,469  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-04.txt is 172671 in 42 milliseconds
-00:23:20,499  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-05.txt is 18946 in 29 milliseconds
-00:23:20,535  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-06.txt is 77096 in 35 milliseconds
-00:23:20,557  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-07.txt is 141706 in 21 milliseconds
-00:23:20,574  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-08.txt is 59282 in 16 milliseconds
-00:23:20,598  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-09.txt is 165544 in 24 milliseconds
-00:23:20,623  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-10.txt is 1094350 in 24 milliseconds
-00:23:20,629  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-11.txt is 157322 in 5 milliseconds
-00:23:20,674  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-12.txt is 17389 in 45 milliseconds
-00:23:20,699  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-13.txt is 133522 in 24 milliseconds
-00:23:20,705  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-14.txt is 426552 in 6 milliseconds
-00:23:20,740  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-15.txt is 121555 in 33 milliseconds
-00:23:20,746  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-16.txt is 359984 in 5 milliseconds
-00:23:20,791  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-17.txt is 92510 in 5 milliseconds
-00:23:20,807  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-18.txt is 174338 in 16 milliseconds
-00:23:20,812  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-19.txt is 482968 in 4 milliseconds
-00:23:20,826  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-20.txt is 113902 in 14 milliseconds
-00:23:20,831  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-21.txt is 191888 in 5 milliseconds
-00:23:20,841  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-22.txt is 149623 in 10 milliseconds
-00:23:20,847  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-23.txt is 1174258 in 5 milliseconds
-00:23:20,862  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-24.txt is 39179 in 15 milliseconds
-00:23:20,870  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-25.txt is 70712 in 7 milliseconds
-00:23:20,899  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-26.txt is 161571 in 21 milliseconds
-00:23:20,903  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-27.txt is 56562 in 4 milliseconds
-00:23:20,945  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-28.txt is 2760 in 42 milliseconds
-00:23:20,950  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-29.txt is 114192 in 4 milliseconds
-00:23:20,963  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-30.txt is 41626 in 11 milliseconds
-00:23:20,968  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-31.txt is 52594 in 4 milliseconds
-00:23:20,985  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-32.txt is 397885 in 15 milliseconds
-00:23:20,990  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-33.txt is 451550 in 3 milliseconds
-00:23:20,993  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-34.txt is 1073370 in 3 milliseconds
-00:23:21,006  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-35.txt is 209575 in 12 milliseconds
-00:23:21,011  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-36.txt is 182143 in 4 milliseconds
-00:23:21,027  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-37.txt is 41566 in 15 milliseconds
-00:23:21,032  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-38.txt is 109685 in 4 milliseconds
-00:23:21,064  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-39.txt is 34183 in 31 milliseconds
-00:23:21,069  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-40.txt is 419170 in 4 milliseconds
-00:23:21,074  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-41.txt is 59050 in 4 milliseconds
-00:23:21,078  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-42.txt is 115695 in 4 milliseconds
-00:23:21,090  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-43.txt is 23795 in 11 milliseconds
-00:23:21,119  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-44.txt is 532410 in 29 milliseconds
-00:23:21,122  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-45.txt is 82125 in 3 milliseconds
-00:23:21,126  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-46.txt is 758 in 3 milliseconds
-00:23:21,179  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-47.txt is 314069 in 53 milliseconds
-00:23:21,226  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-48.txt is 3541 in 47 milliseconds
-00:23:21,235  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-49.txt is 222488 in 3 milliseconds
-00:23:21,272  INFO KKTestCases:23 - Residue for src/test/resources/RandomInstance-50.txt is 70647 in 3 milliseconds
+00:10:43,243  INFO KKTestCases:31 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 758
+00:10:43,302  INFO KKTestCases:31 - The method KK took 9 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 2760
+00:10:43,302  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 3541
+00:10:43,303  INFO KKTestCases:31 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 17389
+00:10:43,303  INFO KKTestCases:31 - The method KK took 55 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 18946
+00:10:43,303  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 23795
+00:10:43,303  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 34183
+00:10:43,304  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 39179
+00:10:43,304  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 41566
+00:10:43,304  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 41626
+00:10:43,304  INFO KKTestCases:31 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 52594
+00:10:43,305  INFO KKTestCases:31 - The method KK took 67 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 56562
+00:10:43,305  INFO KKTestCases:31 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 59050
+00:10:43,312  INFO KKTestCases:31 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 59282
+00:10:43,312  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 70647
+00:10:43,313  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 70712
+00:10:43,317  INFO KKTestCases:31 - The method KK took 24 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 77096
+00:10:43,317  INFO KKTestCases:31 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 82125
+00:10:43,318  INFO KKTestCases:31 - The method KK took 16 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 92510
+00:10:43,318  INFO KKTestCases:31 - The method KK took 35 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 109685
+00:10:43,319  INFO KKTestCases:31 - The method KK took 18 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 113902
+00:10:43,319  INFO KKTestCases:31 - The method KK took 205 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 114182
+00:10:43,321  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 114192
+00:10:43,321  INFO KKTestCases:31 - The method KK took 16 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 115695
+00:10:43,321  INFO KKTestCases:31 - The method KK took 40 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 121555
+00:10:43,321  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 133522
+00:10:43,322  INFO KKTestCases:31 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 141706
+00:10:43,322  INFO KKTestCases:31 - The method KK took 23 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 142542
+00:10:43,322  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 149623
+00:10:43,322  INFO KKTestCases:31 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 157322
+00:10:43,323  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 161571
+00:10:43,323  INFO KKTestCases:31 - The method KK took 26 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 165544
+00:10:43,323  INFO KKTestCases:31 - The method KK took 35 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 172671
+00:10:43,323  INFO KKTestCases:31 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 174338
+00:10:43,324  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 182143
+00:10:43,324  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 191888
+00:10:43,324  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 209575
+00:10:43,324  INFO KKTestCases:31 - The method KK took 48 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 218382
+00:10:43,325  INFO KKTestCases:31 - The method KK took 88 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 222488
+00:10:43,325  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 314069
+00:10:43,348  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 359984
+00:10:43,349  INFO KKTestCases:31 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 397885
+00:10:43,349  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 419170
+00:10:43,349  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 426552
+00:10:43,350  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 451550
+00:10:43,350  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 482968
+00:10:43,350  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 532410
+00:10:43,350  INFO KKTestCases:31 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 1073370
+00:10:43,351  INFO KKTestCases:31 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 1094350
+00:10:43,351  INFO KKTestCases:31 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 1174258
+00:14:32,436  INFO RandomRepeatedTestCases:29 - The method KK took 265 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 1839539
+00:14:32,471  INFO RandomRepeatedTestCases:29 - The method KK took 312 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 2439688
+00:14:32,475  INFO RandomRepeatedTestCases:29 - The method KK took 280 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 6271847
+00:14:32,475  INFO RandomRepeatedTestCases:29 - The method KK took 296 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 6489733
+00:14:32,475  INFO RandomRepeatedTestCases:29 - The method KK took 242 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 17307942
+00:14:32,476  INFO RandomRepeatedTestCases:29 - The method KK took 233 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 17515948
+00:14:32,476  INFO RandomRepeatedTestCases:29 - The method KK took 254 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 21045114
+00:14:32,476  INFO RandomRepeatedTestCases:29 - The method KK took 247 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 49302993
+00:14:32,477  INFO RandomRepeatedTestCases:29 - The method KK took 253 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 56105421
+00:14:32,477  INFO RandomRepeatedTestCases:29 - The method KK took 259 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 64675570
+00:14:32,478  INFO RandomRepeatedTestCases:29 - The method KK took 356 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 71175114
+00:14:32,478  INFO RandomRepeatedTestCases:29 - The method KK took 252 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 75024120
+00:14:32,478  INFO RandomRepeatedTestCases:29 - The method KK took 280 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 80088356
+00:14:32,479  INFO RandomRepeatedTestCases:29 - The method KK took 260 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 82140906
+00:14:32,479  INFO RandomRepeatedTestCases:29 - The method KK took 298 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 94793080
+00:14:32,479  INFO RandomRepeatedTestCases:29 - The method KK took 810 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 104335638
+00:14:32,484  INFO RandomRepeatedTestCases:29 - The method KK took 236 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 109630668
+00:14:32,484  INFO RandomRepeatedTestCases:29 - The method KK took 264 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 115242934
+00:14:32,485  INFO RandomRepeatedTestCases:29 - The method KK took 284 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 115593418
+00:14:32,485  INFO RandomRepeatedTestCases:29 - The method KK took 391 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 128396868
+00:14:32,485  INFO RandomRepeatedTestCases:29 - The method KK took 233 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 137510011
+00:14:32,486  INFO RandomRepeatedTestCases:29 - The method KK took 242 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 148486418
+00:14:32,486  INFO RandomRepeatedTestCases:29 - The method KK took 322 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 149882273
+00:14:32,486  INFO RandomRepeatedTestCases:29 - The method KK took 383 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 151076388
+00:14:32,487  INFO RandomRepeatedTestCases:29 - The method KK took 356 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 161089756
+00:14:32,487  INFO RandomRepeatedTestCases:29 - The method KK took 269 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 163641890
+00:14:32,487  INFO RandomRepeatedTestCases:29 - The method KK took 232 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 168926855
+00:14:32,488  INFO RandomRepeatedTestCases:29 - The method KK took 272 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 192208443
+00:14:32,488  INFO RandomRepeatedTestCases:29 - The method KK took 275 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 198524395
+00:14:32,489  INFO RandomRepeatedTestCases:29 - The method KK took 268 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 231719903
+00:14:32,511  INFO RandomRepeatedTestCases:29 - The method KK took 269 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 256149204
+00:14:32,511  INFO RandomRepeatedTestCases:29 - The method KK took 246 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 270896432
+00:14:32,511  INFO RandomRepeatedTestCases:29 - The method KK took 289 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 286952960
+00:14:32,512  INFO RandomRepeatedTestCases:29 - The method KK took 293 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 306453790
+00:14:32,512  INFO RandomRepeatedTestCases:29 - The method KK took 243 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 369384350
+00:14:32,512  INFO RandomRepeatedTestCases:29 - The method KK took 259 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 376595731
+00:14:32,512  INFO RandomRepeatedTestCases:29 - The method KK took 261 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 399717719
+00:14:32,513  INFO RandomRepeatedTestCases:29 - The method KK took 272 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 404358393
+00:14:32,513  INFO RandomRepeatedTestCases:29 - The method KK took 318 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 459260140
+00:14:32,513  INFO RandomRepeatedTestCases:29 - The method KK took 241 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 470316310
+00:14:32,514  INFO RandomRepeatedTestCases:29 - The method KK took 259 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 514608479
+00:14:32,514  INFO RandomRepeatedTestCases:29 - The method KK took 344 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 519049214
+00:14:32,514  INFO RandomRepeatedTestCases:29 - The method KK took 259 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 588958580
+00:14:32,514  INFO RandomRepeatedTestCases:29 - The method KK took 266 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 641737528
+00:14:32,515  INFO RandomRepeatedTestCases:29 - The method KK took 255 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 870186025
+00:14:32,515  INFO RandomRepeatedTestCases:29 - The method KK took 246 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 881086470
+00:14:32,515  INFO RandomRepeatedTestCases:29 - The method KK took 247 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 882572216
+00:14:32,516  INFO RandomRepeatedTestCases:29 - The method KK took 233 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 969174202
+00:14:32,516  INFO RandomRepeatedTestCases:29 - The method KK took 329 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 972103463
+00:14:32,516  INFO RandomRepeatedTestCases:29 - The method KK took 429 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 1482968146
+00:41:02,211  INFO HillClimbingTestCases:29 - The method HillClimbing took 94 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 6022137
+00:41:02,224  INFO HillClimbingTestCases:29 - The method HillClimbing took 143 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 7280767
+00:41:02,224  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 14936772
+00:41:02,225  INFO HillClimbingTestCases:29 - The method HillClimbing took 98 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 16288832
+00:41:02,225  INFO HillClimbingTestCases:29 - The method HillClimbing took 128 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 19786443
+00:41:02,225  INFO HillClimbingTestCases:29 - The method HillClimbing took 94 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 21384205
+00:41:02,225  INFO HillClimbingTestCases:29 - The method HillClimbing took 110 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 30245143
+00:41:02,225  INFO HillClimbingTestCases:29 - The method HillClimbing took 140 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 31783379
+00:41:02,226  INFO HillClimbingTestCases:29 - The method HillClimbing took 132 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 46642744
+00:41:02,226  INFO HillClimbingTestCases:29 - The method HillClimbing took 132 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 49015915
+00:41:02,226  INFO HillClimbingTestCases:29 - The method HillClimbing took 85 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 61324466
+00:41:02,227  INFO HillClimbingTestCases:29 - The method HillClimbing took 110 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 141627210
+00:41:02,227  INFO HillClimbingTestCases:29 - The method HillClimbing took 106 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 142017640
+00:41:02,227  INFO HillClimbingTestCases:29 - The method HillClimbing took 101 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 142894922
+00:41:02,227  INFO HillClimbingTestCases:29 - The method HillClimbing took 94 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 149251903
+00:41:02,228  INFO HillClimbingTestCases:29 - The method HillClimbing took 128 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 174258182
+00:41:02,242  INFO HillClimbingTestCases:29 - The method HillClimbing took 100 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 184098833
+00:41:02,243  INFO HillClimbingTestCases:29 - The method HillClimbing took 90 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 194592822
+00:41:02,243  INFO HillClimbingTestCases:29 - The method HillClimbing took 106 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 209589800
+00:41:02,244  INFO HillClimbingTestCases:29 - The method HillClimbing took 149 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 220300562
+00:41:02,244  INFO HillClimbingTestCases:29 - The method HillClimbing took 141 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 238663220
+00:41:02,244  INFO HillClimbingTestCases:29 - The method HillClimbing took 100 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 267859244
+00:41:02,245  INFO HillClimbingTestCases:29 - The method HillClimbing took 96 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 271862116
+00:41:02,245  INFO HillClimbingTestCases:29 - The method HillClimbing took 137 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 272528128
+00:41:02,245  INFO HillClimbingTestCases:29 - The method HillClimbing took 149 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 281587096
+00:41:02,246  INFO HillClimbingTestCases:29 - The method HillClimbing took 511 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 288232794
+00:41:02,246  INFO HillClimbingTestCases:29 - The method HillClimbing took 119 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 304407523
+00:41:02,246  INFO HillClimbingTestCases:29 - The method HillClimbing took 119 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 309823672
+00:41:02,247  INFO HillClimbingTestCases:29 - The method HillClimbing took 111 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 366168444
+00:41:02,270  INFO HillClimbingTestCases:29 - The method HillClimbing took 122 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 374528770
+00:41:02,270  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 460731065
+00:41:02,271  INFO HillClimbingTestCases:29 - The method HillClimbing took 150 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 549902362
+00:41:02,271  INFO HillClimbingTestCases:29 - The method HillClimbing took 184 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 559353058
+00:41:02,271  INFO HillClimbingTestCases:29 - The method HillClimbing took 136 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 576382780
+00:41:02,271  INFO HillClimbingTestCases:29 - The method HillClimbing took 112 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 610727411
+00:41:02,272  INFO HillClimbingTestCases:29 - The method HillClimbing took 140 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 653457495
+00:41:02,272  INFO HillClimbingTestCases:29 - The method HillClimbing took 205 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 878799030
+00:41:02,272  INFO HillClimbingTestCases:29 - The method HillClimbing took 155 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 967646830
+00:41:02,273  INFO HillClimbingTestCases:29 - The method HillClimbing took 106 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 1010198743
+00:41:02,273  INFO HillClimbingTestCases:29 - The method HillClimbing took 110 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 1636562955
+00:41:02,273  INFO HillClimbingTestCases:29 - The method HillClimbing took 143 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 2356608580
+00:41:02,273  INFO HillClimbingTestCases:29 - The method HillClimbing took 127 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 5578854350
+00:41:02,274  INFO HillClimbingTestCases:29 - The method HillClimbing took 224 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 6336292596
+00:41:02,274  INFO HillClimbingTestCases:29 - The method HillClimbing took 121 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 21988728149
+00:41:02,274  INFO HillClimbingTestCases:29 - The method HillClimbing took 99 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 30262653960
+00:41:02,274  INFO HillClimbingTestCases:29 - The method HillClimbing took 95 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 36695124236
+00:41:02,296  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 46892491152
+00:41:02,297  INFO HillClimbingTestCases:29 - The method HillClimbing took 136 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 53804698750
+00:41:02,297  INFO HillClimbingTestCases:29 - The method HillClimbing took 115 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 997592335626
+00:41:02,298  INFO HillClimbingTestCases:29 - The method HillClimbing took 124 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 998193642369
+01:05:10,999  INFO HillClimbingTestCases:29 - The method HillClimbing took 98 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 15503836
+01:05:11,041  INFO HillClimbingTestCases:29 - The method HillClimbing took 116 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 18365416
+01:05:11,042  INFO HillClimbingTestCases:29 - The method HillClimbing took 138 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 26697601
+01:05:11,043  INFO HillClimbingTestCases:29 - The method HillClimbing took 105 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 30682468
+01:05:11,043  INFO HillClimbingTestCases:29 - The method HillClimbing took 99 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 53088990
+01:05:11,044  INFO HillClimbingTestCases:29 - The method HillClimbing took 101 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 91262593
+01:05:11,044  INFO HillClimbingTestCases:29 - The method HillClimbing took 160 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 93652558
+01:05:11,045  INFO HillClimbingTestCases:29 - The method HillClimbing took 95 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 94178403
+01:05:11,045  INFO HillClimbingTestCases:29 - The method HillClimbing took 109 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 116654888
+01:05:11,045  INFO HillClimbingTestCases:29 - The method HillClimbing took 104 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 151877212
+01:05:11,046  INFO HillClimbingTestCases:29 - The method HillClimbing took 117 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 172435164
+01:05:11,046  INFO HillClimbingTestCases:29 - The method HillClimbing took 97 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 187602695
+01:05:11,078  INFO HillClimbingTestCases:29 - The method HillClimbing took 151 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 190488939
+01:05:11,079  INFO HillClimbingTestCases:29 - The method HillClimbing took 109 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 203312844
+01:05:11,079  INFO HillClimbingTestCases:29 - The method HillClimbing took 166 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 256783014
+01:05:11,080  INFO HillClimbingTestCases:29 - The method HillClimbing took 150 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 269986032
+01:05:11,095  INFO HillClimbingTestCases:29 - The method HillClimbing took 124 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 393403343
+01:05:11,095  INFO HillClimbingTestCases:29 - The method HillClimbing took 122 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 426202745
+01:05:11,095  INFO HillClimbingTestCases:29 - The method HillClimbing took 115 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 839003261
+01:05:11,096  INFO HillClimbingTestCases:29 - The method HillClimbing took 128 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 959070941680
+01:05:11,096  INFO HillClimbingTestCases:29 - The method HillClimbing took 159 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 973108878409
+01:05:11,097  INFO HillClimbingTestCases:29 - The method HillClimbing took 560 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 973639197932
+01:05:11,097  INFO HillClimbingTestCases:29 - The method HillClimbing took 96 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 975243780801
+01:05:11,097  INFO HillClimbingTestCases:29 - The method HillClimbing took 128 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 979826279732
+01:05:11,098  INFO HillClimbingTestCases:29 - The method HillClimbing took 90 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 980142704343
+01:05:11,098  INFO HillClimbingTestCases:29 - The method HillClimbing took 133 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 986117569694
+01:05:11,098  INFO HillClimbingTestCases:29 - The method HillClimbing took 130 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 988191040830
+01:05:11,099  INFO HillClimbingTestCases:29 - The method HillClimbing took 132 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 989989144544
+01:05:11,099  INFO HillClimbingTestCases:29 - The method HillClimbing took 276 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 990884442054
+01:05:11,121  INFO HillClimbingTestCases:29 - The method HillClimbing took 94 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 990950901685
+01:05:11,122  INFO HillClimbingTestCases:29 - The method HillClimbing took 115 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 991913161392
+01:05:11,122  INFO HillClimbingTestCases:29 - The method HillClimbing took 98 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 993683084384
+01:05:11,123  INFO HillClimbingTestCases:29 - The method HillClimbing took 200 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 993795129697
+01:05:11,123  INFO HillClimbingTestCases:29 - The method HillClimbing took 110 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 994616196714
+01:05:11,123  INFO HillClimbingTestCases:29 - The method HillClimbing took 131 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 995012080813
+01:05:11,123  INFO HillClimbingTestCases:29 - The method HillClimbing took 96 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 995089434450
+01:05:11,124  INFO HillClimbingTestCases:29 - The method HillClimbing took 126 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 996161765029
+01:05:11,124  INFO HillClimbingTestCases:29 - The method HillClimbing took 99 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 996693575723
+01:05:11,124  INFO HillClimbingTestCases:29 - The method HillClimbing took 140 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 996828699141
+01:05:11,124  INFO HillClimbingTestCases:29 - The method HillClimbing took 147 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 997592335626
+01:05:11,125  INFO HillClimbingTestCases:29 - The method HillClimbing took 100 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 998009557706
+01:05:11,125  INFO HillClimbingTestCases:29 - The method HillClimbing took 104 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 998193642369
+01:05:11,125  INFO HillClimbingTestCases:29 - The method HillClimbing took 122 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 998455743553
+01:05:11,125  INFO HillClimbingTestCases:29 - The method HillClimbing took 143 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 998632838224
+01:05:11,126  INFO HillClimbingTestCases:29 - The method HillClimbing took 221 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 998754089249
+01:05:11,126  INFO HillClimbingTestCases:29 - The method HillClimbing took 105 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 998951221149
+01:05:11,126  INFO HillClimbingTestCases:29 - The method HillClimbing took 117 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 999392840405
+01:05:11,127  INFO HillClimbingTestCases:29 - The method HillClimbing took 106 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 999502487255
+01:05:11,127  INFO HillClimbingTestCases:29 - The method HillClimbing took 152 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 999717130168
+01:05:11,127  INFO HillClimbingTestCases:29 - The method HillClimbing took 105 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 999782958519
+01:06:43,571  INFO HillClimbingTestCases:29 - The method HillClimbing took 125 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 9725112
+01:06:43,582  INFO HillClimbingTestCases:29 - The method HillClimbing took 106 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 12848056
+01:06:43,582  INFO HillClimbingTestCases:29 - The method HillClimbing took 179 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 20908332
+01:06:43,582  INFO HillClimbingTestCases:29 - The method HillClimbing took 105 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 24370400
+01:06:43,583  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 30178060
+01:06:43,583  INFO HillClimbingTestCases:29 - The method HillClimbing took 254 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 39455677
+01:06:43,583  INFO HillClimbingTestCases:29 - The method HillClimbing took 112 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 43138138
+01:06:43,583  INFO HillClimbingTestCases:29 - The method HillClimbing took 126 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 43804709
+01:06:43,584  INFO HillClimbingTestCases:29 - The method HillClimbing took 103 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 73939201
+01:06:43,610  INFO HillClimbingTestCases:29 - The method HillClimbing took 99 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 205146268
+01:06:43,611  INFO HillClimbingTestCases:29 - The method HillClimbing took 88 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 211526925
+01:06:43,611  INFO HillClimbingTestCases:29 - The method HillClimbing took 107 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 266987249
+01:06:43,611  INFO HillClimbingTestCases:29 - The method HillClimbing took 167 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 319047958
+01:06:43,612  INFO HillClimbingTestCases:29 - The method HillClimbing took 126 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 346079104
+01:06:43,612  INFO HillClimbingTestCases:29 - The method HillClimbing took 103 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 521000468
+01:06:43,612  INFO HillClimbingTestCases:29 - The method HillClimbing took 151 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 541511419
+01:06:43,616  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 580101247
+01:06:43,617  INFO HillClimbingTestCases:29 - The method HillClimbing took 102 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 606883936
+01:06:43,618  INFO HillClimbingTestCases:29 - The method HillClimbing took 124 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 644957810
+01:06:43,618  INFO HillClimbingTestCases:29 - The method HillClimbing took 111 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 1221351092
+01:06:43,618  INFO HillClimbingTestCases:29 - The method HillClimbing took 123 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 1922157921
+01:06:43,619  INFO HillClimbingTestCases:29 - The method HillClimbing took 129 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 959070941680
+01:06:43,619  INFO HillClimbingTestCases:29 - The method HillClimbing took 537 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 973639197932
+01:06:43,619  INFO HillClimbingTestCases:29 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 975243780801
+01:06:43,620  INFO HillClimbingTestCases:29 - The method HillClimbing took 122 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 978315141001
+01:06:43,628  INFO HillClimbingTestCases:29 - The method HillClimbing took 104 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 981317963164
+01:06:43,628  INFO HillClimbingTestCases:29 - The method HillClimbing took 121 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 988577013115
+01:06:43,629  INFO HillClimbingTestCases:29 - The method HillClimbing took 112 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 989989144544
+01:06:43,630  INFO HillClimbingTestCases:29 - The method HillClimbing took 195 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 990884442054
+01:06:43,631  INFO HillClimbingTestCases:29 - The method HillClimbing took 147 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 990950901685
+01:06:43,632  INFO HillClimbingTestCases:29 - The method HillClimbing took 124 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 993683084384
+01:06:43,632  INFO HillClimbingTestCases:29 - The method HillClimbing took 122 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 993881304408
+01:06:43,632  INFO HillClimbingTestCases:29 - The method HillClimbing took 98 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 994616196714
+01:06:43,633  INFO HillClimbingTestCases:29 - The method HillClimbing took 146 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 994644734897
+01:06:43,633  INFO HillClimbingTestCases:29 - The method HillClimbing took 113 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 995012080813
+01:06:43,633  INFO HillClimbingTestCases:29 - The method HillClimbing took 139 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 995089434450
+01:06:43,634  INFO HillClimbingTestCases:29 - The method HillClimbing took 162 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 995407351331
+01:06:43,634  INFO HillClimbingTestCases:29 - The method HillClimbing took 141 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 996161765029
+01:06:43,634  INFO HillClimbingTestCases:29 - The method HillClimbing took 189 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 996828699141
+01:06:43,634  INFO HillClimbingTestCases:29 - The method HillClimbing took 176 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 997394088168
+01:06:43,635  INFO HillClimbingTestCases:29 - The method HillClimbing took 101 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 997761113188
+01:06:43,635  INFO HillClimbingTestCases:29 - The method HillClimbing took 92 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 997956222183
+01:06:43,635  INFO HillClimbingTestCases:29 - The method HillClimbing took 120 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 998193642369
+01:06:43,636  INFO HillClimbingTestCases:29 - The method HillClimbing took 116 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 998352604717
+01:06:43,636  INFO HillClimbingTestCases:29 - The method HillClimbing took 102 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 998668992628
+01:06:43,636  INFO HillClimbingTestCases:29 - The method HillClimbing took 319 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 998754089249
+01:06:43,637  INFO HillClimbingTestCases:29 - The method HillClimbing took 156 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 998951221149
+01:06:43,637  INFO HillClimbingTestCases:29 - The method HillClimbing took 121 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 999392840405
+01:06:43,638  INFO HillClimbingTestCases:29 - The method HillClimbing took 115 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 999502487255
+01:06:43,638  INFO HillClimbingTestCases:29 - The method HillClimbing took 111 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 999970284215
+01:49:30,081  INFO HillClimbingTestCases:29 - The method HillClimbing took 278 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 18238797
+01:49:30,097  INFO HillClimbingTestCases:29 - The method HillClimbing took 266 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 18309268
+01:49:30,098  INFO HillClimbingTestCases:29 - The method HillClimbing took 356 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 28678646
+01:49:30,099  INFO HillClimbingTestCases:29 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 35560295
+01:49:30,099  INFO HillClimbingTestCases:29 - The method HillClimbing took 276 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 47321056
+01:49:30,100  INFO HillClimbingTestCases:29 - The method HillClimbing took 294 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 60868164
+01:49:30,100  INFO HillClimbingTestCases:29 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 62438416
+01:49:30,100  INFO HillClimbingTestCases:29 - The method HillClimbing took 302 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 67618984
+01:49:30,101  INFO HillClimbingTestCases:29 - The method HillClimbing took 263 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 75934811
+01:49:30,101  INFO HillClimbingTestCases:29 - The method HillClimbing took 289 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 81995842
+01:49:30,102  INFO HillClimbingTestCases:29 - The method HillClimbing took 418 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 97788198
+01:49:30,102  INFO HillClimbingTestCases:29 - The method HillClimbing took 280 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 120520002
+01:49:30,102  INFO HillClimbingTestCases:29 - The method HillClimbing took 261 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 130334680
+01:49:30,103  INFO HillClimbingTestCases:29 - The method HillClimbing took 268 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 140996762
+01:49:30,103  INFO HillClimbingTestCases:29 - The method HillClimbing took 270 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 179400354
+01:49:30,103  INFO HillClimbingTestCases:29 - The method HillClimbing took 288 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 195970516
+01:49:30,107  INFO HillClimbingTestCases:29 - The method HillClimbing took 272 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 199771401
+01:49:30,108  INFO HillClimbingTestCases:29 - The method HillClimbing took 278 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 209157447
+01:49:30,108  INFO HillClimbingTestCases:29 - The method HillClimbing took 287 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 225672361
+01:49:30,109  INFO HillClimbingTestCases:29 - The method HillClimbing took 837 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 239385868
+01:49:30,109  INFO HillClimbingTestCases:29 - The method HillClimbing took 293 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 247606194
+01:49:30,109  INFO HillClimbingTestCases:29 - The method HillClimbing took 261 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 249487308
+01:49:30,110  INFO HillClimbingTestCases:29 - The method HillClimbing took 303 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 255840430
+01:49:30,110  INFO HillClimbingTestCases:29 - The method HillClimbing took 261 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 277015516
+01:49:30,110  INFO HillClimbingTestCases:29 - The method HillClimbing took 253 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 304609340
+01:49:30,111  INFO HillClimbingTestCases:29 - The method HillClimbing took 275 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 307673205
+01:49:30,111  INFO HillClimbingTestCases:29 - The method HillClimbing took 279 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 310899930
+01:49:30,111  INFO HillClimbingTestCases:29 - The method HillClimbing took 279 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 338471712
+01:49:30,112  INFO HillClimbingTestCases:29 - The method HillClimbing took 306 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 346521888
+01:49:30,134  INFO HillClimbingTestCases:29 - The method HillClimbing took 373 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 392183790
+01:49:30,135  INFO HillClimbingTestCases:29 - The method HillClimbing took 301 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 452081989
+01:49:30,135  INFO HillClimbingTestCases:29 - The method HillClimbing took 274 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 461647236
+01:49:30,135  INFO HillClimbingTestCases:29 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 512513633
+01:49:30,136  INFO HillClimbingTestCases:29 - The method HillClimbing took 277 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 541046826
+01:49:30,136  INFO HillClimbingTestCases:29 - The method HillClimbing took 274 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 544641931
+01:49:30,136  INFO HillClimbingTestCases:29 - The method HillClimbing took 404 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 548803006
+01:49:30,137  INFO HillClimbingTestCases:29 - The method HillClimbing took 265 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 572567476
+01:49:30,137  INFO HillClimbingTestCases:29 - The method HillClimbing took 446 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 583695987
+01:49:30,137  INFO HillClimbingTestCases:29 - The method HillClimbing took 263 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 749643735
+01:49:30,137  INFO HillClimbingTestCases:29 - The method HillClimbing took 281 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 794276178
+01:49:30,138  INFO HillClimbingTestCases:29 - The method HillClimbing took 287 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 881176278
+01:49:30,138  INFO HillClimbingTestCases:29 - The method HillClimbing took 321 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 953400000
+01:49:30,138  INFO HillClimbingTestCases:29 - The method HillClimbing took 297 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 974133238
+01:49:30,139  INFO HillClimbingTestCases:29 - The method HillClimbing took 349 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 1000962455
+01:49:30,139  INFO HillClimbingTestCases:29 - The method HillClimbing took 267 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 1091319779
+01:49:30,139  INFO HillClimbingTestCases:29 - The method HillClimbing took 275 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 1246779598
+01:49:30,139  INFO HillClimbingTestCases:29 - The method HillClimbing took 296 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 1473842762
+01:49:30,140  INFO HillClimbingTestCases:29 - The method HillClimbing took 281 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 1562585001
+01:49:30,140  INFO HillClimbingTestCases:29 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 1979728629
+01:49:30,140  INFO HillClimbingTestCases:29 - The method HillClimbing took 286 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 2048866831
+01:52:02,710  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 623 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 2048355059
+01:52:02,720  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 638 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 76824369526
+01:52:02,720  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 629 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 92149723501
+01:52:02,721  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 795 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 93671586354
+01:52:02,721  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 674 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 152097323604
+01:52:02,721  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 983 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 170636673999
+01:52:02,721  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 927 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 188289193392
+01:52:02,722  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 643 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 242907910738
+01:52:02,722  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 636 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 243646990896
+01:52:02,723  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 627 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 327207401950
+01:52:02,723  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 638 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 398593644341
+01:52:02,723  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 627 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 492678958103
+01:52:02,724  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 642 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 729082781488
+01:52:02,724  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 620 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 752074242008
+01:52:02,724  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 617 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 925676987132
+01:52:02,725  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 688 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 1171459886816
+01:52:02,732  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 649 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 1302681616234
+01:52:02,732  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 646 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 1447883113104
+01:52:02,732  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 650 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 1633891066450
+01:52:02,733  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 653 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 1711821129158
+01:52:02,733  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 634 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 1723134646656
+01:52:02,733  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 675 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 2050838990079
+01:52:02,734  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 671 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 2132581624776
+01:52:02,734  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 626 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 2356225879126
+01:52:02,734  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 661 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 2518657778074
+01:52:02,735  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 636 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 2582891006730
+01:52:02,735  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 672 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 2739746502802
+01:52:02,775  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 623 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 2963895049835
+01:52:02,775  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 633 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 3400522493283
+01:52:02,775  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 809 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 3514564805442
+01:52:02,776  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 665 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 4094759556520
+01:52:02,776  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 626 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 4165404914604
+01:52:02,776  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 647 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 4193416527645
+01:52:02,776  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 641 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 4519488079416
+01:52:02,777  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 620 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 5569376058493
+01:52:02,777  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 657 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 5696216142085
+01:52:02,777  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 647 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 5996419198758
+01:52:02,777  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 649 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 6090941554024
+01:52:02,778  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 624 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 6264764693251
+01:52:02,778  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 1491 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 6952068800184
+01:52:02,779  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 670 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 7166172017351
+01:52:02,825  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 621 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 7189935728116
+01:52:02,826  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 643 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 7238198601020
+01:52:02,826  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 615 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 7322779945293
+01:52:02,827  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 624 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 7512242350197
+01:52:02,827  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 654 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 8636058985482
+01:52:02,827  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 617 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 8938407583913
+01:52:02,827  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 638 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 9259137068338
+01:52:02,828  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 624 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 12771969599469
+01:52:02,828  INFO SimulatedAnnealingTestCases:28 - The method Simulated Annealing took 653 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 14445865817450

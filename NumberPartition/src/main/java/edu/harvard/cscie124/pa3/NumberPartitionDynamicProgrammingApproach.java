@@ -6,7 +6,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class NumberPartitionDynamicProgrammingApproach implements NumberPartitionSolver {
+public class NumberPartitionDynamicProgrammingApproach extends HeuristicSolver implements NumberPartitionSolver {
 	
 	private static final Logger logger = LoggerFactory.getLogger(NumberPartitionDynamicProgrammingApproach.class);
 
@@ -65,12 +65,5 @@ public class NumberPartitionDynamicProgrammingApproach implements NumberPartitio
 		}
 	}
 	
-	public Long getTotalSum(List<Long> list){
-		Long totalSum = 0L;
-		for(Long element : list){
-			totalSum += element;
-		}
-		return totalSum;
-	}
 
 }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import edu.harvard.cscie124.pa3.heuristic.KarmarkarKarp;
 
-public class KK {
+public class KK extends HeuristicSolver{
 
 	private KarmarkarKarp karmarkarKarp;
 	
@@ -26,18 +26,5 @@ public class KK {
 		List<Long> elements = readIntegersFromFile(filename);
 		return karmarkarKarp.getResidue(elements);
 	}
-	
-	private List<Long> readIntegersFromFile(String filename) throws FileNotFoundException{
-		List<Long> elements = new ArrayList<Long>(100);
-		Scanner scanner = new Scanner(new File(filename));
-		while(scanner.hasNext()){
-			//String line = scanner.nextLine();
-			elements.add(scanner.nextLong());
-		}
-		
-		return elements;
-	}
-	
-	
 
 }
