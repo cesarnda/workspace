@@ -664,8 +664,13 @@ To run the experiments, several test cases were written. The methods that genera
 
 \subsection{Results}
 
+In Table \ref{kkRandomAndHill} we can appreciate that KK algorithm runs faster than any other proposed heuristic, which makes sense considering the simple operations that are done compared to Random Repeated and Hill Climbing which have to compute the residue of each sum at each step.\\
+The best residue that $K$ was able to produce is 758 for file 46, for which Random Repeated and Hill Climbing produced terrible residues. The execution time for Random Repeated and Hill Climbing did not change that much.\\
+\\
+Since Random Repeated does not consider the current state of the solution, we are practically just iterating and hope to be lucky enough to get a combination that would generate a better residue. \\
+Hill Climbing also is based on random swapping but it will moving to a better neighbor and iterating for another one might get us stuck into a local optima that is far from the one that we would expect.
 \begin{longtable}{|c|cc|cc|cc|}
-\caption{Comparing results with KK,  Random Repeated and Hill Climbing}\\
+\caption{Comparing results with KK,  Random Repeated and Hill Climbing\label{kkRandomAndHill}}\\
 \hline
  	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Random Repeated} 	 & \multicolumn{2}{c|}{ Hill Climbing} \\
 \hline
@@ -724,8 +729,17 @@ File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 
 \hline
 \end{longtable}
 
+In Table \ref{kkSimulatedAndMixedRandom}, we can appreciate that also Simulated Annealing did not perform very well in terms of residue. Moving to worse neighbors really impact in the result generating extremely bad residues. \\
+Also the running time for Simulated Annealing increases due to the operations that have to be computed to decide if we should move to a bad neighbor or not.\\
+The residues really improve when we mixed heuristics. As can be appreciated in the Mixed Random Repeated (MRR) column, the residues are very small compared to KK. The best result was for file 18, with a residue of 4, and for the file 46, the residue was 156 which beats KK in its base case, and every other one.\\
+\\
+The only inconvenience with MRR is its running time. The running time of MRR is almost as twice of Simulated Annealing and almost as 4 times what Repeated Random and Hill Climbing take. This makes sense considering that Repeated Random executes in $O(|A|)$, since the generation of random indices and swapping takes constant time, the only thing that takes time for Repeated Random is calculating the sum over $A$.\\
+For the mixed scenario, we do not sum over $A$, but we apply the algorithm over an array with size in $O(|A|)$, since after prepartitioning we might remove some elements and the array might be smaller.\\
+\\
+The cost of MRR resides in KK, so it runs in $O(|A| \log |A|)$, which we considered very good according to the residues that it gets. 
+
 \begin{longtable}{|c|cc|cc|cc|}
-\caption{Comparing results with KK,  Simulated Annealing and Mixed Random Repeated}\\
+\caption{Comparing results with KK,  Simulated Annealing and Mixed Random Repeated\label{kkSimulatedAndMixedRandom}}\\
 \hline
  	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Simulated Annealing} 	 & \multicolumn{2}{c|}{ Mixed Random Repeated} \\
 \hline
@@ -784,8 +798,14 @@ File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 
 \hline
 \end{longtable}
 
+In Table \ref{kkMixedHillMixedSimulated} and based on the results from Table \ref{kkSimulatedAndMixedRandom}, we can appreciate that the mixed heuristics produced betters residues. \\
+Among the 3 mixed heuristics, Mixed Repeated Random produced the best results. Mixed Hill Climbing produced better results than simple KK and the simple heuristics but the execution time is close to Mixed Repeated Random but the results are not that good. \\
+Still the best result for Mixed Hill Climbing was for file 17, which beat Mixed Random Repeated and Mixed Simulated Annealing. Still Mixed Random Repeated produced better results than Hill Climbing but with the trade-off of running slower.\\
+\\
+The best result for Mixed Simulated Annealing was file 10, which also beats Mixed Hill Climbing and Mixed Random Repeated. Mixed Hill Climbing and Mixed Simulated Annealing generate kind of similar results but over different files. The only inconvenience with Mixed Simulated Annealing is the running time which is the heuristic that performed poorly, given that it took around 3 times what Mixed Random Repeated took. This might be able to be improved if we simplify the function that determines the probability to move to a bad neighbor, as well as the function T. 
+
 \begin{longtable}{|c|cc|cc|cc|}
-\caption{Comparing results with KK,  Mixed Hill Climbing and Mixed Simulated Annealing}\\
+\caption{Comparing results with KK,  Mixed Hill Climbing and Mixed Simulated Annealing\label{kkMixedHillMixedSimulated}}\\
 \hline
  	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Mixed Hill Climbing} 	 & \multicolumn{2}{c|}{ Mixed Simulated Annealing} \\
 \hline
@@ -863,6 +883,11 @@ mvn clean compile assembly:single
 mvn assembly:assembly
 \end{verbatim}
 
-After the command second command is executed, it can be killed when running the test cases.
+After the command second command is executed, it can be killed when running the test cases.\\
+\\
+The program was tested in the NICE system by connecting through the command:
+\begin{verbatim}
+ssh cgarciavazquez@nice.fas.harvard.edu
+\end{verbatim}
 
 \end{document}  
