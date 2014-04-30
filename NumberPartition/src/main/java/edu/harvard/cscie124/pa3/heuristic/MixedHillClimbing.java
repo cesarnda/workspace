@@ -31,11 +31,9 @@ public class MixedHillClimbing extends MixedHeuristicSolver {
 		int[] SPrime = cloneArray(S);
 		int i = random.nextInt(S.length);
 		int j;
-		while((j = random.nextInt(S.length)) == i);
+		while((j = random.nextInt(S.length)) == S[i]);
 		
-		int temp = SPrime[i];
-		SPrime[i] = SPrime[j];
-		SPrime[j] = temp;
+		SPrime[i] = j;
 		return SPrime;
 	}
 	

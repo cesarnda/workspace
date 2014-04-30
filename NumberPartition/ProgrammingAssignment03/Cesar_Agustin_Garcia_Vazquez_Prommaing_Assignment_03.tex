@@ -22,6 +22,7 @@
 \usepackage{pgfplots}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{lscape}
 
 \DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 
@@ -128,7 +129,11 @@ Based on equation (\ref{numberPartitionResidueFormula}), the returned value  jus
 \\
 The algorithm works in theory and in practice is going to work fine with small integers, but when we consider integers in the range of $10^{12}$, then creating the tableau and populating it is going to take too long. Also languages like Java do not allow the creating of arrays that big. To solve this problem, we can create a class called \textit{SparseMatrix} that is going to manage big matrices.\\
 For this approach we considered an array of maps to store the values that are true for each column, and also an map \textit{MC} to represent the array $C$. The map \textit{MC} is going store only true for the columns $j$ such that $D(x,j)$ is true.\\
-We can tune the algorithm a little more by dropping the elements that are larger than $b/2$, which would help reduce the size of the tableau. Also when moving through the columns, we are not considering the case where $S_1 = \{ \}$, this scenario should be validated before, so we can start populating the columns always from the minimum element in the set $A$.
+We can tune the algorithm a little more by dropping the elements that are larger than $b/2$, which would help reduce the size of the tableau. Also when moving through the columns, we are not considering the case where $S_1 = \{ \}$, this scenario should be validated before, so we can start populating the columns always from the minimum element in the set $A$.\\
+Another tunning would be to reduce the size of the tableau from $n \cdot b$ to $n \cdot \lceil \frac{b}{2} \rceil$, since we do not require the values from $\lceil \frac{b}{2} \rceil$.\\
+\\
+Populating the tableau requires a time in $O(n \cdot b)$ and getting the minimum element is in $O(b)$, so the total running time is $O(n  \cdot b)$.
+
 \subsection{Karmarkar-Karp Algorithm}
 
 One deterministic heuristic for the Number Partition problem is the Karmarkar-Karp algorithm, or the KK algorithm. This approach uses \textit{differencing}. The differencing idea is to take two elements from $A$, call them $a_i$ and $a_j$, and replace the larger by $|a_i - a_j|$ while replacing the smaller by 0. The intuition is that if we decided to put $a_i$ and $a_j$ in different sets, then it is as though we have one element of size $|a_i - a_j|$ around. An algorithm based on differencing repeatedly takes two elements from $A$ and performs a differencing until there is only one element left; this element equals an attainable residue. (A sequence of signs $s_i$ that yields this residue can be determined from the differencing operations performed in linear time by two-coloring the graph $(A, E)$ that arises, where $E$ is the set of pairs $(a_i, a_j)$ that are used in the differencing steps. You will not need to construct the $s_i$ for this assignment.)\\
@@ -467,7 +472,7 @@ You will try each of the following three algorithms for both representations.
 	\begin{algorithm}[th!]
 	Start with a random solution $S$\\
 	\For{iter = 1 \textbf{to} max\_iter}{
-		$S^{\prime} = $ a random neighbor of $S$\
+		$S^{\prime} = $ a random neighbor of $S$\\
 		\If{residue($S^{\prime}$ $<$ residue($S$))}{
 			$S = S^{\prime}$
 		}
@@ -483,7 +488,7 @@ You will try each of the following three algorithms for both representations.
 	Start with a random solution $S$\\
 	$S^{\prime \prime} = S$\\
 	\For{iter = 1 \textbf{to} max\_iter}{
-		$S^{\prime} = $ a random neighbor of $S$\
+		$S^{\prime} = $ a random neighbor of $S$\\
 		\If{residue($S^{\prime}$ $<$ residue($S$))}{
 			$S = S^{\prime}$
 		}
@@ -505,19 +510,353 @@ Now we proceed to generate 50 random instances of the problem as described below
 \\
 For the simulated annealing algorithm, you must choose a \textit{cooling schedule}. That is, you must choose a function T(tier). We suggest T(iter) = $10^{10}(0.8)^{\lfloor \mbox{tier} / 300\rfloor}$ for numbers in the range $[1, \ldots 10^{12}]$, but you can experiment with this as you please.\\
 \\
-Note that, in our random experiments, we began with a random initial starting point.
+Note that, in our random experiments, we began with a random initial starting point.\\
+\\
+The approach to develop this section is first to generate the random numbers and store them in a file. We are going to generate 50 plain text files and for each file, 100 integers in the range $[1, \ldots, 10^{12}]$. The integers are going to be distinct since having a repeated element would reduce the complexity of the problem from 100 to 98 since we can place one of the repeated elements in $A_1$ and the other in $A_2$.\\ 
+\\
+The program is developed in Java SE 1.6 on a Macbook late 2008, which presents some constraints due to the size of the integers. The range of the integers are not considered integers in Java, but long integers. This puts a constraint if we would want to also run the experiments using the dynamic programming approach, to validate the results from the heuristics,  since Java cannot create an array whose size is in the range of long integers. \\
+The sparse matrix approach might reduce the complexity but it still takes too long since it has to populate a big tableau.\\
+\\
+Java provides a way to generate a big random integer using the BigInteger class along with the Random class. Also, if we consider all the numbers in $[1, \ldots, 10^{12}]$ as 13 digits number with padding 0s in the left, then a random long integer can be seen as an array of 13 digits in which the first digit can be 0 or 1 and the other 12 digits can take the random values in $[0, 2, \ldots, 9]$.\\
+\\
+The heap to implement the Karmarkar-Karp heuristic uses the priority queue that is already built in Java. The algorithm was implemented in a recursive way and in each step, the largest two elements are removed from the heap. Only the difference is added to the heap since the 0 value does not add any value to the algorithm. Also if the difference is 0, it will also not be added to the heap.\\
+The stop condition is if the heap is empty, which means that the residue found by the algorithm is the minimum possible and it returns 0. If the heap only has one element, then that is the residue and the algorithm finishes.\\
+\\
+For Random Repeated, we start with two lists  representing $A_1$ and $A_2$ and we iterate over all the elements in $A$ and randomly we select if we put the element $a_i$ in $A_1$ or in $A_2$. For all the algorithms, the list $A$ is sorted first, so we start with possible residue equals to the greatest element in $A$. We get the sum $S_1$ for $A_1$ and the sum $S_2$ for $A_2$ and we the residue, if the residue is less than our possible residue, then we replace it. If the residue is 0, then we stop, otherwise, we continue until we finish iterating and then we return the possible residue.\\
+\\
+For Hill Climbing we start with a random solution similar to how we randomly generate a solution in Random Repeated. The neighbor is found by randomly generate a number $i$ between 0 and $|A_1|$ and another number $j$ between 0 and $|A_2|$. In our case we iterate until $j$ is not the same as $i$ but it does not matter if $i = j$ since the indices are for two different sets. \\
+After the indices have been generating, the $i$-th element in $A_1$ is swap with the $j$-th element in $A_2$ and then the residue is generating by getting the total sums $S_1$ and $S_2$ and then we get the absolute difference. If the neighbor solution is better than the proposed solution, then the proposed solution is equal to the neighbor solution and the minimum variable is updated.\\
+\\
+For Simulated Annealing, we start with a generated random solution as in Hill Climbing, but besides keeping tracking of the proposed solution and the neighbor solution, we also keep track of another solution $S^{\prime \prime}$.The neighbor is generated as in Hill Climbing but if the neighbor solution is not better than the proposed solution, we move to the neighbor solution as long as the probability based on the \textit{cooling schedule} T(tier) $= 10^{10}(0.8)^{\lfloor \mbox{tier} / 300\rfloor}$.\\
+Finally we keep track of the best solution seen so far with $S^{\prime \prime}$. If at some point by moving to the neighbor solution, the residue is better than the residue in $S^{\prime \prime}$, then we replace $S^{\prime \prime}$ with this solution.\\
+\\
+For the methods that use the Karmarkar-Karp algorithm, we prefix them with \textit{Mixed}. Instead of randomly swapping elements between $A_1$ and $A_2$, we randomly generate a array of size $|A|$, with elements in $[1, \ldots, |A|]$. After the partition is generated, we get an array $A^{\prime}$ and then from the array we create list of non zero elements and we apply the Karmarkar-Karp program that we already have. If we residue that we have is better than the current one (which initially is the largest element in the array), then we replace it, otherwise we continue until the iterations are completed or we reach a residue of 0.\\
+\\
+For Mixed Hill Climbing, we start with a random partition generated just as in Mixed Random Repeated and then we get a random neighbor by generating a random number $i$ which will be the value to be replaced and then we generate another random integer $j$ such that it is not the same as $S[i]$ and then we assign $j$ to $S[i]$. Notice that $i$ and $j$ are in the range $[1, \ldots, |A|]$. \\
+After each random partition is generated, then we apply KK and compare the residue with the current minimum, if the residue is less than the current minimum, then it is replaced, as well as the current partition by the neighbor partition.\\
+\\
+For Mixed Simulated Annealing, it is like Simulated Annealing but for the partition as in Hill Climbing. \\
+\\
+To run the experiments, several test cases were written. The methods that generated the same value for the same input, have test cases to validate the result. The other heuristic methods have test cases only to run the experiment.
+%
+%\begin{figure}[ht!]
+%\centering
+%\begin{tikzpicture}
+%	\begin{axis}
+%		\addplot+[smooth] coordinates
+%		{ (1, 114182) 
+%		(2, 142542 ) 
+%		(3, 218382) 
+%		(4, 172671) 
+%		(5,  18946) 
+%		(6,  77096) 
+%		(7, 141706) 
+%		(8, 59282) 
+%		(9, 165544) 
+%		(10, 1094350) 
+%		(11, 157322) 
+%		(12, 17389) 
+%		(13, 133522) 
+%		(14, 426552 ) 
+%		(15, 121555) 
+%		(16, 359984) 
+%		(17,  92510) 
+%		(18,  174338) 
+%		(19, 482968) 
+%		(20, 113902) 
+%		(21, 191888) 
+%		(22, 149623) 
+%		(23, 1174258) 
+%		(24, 39179) 
+%		(25, 70712) 
+%		(26, 161571) 
+%		(27, 56562) 
+%		(28, 2760) 
+%		(29, 114192 ) 
+%		(30, 41626) 
+%		(31, 52594) 
+%		(32,  397885) 
+%		(33,  451550) 
+%		(34, 1073370) 
+%		(35, 209575) 
+%		(36, 182143) 
+%		(37, 41566) 
+%		(38, 109685) 
+%		(39, 34183) 
+%		(40, 419170) 
+%		(41, 59050) 
+%		(42, 115695) 
+%		(43, 23795 ) 
+%		(44, 532410) 
+%		(45, 82125) 
+%		(46,  758) 
+%		(47,  314069) 
+%		(48, 3541) 
+%		(49, 222488) 
+%		(50, 70647) 
+%		};
+%	\end{axis}
+%\end{tikzpicture}
+%\caption{Residue gotten from $KK$ for 50 instances}
+%\end{figure}
+%
+%\begin{figure}[ht!]
+%\centering
+%\begin{tikzpicture}
+%	\begin{axis}
+%		\addplot+[smooth] coordinates
+%		{ (1, 81) 
+%		(2, 33 ) 
+%		(3, 112) 
+%		(4, 40) 
+%		(5,  46) 
+%		(6,  41) 
+%		(7, 24) 
+%		(8, 7) 
+%		(9, 165544) 
+%		(10, 1094350) 
+%		(11, 157322) 
+%		(12, 17389) 
+%		(13, 133522) 
+%		(14, 426552 ) 
+%		(15, 121555) 
+%		(16, 359984) 
+%		(17,  92510) 
+%		(18,  174338) 
+%		(19, 482968) 
+%		(20, 113902) 
+%		(21, 191888) 
+%		(22, 149623) 
+%		(23, 1174258) 
+%		(24, 39179) 
+%		(25, 70712) 
+%		(26, 161571) 
+%		(27, 56562) 
+%		(28, 2760) 
+%		(29, 114192 ) 
+%		(30, 41626) 
+%		(31, 52594) 
+%		(32,  397885) 
+%		(33,  451550) 
+%		(34, 1073370) 
+%		(35, 209575) 
+%		(36, 182143) 
+%		(37, 41566) 
+%		(38, 109685) 
+%		(39, 34183) 
+%		(40, 419170) 
+%		(41, 59050) 
+%		(42, 115695) 
+%		(43, 23795 ) 
+%		(44, 532410) 
+%		(45, 82125) 
+%		(46,  758) 
+%		(47,  314069) 
+%		(48, 3541) 
+%		(49, 222488) 
+%		(50, 70647) 
+%		};
+%	\end{axis}
+%\end{tikzpicture}
+%\caption{Time in milliseconds for $KK$ to work on 50 instances}
+%\end{figure}
+%
+
+\subsection{Results}
+
+\begin{longtable}{|c|cc|cc|cc|}
+\caption{Comparing results with KK,  Random Repeated and Hill Climbing}\\
+\hline
+ 	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Random Repeated} 	 & \multicolumn{2}{c|}{ Hill Climbing} \\
+\hline
+File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds\\
+\hline
+1	 &114182	 & 	92	 &124122290	 & 	513	 &323327088	 & 	645\\
+2	 &142542	 & 	51	 &687210366	 & 	397	 &106455160	 & 	276\\
+3	 &218382	 & 	52	 &36606166	 & 	269	 &288046066	 & 	256\\
+4	 &172671	 & 	18	 &673420835	 & 	268	 &50523635	 & 	245\\
+5	 &18946	 & 	43	 &118084310	 & 	260	 &75153670	 & 	265\\
+6	 &77096	 & 	40	 &36200566	 & 	298	 &472988564	 & 	251\\
+7	 &141706	 & 	17	 &290976336	 & 	279	 &68465818	 & 	255\\
+8	 &59282	 & 	14	 &313058340	 & 	407	 &168428118	 & 	229\\
+9	 &165544	 & 	60	 &377751230	 & 	341	 &9664978	 & 	253\\
+10	 &1094350	 & 	8	 &82735178	 & 	349	 &520089022	 & 	275\\
+11	 &157322	 & 	6	 &137124322	 & 	362	 &523831054	 & 	243\\
+12	 &17389	 & 	24	 &246837135	 & 	338	 &57352739	 & 	258\\
+13	 &133522	 & 	6	 &519902896	 & 	416	 &305093332	 & 	228\\
+14	 &426552	 & 	20	 &168683632	 & 	312	 &325835110	 & 	262\\
+15	 &121555	 & 	10	 &79513781	 & 	241	 &25971579	 & 	247\\
+16	 &359984	 & 	19	 &456108672	 & 	423	 &72090110	 & 	251\\
+17	 &92510	 & 	4	 &526761610	 & 	266	 &331717516	 & 	255\\
+18	 &174338	 & 	15	 &216579114	 & 	255	 &142002284	 & 	232\\
+19	 &482968	 & 	5	 &604771234	 & 	287	 &196379512	 & 	240\\
+20	 &113902	 & 	15	 &546133570	 & 	254	 &182198260	 & 	255\\
+21	 &191888	 & 	6	 &322730786	 & 	268	 &74419550	 & 	255\\
+22	 &149623	 & 	5	 &532788945	 & 	268	 &70517311	 & 	240\\
+23	 &1174258	 & 	15	 &446543408	 & 	277	 &359606686	 & 	324\\
+24	 &39179	 & 	4	 &75216663	 & 	271	 &632681317	 & 	319\\
+25	 &70712	 & 	14	 &176375630	 & 	276	 &93852932	 & 	259\\
+26	 &161571	 & 	4	 &41853471	 & 	259	 &1903253797	 & 	248\\
+27	 &56562	 & 	16	 &353456552	 & 	263	 &740153880	 & 	299\\
+28	 &2760	 & 	4	 &170741138	 & 	284	 &539330572	 & 	280\\
+29	 &114192	 & 	4	 &164227170	 & 	267	 &84164316	 & 	281\\
+30	 &41626	 & 	38	 &11218250	 & 	264	 &198030510	 & 	271\\
+31	 &52594	 & 	3	 &481985390	 & 	249	 &187076024	 & 	238\\
+32	 &397885	 & 	9	 &709146039	 & 	286	 &125592209	 & 	254\\
+33	 &451550	 & 	4	 &154726820	 & 	266	 &907916102	 & 	262\\
+34	 &1073370	 & 	28	 &321383432	 & 	243	 &459510096	 & 	260\\
+35	 &209575	 & 	4	 &358859047	 & 	270	 &9427843	 & 	237\\
+36	 &182143	 & 	18	 &1336597985	 & 	331	 &312750889	 & 	249\\
+37	 &41566	 & 	3	 &263114974	 & 	258	 &727491300	 & 	240\\
+38	 &109685	 & 	4	 &63529643	 & 	262	 &38336147	 & 	294\\
+39	 &34183	 & 	19	 &169109701	 & 	267	 &542152423	 & 	264\\
+40	 &419170	 & 	4	 &382161400	 & 	260	 &625390808	 & 	243\\
+41	 &59050	 & 	4	 &142152116	 & 	271	 &821492128	 & 	247\\
+42	 &115695	 & 	11	 &535822457	 & 	250	 &111365141	 & 	254\\
+43	 &23795	 & 	4	 &208174055	 & 	280	 &784144699	 & 	263\\
+44	 &532410	 & 	3	 &296235488	 & 	256	 &556561466	 & 	245\\
+45	 &82125	 & 	47	 &87212219	 & 	273	 &224917259	 & 	247\\
+46	 &758	 & 	3	 &93110072	 & 	257	 &273460596	 & 	241\\
+47	 &314069	 & 	11	 &80326695	 & 	273	 &334603447	 & 	252\\
+48	 &3541	 & 	65	 &457741769	 & 	271	 &621652513	 & 	253\\
+49	 &222488	 & 	3	 &94748350	 & 	263	 &176140458	 & 	254\\
+50	 &70647	 & 	2	 &289828027	 & 	266	 &224036297	 & 	240\\
+\hline
+\end{longtable}
+
+\begin{longtable}{|c|cc|cc|cc|}
+\caption{Comparing results with KK,  Simulated Annealing and Mixed Random Repeated}\\
+\hline
+ 	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Simulated Annealing} 	 & \multicolumn{2}{c|}{ Mixed Random Repeated} \\
+\hline
+File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds\\
+\hline
+1	 &114182	 & 	92	 &5628844163290	 & 	886	 &262	 & 	1191\\
+2	 &142542	 & 	51	 &7217281758456	 & 	620	 &372	 & 	885\\
+3	 &218382	 & 	52	 &2878871546202	 & 	573	 &102	 & 	881\\
+4	 &172671	 & 	18	 &666258108611	 & 	610	 &307	 & 	869\\
+5	 &18946	 & 	43	 &7632874636326	 & 	590	 &408	 & 	957\\
+6	 &77096	 & 	40	 &934620286296	 & 	603	 &410	 & 	1148\\
+7	 &141706	 & 	17	 &7162116942232	 & 	582	 &474	 & 	868\\
+8	 &59282	 & 	14	 &597396995426	 & 	656	 &38	 & 	835\\
+9	 &165544	 & 	60	 &11892733048032	 & 	581	 &6	 & 	852\\
+10	 &1094350	 & 	8	 &2301236163138	 & 	579	 &56	 & 	875\\
+11	 &157322	 & 	6	 &568843491078	 & 	587	 &24	 & 	842\\
+12	 &17389	 & 	24	 &7565861670717	 & 	570	 &53	 & 	879\\
+13	 &133522	 & 	6	 &4683919243710	 & 	579	 &82	 & 	856\\
+14	 &426552	 & 	20	 &3424946559084	 & 	613	 &478	 & 	849\\
+15	 &121555	 & 	10	 &583856455495	 & 	639	 &31	 & 	853\\
+16	 &359984	 & 	19	 &9885670576046	 & 	556	 &474	 & 	909\\
+17	 &92510	 & 	4	 &3498918646720	 & 	607	 &6	 & 	838\\
+18	 &174338	 & 	15	 &4529287452558	 & 	589	 &4	 & 	880\\
+19	 &482968	 & 	5	 &237340093792	 & 	560	 &226	 & 	866\\
+20	 &113902	 & 	15	 &6422793728994	 & 	597	 &144	 & 	1064\\
+21	 &191888	 & 	6	 &8016240362984	 & 	676	 &142	 & 	861\\
+22	 &149623	 & 	5	 &499952415977	 & 	564	 &25	 & 	862\\
+23	 &1174258	 & 	15	 &4072419307264	 & 	592	 &240	 & 	857\\
+24	 &39179	 & 	4	 &2867083895877	 & 	576	 &155	 & 	873\\
+25	 &70712	 & 	14	 &130915334860	 & 	591	 &172	 & 	861\\
+26	 &161571	 & 	4	 &8096375661177	 & 	586	 &21	 & 	852\\
+27	 &56562	 & 	16	 &182986537564	 & 	580	 &390	 & 	867\\
+28	 &2760	 & 	4	 &362811874734	 & 	577	 &230	 & 	1005\\
+29	 &114192	 & 	4	 &2435593865940	 & 	569	 &642	 & 	918\\
+30	 &41626	 & 	38	 &7206058598972	 & 	602	 &138	 & 	822\\
+31	 &52594	 & 	3	 &2675618126524	 & 	579	 &200	 & 	926\\
+32	 &397885	 & 	9	 &1704894217047	 & 	556	 &131	 & 	1136\\
+33	 &451550	 & 	4	 &3683242392588	 & 	579	 &110	 & 	948\\
+34	 &1073370	 & 	28	 &4386435495758	 & 	579	 &28	 & 	884\\
+35	 &209575	 & 	4	 &4349655004671	 & 	570	 &105	 & 	839\\
+36	 &182143	 & 	18	 &13260978395405	 & 	607	 &13	 & 	881\\
+37	 &41566	 & 	3	 &9691243560948	 & 	592	 &50	 & 	843\\
+38	 &109685	 & 	4	 &5041972691309	 & 	610	 &61	 & 	866\\
+39	 &34183	 & 	19	 &891678421687	 & 	764	 &179	 & 	834\\
+40	 &419170	 & 	4	 &2776743313208	 & 	629	 &38	 & 	887\\
+41	 &59050	 & 	4	 &92442205666	 & 	637	 &360	 & 	830\\
+42	 &115695	 & 	11	 &112816335279	 & 	567	 &253	 & 	867\\
+43	 &23795	 & 	4	 &3134687481497	 & 	590	 &163	 & 	824\\
+44	 &532410	 & 	3	 &1062467313616	 & 	582	 &52	 & 	955\\
+45	 &82125	 & 	47	 &1403159039103	 & 	598	 &105	 & 	891\\
+46	 &758	 & 	3	 &561503245280	 & 	555	 &156	 & 	876\\
+47	 &314069	 & 	11	 &8590215375767	 & 	562	 &195	 & 	872\\
+48	 &3541	 & 	65	 &6012728597293	 & 	584	 &73	 & 	836\\
+49	 &222488	 & 	3	 &5091469271684	 & 	586	 &56	 & 	877\\
+50	 &70647	 & 	2	 &5774852634595	 & 	566	 &191	 & 	856\\
+\hline
+\end{longtable}
+
+\begin{longtable}{|c|cc|cc|cc|}
+\caption{Comparing results with KK,  Mixed Hill Climbing and Mixed Simulated Annealing}\\
+\hline
+ 	 & \multicolumn{2}{c}{ KK} 	 & \multicolumn{2}{c}{ Mixed Hill Climbing} 	 & \multicolumn{2}{c|}{ Mixed Simulated Annealing} \\
+\hline
+File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds\\
+\hline
+1	 &114182	 & 	92	 &600	 & 	887	 &614	 & 	3118\\
+2	 &142542	 & 	51	 &1202	 & 	718	 &94	 & 	2935\\
+3	 &218382	 & 	52	 &1148	 & 	651	 &636	 & 	2499\\
+4	 &172671	 & 	18	 &553	 & 	703	 &261	 & 	2696\\
+5	 &18946	 & 	43	 &54	 & 	712	 &204	 & 	2660\\
+6	 &77096	 & 	40	 &994	 & 	743	 &186	 & 	2776\\
+7	 &141706	 & 	17	 &3034	 & 	719	 &1166	 & 	2816\\
+8	 &59282	 & 	14	 &638	 & 	754	 &18	 & 	2757\\
+9	 &165544	 & 	60	 &1088	 & 	784	 &282	 & 	2816\\
+10	 &1094350	 & 	8	 &566	 & 	678	 &4	 & 	2861\\
+11	 &157322	 & 	6	 &1394	 & 	683	 &262	 & 	2804\\
+12	 &17389	 & 	24	 &9	 & 	804	 &113	 & 	2723\\
+13	 &133522	 & 	6	 &468	 & 	716	 &234	 & 	3171\\
+14	 &426552	 & 	20	 &1468	 & 	769	 &8	 & 	3050\\
+15	 &121555	 & 	10	 &561	 & 	631	 &33	 & 	2790\\
+16	 &359984	 & 	19	 &1170	 & 	793	 &402	 & 	2660\\
+17	 &92510	 & 	4	 &4	 & 	678	 &722	 & 	2572\\
+18	 &174338	 & 	15	 &328	 & 	988	 &106	 & 	2672\\
+19	 &482968	 & 	5	 &244	 & 	847	 &400	 & 	2832\\
+20	 &113902	 & 	15	 &66	 & 	987	 &890	 & 	2583\\
+21	 &191888	 & 	6	 &76	 & 	696	 &50	 & 	2716\\
+22	 &149623	 & 	5	 &4693	 & 	666	 &409	 & 	2707\\
+23	 &1174258	 & 	15	 &42	 & 	698	 &22	 & 	2858\\
+24	 &39179	 & 	4	 &1189	 & 	675	 &169	 & 	2835\\
+25	 &70712	 & 	14	 &476	 & 	683	 &88	 & 	2799\\
+26	 &161571	 & 	4	 &245	 & 	721	 &189	 & 	2649\\
+27	 &56562	 & 	16	 &466	 & 	704	 &276	 & 	2807\\
+28	 &2760	 & 	4	 &18	 & 	697	 &504	 & 	2862\\
+29	 &114192	 & 	4	 &20	 & 	774	 &232	 & 	2735\\
+30	 &41626	 & 	38	 &2548	 & 	768	 &22	 & 	2743\\
+31	 &52594	 & 	3	 &1322	 & 	625	 &214	 & 	2657\\
+32	 &397885	 & 	9	 &113	 & 	672	 &131	 & 	2714\\
+33	 &451550	 & 	4	 &2858	 & 	672	 &170	 & 	2871\\
+34	 &1073370	 & 	28	 &54	 & 	801	 &102	 & 	3247\\
+35	 &209575	 & 	4	 &327	 & 	737	 &11	 & 	2883\\
+36	 &182143	 & 	18	 &1835	 & 	732	 &119	 & 	2838\\
+37	 &41566	 & 	3	 &398	 & 	694	 &18	 & 	2700\\
+38	 &109685	 & 	4	 &153	 & 	767	 &333	 & 	3078\\
+39	 &34183	 & 	19	 &1259	 & 	765	 &27	 & 	2801\\
+40	 &419170	 & 	4	 &58	 & 	749	 &36	 & 	3130\\
+41	 &59050	 & 	4	 &1358	 & 	739	 &166	 & 	2651\\
+42	 &115695	 & 	11	 &869	 & 	751	 &303	 & 	2814\\
+43	 &23795	 & 	4	 &963	 & 	737	 &167	 & 	2816\\
+44	 &532410	 & 	3	 &2258	 & 	728	 &774	 & 	2623\\
+45	 &82125	 & 	47	 &103	 & 	683	 &261	 & 	2519\\
+46	 &758	 & 	3	 &228	 & 	624	 &58	 & 	2853\\
+47	 &314069	 & 	11	 &449	 & 	864	 &447	 & 	2800\\
+48	 &3541	 & 	65	 &1591	 & 	729	 &285	 & 	2757\\
+49	 &222488	 & 	3	 &3194	 & 	726	 &998	 & 	2914\\
+50	 &70647	 & 	2	 &183	 & 	630	 &17	 & 	3157\\
+\hline
+\end{longtable}
+
 
 \subsection{Mixing Karmarkar-Karp with heuristics}
 
 Discuss briefly how you could use the solution from the Karmarkar-Karp algorithm as a starting point for the randomized algorithms, and suggest what effect that might have. (No experiments are necessary, but feel free to try it.)
 
 \subsection{Running the Karkarmar-Karp program}
-The program is already compiled and package in the root directory so it can run as follows.
+The program is already compiled and package in the root directory so it can run as follows:
+
 \begin{verbatim}
  java -jar NumberPartition.jar input.txt 
 \end{verbatim}
 
-f the user would like to try it in a different environment or recompile it again from scratch, you would only need to run the following two commands:
+If the user would like to try it in a different environment or recompile it again from scratch, you would only need to run the following two commands:
 
 \begin{verbatim}
 mvn clean compile assembly:single

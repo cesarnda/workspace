@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  27 APR 2014 23:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  30 APR 2014 01:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1334,6 +1334,9 @@ File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
 
+(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
 
 LaTeX Warning: Unused global option(s):
     [tikz].
@@ -1341,20 +1344,20 @@ LaTeX Warning: Unused global option(s):
 (./Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.aux)
 \openout1 = `Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1415,7 +1418,7 @@ Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box61
-Package hyperref Info: Link coloring OFF on input line 33.
+Package hyperref Info: Link coloring OFF on input line 34.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1425,9 +1428,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count279
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
 (./Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.out)
 (./Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.out)
@@ -1440,38 +1443,38 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.8} into y
 our preamble.
- on input line 33.
+ on input line 34.
 
 \c@lstlisting=\count280
 
-Underfull \hbox (badness 10000) in paragraph at lines 45--48
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\cdot' on input line 49.
+(hyperref)                removing `\cdot' on input line 50.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 49.
+(hyperref)                removing `math shift' on input line 50.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--61
+Underfull \hbox (badness 10000) in paragraph at lines 52--62
 
  []
 
@@ -1491,17 +1494,22 @@ Non-PDF special ignored!
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--132
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--137
+Underfull \hbox (badness 10000) in paragraph at lines 128--136
 
  []
 
 
-Overfull \hbox (1.6451pt too wide) in paragraph at lines 134--137
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+
+Overfull \hbox (1.6451pt too wide) in paragraph at lines 139--142
 \OT1/cmr/m/n/12 main-ing in $\OML/cmm/m/it/12 A$ \OT1/cmr/m/n/12 at each step a
 nd dif-fer-enc-ing them. For ex-am-ple, if $\OML/cmm/m/it/12 A$ \OT1/cmr/m/n/12
  is ini-tially $(10\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 8\OML/cmm/m/it/12 ; \OT1/
@@ -1510,90 +1518,160 @@ cmr/m/n/12 7\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 148--152
+Underfull \hbox (badness 10000) in paragraph at lines 153--157
 
  []
 
 [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 368--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--369
+Underfull \hbox (badness 10000) in paragraph at lines 368--374
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 387--392
+Underfull \hbox (badness 10000) in paragraph at lines 392--397
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 409--418
+Underfull \hbox (badness 10000) in paragraph at lines 414--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--418
+Underfull \hbox (badness 10000) in paragraph at lines 414--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--418
+Underfull \hbox (badness 10000) in paragraph at lines 414--423
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 409--418
+Underfull \hbox (badness 10000) in paragraph at lines 414--423
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 441--448
+Underfull \hbox (badness 10000) in paragraph at lines 446--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--448
+Underfull \hbox (badness 10000) in paragraph at lines 446--453
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 441--448
+Underfull \hbox (badness 10000) in paragraph at lines 446--453
 
  []
 
 [9]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 450.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 455.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 450.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 455.
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 502--509
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 502--509
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
 
  []
 
-[10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 529.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 529.
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 507--664
+
+ []
+
+[10] [11] [12] [13]
+Overfull \hbox (17.67813pt too wide) in alignment at lines 727--751
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (17.67813pt too wide) in alignment at lines 751--771
+ [] [] [] [] [] [] [] 
+ []
+
+[14]
+Overfull \hbox (17.67813pt too wide) in alignment at lines 771--785
+ [] [] [] [] [] [] [] 
+ []
+
+[15] [16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 868.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 868.
  (./Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 529.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 529.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 868.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 868.
 
 
 Package rerunfilecheck Warning: File `Cesar_Agustin_Garcia_Vazquez_Prommaing_As
@@ -1603,40 +1681,43 @@ signment_03.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `Cesar_Agustin_Garcia_Vazquez_Promma
 ing_Assignment_03.out':
-(rerunfilecheck)             Before: 0D1DCB2265E51011ACA62A992FA84405;442
-(rerunfilecheck)             After:  68B12D6BF9804E7D76C708E604D3AD2D;528.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 529.
+(rerunfilecheck)             Before: 0885B086DD309FEF9EF2B3C80019655C;594
+(rerunfilecheck)             After:  E4407D8EBF966E18D309FAA182FF611F;584.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 868.
  ) 
 Here is how much of TeX's memory you used:
- 33755 strings out of 493315
- 684138 string characters out of 6137904
- 999703 words of memory out of 5000000
- 36414 multiletter control sequences out of 15000+600000
+ 33795 strings out of 493315
+ 684746 string characters out of 6137904
+ 1005702 words of memory out of 5000000
+ 36439 multiletter control sequences out of 15000+600000
  15404 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 57i,26n,78p,1045b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
-cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/tex
-live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
-2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.pdf (12 
-pages, 212111 bytes).
+ 57i,26n,85p,1045b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsubsection.1.4.1} has been referenced but does
+ not exist, replaced by a fixed one
+
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></
+usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
+l/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
+ve/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on Cesar_Agustin_Garcia_Vazquez_Prommaing_Assignment_03.pdf (17 
+pages, 231190 bytes).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 107 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 331 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 119 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 

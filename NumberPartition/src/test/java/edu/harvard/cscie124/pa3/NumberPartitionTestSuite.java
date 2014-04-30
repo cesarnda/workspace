@@ -22,7 +22,8 @@ import edu.harvard.cscie124.pa3.heuristic.SimulatedAnnealingTestCases;
 	SimulatedAnnealingTestCases.class,
 	MixedRandomRepeatedTestCases.class,
 	MixedHillClimbingTestCases.class,
-	MixedSimulatedAnnealingTestCases.class
+	MixedSimulatedAnnealingTestCases.class,
+	PrintResultsForLatex.class
 })
 public class NumberPartitionTestSuite {
 

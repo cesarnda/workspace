@@ -1,364 +1,778 @@
-20:41:57,114  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,122  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,124  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,124  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,154  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,155  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,155  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,156  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,157  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,158  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,159  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,189  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:57,191  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
-20:41:57,191  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
-20:41:58,370  INFO AbstractTestCases:17 - The method KK took 81 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 114182
-20:41:58,372  INFO AbstractTestCases:17 - The method KK took 33 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 142542
-20:41:58,375  INFO AbstractTestCases:17 - The method KK took 112 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 218382
-20:41:58,376  INFO AbstractTestCases:17 - The method KK took 40 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 172671
-20:41:58,376  INFO AbstractTestCases:17 - The method KK took 46 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 18946
-20:41:58,376  INFO AbstractTestCases:17 - The method KK took 41 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 77096
-20:41:58,376  INFO AbstractTestCases:17 - The method KK took 24 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 141706
-20:41:58,377  INFO AbstractTestCases:17 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 59282
-20:41:58,411  INFO AbstractTestCases:17 - The method KK took 59 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 165544
-20:41:58,411  INFO AbstractTestCases:17 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 1094350
-20:41:58,411  INFO AbstractTestCases:17 - The method KK took 25 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 157322
-20:41:58,412  INFO AbstractTestCases:17 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 17389
-20:41:58,412  INFO AbstractTestCases:17 - The method KK took 18 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 133522
-20:41:58,413  INFO AbstractTestCases:17 - The method KK took 31 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 426552
-20:41:58,413  INFO AbstractTestCases:17 - The method KK took 29 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 121555
-20:41:58,413  INFO AbstractTestCases:17 - The method KK took 36 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 359984
-20:41:58,414  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 92510
-20:41:58,414  INFO AbstractTestCases:17 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 174338
-20:41:58,414  INFO AbstractTestCases:17 - The method KK took 32 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 482968
-20:41:58,415  INFO AbstractTestCases:17 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 113902
-20:41:58,415  INFO AbstractTestCases:17 - The method KK took 27 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 191888
-20:41:58,415  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 149623
-20:41:58,415  INFO AbstractTestCases:17 - The method KK took 25 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 1174258
-20:41:58,416  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 39179
-20:41:58,421  INFO AbstractTestCases:17 - The method KK took 13 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 70712
-20:41:58,422  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 161571
-20:41:58,422  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 56562
-20:41:58,422  INFO AbstractTestCases:17 - The method KK took 18 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 2760
-20:41:58,422  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 114192
-20:41:58,423  INFO AbstractTestCases:17 - The method KK took 43 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 41626
-20:41:58,423  INFO AbstractTestCases:17 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 52594
-20:41:58,423  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 397885
-20:41:58,424  INFO AbstractTestCases:17 - The method KK took 9 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 451550
-20:41:58,424  INFO AbstractTestCases:17 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 1073370
-20:41:58,424  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 209575
-20:41:58,425  INFO AbstractTestCases:17 - The method KK took 22 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 182143
-20:41:58,425  INFO AbstractTestCases:17 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 41566
-20:41:58,425  INFO AbstractTestCases:17 - The method KK took 21 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 109685
-20:41:58,426  INFO AbstractTestCases:17 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 34183
-20:41:58,426  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 419170
-20:41:58,426  INFO AbstractTestCases:17 - The method KK took 29 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 59050
-20:41:58,427  INFO AbstractTestCases:17 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 115695
-20:41:58,427  INFO AbstractTestCases:17 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 23795
-20:41:58,427  INFO AbstractTestCases:17 - The method KK took 26 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 532410
-20:41:58,428  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 82125
-20:41:58,428  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 758
-20:41:58,428  INFO AbstractTestCases:17 - The method KK took 61 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 314069
-20:41:58,429  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 3541
-20:41:58,429  INFO AbstractTestCases:17 - The method KK took 93 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 222488
-20:41:58,429  INFO AbstractTestCases:17 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 70647
-20:42:16,143  INFO AbstractTestCases:17 - The method RandomRepeated took 677 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 62235340
-20:42:16,147  INFO AbstractTestCases:17 - The method RandomRepeated took 512 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 707220646
-20:42:16,147  INFO AbstractTestCases:17 - The method RandomRepeated took 504 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 213238586
-20:42:16,147  INFO AbstractTestCases:17 - The method RandomRepeated took 522 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 5620569
-20:42:16,149  INFO AbstractTestCases:17 - The method RandomRepeated took 460 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 810668980
-20:42:16,149  INFO AbstractTestCases:17 - The method RandomRepeated took 314 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 38406970
-20:42:16,149  INFO AbstractTestCases:17 - The method RandomRepeated took 311 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 402598862
-20:42:16,150  INFO AbstractTestCases:17 - The method RandomRepeated took 303 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 262638390
-20:42:16,150  INFO AbstractTestCases:17 - The method RandomRepeated took 475 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 37944900
-20:42:16,150  INFO AbstractTestCases:17 - The method RandomRepeated took 371 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 321017440
-20:42:16,151  INFO AbstractTestCases:17 - The method RandomRepeated took 298 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 6616986
-20:42:16,151  INFO AbstractTestCases:17 - The method RandomRepeated took 324 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 60540309
-20:42:16,151  INFO AbstractTestCases:17 - The method RandomRepeated took 289 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 519126904
-20:42:16,152  INFO AbstractTestCases:17 - The method RandomRepeated took 313 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 366795404
-20:42:16,152  INFO AbstractTestCases:17 - The method RandomRepeated took 309 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 564336723
-20:42:16,152  INFO AbstractTestCases:17 - The method RandomRepeated took 477 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 1502793700
-20:42:16,152  INFO AbstractTestCases:17 - The method RandomRepeated took 294 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 679886530
-20:42:16,152  INFO AbstractTestCases:17 - The method RandomRepeated took 313 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 266208546
-20:42:16,153  INFO AbstractTestCases:17 - The method RandomRepeated took 319 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 35814624
-20:42:16,153  INFO AbstractTestCases:17 - The method RandomRepeated took 303 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 179062998
-20:42:16,153  INFO AbstractTestCases:17 - The method RandomRepeated took 285 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 295585742
-20:42:16,154  INFO AbstractTestCases:17 - The method RandomRepeated took 314 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 143483795
-20:42:16,154  INFO AbstractTestCases:17 - The method RandomRepeated took 367 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 862114418
-20:42:16,154  INFO AbstractTestCases:17 - The method RandomRepeated took 347 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 309897273
-20:42:16,155  INFO AbstractTestCases:17 - The method RandomRepeated took 364 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 135940712
-20:42:16,155  INFO AbstractTestCases:17 - The method RandomRepeated took 354 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 211527321
-20:42:16,155  INFO AbstractTestCases:17 - The method RandomRepeated took 330 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 49583152
-20:42:16,156  INFO AbstractTestCases:17 - The method RandomRepeated took 343 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 364551388
-20:42:16,156  INFO AbstractTestCases:17 - The method RandomRepeated took 378 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 12554400
-20:42:16,156  INFO AbstractTestCases:17 - The method RandomRepeated took 342 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 107689226
-20:42:16,156  INFO AbstractTestCases:17 - The method RandomRepeated took 389 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 25830792
-20:42:16,157  INFO AbstractTestCases:17 - The method RandomRepeated took 319 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 336254767
-20:42:16,157  INFO AbstractTestCases:17 - The method RandomRepeated took 329 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 158599484
-20:42:16,157  INFO AbstractTestCases:17 - The method RandomRepeated took 334 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 138674522
-20:42:16,158  INFO AbstractTestCases:17 - The method RandomRepeated took 294 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 920425299
-20:42:16,168  INFO AbstractTestCases:17 - The method RandomRepeated took 306 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 339691993
-20:42:16,168  INFO AbstractTestCases:17 - The method RandomRepeated took 345 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 2102222
-20:42:16,168  INFO AbstractTestCases:17 - The method RandomRepeated took 315 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 56956039
-20:42:16,169  INFO AbstractTestCases:17 - The method RandomRepeated took 326 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 454638743
-20:42:16,169  INFO AbstractTestCases:17 - The method RandomRepeated took 283 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 124418192
-20:42:16,169  INFO AbstractTestCases:17 - The method RandomRepeated took 325 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 48178926
-20:42:16,170  INFO AbstractTestCases:17 - The method RandomRepeated took 320 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 64930607
-20:42:16,170  INFO AbstractTestCases:17 - The method RandomRepeated took 316 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 240175313
-20:42:16,170  INFO AbstractTestCases:17 - The method RandomRepeated took 329 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 459068960
-20:42:16,170  INFO AbstractTestCases:17 - The method RandomRepeated took 307 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 255291603
-20:42:16,171  INFO AbstractTestCases:17 - The method RandomRepeated took 327 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 135834330
-20:42:16,171  INFO AbstractTestCases:17 - The method RandomRepeated took 427 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 672409927
-20:42:16,172  INFO AbstractTestCases:17 - The method RandomRepeated took 316 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 184470245
-20:42:16,172  INFO AbstractTestCases:17 - The method RandomRepeated took 337 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 126563452
-20:42:16,172  INFO AbstractTestCases:17 - The method RandomRepeated took 351 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 17958689
-20:42:31,602  INFO AbstractTestCases:17 - The method HillClimbing took 624 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 105658782
-20:42:31,605  INFO AbstractTestCases:17 - The method HillClimbing took 340 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 57635140
-20:42:31,605  INFO AbstractTestCases:17 - The method HillClimbing took 329 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 233662680
-20:42:31,606  INFO AbstractTestCases:17 - The method HillClimbing took 290 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 115796315
-20:42:31,606  INFO AbstractTestCases:17 - The method HillClimbing took 328 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 262771532
-20:42:31,606  INFO AbstractTestCases:17 - The method HillClimbing took 272 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 139974486
-20:42:31,608  INFO AbstractTestCases:17 - The method HillClimbing took 337 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 103741964
-20:42:31,609  INFO AbstractTestCases:17 - The method HillClimbing took 342 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 208121578
-20:42:31,610  INFO AbstractTestCases:17 - The method HillClimbing took 320 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 44341756
-20:42:31,610  INFO AbstractTestCases:17 - The method HillClimbing took 335 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 106200282
-20:42:31,610  INFO AbstractTestCases:17 - The method HillClimbing took 330 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 114489006
-20:42:31,610  INFO AbstractTestCases:17 - The method HillClimbing took 299 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 263747139
-20:42:31,611  INFO AbstractTestCases:17 - The method HillClimbing took 270 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 3073260
-20:42:31,611  INFO AbstractTestCases:17 - The method HillClimbing took 314 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 467900840
-20:42:31,611  INFO AbstractTestCases:17 - The method HillClimbing took 278 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 157177333
-20:42:31,612  INFO AbstractTestCases:17 - The method HillClimbing took 281 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 67002602
-20:42:31,612  INFO AbstractTestCases:17 - The method HillClimbing took 275 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 178999536
-20:42:31,612  INFO AbstractTestCases:17 - The method HillClimbing took 336 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 348734662
-20:42:31,613  INFO AbstractTestCases:17 - The method HillClimbing took 277 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 1578558
-20:42:31,613  INFO AbstractTestCases:17 - The method HillClimbing took 305 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 413969724
-20:42:31,613  INFO AbstractTestCases:17 - The method HillClimbing took 311 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 84729496
-20:42:31,614  INFO AbstractTestCases:17 - The method HillClimbing took 270 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 417158867
-20:42:31,614  INFO AbstractTestCases:17 - The method HillClimbing took 285 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 65825058
-20:42:31,615  INFO AbstractTestCases:17 - The method HillClimbing took 269 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 56652831
-20:42:31,615  INFO AbstractTestCases:17 - The method HillClimbing took 284 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 10022758
-20:42:31,615  INFO AbstractTestCases:17 - The method HillClimbing took 297 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 167037239
-20:42:31,615  INFO AbstractTestCases:17 - The method HillClimbing took 281 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 5428316
-20:42:31,616  INFO AbstractTestCases:17 - The method HillClimbing took 369 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 1207691232
-20:42:31,616  INFO AbstractTestCases:17 - The method HillClimbing took 264 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 722238596
-20:42:31,616  INFO AbstractTestCases:17 - The method HillClimbing took 284 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 490456192
-20:42:31,617  INFO AbstractTestCases:17 - The method HillClimbing took 264 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 197184076
-20:42:31,617  INFO AbstractTestCases:17 - The method HillClimbing took 337 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 80842275
-20:42:31,617  INFO AbstractTestCases:17 - The method HillClimbing took 320 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 1497972456
-20:42:31,618  INFO AbstractTestCases:17 - The method HillClimbing took 295 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 148078546
-20:42:31,618  INFO AbstractTestCases:17 - The method HillClimbing took 294 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 121483585
-20:42:31,619  INFO AbstractTestCases:17 - The method HillClimbing took 294 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 90942957
-20:42:31,619  INFO AbstractTestCases:17 - The method HillClimbing took 344 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 173657604
-20:42:31,619  INFO AbstractTestCases:17 - The method HillClimbing took 307 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 1378933
-20:42:31,619  INFO AbstractTestCases:17 - The method HillClimbing took 322 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 94797797
-20:42:31,620  INFO AbstractTestCases:17 - The method HillClimbing took 314 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 239991156
-20:42:31,620  INFO AbstractTestCases:17 - The method HillClimbing took 288 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 54339344
-20:42:31,620  INFO AbstractTestCases:17 - The method HillClimbing took 305 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 55179765
-20:42:31,621  INFO AbstractTestCases:17 - The method HillClimbing took 346 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 113441143
-20:42:31,621  INFO AbstractTestCases:17 - The method HillClimbing took 266 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 1015782752
-20:42:31,621  INFO AbstractTestCases:17 - The method HillClimbing took 289 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 117199843
-20:42:31,622  INFO AbstractTestCases:17 - The method HillClimbing took 290 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 66183094
-20:42:31,622  INFO AbstractTestCases:17 - The method HillClimbing took 269 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 310668787
-20:42:31,622  INFO AbstractTestCases:17 - The method HillClimbing took 287 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 126457527
-20:42:31,623  INFO AbstractTestCases:17 - The method HillClimbing took 328 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 401869264
-20:42:31,623  INFO AbstractTestCases:17 - The method HillClimbing took 270 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 64146829
-20:43:06,346  INFO AbstractTestCases:17 - The method Simulated Annealing took 814 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 2254807475678
-20:43:06,349  INFO AbstractTestCases:17 - The method Simulated Annealing took 679 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 958833919822
-20:43:06,349  INFO AbstractTestCases:17 - The method Simulated Annealing took 647 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 270581848166
-20:43:06,349  INFO AbstractTestCases:17 - The method Simulated Annealing took 702 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 11746904198357
-20:43:06,350  INFO AbstractTestCases:17 - The method Simulated Annealing took 631 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 1060946242216
-20:43:06,350  INFO AbstractTestCases:17 - The method Simulated Annealing took 741 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 3480910113576
-20:43:06,350  INFO AbstractTestCases:17 - The method Simulated Annealing took 741 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 4154691015704
-20:43:06,351  INFO AbstractTestCases:17 - The method Simulated Annealing took 714 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 3126898979112
-20:43:06,351  INFO AbstractTestCases:17 - The method Simulated Annealing took 768 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 14804974024980
-20:43:06,351  INFO AbstractTestCases:17 - The method Simulated Annealing took 699 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 4833845662500
-20:43:06,352  INFO AbstractTestCases:17 - The method Simulated Annealing took 692 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 1809988619068
-20:43:06,352  INFO AbstractTestCases:17 - The method Simulated Annealing took 663 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 1251895054905
-20:43:06,352  INFO AbstractTestCases:17 - The method Simulated Annealing took 774 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 5281870388584
-20:43:06,352  INFO AbstractTestCases:17 - The method Simulated Annealing took 643 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 1501462343970
-20:43:06,353  INFO AbstractTestCases:17 - The method Simulated Annealing took 624 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 359075019557
-20:43:06,353  INFO AbstractTestCases:17 - The method Simulated Annealing took 658 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 7160952778398
-20:43:06,353  INFO AbstractTestCases:17 - The method Simulated Annealing took 642 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 4596003017932
-20:43:06,354  INFO AbstractTestCases:17 - The method Simulated Annealing took 638 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 14181201031754
-20:43:06,354  INFO AbstractTestCases:17 - The method Simulated Annealing took 716 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 234535653228
-20:43:06,354  INFO AbstractTestCases:17 - The method Simulated Annealing took 739 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 4156761393050
-20:43:06,355  INFO AbstractTestCases:17 - The method Simulated Annealing took 725 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 300155744608
-20:43:06,355  INFO AbstractTestCases:17 - The method Simulated Annealing took 727 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 6821892826037
-20:43:06,355  INFO AbstractTestCases:17 - The method Simulated Annealing took 753 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 6077155244860
-20:43:06,356  INFO AbstractTestCases:17 - The method Simulated Annealing took 681 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 3482496384275
-20:43:06,357  INFO AbstractTestCases:17 - The method Simulated Annealing took 677 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 1594924094984
-20:43:06,358  INFO AbstractTestCases:17 - The method Simulated Annealing took 662 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 6414542319311
-20:43:06,358  INFO AbstractTestCases:17 - The method Simulated Annealing took 688 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 4809276938458
-20:43:06,359  INFO AbstractTestCases:17 - The method Simulated Annealing took 653 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 5776222289338
-20:43:06,359  INFO AbstractTestCases:17 - The method Simulated Annealing took 661 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 5260442782620
-20:43:06,360  INFO AbstractTestCases:17 - The method Simulated Annealing took 639 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 6488432369742
-20:43:06,363  INFO AbstractTestCases:17 - The method Simulated Annealing took 670 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 9190297244886
-20:43:06,365  INFO AbstractTestCases:17 - The method Simulated Annealing took 722 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 3475191664457
-20:43:06,368  INFO AbstractTestCases:17 - The method Simulated Annealing took 688 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 826048994096
-20:43:06,369  INFO AbstractTestCases:17 - The method Simulated Annealing took 757 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 2143808161722
-20:43:06,370  INFO AbstractTestCases:17 - The method Simulated Annealing took 701 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 1822434528921
-20:43:06,370  INFO AbstractTestCases:17 - The method Simulated Annealing took 790 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 5080631288111
-20:43:06,370  INFO AbstractTestCases:17 - The method Simulated Annealing took 674 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 4424853220158
-20:43:06,371  INFO AbstractTestCases:17 - The method Simulated Annealing took 650 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 4942602163203
-20:43:06,371  INFO AbstractTestCases:17 - The method Simulated Annealing took 681 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 8189836505881
-20:43:06,371  INFO AbstractTestCases:17 - The method Simulated Annealing took 676 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 7053337880704
-20:43:06,372  INFO AbstractTestCases:17 - The method Simulated Annealing took 654 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 10293070769290
-20:43:06,372  INFO AbstractTestCases:17 - The method Simulated Annealing took 662 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 277317347901
-20:43:06,372  INFO AbstractTestCases:17 - The method Simulated Annealing took 640 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 2805472014833
-20:43:06,372  INFO AbstractTestCases:17 - The method Simulated Annealing took 653 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 6742252487914
-20:43:06,374  INFO AbstractTestCases:17 - The method Simulated Annealing took 682 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 4647244930875
-20:43:06,375  INFO AbstractTestCases:17 - The method Simulated Annealing took 738 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 2171192784116
-20:43:06,375  INFO AbstractTestCases:17 - The method Simulated Annealing took 718 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 4576815681819
-20:43:06,375  INFO AbstractTestCases:17 - The method Simulated Annealing took 745 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 12028523224663
-20:43:06,376  INFO AbstractTestCases:17 - The method Simulated Annealing took 660 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 2032263062844
-20:43:06,376  INFO AbstractTestCases:17 - The method Simulated Annealing took 767 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 2881157114567
-20:44:01,219  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1251 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 22
-20:44:01,222  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1077 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 50
-20:44:01,223  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1001 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 182
-20:44:01,223  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1028 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 141
-20:44:01,223  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1051 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 180
-20:44:01,227  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1221 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 132
-20:44:01,239  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1183 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 464
-20:44:01,239  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1161 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 260
-20:44:01,240  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1046 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 10
-20:44:01,240  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1063 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 54
-20:44:01,240  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1024 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 180
-20:44:01,241  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1064 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 207
-20:44:01,241  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1019 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 252
-20:44:01,241  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1132 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 12
-20:44:01,271  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1209 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 31
-20:44:01,272  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1233 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 96
-20:44:01,272  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1045 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 8
-20:44:01,272  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1069 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 14
-20:44:01,272  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1015 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 502
-20:44:01,273  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1023 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 60
-20:44:01,273  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 975 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 38
-20:44:01,273  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1093 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 29
-20:44:01,273  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1204 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 40
-20:44:01,273  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1212 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 23
-20:44:01,274  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1039 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 56
-20:44:01,274  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1094 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 21
-20:44:01,275  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1019 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 408
-20:44:01,275  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1043 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 190
-20:44:01,275  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 972 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 146
-20:44:01,287  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1087 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 34
-20:44:01,292  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1163 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 232
-20:44:01,294  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1194 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 149
-20:44:01,298  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1142 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 660
-20:44:01,300  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1019 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 220
-20:44:01,301  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1006 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 83
-20:44:01,301  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1023 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 447
-20:44:01,301  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1006 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 224
-20:44:01,302  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1052 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 189
-20:44:01,302  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1236 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 95
-20:44:01,302  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1232 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 24
-20:44:01,312  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1160 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 340
-20:44:01,313  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1115 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 39
-20:44:01,313  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1016 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 43
-20:44:01,313  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1002 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 60
-20:44:01,313  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1025 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 125
-20:44:01,314  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1041 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 322
-20:44:01,314  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1204 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 87
-20:44:01,314  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1153 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 619
-20:44:01,314  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1126 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 112
-20:44:01,314  INFO AbstractTestCases:17 - The method MixedRandomRepeated took 1267 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 89
-20:44:47,225  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1117 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 58
-20:44:47,228  INFO AbstractTestCases:17 - The method MixedHillClimbing took 873 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 142
-20:44:47,228  INFO AbstractTestCases:17 - The method MixedHillClimbing took 905 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 218
-20:44:47,229  INFO AbstractTestCases:17 - The method MixedHillClimbing took 829 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 1183
-20:44:47,232  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1072 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 2088
-20:44:47,232  INFO AbstractTestCases:17 - The method MixedHillClimbing took 861 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 28
-20:44:47,233  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1091 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 1734
-20:44:47,233  INFO AbstractTestCases:17 - The method MixedHillClimbing took 952 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 80
-20:44:47,233  INFO AbstractTestCases:17 - The method MixedHillClimbing took 837 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 144
-20:44:47,233  INFO AbstractTestCases:17 - The method MixedHillClimbing took 966 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 1650
-20:44:47,234  INFO AbstractTestCases:17 - The method MixedHillClimbing took 883 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 102
-20:44:47,234  INFO AbstractTestCases:17 - The method MixedHillClimbing took 962 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 309
-20:44:47,234  INFO AbstractTestCases:17 - The method MixedHillClimbing took 828 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 3452
-20:44:47,235  INFO AbstractTestCases:17 - The method MixedHillClimbing took 953 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 190
-20:44:47,235  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1058 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 975
-20:44:47,235  INFO AbstractTestCases:17 - The method MixedHillClimbing took 912 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 3168
-20:44:47,235  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1024 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 1038
-20:44:47,236  INFO AbstractTestCases:17 - The method MixedHillClimbing took 904 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 312
-20:44:47,236  INFO AbstractTestCases:17 - The method MixedHillClimbing took 872 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 418
-20:44:47,236  INFO AbstractTestCases:17 - The method MixedHillClimbing took 858 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 130
-20:44:47,237  INFO AbstractTestCases:17 - The method MixedHillClimbing took 934 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 32
-20:44:47,237  INFO AbstractTestCases:17 - The method MixedHillClimbing took 803 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 3045
-20:44:47,239  INFO AbstractTestCases:17 - The method MixedHillClimbing took 817 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 2236
-20:44:47,240  INFO AbstractTestCases:17 - The method MixedHillClimbing took 982 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 479
-20:44:47,240  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1098 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 574
-20:44:47,240  INFO AbstractTestCases:17 - The method MixedHillClimbing took 963 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 1063
-20:44:47,241  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1001 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 1516
-20:44:47,241  INFO AbstractTestCases:17 - The method MixedHillClimbing took 856 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 834
-20:44:47,241  INFO AbstractTestCases:17 - The method MixedHillClimbing took 984 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 148
-20:44:47,245  INFO AbstractTestCases:17 - The method MixedHillClimbing took 921 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 50
-20:44:47,247  INFO AbstractTestCases:17 - The method MixedHillClimbing took 853 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 1066
-20:44:47,251  INFO AbstractTestCases:17 - The method MixedHillClimbing took 902 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 181
-20:44:47,254  INFO AbstractTestCases:17 - The method MixedHillClimbing took 715 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 2988
-20:44:47,257  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1026 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 332
-20:44:47,259  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1031 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 1313
-20:44:47,262  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1023 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 67
-20:44:47,264  INFO AbstractTestCases:17 - The method MixedHillClimbing took 802 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 44
-20:44:47,267  INFO AbstractTestCases:17 - The method MixedHillClimbing took 867 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 1685
-20:44:47,329  INFO AbstractTestCases:17 - The method MixedHillClimbing took 784 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 1205
-20:44:47,332  INFO AbstractTestCases:17 - The method MixedHillClimbing took 822 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 36
-20:44:47,357  INFO AbstractTestCases:17 - The method MixedHillClimbing took 796 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 2020
-20:44:47,373  INFO AbstractTestCases:17 - The method MixedHillClimbing took 895 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 211
-20:44:47,375  INFO AbstractTestCases:17 - The method MixedHillClimbing took 899 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 833
-20:44:47,378  INFO AbstractTestCases:17 - The method MixedHillClimbing took 952 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 2272
-20:44:47,384  INFO AbstractTestCases:17 - The method MixedHillClimbing took 1044 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 765
-20:44:47,386  INFO AbstractTestCases:17 - The method MixedHillClimbing took 994 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 1334
-20:44:47,387  INFO AbstractTestCases:17 - The method MixedHillClimbing took 860 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 313
-20:44:47,387  INFO AbstractTestCases:17 - The method MixedHillClimbing took 838 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 397
-20:44:47,387  INFO AbstractTestCases:17 - The method MixedHillClimbing took 799 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 378
-20:44:47,387  INFO AbstractTestCases:17 - The method MixedHillClimbing took 886 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 23
-20:47:45,409  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3782 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 502
-20:47:45,413  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3484 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 20
-20:47:45,414  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3303 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 670
-20:47:45,414  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3940 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 273
-20:47:45,414  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3371 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 38
-20:47:45,414  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3799 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 140
-20:47:45,415  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3696 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 328
-20:47:45,415  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 2892 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 26
-20:47:45,415  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3761 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 510
-20:47:45,415  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3241 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 20
-20:47:45,416  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3795 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 142
-20:47:45,416  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3448 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 1537
-20:47:45,416  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3241 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 236
-20:47:45,416  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3818 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 32
-20:47:45,417  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3568 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 11
-20:47:45,417  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3402 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 24
-20:47:45,417  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3580 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 494
-20:47:45,417  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3377 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 16
-20:47:45,418  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3779 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 610
-20:47:45,418  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3727 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 154
-20:47:45,418  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3552 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 280
-20:47:45,418  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3618 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 91
-20:47:45,419  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3674 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 566
-20:47:45,419  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3632 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 679
-20:47:45,419  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3795 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 34
-20:47:45,420  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3869 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 35
-20:47:45,420  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3367 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 306
-20:47:45,420  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3404 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 44
-20:47:45,420  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3748 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 378
-20:47:45,421  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3751 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 458
-20:47:45,421  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3293 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 1064
-20:47:45,421  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3561 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 161
-20:47:45,422  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3345 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 2208
-20:47:45,422  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3472 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 28
-20:47:45,422  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3292 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 119
-20:47:45,422  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3771 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 383
-20:47:45,423  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3094 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 18
-20:47:45,423  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3475 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 133
-20:47:45,423  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3864 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 35
-20:47:45,424  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3220 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 60
-20:47:45,424  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3648 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 304
-20:47:45,424  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3653 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 285
-20:47:45,424  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3576 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 165
-20:47:45,425  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3835 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 134
-20:47:45,425  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3253 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 125
-20:47:45,425  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 4079 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 16
-20:47:45,426  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3472 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 197
-20:47:45,426  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3587 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 23
-20:47:45,426  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3766 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 80
-20:47:45,427  INFO AbstractTestCases:17 - The method MixedSimulatedAnnealing took 3349 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 501
+22:40:45,707  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1187 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 104
+22:40:45,710  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1087 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 168
+22:40:45,711  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 939 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 36
+22:40:45,711  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 937 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 135
+22:40:45,713  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1093 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 342
+22:40:45,713  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1118 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 136
+22:40:45,713  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1109 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 36
+22:40:45,739  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 929 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 142
+22:40:45,740  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1233 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 66
+22:40:45,740  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1070 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 212
+22:40:45,740  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1205 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 210
+22:40:45,741  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 898 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 101
+22:40:45,741  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1051 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 40
+22:40:45,741  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1053 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 8
+22:40:45,741  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 908 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 15
+22:40:45,742  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 984 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 244
+22:40:45,742  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 981 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 10
+22:40:45,742  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1038 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 100
+22:40:45,743  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1178 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 8
+22:40:45,743  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 955 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 264
+22:40:45,743  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1136 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 242
+22:40:45,743  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 918 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 637
+22:40:45,744  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 890 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 490
+22:40:45,744  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1126 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 291
+22:40:45,744  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1018 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 54
+22:40:45,745  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 891 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 41
+22:40:45,745  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 955 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 108
+22:40:45,745  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 867 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 400
+22:40:45,746  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 844 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 284
+22:40:45,746  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1039 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 274
+22:40:45,746  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 883 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 44
+22:40:45,747  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 862 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 141
+22:40:45,747  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 912 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 976
+22:40:45,747  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1004 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 48
+22:40:45,747  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 963 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 401
+22:40:45,748  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 849 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 223
+22:40:45,748  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 860 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 64
+22:40:45,748  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1062 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 89
+22:40:45,749  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 931 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 137
+22:40:45,749  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 919 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 36
+22:40:45,749  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 995 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 68
+22:40:45,750  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1148 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 59
+22:40:45,750  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 887 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 167
+22:40:45,750  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1206 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 258
+22:40:45,750  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1031 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 251
+22:40:45,751  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 172 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 0
+22:40:45,751  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 923 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 155
+22:40:45,751  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 847 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 109
+22:40:45,752  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 933 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 350
+22:40:45,752  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1057 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 47
+22:40:58,714  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,734  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,737  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,737  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,752  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,753  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,754  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,754  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,756  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,757  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,759  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,778  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:58,780  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+22:40:58,780  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+22:40:59,800  INFO AbstractTestCases:24 - The method KK took 138 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 114182
+22:40:59,800  INFO AbstractTestCases:24 - The method KK took 24 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 142542
+22:40:59,804  INFO AbstractTestCases:24 - The method KK took 44 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 218382
+22:40:59,804  INFO AbstractTestCases:24 - The method KK took 57 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 172671
+22:40:59,805  INFO AbstractTestCases:24 - The method KK took 30 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 18946
+22:40:59,805  INFO AbstractTestCases:24 - The method KK took 20 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 77096
+22:40:59,805  INFO AbstractTestCases:24 - The method KK took 26 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 141706
+22:40:59,805  INFO AbstractTestCases:24 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 59282
+22:40:59,806  INFO AbstractTestCases:24 - The method KK took 37 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 165544
+22:40:59,817  INFO AbstractTestCases:24 - The method KK took 23 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 1094350
+22:40:59,818  INFO AbstractTestCases:24 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 157322
+22:40:59,818  INFO AbstractTestCases:24 - The method KK took 55 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 17389
+22:40:59,819  INFO AbstractTestCases:24 - The method KK took 9 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 133522
+22:40:59,819  INFO AbstractTestCases:24 - The method KK took 17 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 426552
+22:40:59,819  INFO AbstractTestCases:24 - The method KK took 9 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 121555
+22:40:59,820  INFO AbstractTestCases:24 - The method KK took 25 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 359984
+22:40:59,820  INFO AbstractTestCases:24 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 92510
+22:40:59,820  INFO AbstractTestCases:24 - The method KK took 14 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 174338
+22:40:59,821  INFO AbstractTestCases:24 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 482968
+22:40:59,821  INFO AbstractTestCases:24 - The method KK took 29 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 113902
+22:40:59,822  INFO AbstractTestCases:24 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 191888
+22:40:59,822  INFO AbstractTestCases:24 - The method KK took 13 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 149623
+22:40:59,822  INFO AbstractTestCases:24 - The method KK took 10 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 1174258
+22:40:59,822  INFO AbstractTestCases:24 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 39179
+22:40:59,823  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 70712
+22:40:59,823  INFO AbstractTestCases:24 - The method KK took 12 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 161571
+22:40:59,823  INFO AbstractTestCases:24 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 56562
+22:40:59,824  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 2760
+22:40:59,824  INFO AbstractTestCases:24 - The method KK took 15 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 114192
+22:40:59,824  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 41626
+22:40:59,824  INFO AbstractTestCases:24 - The method KK took 14 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 52594
+22:40:59,825  INFO AbstractTestCases:24 - The method KK took 37 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 397885
+22:40:59,825  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 451550
+22:40:59,825  INFO AbstractTestCases:24 - The method KK took 16 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 1073370
+22:40:59,825  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 209575
+22:40:59,826  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 182143
+22:40:59,826  INFO AbstractTestCases:24 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 41566
+22:40:59,826  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 109685
+22:40:59,827  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 34183
+22:40:59,827  INFO AbstractTestCases:24 - The method KK took 14 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 419170
+22:40:59,827  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 59050
+22:40:59,827  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 115695
+22:40:59,828  INFO AbstractTestCases:24 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 23795
+22:40:59,828  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 532410
+22:40:59,879  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 82125
+22:40:59,879  INFO AbstractTestCases:24 - The method KK took 7 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 758
+22:40:59,880  INFO AbstractTestCases:24 - The method KK took 16 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 314069
+22:40:59,880  INFO AbstractTestCases:24 - The method KK took 45 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 3541
+22:40:59,880  INFO AbstractTestCases:24 - The method KK took 21 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 222488
+22:40:59,881  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 70647
+22:41:14,058  INFO AbstractTestCases:24 - The method RandomRepeated took 530 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 124852040
+22:41:14,062  INFO AbstractTestCases:24 - The method RandomRepeated took 442 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 131126028
+22:41:14,063  INFO AbstractTestCases:24 - The method RandomRepeated took 336 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 641429796
+22:41:14,063  INFO AbstractTestCases:24 - The method RandomRepeated took 272 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 355045413
+22:41:14,068  INFO AbstractTestCases:24 - The method RandomRepeated took 264 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 224854620
+22:41:14,068  INFO AbstractTestCases:24 - The method RandomRepeated took 280 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 250902682
+22:41:14,069  INFO AbstractTestCases:24 - The method RandomRepeated took 261 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 132415162
+22:41:14,069  INFO AbstractTestCases:24 - The method RandomRepeated took 256 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 32963354
+22:41:14,069  INFO AbstractTestCases:24 - The method RandomRepeated took 275 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 252248950
+22:41:14,070  INFO AbstractTestCases:24 - The method RandomRepeated took 274 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 661718494
+22:41:14,070  INFO AbstractTestCases:24 - The method RandomRepeated took 252 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 26244366
+22:41:14,070  INFO AbstractTestCases:24 - The method RandomRepeated took 282 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 88656441
+22:41:14,071  INFO AbstractTestCases:24 - The method RandomRepeated took 261 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 1051671338
+22:41:14,071  INFO AbstractTestCases:24 - The method RandomRepeated took 286 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 388873878
+22:41:14,071  INFO AbstractTestCases:24 - The method RandomRepeated took 276 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 364650281
+22:41:14,072  INFO AbstractTestCases:24 - The method RandomRepeated took 402 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 135645070
+22:41:14,072  INFO AbstractTestCases:24 - The method RandomRepeated took 286 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 87822406
+22:41:14,072  INFO AbstractTestCases:24 - The method RandomRepeated took 275 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 56114182
+22:41:14,073  INFO AbstractTestCases:24 - The method RandomRepeated took 269 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 409755688
+22:41:14,073  INFO AbstractTestCases:24 - The method RandomRepeated took 299 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 947748142
+22:41:14,073  INFO AbstractTestCases:24 - The method RandomRepeated took 259 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 342267594
+22:41:14,074  INFO AbstractTestCases:24 - The method RandomRepeated took 270 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 1276699571
+22:41:14,074  INFO AbstractTestCases:24 - The method RandomRepeated took 257 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 111203358
+22:41:14,074  INFO AbstractTestCases:24 - The method RandomRepeated took 290 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 285059531
+22:41:14,075  INFO AbstractTestCases:24 - The method RandomRepeated took 267 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 363712622
+22:41:14,075  INFO AbstractTestCases:24 - The method RandomRepeated took 241 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 262066797
+22:41:14,075  INFO AbstractTestCases:24 - The method RandomRepeated took 318 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 115273444
+22:41:14,076  INFO AbstractTestCases:24 - The method RandomRepeated took 266 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 70759256
+22:41:14,076  INFO AbstractTestCases:24 - The method RandomRepeated took 291 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 214081918
+22:41:14,076  INFO AbstractTestCases:24 - The method RandomRepeated took 262 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 44046186
+22:41:14,077  INFO AbstractTestCases:24 - The method RandomRepeated took 270 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 772809952
+22:41:14,077  INFO AbstractTestCases:24 - The method RandomRepeated took 288 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 904442261
+22:41:14,085  INFO AbstractTestCases:24 - The method RandomRepeated took 241 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 234457156
+22:41:14,085  INFO AbstractTestCases:24 - The method RandomRepeated took 267 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 102235302
+22:41:14,086  INFO AbstractTestCases:24 - The method RandomRepeated took 275 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 108994981
+22:41:14,086  INFO AbstractTestCases:24 - The method RandomRepeated took 235 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 146217111
+22:41:14,086  INFO AbstractTestCases:24 - The method RandomRepeated took 283 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 3424622
+22:41:14,087  INFO AbstractTestCases:24 - The method RandomRepeated took 277 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 21564241
+22:41:14,087  INFO AbstractTestCases:24 - The method RandomRepeated took 270 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 34902765
+22:41:14,087  INFO AbstractTestCases:24 - The method RandomRepeated took 251 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 111274366
+22:41:14,087  INFO AbstractTestCases:24 - The method RandomRepeated took 271 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 728584360
+22:41:14,088  INFO AbstractTestCases:24 - The method RandomRepeated took 261 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 258781367
+22:41:14,088  INFO AbstractTestCases:24 - The method RandomRepeated took 269 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 116452667
+22:41:14,088  INFO AbstractTestCases:24 - The method RandomRepeated took 257 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 50756544
+22:41:14,088  INFO AbstractTestCases:24 - The method RandomRepeated took 301 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 346597431
+22:41:14,089  INFO AbstractTestCases:24 - The method RandomRepeated took 240 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 57044144
+22:41:14,089  INFO AbstractTestCases:24 - The method RandomRepeated took 282 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 120652973
+22:41:14,089  INFO AbstractTestCases:24 - The method RandomRepeated took 257 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 320323891
+22:41:14,090  INFO AbstractTestCases:24 - The method RandomRepeated took 269 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 26725140
+22:41:14,090  INFO AbstractTestCases:24 - The method RandomRepeated took 305 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 127709835
+22:41:27,024  INFO AbstractTestCases:24 - The method HillClimbing took 540 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 204309512
+22:41:27,028  INFO AbstractTestCases:24 - The method HillClimbing took 307 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 371983258
+22:41:27,029  INFO AbstractTestCases:24 - The method HillClimbing took 234 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 131139692
+22:41:27,029  INFO AbstractTestCases:24 - The method HillClimbing took 252 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 119367223
+22:41:27,029  INFO AbstractTestCases:24 - The method HillClimbing took 252 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 184066600
+22:41:27,029  INFO AbstractTestCases:24 - The method HillClimbing took 246 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 390805258
+22:41:27,029  INFO AbstractTestCases:24 - The method HillClimbing took 241 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 475132914
+22:41:27,030  INFO AbstractTestCases:24 - The method HillClimbing took 243 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 458726412
+22:41:27,030  INFO AbstractTestCases:24 - The method HillClimbing took 246 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 70523838
+22:41:27,030  INFO AbstractTestCases:24 - The method HillClimbing took 280 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 310558962
+22:41:27,031  INFO AbstractTestCases:24 - The method HillClimbing took 236 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 721311976
+22:41:27,033  INFO AbstractTestCases:24 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 1205723051
+22:41:27,034  INFO AbstractTestCases:24 - The method HillClimbing took 234 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 162971558
+22:41:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 322 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 909108932
+22:41:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 161954687
+22:41:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 248 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 342692132
+22:41:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 242 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 61350860
+22:41:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 258 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 458618038
+22:41:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 48044414
+22:41:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 599577036
+22:41:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 252 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 53016590
+22:41:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 224 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 244143039
+22:41:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 268 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 40133354
+22:41:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 228 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 454044585
+22:41:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 272 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 813138394
+22:41:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 239 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 45416723
+22:41:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 246 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 169608306
+22:41:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 236 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 451206930
+22:41:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 246 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 214724050
+22:41:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 269 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 465059542
+22:41:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 230 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 176931870
+22:41:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 285 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 360951989
+22:41:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 238 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 640019818
+22:41:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 260 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 387759268
+22:41:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 248 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 72676227
+22:41:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 1506948195
+22:41:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 259 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 558897456
+22:41:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 67372617
+22:41:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 221 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 193033171
+22:41:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 242 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 112048960
+22:41:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 242 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 130992480
+22:41:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 263 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 80769733
+22:41:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 257 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 43980665
+22:41:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 258 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 273921004
+22:41:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 247 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 127517051
+22:41:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 263 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 1176895926
+22:41:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 244 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 19286357
+22:41:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 259 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 397014221
+22:41:27,046  INFO AbstractTestCases:24 - The method HillClimbing took 280 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 705997830
+22:41:27,046  INFO AbstractTestCases:24 - The method HillClimbing took 244 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 252920683
+22:41:56,798  INFO AbstractTestCases:24 - The method Simulated Annealing took 835 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 2977219267704
+22:41:56,801  INFO AbstractTestCases:24 - The method Simulated Annealing took 654 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 6170696010352
+22:41:56,801  INFO AbstractTestCases:24 - The method Simulated Annealing took 637 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 3047644161902
+22:41:56,802  INFO AbstractTestCases:24 - The method Simulated Annealing took 552 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 338985246765
+22:41:56,802  INFO AbstractTestCases:24 - The method Simulated Annealing took 607 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 214243432636
+22:41:56,802  INFO AbstractTestCases:24 - The method Simulated Annealing took 571 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 2559632156782
+22:41:56,803  INFO AbstractTestCases:24 - The method Simulated Annealing took 578 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 1571569126564
+22:41:56,803  INFO AbstractTestCases:24 - The method Simulated Annealing took 587 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 7664237976056
+22:41:56,803  INFO AbstractTestCases:24 - The method Simulated Annealing took 629 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 10418669094878
+22:41:56,804  INFO AbstractTestCases:24 - The method Simulated Annealing took 609 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 6766291714238
+22:41:56,804  INFO AbstractTestCases:24 - The method Simulated Annealing took 569 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 1258459698626
+22:41:56,805  INFO AbstractTestCases:24 - The method Simulated Annealing took 576 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 1344642246187
+22:41:56,805  INFO AbstractTestCases:24 - The method Simulated Annealing took 593 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 4228535451610
+22:41:56,805  INFO AbstractTestCases:24 - The method Simulated Annealing took 565 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 914648205086
+22:41:56,806  INFO AbstractTestCases:24 - The method Simulated Annealing took 601 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 643249490439
+22:41:56,806  INFO AbstractTestCases:24 - The method Simulated Annealing took 608 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 5823652642494
+22:41:56,806  INFO AbstractTestCases:24 - The method Simulated Annealing took 580 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 619691983458
+22:41:56,807  INFO AbstractTestCases:24 - The method Simulated Annealing took 581 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 6290547638732
+22:41:56,807  INFO AbstractTestCases:24 - The method Simulated Annealing took 576 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 1095056743510
+22:41:56,807  INFO AbstractTestCases:24 - The method Simulated Annealing took 589 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 7950750424090
+22:41:56,807  INFO AbstractTestCases:24 - The method Simulated Annealing took 591 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 1394453893528
+22:41:56,808  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 12298108446797
+22:41:56,808  INFO AbstractTestCases:24 - The method Simulated Annealing took 586 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 75427298584
+22:41:56,808  INFO AbstractTestCases:24 - The method Simulated Annealing took 571 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 2280676581
+22:41:56,809  INFO AbstractTestCases:24 - The method Simulated Annealing took 573 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 3920723740646
+22:41:56,809  INFO AbstractTestCases:24 - The method Simulated Annealing took 625 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 977878232013
+22:41:56,809  INFO AbstractTestCases:24 - The method Simulated Annealing took 624 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 8610729464620
+22:41:56,809  INFO AbstractTestCases:24 - The method Simulated Annealing took 593 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 1618497298228
+22:41:56,810  INFO AbstractTestCases:24 - The method Simulated Annealing took 574 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 1090157603132
+22:41:56,810  INFO AbstractTestCases:24 - The method Simulated Annealing took 593 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 4864219396154
+22:41:56,810  INFO AbstractTestCases:24 - The method Simulated Annealing took 552 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 9072718149972
+22:41:56,811  INFO AbstractTestCases:24 - The method Simulated Annealing took 571 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 4730082689089
+22:41:56,811  INFO AbstractTestCases:24 - The method Simulated Annealing took 577 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 2750904961376
+22:41:56,812  INFO AbstractTestCases:24 - The method Simulated Annealing took 589 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 8064628648108
+22:41:56,812  INFO AbstractTestCases:24 - The method Simulated Annealing took 580 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 28532328147
+22:41:56,812  INFO AbstractTestCases:24 - The method Simulated Annealing took 581 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 5913261082497
+22:41:56,813  INFO AbstractTestCases:24 - The method Simulated Annealing took 595 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 8592805882696
+22:41:56,813  INFO AbstractTestCases:24 - The method Simulated Annealing took 586 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 2720319668021
+22:41:56,814  INFO AbstractTestCases:24 - The method Simulated Annealing took 577 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 130921307641
+22:41:56,814  INFO AbstractTestCases:24 - The method Simulated Annealing took 583 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 61737074958
+22:41:56,814  INFO AbstractTestCases:24 - The method Simulated Annealing took 567 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 1016574048722
+22:41:56,815  INFO AbstractTestCases:24 - The method Simulated Annealing took 590 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 9558115632759
+22:41:56,815  INFO AbstractTestCases:24 - The method Simulated Annealing took 554 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 2392135237125
+22:41:56,815  INFO AbstractTestCases:24 - The method Simulated Annealing took 692 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 11892062198134
+22:41:56,816  INFO AbstractTestCases:24 - The method Simulated Annealing took 577 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 3771348402089
+22:41:56,816  INFO AbstractTestCases:24 - The method Simulated Annealing took 572 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 9101371331722
+22:41:56,816  INFO AbstractTestCases:24 - The method Simulated Annealing took 585 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 393970213241
+22:41:56,817  INFO AbstractTestCases:24 - The method Simulated Annealing took 585 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 8553716606327
+22:41:56,817  INFO AbstractTestCases:24 - The method Simulated Annealing took 572 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 5927510742506
+22:41:56,817  INFO AbstractTestCases:24 - The method Simulated Annealing took 652 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 1639354027717
+22:42:41,681  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1207 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 110
+22:42:41,683  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 859 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 10
+22:42:41,684  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 861 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 176
+22:42:41,684  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 879 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 91
+22:42:41,684  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 854 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 130
+22:42:41,690  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 826 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 2
+22:42:41,690  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1095 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 62
+22:42:41,691  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1226 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 194
+22:42:41,691  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1036 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 8
+22:42:41,691  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 891 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 138
+22:42:41,692  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1080 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 40
+22:42:41,692  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 849 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 25
+22:42:41,692  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 875 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 448
+22:42:41,693  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 834 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 60
+22:42:41,693  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 868 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 283
+22:42:41,693  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 854 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 110
+22:42:41,694  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 900 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 10
+22:42:41,694  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 837 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 4
+22:42:41,694  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 873 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 14
+22:42:41,694  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 844 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 354
+22:42:41,695  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 894 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 262
+22:42:41,695  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 830 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 89
+22:42:41,695  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 910 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 44
+22:42:41,696  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 877 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 43
+22:42:41,696  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 878 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 74
+22:42:41,696  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 863 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 95
+22:42:41,697  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 855 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 332
+22:42:41,697  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 862 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 22
+22:42:41,697  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 833 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 170
+22:42:41,698  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 860 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 34
+22:42:41,698  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 857 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 58
+22:42:41,698  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 880 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 95
+22:42:41,699  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 825 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 1724
+22:42:41,699  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1012 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 84
+22:42:41,699  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 871 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 239
+22:42:41,700  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 828 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 237
+22:42:41,700  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 845 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 586
+22:42:41,700  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 841 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 661
+22:42:41,701  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 861 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 355
+22:42:41,701  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 864 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 40
+22:42:41,701  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 884 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 130
+22:42:41,702  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 952 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 303
+22:42:41,702  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 872 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 189
+22:42:41,702  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 882 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 210
+22:42:41,703  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 839 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 251
+22:42:41,703  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1046 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 74
+22:42:41,703  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 880 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 939
+22:42:41,703  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 852 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 193
+22:42:41,704  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 902 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 112
+22:42:41,704  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 851 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 67
+22:43:17,903  INFO AbstractTestCases:24 - The method MixedHillClimbing took 973 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 2184
+22:43:17,907  INFO AbstractTestCases:24 - The method MixedHillClimbing took 741 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 224
+22:43:17,908  INFO AbstractTestCases:24 - The method MixedHillClimbing took 709 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 578
+22:43:17,913  INFO AbstractTestCases:24 - The method MixedHillClimbing took 703 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 719
+22:43:17,914  INFO AbstractTestCases:24 - The method MixedHillClimbing took 780 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 572
+22:43:17,914  INFO AbstractTestCases:24 - The method MixedHillClimbing took 673 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 416
+22:43:17,915  INFO AbstractTestCases:24 - The method MixedHillClimbing took 708 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 292
+22:43:17,915  INFO AbstractTestCases:24 - The method MixedHillClimbing took 749 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 400
+22:43:17,916  INFO AbstractTestCases:24 - The method MixedHillClimbing took 759 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 8
+22:43:17,916  INFO AbstractTestCases:24 - The method MixedHillClimbing took 617 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 150
+22:43:17,916  INFO AbstractTestCases:24 - The method MixedHillClimbing took 662 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 1218
+22:43:17,917  INFO AbstractTestCases:24 - The method MixedHillClimbing took 783 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 303
+22:43:17,917  INFO AbstractTestCases:24 - The method MixedHillClimbing took 660 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 1724
+22:43:17,918  INFO AbstractTestCases:24 - The method MixedHillClimbing took 753 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 10
+22:43:17,918  INFO AbstractTestCases:24 - The method MixedHillClimbing took 688 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 351
+22:43:17,918  INFO AbstractTestCases:24 - The method MixedHillClimbing took 716 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 3048
+22:43:17,919  INFO AbstractTestCases:24 - The method MixedHillClimbing took 724 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 3346
+22:43:17,919  INFO AbstractTestCases:24 - The method MixedHillClimbing took 763 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 524
+22:43:17,919  INFO AbstractTestCases:24 - The method MixedHillClimbing took 707 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 630
+22:43:17,920  INFO AbstractTestCases:24 - The method MixedHillClimbing took 747 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 346
+22:43:17,920  INFO AbstractTestCases:24 - The method MixedHillClimbing took 700 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 120
+22:43:17,920  INFO AbstractTestCases:24 - The method MixedHillClimbing took 767 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 899
+22:43:17,921  INFO AbstractTestCases:24 - The method MixedHillClimbing took 800 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 172
+22:43:17,921  INFO AbstractTestCases:24 - The method MixedHillClimbing took 698 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 993
+22:43:17,921  INFO AbstractTestCases:24 - The method MixedHillClimbing took 680 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 302
+22:43:17,922  INFO AbstractTestCases:24 - The method MixedHillClimbing took 808 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 61
+22:43:17,922  INFO AbstractTestCases:24 - The method MixedHillClimbing took 675 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 554
+22:43:17,922  INFO AbstractTestCases:24 - The method MixedHillClimbing took 712 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 328
+22:43:17,923  INFO AbstractTestCases:24 - The method MixedHillClimbing took 635 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 130
+22:43:17,923  INFO AbstractTestCases:24 - The method MixedHillClimbing took 742 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 792
+22:43:17,923  INFO AbstractTestCases:24 - The method MixedHillClimbing took 690 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 78
+22:43:17,924  INFO AbstractTestCases:24 - The method MixedHillClimbing took 784 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 317
+22:43:17,924  INFO AbstractTestCases:24 - The method MixedHillClimbing took 725 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 3524
+22:43:17,924  INFO AbstractTestCases:24 - The method MixedHillClimbing took 731 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 642
+22:43:17,925  INFO AbstractTestCases:24 - The method MixedHillClimbing took 647 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 1163
+22:43:17,925  INFO AbstractTestCases:24 - The method MixedHillClimbing took 719 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 333
+22:43:17,925  INFO AbstractTestCases:24 - The method MixedHillClimbing took 690 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 10
+22:43:17,926  INFO AbstractTestCases:24 - The method MixedHillClimbing took 810 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 167
+22:43:18,039  INFO AbstractTestCases:24 - The method MixedHillClimbing took 695 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 631
+22:43:18,039  INFO AbstractTestCases:24 - The method MixedHillClimbing took 756 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 572
+22:43:18,040  INFO AbstractTestCases:24 - The method MixedHillClimbing took 686 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 892
+22:43:18,040  INFO AbstractTestCases:24 - The method MixedHillClimbing took 750 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 195
+22:43:18,040  INFO AbstractTestCases:24 - The method MixedHillClimbing took 706 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 449
+22:43:18,041  INFO AbstractTestCases:24 - The method MixedHillClimbing took 670 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 646
+22:43:18,041  INFO AbstractTestCases:24 - The method MixedHillClimbing took 692 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 107
+22:43:18,041  INFO AbstractTestCases:24 - The method MixedHillClimbing took 704 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 1454
+22:43:18,041  INFO AbstractTestCases:24 - The method MixedHillClimbing took 750 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 43
+22:43:18,042  INFO AbstractTestCases:24 - The method MixedHillClimbing took 749 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 1883
+22:43:18,042  INFO AbstractTestCases:24 - The method MixedHillClimbing took 648 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 622
+22:43:18,042  INFO AbstractTestCases:24 - The method MixedHillClimbing took 753 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 231
+22:45:43,002  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3083 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 208
+22:45:43,006  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2952 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 146
+22:45:43,007  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2946 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 52
+22:45:43,007  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2775 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 41
+22:45:43,008  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3160 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 164
+22:45:43,008  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3059 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 140
+22:45:43,008  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3081 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 314
+22:45:43,009  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2912 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 34
+22:45:43,009  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3087 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 12
+22:45:43,009  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2978 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 32
+22:45:43,009  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2742 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 64
+22:45:43,010  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2902 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 75
+22:45:43,010  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2952 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 8
+22:45:43,010  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3166 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 10
+22:45:43,010  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3084 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 31
+22:45:43,011  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2934 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 172
+22:45:43,011  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2622 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 254
+22:45:43,011  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2920 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 104
+22:45:43,011  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3061 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 242
+22:45:43,011  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3091 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 248
+22:45:43,012  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2798 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 218
+22:45:43,012  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2788 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 427
+22:45:43,012  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2958 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 40
+22:45:43,013  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3093 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 149
+22:45:43,013  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2946 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 262
+22:45:43,013  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2919 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 109
+22:45:43,014  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2662 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 366
+22:45:43,014  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3029 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 172
+22:45:43,014  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3266 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 222
+22:45:43,015  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2888 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 66
+22:45:43,015  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2474 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 988
+22:45:43,015  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2698 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 1449
+22:45:43,015  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2747 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 414
+22:45:43,016  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2738 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 104
+22:45:43,016  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2951 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 7
+22:45:43,016  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2596 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 577
+22:45:43,016  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3073 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 60
+22:45:43,017  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2683 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 55
+22:45:43,017  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3038 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 67
+22:45:43,017  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2804 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 38
+22:45:43,018  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2677 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 692
+22:45:43,019  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2756 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 205
+22:45:43,019  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2476 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 459
+22:45:43,019  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3130 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 34
+22:45:43,019  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2920 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 109
+22:45:43,020  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2479 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 736
+22:45:43,020  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2751 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 427
+22:45:43,020  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3121 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 279
+22:45:43,021  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3128 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 470
+22:45:43,021  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2835 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 481
+23:22:58,115  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,120  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,122  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,122  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,128  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,129  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,129  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,130  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,130  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,131  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,131  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,133  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:58,134  INFO NumberPartitionDynamicProgrammingApproach:22 - Finished sorting elements
+23:22:58,135  INFO NumberPartitionDynamicProgrammingApproach:24 - Finish populating the tableu
+23:22:59,106  INFO AbstractTestCases:24 - The method KK took 92 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 114182
+23:22:59,109  INFO AbstractTestCases:24 - The method KK took 51 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 142542
+23:22:59,113  INFO AbstractTestCases:24 - The method KK took 52 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 218382
+23:22:59,113  INFO AbstractTestCases:24 - The method KK took 18 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 172671
+23:22:59,114  INFO AbstractTestCases:24 - The method KK took 43 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 18946
+23:22:59,114  INFO AbstractTestCases:24 - The method KK took 40 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 77096
+23:22:59,114  INFO AbstractTestCases:24 - The method KK took 17 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 141706
+23:22:59,115  INFO AbstractTestCases:24 - The method KK took 14 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 59282
+23:22:59,115  INFO AbstractTestCases:24 - The method KK took 60 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 165544
+23:22:59,115  INFO AbstractTestCases:24 - The method KK took 8 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 1094350
+23:22:59,116  INFO AbstractTestCases:24 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 157322
+23:22:59,116  INFO AbstractTestCases:24 - The method KK took 24 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 17389
+23:22:59,116  INFO AbstractTestCases:24 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 133522
+23:22:59,117  INFO AbstractTestCases:24 - The method KK took 20 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 426552
+23:22:59,118  INFO AbstractTestCases:24 - The method KK took 10 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 121555
+23:22:59,118  INFO AbstractTestCases:24 - The method KK took 19 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 359984
+23:22:59,118  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 92510
+23:22:59,119  INFO AbstractTestCases:24 - The method KK took 15 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 174338
+23:22:59,119  INFO AbstractTestCases:24 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 482968
+23:22:59,119  INFO AbstractTestCases:24 - The method KK took 15 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 113902
+23:22:59,120  INFO AbstractTestCases:24 - The method KK took 6 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 191888
+23:22:59,120  INFO AbstractTestCases:24 - The method KK took 5 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 149623
+23:22:59,120  INFO AbstractTestCases:24 - The method KK took 15 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 1174258
+23:22:59,121  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 39179
+23:22:59,123  INFO AbstractTestCases:24 - The method KK took 14 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 70712
+23:22:59,123  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 161571
+23:22:59,124  INFO AbstractTestCases:24 - The method KK took 16 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 56562
+23:22:59,124  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 2760
+23:22:59,124  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 114192
+23:22:59,124  INFO AbstractTestCases:24 - The method KK took 38 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 41626
+23:22:59,125  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 52594
+23:22:59,125  INFO AbstractTestCases:24 - The method KK took 9 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 397885
+23:22:59,125  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 451550
+23:22:59,126  INFO AbstractTestCases:24 - The method KK took 28 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 1073370
+23:22:59,126  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 209575
+23:22:59,126  INFO AbstractTestCases:24 - The method KK took 18 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 182143
+23:22:59,127  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 41566
+23:22:59,127  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 109685
+23:22:59,127  INFO AbstractTestCases:24 - The method KK took 19 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 34183
+23:22:59,128  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 419170
+23:22:59,128  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 59050
+23:22:59,128  INFO AbstractTestCases:24 - The method KK took 11 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 115695
+23:22:59,129  INFO AbstractTestCases:24 - The method KK took 4 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 23795
+23:22:59,129  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 532410
+23:22:59,129  INFO AbstractTestCases:24 - The method KK took 47 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 82125
+23:22:59,130  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 758
+23:22:59,130  INFO AbstractTestCases:24 - The method KK took 11 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 314069
+23:22:59,130  INFO AbstractTestCases:24 - The method KK took 65 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 3541
+23:22:59,131  INFO AbstractTestCases:24 - The method KK took 3 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 222488
+23:22:59,131  INFO AbstractTestCases:24 - The method KK took 2 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 70647
+23:23:13,718  INFO AbstractTestCases:24 - The method RandomRepeated took 513 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 124122290
+23:23:13,718  INFO AbstractTestCases:24 - The method RandomRepeated took 397 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 687210366
+23:23:13,719  INFO AbstractTestCases:24 - The method RandomRepeated took 269 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 36606166
+23:23:13,719  INFO AbstractTestCases:24 - The method RandomRepeated took 268 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 673420835
+23:23:13,719  INFO AbstractTestCases:24 - The method RandomRepeated took 260 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 118084310
+23:23:13,759  INFO AbstractTestCases:24 - The method RandomRepeated took 298 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 36200566
+23:23:13,759  INFO AbstractTestCases:24 - The method RandomRepeated took 279 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 290976336
+23:23:13,760  INFO AbstractTestCases:24 - The method RandomRepeated took 407 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 313058340
+23:23:13,760  INFO AbstractTestCases:24 - The method RandomRepeated took 341 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 377751230
+23:23:13,760  INFO AbstractTestCases:24 - The method RandomRepeated took 349 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 82735178
+23:23:13,760  INFO AbstractTestCases:24 - The method RandomRepeated took 362 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 137124322
+23:23:13,761  INFO AbstractTestCases:24 - The method RandomRepeated took 338 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 246837135
+23:23:13,761  INFO AbstractTestCases:24 - The method RandomRepeated took 416 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 519902896
+23:23:13,761  INFO AbstractTestCases:24 - The method RandomRepeated took 312 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 168683632
+23:23:13,762  INFO AbstractTestCases:24 - The method RandomRepeated took 241 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 79513781
+23:23:13,762  INFO AbstractTestCases:24 - The method RandomRepeated took 423 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 456108672
+23:23:13,762  INFO AbstractTestCases:24 - The method RandomRepeated took 266 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 526761610
+23:23:13,763  INFO AbstractTestCases:24 - The method RandomRepeated took 255 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 216579114
+23:23:13,763  INFO AbstractTestCases:24 - The method RandomRepeated took 287 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 604771234
+23:23:13,763  INFO AbstractTestCases:24 - The method RandomRepeated took 254 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 546133570
+23:23:13,764  INFO AbstractTestCases:24 - The method RandomRepeated took 268 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 322730786
+23:23:13,764  INFO AbstractTestCases:24 - The method RandomRepeated took 268 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 532788945
+23:23:13,764  INFO AbstractTestCases:24 - The method RandomRepeated took 277 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 446543408
+23:23:13,764  INFO AbstractTestCases:24 - The method RandomRepeated took 271 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 75216663
+23:23:13,765  INFO AbstractTestCases:24 - The method RandomRepeated took 276 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 176375630
+23:23:13,765  INFO AbstractTestCases:24 - The method RandomRepeated took 259 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 41853471
+23:23:13,765  INFO AbstractTestCases:24 - The method RandomRepeated took 263 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 353456552
+23:23:13,766  INFO AbstractTestCases:24 - The method RandomRepeated took 284 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 170741138
+23:23:13,766  INFO AbstractTestCases:24 - The method RandomRepeated took 267 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 164227170
+23:23:13,766  INFO AbstractTestCases:24 - The method RandomRepeated took 264 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 11218250
+23:23:13,766  INFO AbstractTestCases:24 - The method RandomRepeated took 249 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 481985390
+23:23:13,773  INFO AbstractTestCases:24 - The method RandomRepeated took 286 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 709146039
+23:23:13,774  INFO AbstractTestCases:24 - The method RandomRepeated took 266 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 154726820
+23:23:13,774  INFO AbstractTestCases:24 - The method RandomRepeated took 243 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 321383432
+23:23:13,774  INFO AbstractTestCases:24 - The method RandomRepeated took 270 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 358859047
+23:23:13,774  INFO AbstractTestCases:24 - The method RandomRepeated took 331 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 1336597985
+23:23:13,775  INFO AbstractTestCases:24 - The method RandomRepeated took 258 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 263114974
+23:23:13,775  INFO AbstractTestCases:24 - The method RandomRepeated took 262 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 63529643
+23:23:13,775  INFO AbstractTestCases:24 - The method RandomRepeated took 267 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 169109701
+23:23:13,776  INFO AbstractTestCases:24 - The method RandomRepeated took 260 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 382161400
+23:23:13,776  INFO AbstractTestCases:24 - The method RandomRepeated took 271 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 142152116
+23:23:13,776  INFO AbstractTestCases:24 - The method RandomRepeated took 250 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 535822457
+23:23:13,777  INFO AbstractTestCases:24 - The method RandomRepeated took 280 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 208174055
+23:23:13,777  INFO AbstractTestCases:24 - The method RandomRepeated took 256 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 296235488
+23:23:13,777  INFO AbstractTestCases:24 - The method RandomRepeated took 273 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 87212219
+23:23:13,778  INFO AbstractTestCases:24 - The method RandomRepeated took 257 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 93110072
+23:23:13,778  INFO AbstractTestCases:24 - The method RandomRepeated took 273 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 80326695
+23:23:13,778  INFO AbstractTestCases:24 - The method RandomRepeated took 271 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 457741769
+23:23:13,779  INFO AbstractTestCases:24 - The method RandomRepeated took 263 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 94748350
+23:23:13,779  INFO AbstractTestCases:24 - The method RandomRepeated took 266 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 289828027
+23:23:27,026  INFO AbstractTestCases:24 - The method HillClimbing took 645 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 323327088
+23:23:27,031  INFO AbstractTestCases:24 - The method HillClimbing took 276 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 106455160
+23:23:27,032  INFO AbstractTestCases:24 - The method HillClimbing took 256 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 288046066
+23:23:27,032  INFO AbstractTestCases:24 - The method HillClimbing took 245 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 50523635
+23:23:27,033  INFO AbstractTestCases:24 - The method HillClimbing took 265 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 75153670
+23:23:27,033  INFO AbstractTestCases:24 - The method HillClimbing took 251 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 472988564
+23:23:27,033  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 68465818
+23:23:27,034  INFO AbstractTestCases:24 - The method HillClimbing took 229 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 168428118
+23:23:27,034  INFO AbstractTestCases:24 - The method HillClimbing took 253 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 9664978
+23:23:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 275 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 520089022
+23:23:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 243 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 523831054
+23:23:27,035  INFO AbstractTestCases:24 - The method HillClimbing took 258 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 57352739
+23:23:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 228 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 305093332
+23:23:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 325835110
+23:23:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 247 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 25971579
+23:23:27,036  INFO AbstractTestCases:24 - The method HillClimbing took 251 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 72090110
+23:23:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 331717516
+23:23:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 232 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 142002284
+23:23:27,037  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 196379512
+23:23:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 182198260
+23:23:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 255 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 74419550
+23:23:27,038  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 70517311
+23:23:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 324 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 359606686
+23:23:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 319 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 632681317
+23:23:27,039  INFO AbstractTestCases:24 - The method HillClimbing took 259 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 93852932
+23:23:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 248 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 1903253797
+23:23:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 299 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 740153880
+23:23:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 280 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 539330572
+23:23:27,040  INFO AbstractTestCases:24 - The method HillClimbing took 281 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 84164316
+23:23:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 271 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 198030510
+23:23:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 238 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 187076024
+23:23:27,041  INFO AbstractTestCases:24 - The method HillClimbing took 254 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 125592209
+23:23:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 262 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 907916102
+23:23:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 260 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 459510096
+23:23:27,042  INFO AbstractTestCases:24 - The method HillClimbing took 237 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 9427843
+23:23:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 249 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 312750889
+23:23:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 727491300
+23:23:27,043  INFO AbstractTestCases:24 - The method HillClimbing took 294 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 38336147
+23:23:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 264 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 542152423
+23:23:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 243 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 625390808
+23:23:27,044  INFO AbstractTestCases:24 - The method HillClimbing took 247 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 821492128
+23:23:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 254 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 111365141
+23:23:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 263 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 784144699
+23:23:27,045  INFO AbstractTestCases:24 - The method HillClimbing took 245 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 556561466
+23:23:27,046  INFO AbstractTestCases:24 - The method HillClimbing took 247 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 224917259
+23:23:27,046  INFO AbstractTestCases:24 - The method HillClimbing took 241 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 273460596
+23:23:27,046  INFO AbstractTestCases:24 - The method HillClimbing took 252 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 334603447
+23:23:27,047  INFO AbstractTestCases:24 - The method HillClimbing took 253 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 621652513
+23:23:27,047  INFO AbstractTestCases:24 - The method HillClimbing took 254 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 176140458
+23:23:27,047  INFO AbstractTestCases:24 - The method HillClimbing took 240 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 224036297
+23:23:57,035  INFO AbstractTestCases:24 - The method Simulated Annealing took 886 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 5628844163290
+23:23:57,039  INFO AbstractTestCases:24 - The method Simulated Annealing took 620 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 7217281758456
+23:23:57,057  INFO AbstractTestCases:24 - The method Simulated Annealing took 573 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 2878871546202
+23:23:57,058  INFO AbstractTestCases:24 - The method Simulated Annealing took 610 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 666258108611
+23:23:57,058  INFO AbstractTestCases:24 - The method Simulated Annealing took 590 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 7632874636326
+23:23:57,058  INFO AbstractTestCases:24 - The method Simulated Annealing took 603 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 934620286296
+23:23:57,060  INFO AbstractTestCases:24 - The method Simulated Annealing took 582 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 7162116942232
+23:23:57,060  INFO AbstractTestCases:24 - The method Simulated Annealing took 656 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 597396995426
+23:23:57,061  INFO AbstractTestCases:24 - The method Simulated Annealing took 581 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 11892733048032
+23:23:57,061  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 2301236163138
+23:23:57,061  INFO AbstractTestCases:24 - The method Simulated Annealing took 587 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 568843491078
+23:23:57,062  INFO AbstractTestCases:24 - The method Simulated Annealing took 570 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 7565861670717
+23:23:57,062  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 4683919243710
+23:23:57,062  INFO AbstractTestCases:24 - The method Simulated Annealing took 613 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 3424946559084
+23:23:57,063  INFO AbstractTestCases:24 - The method Simulated Annealing took 639 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 583856455495
+23:23:57,063  INFO AbstractTestCases:24 - The method Simulated Annealing took 556 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 9885670576046
+23:23:57,063  INFO AbstractTestCases:24 - The method Simulated Annealing took 607 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 3498918646720
+23:23:57,064  INFO AbstractTestCases:24 - The method Simulated Annealing took 589 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 4529287452558
+23:23:57,064  INFO AbstractTestCases:24 - The method Simulated Annealing took 560 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 237340093792
+23:23:57,064  INFO AbstractTestCases:24 - The method Simulated Annealing took 597 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 6422793728994
+23:23:57,064  INFO AbstractTestCases:24 - The method Simulated Annealing took 676 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 8016240362984
+23:23:57,065  INFO AbstractTestCases:24 - The method Simulated Annealing took 564 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 499952415977
+23:23:57,065  INFO AbstractTestCases:24 - The method Simulated Annealing took 592 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 4072419307264
+23:23:57,065  INFO AbstractTestCases:24 - The method Simulated Annealing took 576 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 2867083895877
+23:23:57,066  INFO AbstractTestCases:24 - The method Simulated Annealing took 591 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 130915334860
+23:23:57,066  INFO AbstractTestCases:24 - The method Simulated Annealing took 586 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 8096375661177
+23:23:57,066  INFO AbstractTestCases:24 - The method Simulated Annealing took 580 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 182986537564
+23:23:57,066  INFO AbstractTestCases:24 - The method Simulated Annealing took 577 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 362811874734
+23:23:57,067  INFO AbstractTestCases:24 - The method Simulated Annealing took 569 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 2435593865940
+23:23:57,067  INFO AbstractTestCases:24 - The method Simulated Annealing took 602 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 7206058598972
+23:23:57,068  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 2675618126524
+23:23:57,068  INFO AbstractTestCases:24 - The method Simulated Annealing took 556 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 1704894217047
+23:23:57,068  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 3683242392588
+23:23:57,069  INFO AbstractTestCases:24 - The method Simulated Annealing took 579 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 4386435495758
+23:23:57,069  INFO AbstractTestCases:24 - The method Simulated Annealing took 570 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 4349655004671
+23:23:57,069  INFO AbstractTestCases:24 - The method Simulated Annealing took 607 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 13260978395405
+23:23:57,069  INFO AbstractTestCases:24 - The method Simulated Annealing took 592 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 9691243560948
+23:23:57,070  INFO AbstractTestCases:24 - The method Simulated Annealing took 610 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 5041972691309
+23:23:57,070  INFO AbstractTestCases:24 - The method Simulated Annealing took 764 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 891678421687
+23:23:57,070  INFO AbstractTestCases:24 - The method Simulated Annealing took 629 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 2776743313208
+23:23:57,071  INFO AbstractTestCases:24 - The method Simulated Annealing took 637 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 92442205666
+23:23:57,071  INFO AbstractTestCases:24 - The method Simulated Annealing took 567 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 112816335279
+23:23:57,071  INFO AbstractTestCases:24 - The method Simulated Annealing took 590 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 3134687481497
+23:23:57,071  INFO AbstractTestCases:24 - The method Simulated Annealing took 582 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 1062467313616
+23:23:57,072  INFO AbstractTestCases:24 - The method Simulated Annealing took 598 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 1403159039103
+23:23:57,072  INFO AbstractTestCases:24 - The method Simulated Annealing took 555 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 561503245280
+23:23:57,072  INFO AbstractTestCases:24 - The method Simulated Annealing took 562 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 8590215375767
+23:23:57,073  INFO AbstractTestCases:24 - The method Simulated Annealing took 584 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 6012728597293
+23:23:57,073  INFO AbstractTestCases:24 - The method Simulated Annealing took 586 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 5091469271684
+23:23:57,073  INFO AbstractTestCases:24 - The method Simulated Annealing took 566 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 5774852634595
+23:24:41,781  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1191 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 262
+23:24:41,786  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 885 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 372
+23:24:41,787  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 881 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 102
+23:24:41,794  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 869 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 307
+23:24:41,795  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 957 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 408
+23:24:41,801  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1148 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 410
+23:24:41,801  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 868 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 474
+23:24:41,801  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 835 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 38
+23:24:41,802  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 852 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 6
+23:24:41,802  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 875 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 56
+23:24:41,802  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 842 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 24
+23:24:41,803  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 879 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 53
+23:24:41,803  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 856 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 82
+23:24:41,804  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 849 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 478
+23:24:41,804  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 853 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 31
+23:24:41,804  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 909 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 474
+23:24:41,805  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 838 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 6
+23:24:41,805  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 880 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 4
+23:24:41,805  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 866 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 226
+23:24:41,805  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1064 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 144
+23:24:41,806  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 861 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 142
+23:24:41,806  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 862 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 25
+23:24:41,806  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 857 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 240
+23:24:41,807  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 873 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 155
+23:24:41,807  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 861 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 172
+23:24:41,807  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 852 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 21
+23:24:41,808  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 867 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 390
+23:24:41,808  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1005 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 230
+23:24:41,808  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 918 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 642
+23:24:41,809  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 822 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 138
+23:24:41,809  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 926 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 200
+23:24:41,809  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 1136 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 131
+23:24:41,809  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 948 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 110
+23:24:41,810  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 884 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 28
+23:24:41,810  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 839 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 105
+23:24:41,810  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 881 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 13
+23:24:41,810  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 843 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 50
+23:24:41,811  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 866 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 61
+23:24:41,811  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 834 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 179
+23:24:41,811  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 887 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 38
+23:24:41,811  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 830 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 360
+23:24:41,812  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 867 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 253
+23:24:41,812  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 824 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 163
+23:24:41,812  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 955 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 52
+23:24:41,813  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 891 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 105
+23:24:41,813  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 876 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 156
+23:24:41,813  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 872 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 195
+23:24:41,813  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 836 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 73
+23:24:41,814  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 877 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 56
+23:24:41,814  INFO AbstractTestCases:24 - The method MixedRandomRepeated took 856 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 191
+23:25:18,569  INFO AbstractTestCases:24 - The method MixedHillClimbing took 887 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 600
+23:25:18,573  INFO AbstractTestCases:24 - The method MixedHillClimbing took 718 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 1202
+23:25:18,573  INFO AbstractTestCases:24 - The method MixedHillClimbing took 651 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 1148
+23:25:18,573  INFO AbstractTestCases:24 - The method MixedHillClimbing took 703 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 553
+23:25:18,573  INFO AbstractTestCases:24 - The method MixedHillClimbing took 712 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 54
+23:25:18,574  INFO AbstractTestCases:24 - The method MixedHillClimbing took 743 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 994
+23:25:18,574  INFO AbstractTestCases:24 - The method MixedHillClimbing took 719 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 3034
+23:25:18,574  INFO AbstractTestCases:24 - The method MixedHillClimbing took 754 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 638
+23:25:18,575  INFO AbstractTestCases:24 - The method MixedHillClimbing took 784 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 1088
+23:25:18,575  INFO AbstractTestCases:24 - The method MixedHillClimbing took 678 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 566
+23:25:18,575  INFO AbstractTestCases:24 - The method MixedHillClimbing took 683 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 1394
+23:25:18,576  INFO AbstractTestCases:24 - The method MixedHillClimbing took 804 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 9
+23:25:18,576  INFO AbstractTestCases:24 - The method MixedHillClimbing took 716 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 468
+23:25:18,576  INFO AbstractTestCases:24 - The method MixedHillClimbing took 769 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 1468
+23:25:18,581  INFO AbstractTestCases:24 - The method MixedHillClimbing took 631 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 561
+23:25:18,581  INFO AbstractTestCases:24 - The method MixedHillClimbing took 793 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 1170
+23:25:18,582  INFO AbstractTestCases:24 - The method MixedHillClimbing took 678 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 4
+23:25:18,582  INFO AbstractTestCases:24 - The method MixedHillClimbing took 988 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 328
+23:25:18,583  INFO AbstractTestCases:24 - The method MixedHillClimbing took 847 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 244
+23:25:18,583  INFO AbstractTestCases:24 - The method MixedHillClimbing took 987 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 66
+23:25:18,583  INFO AbstractTestCases:24 - The method MixedHillClimbing took 696 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 76
+23:25:18,584  INFO AbstractTestCases:24 - The method MixedHillClimbing took 666 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 4693
+23:25:18,584  INFO AbstractTestCases:24 - The method MixedHillClimbing took 698 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 42
+23:25:18,584  INFO AbstractTestCases:24 - The method MixedHillClimbing took 675 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 1189
+23:25:18,585  INFO AbstractTestCases:24 - The method MixedHillClimbing took 683 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 476
+23:25:18,585  INFO AbstractTestCases:24 - The method MixedHillClimbing took 721 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 245
+23:25:18,585  INFO AbstractTestCases:24 - The method MixedHillClimbing took 704 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 466
+23:25:18,585  INFO AbstractTestCases:24 - The method MixedHillClimbing took 697 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 18
+23:25:18,586  INFO AbstractTestCases:24 - The method MixedHillClimbing took 774 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 20
+23:25:18,586  INFO AbstractTestCases:24 - The method MixedHillClimbing took 768 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 2548
+23:25:18,586  INFO AbstractTestCases:24 - The method MixedHillClimbing took 625 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 1322
+23:25:18,587  INFO AbstractTestCases:24 - The method MixedHillClimbing took 672 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 113
+23:25:18,587  INFO AbstractTestCases:24 - The method MixedHillClimbing took 672 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 2858
+23:25:18,587  INFO AbstractTestCases:24 - The method MixedHillClimbing took 801 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 54
+23:25:18,588  INFO AbstractTestCases:24 - The method MixedHillClimbing took 737 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 327
+23:25:18,588  INFO AbstractTestCases:24 - The method MixedHillClimbing took 732 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 1835
+23:25:18,588  INFO AbstractTestCases:24 - The method MixedHillClimbing took 694 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 398
+23:25:18,589  INFO AbstractTestCases:24 - The method MixedHillClimbing took 767 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 153
+23:25:18,589  INFO AbstractTestCases:24 - The method MixedHillClimbing took 765 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 1259
+23:25:18,725  INFO AbstractTestCases:24 - The method MixedHillClimbing took 749 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 58
+23:25:18,725  INFO AbstractTestCases:24 - The method MixedHillClimbing took 739 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 1358
+23:25:18,725  INFO AbstractTestCases:24 - The method MixedHillClimbing took 751 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 869
+23:25:18,725  INFO AbstractTestCases:24 - The method MixedHillClimbing took 737 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 963
+23:25:18,725  INFO AbstractTestCases:24 - The method MixedHillClimbing took 728 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 2258
+23:25:18,726  INFO AbstractTestCases:24 - The method MixedHillClimbing took 683 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 103
+23:25:18,726  INFO AbstractTestCases:24 - The method MixedHillClimbing took 624 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 228
+23:25:18,726  INFO AbstractTestCases:24 - The method MixedHillClimbing took 864 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 449
+23:25:18,726  INFO AbstractTestCases:24 - The method MixedHillClimbing took 729 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 1591
+23:25:18,727  INFO AbstractTestCases:24 - The method MixedHillClimbing took 726 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 3194
+23:25:18,727  INFO AbstractTestCases:24 - The method MixedHillClimbing took 630 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 183
+23:27:39,055  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3118 milliseconds for file src/test/resources/RandomInstance-01.txt and computed the residue 614
+23:27:39,056  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2935 milliseconds for file src/test/resources/RandomInstance-02.txt and computed the residue 94
+23:27:39,056  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2499 milliseconds for file src/test/resources/RandomInstance-03.txt and computed the residue 636
+23:27:39,056  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2696 milliseconds for file src/test/resources/RandomInstance-04.txt and computed the residue 261
+23:27:39,057  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2660 milliseconds for file src/test/resources/RandomInstance-05.txt and computed the residue 204
+23:27:39,057  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2776 milliseconds for file src/test/resources/RandomInstance-06.txt and computed the residue 186
+23:27:39,057  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2816 milliseconds for file src/test/resources/RandomInstance-07.txt and computed the residue 1166
+23:27:39,057  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2757 milliseconds for file src/test/resources/RandomInstance-08.txt and computed the residue 18
+23:27:39,058  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2816 milliseconds for file src/test/resources/RandomInstance-09.txt and computed the residue 282
+23:27:39,058  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2861 milliseconds for file src/test/resources/RandomInstance-10.txt and computed the residue 4
+23:27:39,058  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2804 milliseconds for file src/test/resources/RandomInstance-11.txt and computed the residue 262
+23:27:39,058  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2723 milliseconds for file src/test/resources/RandomInstance-12.txt and computed the residue 113
+23:27:39,060  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3171 milliseconds for file src/test/resources/RandomInstance-13.txt and computed the residue 234
+23:27:39,062  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3050 milliseconds for file src/test/resources/RandomInstance-14.txt and computed the residue 8
+23:27:39,063  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2790 milliseconds for file src/test/resources/RandomInstance-15.txt and computed the residue 33
+23:27:39,063  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2660 milliseconds for file src/test/resources/RandomInstance-16.txt and computed the residue 402
+23:27:39,063  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2572 milliseconds for file src/test/resources/RandomInstance-17.txt and computed the residue 722
+23:27:39,063  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2672 milliseconds for file src/test/resources/RandomInstance-18.txt and computed the residue 106
+23:27:39,064  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2832 milliseconds for file src/test/resources/RandomInstance-19.txt and computed the residue 400
+23:27:39,064  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2583 milliseconds for file src/test/resources/RandomInstance-20.txt and computed the residue 890
+23:27:39,065  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2716 milliseconds for file src/test/resources/RandomInstance-21.txt and computed the residue 50
+23:27:39,065  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2707 milliseconds for file src/test/resources/RandomInstance-22.txt and computed the residue 409
+23:27:39,065  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2858 milliseconds for file src/test/resources/RandomInstance-23.txt and computed the residue 22
+23:27:39,065  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2835 milliseconds for file src/test/resources/RandomInstance-24.txt and computed the residue 169
+23:27:39,067  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2799 milliseconds for file src/test/resources/RandomInstance-25.txt and computed the residue 88
+23:27:39,070  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2649 milliseconds for file src/test/resources/RandomInstance-26.txt and computed the residue 189
+23:27:39,074  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2807 milliseconds for file src/test/resources/RandomInstance-27.txt and computed the residue 276
+23:27:39,075  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2862 milliseconds for file src/test/resources/RandomInstance-28.txt and computed the residue 504
+23:27:39,075  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2735 milliseconds for file src/test/resources/RandomInstance-29.txt and computed the residue 232
+23:27:39,075  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2743 milliseconds for file src/test/resources/RandomInstance-30.txt and computed the residue 22
+23:27:39,076  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2657 milliseconds for file src/test/resources/RandomInstance-31.txt and computed the residue 214
+23:27:39,076  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2714 milliseconds for file src/test/resources/RandomInstance-32.txt and computed the residue 131
+23:27:39,076  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2871 milliseconds for file src/test/resources/RandomInstance-33.txt and computed the residue 170
+23:27:39,076  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3247 milliseconds for file src/test/resources/RandomInstance-34.txt and computed the residue 102
+23:27:39,077  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2883 milliseconds for file src/test/resources/RandomInstance-35.txt and computed the residue 11
+23:27:39,077  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2838 milliseconds for file src/test/resources/RandomInstance-36.txt and computed the residue 119
+23:27:39,077  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2700 milliseconds for file src/test/resources/RandomInstance-37.txt and computed the residue 18
+23:27:39,078  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3078 milliseconds for file src/test/resources/RandomInstance-38.txt and computed the residue 333
+23:27:39,078  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2801 milliseconds for file src/test/resources/RandomInstance-39.txt and computed the residue 27
+23:27:39,078  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3130 milliseconds for file src/test/resources/RandomInstance-40.txt and computed the residue 36
+23:27:39,078  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2651 milliseconds for file src/test/resources/RandomInstance-41.txt and computed the residue 166
+23:27:39,079  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2814 milliseconds for file src/test/resources/RandomInstance-42.txt and computed the residue 303
+23:27:39,079  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2816 milliseconds for file src/test/resources/RandomInstance-43.txt and computed the residue 167
+23:27:39,079  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2623 milliseconds for file src/test/resources/RandomInstance-44.txt and computed the residue 774
+23:27:39,079  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2519 milliseconds for file src/test/resources/RandomInstance-45.txt and computed the residue 261
+23:27:39,080  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2853 milliseconds for file src/test/resources/RandomInstance-46.txt and computed the residue 58
+23:27:39,080  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2800 milliseconds for file src/test/resources/RandomInstance-47.txt and computed the residue 447
+23:27:39,080  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2757 milliseconds for file src/test/resources/RandomInstance-48.txt and computed the residue 285
+23:27:39,080  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 2914 milliseconds for file src/test/resources/RandomInstance-49.txt and computed the residue 998
+23:27:39,081  INFO AbstractTestCases:24 - The method MixedSimulatedAnnealing took 3157 milliseconds for file src/test/resources/RandomInstance-50.txt and computed the residue 17
