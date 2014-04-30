@@ -867,8 +867,14 @@ File	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 	 Milliseconds	 & Residue 	 & 
 
 \subsection{Mixing Karmarkar-Karp with heuristics}
 
-Discuss briefly how you could use the solution from the Karmarkar-Karp algorithm as a starting point for the randomized algorithms, and suggest what effect that might have. (No experiments are necessary, but feel free to try it.)
-
+Discuss briefly how you could use the solution from the Karmarkar-Karp algorithm as a starting point for the randomized algorithms, and suggest what effect that might have. (No experiments are necessary, but feel free to try it.)\\
+\\
+After we run KK, we already have an upper bound of the residue, that we call $r$. So we take our decisions based on this value.\\
+For Random Repeated, in each iteration the elements in $A_1$ and $A_2$ must be sorted. We randomly take one element in $A_1$ and another in $A_2$, if the difference is less than $r$, then stay, otherwise we randomly decide if we move the element from $A_1$ to $A_2$ or the element from $A_2$ to $A_1$. \\
+\\
+For Hill Climbing, we generate a random solution $A_1$ and $A_2$. If the residue is more than $r$, then we randomly pick an element in $A_1$ and we look for another element in $A_1$ whose difference is less than $r$. When we find it, either element is moved to $A_2$. We do the same with $A_2$. This way we are moving the elements between the sets in a way that we look for improving the current residue $r$ found. \\
+\\
+For Simulated Annealing, we generate the random solution as in the above version of Hill Climbing and we consider to move to a bad solution depending of how far is the proposed residue from $r$ instead of the current residue.
 \subsection{Running the Karkarmar-Karp program}
 The program is already compiled and package in the root directory so it can run as follows:
 
