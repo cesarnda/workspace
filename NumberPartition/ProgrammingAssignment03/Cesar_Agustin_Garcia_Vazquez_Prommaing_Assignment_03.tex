@@ -489,7 +489,7 @@ You will try each of the following three algorithms for both representations.
 	$S^{\prime \prime} = S$\\
 	\For{iter = 1 \textbf{to} max\_iter}{
 		$S^{\prime} = $ a random neighbor of $S$\\
-		\If{residue($S^{\prime}$ $<$ residue($S$))}{
+		\If{residue($S^{\prime}$) $<$ residue($S$)}{
 			$S = S^{\prime}$
 		}
 		\Else{
@@ -895,5 +895,12 @@ The program was tested in the NICE system by connecting through the command:
 \begin{verbatim}
 ssh cgarciavazquez@nice.fas.harvard.edu
 \end{verbatim}
+
+The Java project was developed using Eclipse and Maven. In NumberPartition/src/main/java/edu/hardvard/cscie124/pa3 we are going to find the main classes to run the applications. NumberPartition/src/main/java/edu/hardvard/cscie124/pa3/structure we can find the MapxHeap class which extends from AbstractHeap which implements the Heap interface. AbstractHeap uses internally the PriorityQueue class from Java. The class Solution is used for the Heuristic methods to represent a proposed solution and swap elements between sets $A_1$ and $A_2$, as well as cloning capability and a method to get the sum over a list and a method to get the residue.\\
+\\
+In NumberPartition/src/main/java/edu/hardvard/cscie124/pa3/heuristic we can find the 7 methods implemented starting with HillClimbing, KarmarkarKarp, MixedHillClimbing, MixedRandomRepeated, MixedSimulatedAnnealing, Random Repeated and SimulatedAnnealing. The class NumberPartitionSolution is used to store each result with its corresponding taken time in milliseconds and residue to display it in the logs as well as output in \LaTeX format.\\
+\\
+In NumberPartition/src/test/java/edu/hardvard/cscie124/pa3/heuristic we can find the test cases that we uses for the 7 heuristics. This test cases take the 50 input files and apply each heuristic for each set. In NumberPartition/src/test/java/edu/hardvard/cscie124/pa3/ we can find class ElementsInFileGenerator that generates the 50 instances of 100 random positive integers.
+
 
 \end{document}  
