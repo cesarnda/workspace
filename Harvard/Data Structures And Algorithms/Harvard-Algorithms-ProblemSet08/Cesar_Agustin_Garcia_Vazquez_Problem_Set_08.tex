@@ -98,7 +98,7 @@ As the inductive step, for $n + 1$ vertices, for the first $n$ vertices we can g
 \\
 For a complete binary tree, when we the heigh is 0, then we have an empty set of nodes, which means that we have 1 independent set. When we have heigh 1, then we have 2 independent sets: $\{\}$ and $\{1\}$. Hence the base case is $I(0) = 1$ and $I(1) = 2$. 	\\
 \\
-When we have a tree with heigh is 2, then we have $2^2 - 1$ nodes, and besides the independent sets that we have with heigh 1, now we have the independent sets $\{2\}$, $\{3\}$ and $\{2, 3\}$. So when we have heigh 2, then we have 5 independent sets. When the tree is of heigh k, the proposes solution is $I(k) = I(k - 1)^2 + I(k - 2)^4$.
+When we have a tree with heigh is 2, then we have $2^2 - 1$ nodes, and besides the independent sets that we have with heigh 1, now we have the independent sets $\{2\}$, $\{3\}$ and $\{2, 3\}$. So when we have heigh 2, then we have 5 independent sets. When the tree is of heigh k, the proposed solution is $I(k) = I(k - 1)^2 + I(k - 2)^4$.
 
 On a complete binary tree with 127 nodes, three is of height 8, since $2^{8 - 1} - 1 = 127$. So we just need to compute $I(8)$. Using BigIntegers in Java, we get that the number of independent sets with 127 is shown in equation (\ref{independentSetsInCompleteBinaryTree}).
 
