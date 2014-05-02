@@ -107,15 +107,39 @@ On a complete binary tree with 127 nodes, three is of height 8, since $2^{8 - 1}
 \end{equation}
 
 	
-	\item Consider the problem MAX-$K$-CUT, which is like the MAX CUT algorithm, except that we divide the vertices into $k$ disjoint sets, and we want to maximize the number of edges between sets. Explain how to generalize both the randomized and the local search algorithms for MAX CUT to MAX-$k$-CUT and prove bounds on their performance.
-	
+	\item Consider the problem MAX-$K$-CUT, which is like the MAX CUT algorithm, except that we divide the vertices into $k$ disjoint sets, and we want to maximize the number of edges between sets. Explain how to generalize both the randomized and the local search algorithms for MAX CUT to MAX-$k$-CUT and prove bounds on their performance.\\
+\\
+\textbf{Answer:} To solve the problem, we first define a cut. Let $G = \{V, E\}$ be a weighted graph where eadh edge $e \in E$ has a weight $w_e$. A cut is a partition of $V$ into two subsets $S$ and $S^{\prime} = V \backslash S$. We simply denote a cut by either one of its subsets. The value of a cut $S$ is computed as in equation (\ref{aCut}).
+
+\begin{equation}\label{aCut}
+c(S) = \sum_{\begin{array}{c}(s,s^{\prime})\\ s\in S, s^{\prime} \in S^{\prime} \end{array} }w_{s,s^{\prime}}
+\end{equation}
+
+The Max-Cut problem is defined as given a weighted graph $G = \{V, E\}$ where each edge $e \in E$ has a positive integral weight $w_e$, find a cut in $G$ with maximum cut value.\\
+\\
+For the Max-$k$-Cut problem, we can start with a random solution, which would imply a random partition. The idea to move from one solution to another is to consider moving an element from one partition $V_i$ to another partition $V_j$ where $i \neq j$. We are going to move a vertex $v$ in $V_i$ to $V_j$ as long as the number of edges in $V_i$ does not decrease below the number of edges of $V_j$. Otherwise, we are not optimizing anything, we are exchanging places between sets.\\
+\\
+The algorithm is going to finish when we are not able to randomly find an element in a random partition that increases the number of edges in another random partition.\\
+\\
+For this algorithm, we are going to derive the lower bound. That is, the solution is going to be smaller than what is the optimum. If we define as OPT, the optimal value of the problem and  $w(V_i)$, as the sume of the edges whose ends are in $V_i$, then we can also define $w(V_{i,j})$ as the sum of weights of edges that connect a vertex in $V_i$ to a vertex in $V_j$. so we have we can define $C$ as the sum of weights of the cut edges as $\sum_{i=1}^k \sum_{j = i + 1}^{k}w(V_{i,j})$, then we have that ALG + $C = \sum_{e \in E} w_e$.\\
+\\
+Based on how the algorithm stopped, we have that $\sum_{u \in V_i}w(V_{i} + \{u\}) > \sum_{u \in V_i}w(V_{j} + \{u\})$, and also we have that $\sum_{u \in V_i}w(V_i + \{u\}) = 2 w(V_i)$.\\
+Considering that $\sum_{u \in V_i}w(V_j + \{u\}) = w(V_{i,j})$, this yields $2w(V_i) > w(V_{i,j})$. Adding both sides to the inequality ew get that $2 \sum_{i=1}^k \sum_{j = 1}^k w(V_i) >  \sum_{i=1}^k \sum_{j = 1}^k w(V_{i,j})$, due to the fact that   $\sum_{i=1}^k \sum_{j = 1}^k w(V_{i,j}) = 2 \sum_{i=1}^k \sum_{j = i+1}^k w(V_{i,j})$.\\
+This leads to $2\sum_{i=1}^k \sum_{j = 1}^k w(V_{i}) > 2 \sum_{i=1}^k \sum_{j = i+1}^k w(V_{i,j})$, and hence we have that $(k -1) \sum_{i = 1}^k w(V_i) > \sum_{i = 1}^k \sum_{j = i +1}^k w(V_{i,j})$. Based on the previous result, we know that the right hand size of the inequality is $C$ and the left hand size is $(k - 1) ALG$. \\
+Finally we have that $OPT < C + ALG < ALG + (k - 1)ALG$, from which we get that $OPT< k \cdot ALG$. 
+
+
 	\item We know that all of NP-Complete reduce to each other. It would be nice if this meant that an approximation for one NP-Hard problem would lead to another. But this is not the case. Consider the case of Minimum Vertex Cover, for which we have a 2-approximation; that is, we are always within a factor of 2 of the optimal solution. We know (from the NP-Completeness notes, which you may want to check) that $C$ is a cover in a graph $G = (V, E)$ if and only if $V - C$ is an independent set in $V$. Explain why this does not yield an approximation algorithm that is within a constant factor of optimal for Maximum Independent Set. That is, show that for any constant $c_1$, there exists a graph for which even if we obtain a 2-approximation of the Minimum Vertex Cover, the corresponding independent set is not within a factor of $c$ of the Maximum Independent Set.\\
 	\\
-	The Maximum Independent Set problem and the Maximum Clique problem are related in the following way: an independent set of a graph $G$ is a clique in the complement of $G$. (The complement of $G$ is the graph that contains exactly the edges that are not in $G$.) Does an approximation algorithm (that is, an algorithm within a constant factor of the optimal) for the Maximum Clique problem yield an approximation algorithm (within a constant factor of optimal) for Maximum Independent Set?
+	The Maximum Independent Set problem and the Maximum Clique problem are related in the following way: an independent set of a graph $G$ is a clique in the complement of $G$. (The complement of $G$ is the graph that contains exactly the edges that are not in $G$.) Does an approximation algorithm (that is, an algorithm within a constant factor of the optimal) for the Maximum Clique problem yield an approximation algorithm (within a constant factor of optimal) for Maximum Independent Set?\\
+\\
+\textbf{Answer:} If we assume that $S$ is an optimal vertex cover and has size $|V| /2$, then the algorithm for minimum vertex cover is only guaranteed to give a vertex of cover size $|V|!$. So the 2-approximation algorithm does not obtain a non-trivial independent set by complementing the approximate vertex cover. 
 	
+
+
 	\item Suppose we have a random walk with boundaries 0 and $n$, starting at position $i$. As mentioned in class, this can model a gambling game, where we start with $i$ dollars and quit when we lose it all or reach $n$ dollars. Let $W_t$ be our winnings after $t$ games, where $W_t$ is defined only until we hit a boundary (at which point we stop). Note that $W_t$ is negative if we are at a position $j$ with $j < i$; that is, we have lost money. If the probability of winning and the probability of losing 1 dollar each game are $1/2$, then with probability $1/2$, $W_{t + 1} = W_t + 1$ and with probability $1/2$, $W_{t+1} = W_t - 1$. Hence
 	\begin{equation}
-	E[W_{t + 1} = \frac{1}{2} E[W_{t} + 1]] + \frac{1}{2}E[W_{t} - 1] = E[W_{t}],
+	E[W_{t + 1}] = \frac{1}{2} E[W_{t} + 1] + \frac{1}{2}E[W_{t} - 1] = E[W_{t}],
 	\end{equation}
 	where we have used the linearity of expectations at the last step. Therefore when the walk reaches a boundary, the expected winnings is $E[W_0] = 0$. We can use this to calculate the probability that we finish with 0 dollars. Let this probability be $p_0$. Then with probability $p_0$ we lost $i$ dollars, and with probability $1 - p_0$ we gain $n - i$ dollars. Hence
 	\begin{equation}
@@ -123,7 +147,13 @@ On a complete binary tree with 127 nodes, three is of height 8, since $2^{8 - 1}
 	\end{equation}
 	from which we find $p_0  = (n - i) / n$.\\
 	\\
-	Buffy encounters this game in one of her visits to a hell dimension (or, worse, Las Vegas). Unfortunately, because it is a hell dimension, the game is not fair; instead, the probability of losing a dollar each game is $2/3$, and the probability of winning a dollar each game is $1/3$. Each victim starts with $i$ dollars and gets to leave the hell dimension if they reach $n$ dollars before going bankrupt. We wish to extend the above argument to this case. Show that $E[2^{W_{t+1}}] = E[2^{W_t}]$. Use this to determine the probability of finishing with 0 dollars and the probability of finishing with $n$ dollars when starting at position $i$. Then generalize the argument to handle the case where the probability of losing is $p > 1/2$? Hint: Try using $E[c^{W_t}]$ for some constant $c$.
+	Buffy encounters this game in one of her visits to a hell dimension (or, worse, Las Vegas). Unfortunately, because it is a hell dimension, the game is not fair; instead, the probability of losing a dollar each game is $2/3$, and the probability of winning a dollar each game is $1/3$. Each victim starts with $i$ dollars and gets to leave the hell dimension if they reach $n$ dollars before going bankrupt. We wish to extend the above argument to this case. Show that $E[2^{W_{t+1}}] = E[2^{W_t}]$. Use this to determine the probability of finishing with 0 dollars and the probability of finishing with $n$ dollars when starting at position $i$. Then generalize the argument to handle the case where the probability of losing is $p > 1/2$? Hint: Try using $E[c^{W_t}]$ for some constant $c$.\\
+\\
+\textbf{Answer:} We first just need to consider the case when $W_t = 0$ and $W_t = n$. When either of these two cases occur,  we have that $W_{t+1} = W_t$ and $E[2^{W_{t+1}}] = E[2^{W_t}]$. The remaining scenario is when $0 < W_t < n$, which implies that $E[2^{W_{t+1}}| W_t] = \frac{2}{3}E[2^{W_{t-1}}]+\frac{1}{3}E[2^{W_t} + 1]$. The by the previous result we have that $ \frac{2}{3}E[2^{W_{t-1}}]+\frac{1}{3}E[2^{W_t} + 1] = \frac{2}{3}E[2^{W_t}] + \frac{1}{3}E[2^{W_t}]$, which implies that $E[2^{W_{t+1}}] = E[2^{W_t}]$.\\
+\\
+For the general case when the $p$ is the probability of finishing with $n$ dollars and $1- p$ the probability of finishing with 0. Let T be the number of gamblings that we have to do before we stop, either with 0 dollars or $n$ dollars. Considering that $E[2^{W_T}] = E[2^{W_0}]$, then we have that $p \cdot 2^n + (1 - p)2^0 = 2^i$, and then we have that $p(2^n -1) = 2^i - 1$, so we finally reach that the probability of finishing  with $n$ dollars starting at position $i$ is $\frac{2^i - 1}{2^n - 1}$.
+
+
 \end{enumerate}
 %\subsection{}
 
