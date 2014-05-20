@@ -3,9 +3,28 @@
 <head>
 <meta charset="US-ASCII">
 <title>Insert title here</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/sorting.js"></script>
 </head>
 <body>
 	<label>Elements to sort: </label>
-	<input size="40">
+	<input size="40" id="elementsToSort" />
+	<select>
+		<option>Selection Sort</option>
+		<option>Bubble Sort</option>
+	</select>
+	<button id="sortButton">Sort</button>
+	<br/>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Step</th>
+				<th>State</th>
+			</tr>
+		</thead>
+		<tbody id="bodySteps">
+		
+		</tbody>
+	</table>
 </body>
 </html>
