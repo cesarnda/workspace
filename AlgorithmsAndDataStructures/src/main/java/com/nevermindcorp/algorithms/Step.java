@@ -5,8 +5,7 @@ public class Step {
 	private String step;
 	private String description;
 	
-	public Step(){
-		
+	public Step(){	
 	}
 	
 	public Step(String step, String description) {

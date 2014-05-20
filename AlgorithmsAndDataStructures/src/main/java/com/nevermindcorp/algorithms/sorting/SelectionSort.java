@@ -22,7 +22,7 @@ public class SelectionSort implements Sorting{
 		for(int i = 0; i < size - 1; i++){
 			minimumIndex = i;
 			for(int j = i + 1; j < size; j++){
-				if(list.get(j).compareTo(list.get(i)) < 0){
+				if(list.get(j).compareTo(list.get(minimumIndex)) < 0){
 					minimumIndex = j; 
 				}
 			}
