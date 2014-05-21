@@ -7,27 +7,27 @@ import com.nevermindcorp.algorithms.Step;
 
 public class BubbleSort implements Sorting{
 
-private Printer printer;
-	
-	
+	private transient Printer printer;
+
+
 	public BubbleSort(){
 		printer = new Printer();
 	}
-	
+
 	private <T extends Comparable<T>>  void sortList(List<T> list, List<Step> steps){
 		int size = list.size();
 		steps.add(new Step(printer.print(list), "Initial order"));
-		
+
 		for(int i = 0; i < size - 1; i++){
 			for(int j = 0; j < size - 1 - i; j++){
-				if(list.get(j + 1).compareTo(list.get(i)) < 0){
+				if(list.get(j + 1).compareTo(list.get(j)) < 0){
 					swap(list, j, j + 1, steps);
 				}
 			}
-			
+
 		}
 	}
-	
+
 	private <T>void swap(List<T> list, int i, int j, List<Step> steps){
 		// Swapping A[i] and A[min]
 		T elementInI = list.get(i);
@@ -44,5 +44,10 @@ private Printer printer;
 		sortList(list, steps);
 		return list;
 	}
-	
+
+	@Override
+	public String toString(){
+		return "Bubble Sort";
+	}
+
 }

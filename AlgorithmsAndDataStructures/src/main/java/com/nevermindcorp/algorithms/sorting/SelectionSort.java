@@ -7,7 +7,7 @@ import com.nevermindcorp.algorithms.Step;
 
 public class SelectionSort implements Sorting{
 	
-	private Printer printer;
+	private transient Printer printer;
 	
 	
 	public SelectionSort(){
@@ -41,6 +41,11 @@ public class SelectionSort implements Sorting{
 	public <T extends Comparable<T>> List<T> sort(List<T> list, List<Step> steps) {
 		sortList(list, steps);
 		return list;
+	}
+	
+	@Override
+	public String toString(){
+		return "Selection Sort";
 	}
 
 }
