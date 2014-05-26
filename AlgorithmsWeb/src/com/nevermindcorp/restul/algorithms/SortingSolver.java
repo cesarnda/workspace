@@ -1,9 +1,9 @@
 package com.nevermindcorp.restul.algorithms;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
@@ -27,7 +27,7 @@ public class SortingSolver {
 	private static final Map<String, String> SORTING_METHODS;
 	
 	static{
-		SORTING_METHODS = new HashMap<String, String>();
+		SORTING_METHODS = new TreeMap<String, String>();
 		for(SortingMethods sortingMethod : SortingMethods.values()){
 			SORTING_METHODS.put(sortingMethod.getKey(), sortingMethod.toString());
 		}

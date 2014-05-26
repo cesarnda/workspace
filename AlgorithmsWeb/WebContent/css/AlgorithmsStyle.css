@@ -1,0 +1,11 @@
+@CHARSET "US-ASCII";
+
+#graphCanvas{
+	border-width: thin;
+	border-style: solid;
+	float: left;
+}
+
+#addingEdgeColumn{
+	float: right;
+}

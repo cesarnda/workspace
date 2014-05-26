@@ -4,13 +4,19 @@ import java.util.List;
 
 import com.nevermindcorp.algorithms.Step;
 import com.nevermindcorp.algorithms.sorting.BubbleSort;
+import com.nevermindcorp.algorithms.sorting.InsertionSort;
+import com.nevermindcorp.algorithms.sorting.MergeSort;
+import com.nevermindcorp.algorithms.sorting.QuickSort;
 import com.nevermindcorp.algorithms.sorting.SelectionSort;
 import com.nevermindcorp.algorithms.sorting.Sorting;
 
 public enum SortingMethods {
-	
-	SELECTION_SORT("Selection Sort", new SelectionSort()),
-	BUBBLE_SORT("Bubble Sort", new BubbleSort());
+
+	BUBBLE_SORT("Bubble Sort", new BubbleSort()),
+	INSERTION_SORT("Insertion Sort", new InsertionSort()),
+	MERGE_SORT("Merge Sort", new MergeSort()),
+	QUICK_SORT("Quick Sort", new QuickSort()),
+	SELECTION_SORT("Selection Sort", new SelectionSort());
 	
 	private String methodName;
 	private Sorting sortingMethod;
